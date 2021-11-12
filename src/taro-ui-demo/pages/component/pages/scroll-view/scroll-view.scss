@@ -1,0 +1,20 @@
+/*postcss-pxtransform rn eject enable*/
+.scroll-view {
+  .example-body__scroll-view {
+    &--H {
+      white-space: nowrap;
+      .example-body__scroll-view-item {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    &--V {
+      height: 300px;
+    }
+    .example-body__scroll-view-item {
+      height: 300px;
+    }
+  }
+}
+
+/*postcss-pxtransform rn eject disable*/
