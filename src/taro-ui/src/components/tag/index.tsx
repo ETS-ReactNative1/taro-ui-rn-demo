@@ -4,6 +4,7 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtTagProps } from '../../../types/tag'
+import '../../style/components/tag.scss';
 
 const SIZE_CLASS = {
   normal: 'normal',

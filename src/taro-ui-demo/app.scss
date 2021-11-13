@@ -61,6 +61,14 @@ view {
     padding: 20px;
   }
 
+  &__blocks {
+    display: flex;
+    flex-direction: row;
+    &__block {
+      margin-left: 24px;
+    }
+  }
+
   .example-item {
     margin-bottom: 20px;
 

@@ -116,9 +116,9 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>空心标签</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <View className='panel__content__blocks'>
                 {this.state.hollowTagList.map((item, index) => (
-                  <View className='subitem' key={`at-tag-${index}`}>
+                  <View className='panel__content__blocks__block' key={`at-tag-${index}`}>
                     <AtTag
                       name={item.name}
                       active={item.active}
@@ -137,9 +137,9 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实心标签</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <View className='panel__content__blocks'>
                 {this.state.solidTagList.map((item, index) => (
-                  <View className='subitem' key={`at-tag-${index}`}>
+                  <View className='panel__content__blocks__block' key={`at-tag-${index}`}>
                     <AtTag
                       type='primary'
                       name={item.name}
@@ -159,9 +159,9 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>点击事件</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <View className='panel__content__blocks'>
                 {this.state.tagList.map((item, index) => (
-                  <View className='subitem' key={`at-tag-${index}`}>
+                  <View className='panel__content__blocks__block' key={`at-tag-${index}`}>
                     <AtTag
                       name={item.name}
                       type='primary'
@@ -169,7 +169,7 @@ export default class TagPage extends React.Component<{}, TagPageState> {
                       circle={index % 2 === 0}
                       onClick={this.onClick.bind(this)}
                     >
-                      tag-{index + 1}
+                      标签{index + 1}
                     </AtTag>
                   </View>
                 ))}
@@ -181,13 +181,13 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不可点击态</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
-                <View className='subitem'>
+              <View className='panel__content__blocks'>
+                <View className='panel__content__blocks__block'>
                   <AtTag type='primary' circle disabled>
                     标签
                   </AtTag>
                 </View>
-                <View className='subitem'>
+                <View className='panel__content__blocks__block'>
                   <AtTag type='primary' disabled>
                     标签
                   </AtTag>
@@ -200,9 +200,9 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>空心标签（小）</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <View className='panel__content__blocks'>
                 {this.state.hollowTagList2.map((item, index) => (
-                  <View className='subitem' key={`at-tag-${index}`}>
+                  <View className='panel__content__blocks__block' key={`at-tag-${index}`}>
                     <AtTag
                       size='small'
                       name={item.name}
@@ -222,9 +222,9 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实心标签（小）</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <View className='panel__content__blocks'>
                 {this.state.solidTagList2.map((item, index) => (
-                  <View className='subitem' key={`at-tag-${index}`}>
+                  <View className='panel__content__blocks__block' key={`at-tag-${index}`}>
                     <AtTag
                       size='small'
                       type='primary'
@@ -245,13 +245,13 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不可点击态（小）</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
-                <View className='subitem'>
+              <View className='panel__content__blocks'>
+                <View className='panel__content__blocks__block'>
                   <AtTag size='small' type='primary' circle disabled>
                     标签
                   </AtTag>
                 </View>
-                <View className='subitem'>
+                <View className='panel__content__blocks__block'>
                   <AtTag size='small' type='primary' disabled>
                     标签
                   </AtTag>
