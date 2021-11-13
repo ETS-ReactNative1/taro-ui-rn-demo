@@ -3,6 +3,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { Text, View } from '@tarojs/components'
 import { AtTimelineProps } from '../../../types/timeline'
+import '../../style/components/timeline.scss';
 
 export default class AtTimeline extends React.Component<AtTimelineProps> {
   public static defaultProps: AtTimelineProps
@@ -49,7 +50,10 @@ export default class AtTimeline extends React.Component<AtTimelineProps> {
             <View className='at-timeline-item__content-item'>{title}</View>
             {content.map((sub, subIndex) => (
               <View
-                className='at-timeline-item__content-item at-timeline-item__content--sub'
+                className={classNames([
+                  'at-timeline-item__content-item',
+                  'at-timeline-item__content--sub',
+                ])}
                 key={subIndex}
               >
                 {sub}

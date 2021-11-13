@@ -5,6 +5,7 @@ import { Text, View } from '@tarojs/components'
 import { AtLoadMoreProps } from '../../../types/load-more'
 import AtActivityIndicator from '../activity-indicator/index'
 import AtButton from '../button/index'
+import '../../style/components/load-more.scss';
 
 export default class AtLoadMore extends React.Component<AtLoadMoreProps> {
   public static defaultProps: AtLoadMoreProps

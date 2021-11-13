@@ -149,7 +149,7 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
                           max={2000}
                           value={duration}
                           onChange={this.setDuration}
-                        ></Slider>
+                        />
                       </View>
                     </View>
                     <View className='slider-list__item'>
@@ -165,7 +165,7 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
                           max={10000}
                           value={this.state.interval}
                           onChange={this.setInterval}
-                        ></Slider>
+                        />
                       </View>
                     </View>
                   </View>

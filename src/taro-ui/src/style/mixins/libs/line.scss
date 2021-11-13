@@ -5,10 +5,13 @@
   @if ($num == 1) {
     white-space: nowrap;
   } @else {
+
+    /*postcss-pxtransform rn eject enable*/
     display: -webkit-box;
     -webkit-line-clamp: $num;
-
     /* autoprefixer: off */
     -webkit-box-orient: vertical;
+    /*postcss-pxtransform rn eject disable*/
+
   }
 }

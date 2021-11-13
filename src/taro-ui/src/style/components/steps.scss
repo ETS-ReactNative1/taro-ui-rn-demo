@@ -3,6 +3,7 @@
 
 .at-steps {
   display: flex;
+  flex-direction: row;
   width: 100%;
   align-items: flex-start;
   justify-content: center;
@@ -16,8 +17,20 @@
     height: $at-steps-circle-size;
     text-align: center;
     line-height: $at-steps-circle-size;
-    border-radius: 50%;
+    border-radius: $at-steps-circle-size / 2;
     transition: all 0.3s;
+    &--active {
+      background-color: $at-steps-bg-color-active;
+      &--text {
+        color: $at-steps-color;
+      }
+    }
+    &--inactive {
+      background-color: $at-steps-bg-color;
+      &--text {
+        color: $at-steps-color-active;
+      }
+    }
   }
 
   &__item {
@@ -25,20 +38,6 @@
     flex: 1;
     width: 33%;
     text-align: center;
-
-    &--active {
-      .at-steps__circular {
-        color: $at-steps-color;
-        background-color: $at-steps-bg-color-active;
-      }
-    }
-
-    &--inactive {
-      .at-steps__circular {
-        color: $at-steps-color-active;
-        background-color: $at-steps-bg-color;
-      }
-    }
   }
 
   &__circular-wrap {
@@ -88,15 +87,33 @@
   }
 
   &__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: $spacing-v-sm 0;
-    color: $at-steps-title-color;
-    font-size: $at-steps-title-size;
+    /*postcss-pxtransform rn eject enable*/
     @include line(1);
+    /*postcss-pxtransform rn eject disable*/
+    &__text {
+      color: $at-steps-title-color;
+      font-size: $at-steps-title-size;
+      text-align: center;
+    }
   }
 
   &__desc {
-    color: $at-steps-desc-color;
-    font-size: $at-steps-desc-size;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*postcss-pxtransform rn eject enable*/
     @include line(2);
+    /*postcss-pxtransform rn eject disable*/
+    &__text {
+      color: $at-steps-desc-color;
+      font-size: $at-steps-desc-size;
+      text-align: center;
+    }
   }
 }

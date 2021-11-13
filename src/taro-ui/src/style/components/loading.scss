@@ -27,7 +27,7 @@
     border-width: 1PX;
     border-style: solid;
     border-color: $at-loading-color transparent transparent transparent;
-    border-radius: 50%;
+    border-radius: $at-loading-size / 2;
     animation: loading 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 
     &:nth-child(1) {

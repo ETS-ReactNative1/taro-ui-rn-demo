@@ -54,7 +54,7 @@
       //display: inline-block;
       width: 60px;
       height: 2PX;
-      border-radius: 1PX;
+      border-radius: 1px;
       background: $at-image-picker-btn-add-color;
 
       &:nth-child(1) {
@@ -78,7 +78,7 @@
     width: 18px;
     height: 18px;
     font-size: 0;
-    border-radius: 50%;
+    border-radius: 9px;
     overflow: hidden;
     text-align: center;
     background-color: $at-image-picker-btn-remove-bg-color;
@@ -94,7 +94,7 @@
       //display: inline-block;
       width: 10PX;
       height: 1PX;
-      border-radius: 1PX;
+      border-radius: 1px;
       background: $at-image-picker-btn-remove-color;
     }
 

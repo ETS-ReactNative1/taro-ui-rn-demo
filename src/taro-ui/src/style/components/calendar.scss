@@ -46,7 +46,7 @@
           height: $at-calendar-day-size;
           margin-left: auto;
           margin-right: auto;
-          border-radius: 50%;
+          border-radius: $at-calendar-day-size / 2;
 
           .container-text {
             @include flex;
@@ -67,7 +67,7 @@
               margin-right: 4px;
               //display: inline-block;
               background-color: $at-calendar-main-color;
-              border-radius: 50%;
+              border-radius: $at-calendar-mark-size / 2;
               overflow: hidden;
 
               &:last-child {
