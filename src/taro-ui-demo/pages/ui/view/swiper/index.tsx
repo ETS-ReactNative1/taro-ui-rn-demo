@@ -91,8 +91,8 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <Swiper

@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtInputNumber } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
@@ -45,8 +45,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>
@@ -64,8 +64,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 小数 */}
-          <View className='panel'>
-            <View className='panel__title'>小数</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>小数</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>
@@ -84,8 +84,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 禁用状态 */}
-          <View className='panel'>
-            <View className='panel__title'>禁用状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用状态</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtInputNumber
@@ -100,8 +100,8 @@ export default class Index extends React.Component<{}, IndexState> {
             </View>
           </View>
           {/* 禁用输入状态 */}
-          <View className='panel'>
-            <View className='panel__title'>禁用输入状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用输入状态</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtInputNumber
@@ -117,8 +117,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义宽度 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义宽度</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义宽度</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtInputNumber
@@ -134,8 +134,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 大尺寸 */}
-          <View className='panel'>
-            <View className='panel__title'>大尺寸</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>大尺寸</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtInputNumber

@@ -7,7 +7,7 @@
 }
 
 .at-countdown {
-  display: inline-block;
+  //display: inline-block;
   min-height: $at-countdown-font-size;
 
   /* elements */
@@ -17,7 +17,7 @@
   }
 
   &__time-box {
-    display: inline-block;
+    //display: inline-block;
     text-align: center;
     min-width: $at-countdown-font-size;
 
@@ -48,7 +48,7 @@
   /* modifiers */
   &--card {
     .at-countdown__time-box {
-      display: inline-block;
+      //display: inline-block;
       position: relative;
       padding: $spacing-v-xs 0;
       color: $at-countdown-card-num-color;

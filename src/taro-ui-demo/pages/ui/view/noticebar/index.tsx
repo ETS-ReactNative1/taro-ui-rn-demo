@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtNoticebar } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -28,8 +28,8 @@ export default class NoticebarPage extends React.Component {
         {/* S Body */}
         <View className='doc-body'>
           {/* 文字 */}
-          <View className='panel'>
-            <View className='panel__title'>文字</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文字</Text></View>
             <View className='panel__content'>
               <View className='bar-item'>
                 <AtNoticebar single>
@@ -47,8 +47,8 @@ export default class NoticebarPage extends React.Component {
           </View>
 
           {/* 跑马灯 */}
-          <View className='panel'>
-            <View className='panel__title'>跑马灯</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>跑马灯</Text></View>
             <View className='panel__content'>
               <View className='bar-item'>
                 <AtNoticebar marquee>
@@ -69,8 +69,8 @@ export default class NoticebarPage extends React.Component {
           </View>
 
           {/* 图标 */}
-          <View className='panel'>
-            <View className='panel__title'>图标</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>图标</Text></View>
             <View className='panel__content'>
               <View className='bar-item'>
                 <AtNoticebar icon='volume-plus' single>
@@ -88,8 +88,8 @@ export default class NoticebarPage extends React.Component {
           </View>
 
           {/* 查看更多 */}
-          <View className='panel'>
-            <View className='panel__title'>查看更多</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>查看更多</Text></View>
             <View className='panel__content'>
               <View className='bar-item'>
                 <AtNoticebar
@@ -137,8 +137,8 @@ export default class NoticebarPage extends React.Component {
           </View>
 
           {/* 关闭按钮 */}
-          <View className='panel'>
-            <View className='panel__title'>关闭按钮</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>关闭按钮</Text></View>
             <View className='panel__content'>
               <View className='bar-item'>
                 <AtNoticebar close single>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { AtButton, AtCheckbox, AtForm, AtInput, AtToast } from '@/taro-ui'
 import { CheckboxOption } from 'types/checkbox'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -77,8 +77,8 @@ export default class PageForm extends React.Component<{}, PageFormState> {
         <DocsHeader title='Form 表单'></DocsHeader>
         <View className='doc-body'>
           {/* 表单提交与重置 */}
-          <View className='panel'>
-            <View className='panel__title'>表单提交与重置</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>表单提交与重置</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtForm

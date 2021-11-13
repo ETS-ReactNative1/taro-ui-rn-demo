@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtButton, AtFloatLayout } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
@@ -69,8 +69,8 @@ export default class FloatLayoutPage extends React.Component<
 
         <View className='doc-body'>
           {/* 基本用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基本用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 1)}>
@@ -81,8 +81,8 @@ export default class FloatLayoutPage extends React.Component<
           </View>
 
           {/* 最大高度 */}
-          <View className='panel'>
-            <View className='panel__title'>最大高度</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>最大高度</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 2)}>
@@ -92,8 +92,8 @@ export default class FloatLayoutPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>监听事件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>监听事件</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 3)}>

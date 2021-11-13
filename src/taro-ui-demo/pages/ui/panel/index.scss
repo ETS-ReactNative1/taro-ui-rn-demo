@@ -3,6 +3,7 @@
  */
 .panel-header {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: 60px;
   height: 180px;
@@ -19,7 +20,7 @@
     //box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.11);
     border-radius: 10px;
 
-    .img {
+    &__img {
       width: 36px;
       height: 36px;
     }
@@ -34,7 +35,7 @@
 }
 
 .panel-body {
-  min-height: calc(100vh - 180px);
+  //min-height: calc(100vh - 180px);
   background: #fff;
   //box-shadow: 0 26px 163px 0 rgba(0, 0, 0, 0.11);
 }
@@ -44,18 +45,20 @@
 
   &__item {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 120px;
     @include hairline-bottom();
 
-    .name {
+    &__name {
       color: #1d1d26;
       font-size: 28px;
+      flex: 1;
     }
-
-    .at-icon {
-      color: #CCC;
+    &__icon {
+      width: 32px;
+      height: 32px;
     }
   }
 }

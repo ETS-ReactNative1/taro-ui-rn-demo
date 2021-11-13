@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtImagePicker } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -71,8 +71,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtImagePicker
@@ -84,8 +84,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 多选图片 */}
-          <View className='panel'>
-            <View className='panel__title'>多选图片</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>多选图片</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtImagePicker
@@ -100,8 +100,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义每行数量 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义每行数量</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义每行数量</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtImagePicker
@@ -115,8 +115,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 更改图片的缩放模式 */}
-          <View className='panel'>
-            <View className='panel__title'>更改图片的缩放模式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>更改图片的缩放模式</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtImagePicker

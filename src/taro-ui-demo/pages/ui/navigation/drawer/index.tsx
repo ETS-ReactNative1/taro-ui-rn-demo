@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
 import { AtBadge, AtButton, AtDrawer, AtIcon } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -71,8 +71,8 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
         <DocsHeader title='Drawer 抽屉'></DocsHeader>
 
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>左边滑出</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左边滑出</Text></View>
             <View className='panel__content no-padding'>
               <View className='example'>
                 <AtButton onClick={this.leftDrawerClick.bind(this)}>
@@ -89,8 +89,8 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>右边滑出</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右边滑出</Text></View>
             <View className='panel__content no-padding'>
               <View className='example'>
                 <AtButton onClick={this.rightDrawerClick.bind(this)}>
@@ -108,8 +108,8 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>自定义内容</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义内容</Text></View>
             <View className='panel__content no-padding'>
               <View className='example'>
                 <AtButton onClick={this.childrenDrawerClick.bind(this)}>

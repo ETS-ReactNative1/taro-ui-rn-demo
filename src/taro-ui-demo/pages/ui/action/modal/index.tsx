@@ -7,7 +7,7 @@ import {
   AtModalContent,
   AtModalHeader
 } from '@/taro-ui'
-import { Button, View } from '@tarojs/components'
+import { Button, View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import mockData from '../../navigation/indexes/mock-data'
@@ -65,8 +65,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
 
         <View className='doc-body'>
           {/* 基础模态框 */}
-          <View className='panel'>
-            <View className='panel__title'>基础模态框</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础模态框</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 1)}>
@@ -77,8 +77,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
           </View>
 
           {/* 单个按钮 */}
-          <View className='panel'>
-            <View className='panel__title'>单个按钮</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>单个按钮</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 2)}>
@@ -89,8 +89,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
           </View>
 
           {/* 无标题 */}
-          <View className='panel'>
-            <View className='panel__title'>无标题</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>无标题</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 3)}>
@@ -101,8 +101,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
           </View>
 
           {/* 简化使用 */}
-          <View className='panel'>
-            <View className='panel__title'>简化使用</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>简化使用</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 4)}>
@@ -113,8 +113,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
           </View>
 
           {/* 城市索引 */}
-          <View className='panel'>
-            <View className='panel__title'>城市索引</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>城市索引</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 5)}>

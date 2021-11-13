@@ -1,21 +1,17 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Button, Form, View } from '@tarojs/components'
+import { Button, Form, View, Text } from '@tarojs/components'
 import { ButtonProps } from '@tarojs/components/types/Button'
 import { BaseEventOrig, CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtButtonProps, AtButtonState } from '../../../types/button'
 import AtLoading from '../loading/index'
+import '../../style/components/button.scss';
 
 const SIZE_CLASS = {
   normal: 'normal',
   small: 'small'
-}
-
-const TYPE_CLASS = {
-  primary: 'primary',
-  secondary: 'secondary'
 }
 
 export default class AtButton extends React.Component<
@@ -62,7 +58,7 @@ export default class AtButton extends React.Component<
     this.props.onOpenSetting && this.props.onOpenSetting(event)
   }
 
-  private onSumit(event: CommonEvent): void {
+  private onSubmit(event: CommonEvent): void {
     if (this.state.isWEAPP || this.state.isWEB) {
       // TODO: 3.0 this.$scope
       // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
@@ -106,16 +102,26 @@ export default class AtButton extends React.Component<
       appParameter
     } = this.props
     const { isWEAPP, isALIPAY, isWEB } = this.state
-    const rootClassName = ['at-button']
-    const classObject = {
-      [`at-button--${SIZE_CLASS[size]}`]: SIZE_CLASS[size],
+
+    const rootClassNames = {
+      'at-button': true,
+      [`at-button--${SIZE_CLASS[size]}`]: true,
       'at-button--disabled': disabled,
-      [`at-button--${type}`]: TYPE_CLASS[type],
+      [`at-button--${type}`]: !!type,
       'at-button--circle': circle,
       'at-button--full': full
     }
-    const loadingColor = type === 'primary' ? '#fff' : ''
-    const loadingSize = size === 'small' ? '30' : 0
+    const textClassNames = {
+      'at-button__text': true,
+      [`at-button--${SIZE_CLASS[size]}--text`]: true,
+      'at-button--disabled--text': disabled,
+      [`at-button--${type}--text`]: !!type,
+      'at-button--circle--text': circle,
+      'at-button--full--text': full
+    }
+
+    const loadingColor = type === 'primary' ? '#fff' : '#6a91e1'
+    const loadingSize = size === 'small' ? 30 : 36
 
     let loadingComponent: JSX.Element | null = null
     if (loading) {
@@ -124,7 +130,7 @@ export default class AtButton extends React.Component<
           <AtLoading color={loadingColor} size={loadingSize} />
         </View>
       )
-      rootClassName.push('at-button--icon')
+      rootClassNames['at-button--icon'] = true;
     }
 
     const webButton = (
@@ -132,7 +138,7 @@ export default class AtButton extends React.Component<
         className='at-button__wxbutton'
         lang={lang}
         formType={formType}
-      ></Button>
+      />
     )
 
     const button = (
@@ -152,19 +158,24 @@ export default class AtButton extends React.Component<
         onOpenSetting={this.onOpenSetting.bind(this)}
         onError={this.onError.bind(this)}
         onContact={this.onContact.bind(this)}
-      ></Button>
+      />
     )
 
+    if (this.props.className) {
+      rootClassNames[this.props.className] = true;
+    }
+
+    // console.log(rootClassNames);
     return (
       <View
-        className={classNames(rootClassName, classObject, this.props.className)}
+        className={classNames(rootClassNames)}
         style={customStyle}
         onClick={this.onClick.bind(this)}
       >
         {isWEB && !disabled && webButton}
         {isWEAPP && !disabled && (
           <Form
-            onSubmit={this.onSumit.bind(this)}
+            onSubmit={this.onSubmit.bind(this)}
             onReset={this.onReset.bind(this)}
           >
             {button}
@@ -172,7 +183,9 @@ export default class AtButton extends React.Component<
         )}
         {isALIPAY && !disabled && button}
         {loadingComponent}
-        <View className='at-button__text'>{this.props.children}</View>
+        {React.isValidElement(this.props.children)
+          ? this.props.children
+          : <Text className={classNames(textClassNames)}>{this.props.children}</Text>}
       </View>
     )
   }

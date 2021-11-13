@@ -10,18 +10,19 @@
 }
 
 .at-button {
-  position: relative;
+  flex: 1;
+  //position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 0 $spacing-h-xl;
   height: $at-button-height;
-  color: $color-text-base;
-  font-size: $font-size-lg;
-  line-height: $at-button-height - 2;
+  line-height: $at-button-height - 2px;
   text-align: center;
   border-radius: $border-radius-md;
-  border: 1PX solid $color-border-base;
+  border: 1px solid $color-border-base;
   box-sizing: border-box;
   @include line();
 
@@ -32,12 +33,14 @@
   /* elements */
 
   &__icon {
-    display: inline-block;
-    margin: 2PX 20px 0 20px;
+    //display: inline-block;
+    margin: 2px 20px 0 20px;
   }
 
   &__text {
-    display: inline;
+    //display: inline;
+    color: $color-text-base;
+    font-size: $font-size-lg;
   }
 
   &__wxbutton {
@@ -72,15 +75,19 @@
   }
 
   &--primary {
-    color: $color-text-base-inverse;
-    border: 1PX solid $at-button-border-color-primary;
-    background: $at-button-bg;
+    border: 1px solid $at-button-border-color-primary;
+    background-color: $at-button-bg;
+    &--text {
+      color: $color-text-base-inverse;
+    }
   }
 
   &--secondary {
-    color: $at-button-color;
-    border: 1PX solid $at-button-border-color-secondary;
+    border: 1px solid $at-button-border-color-secondary;
     background-color: $color-white;
+    &--text {
+      color: $at-button-color;
+    }
   }
 
   &--circle {
@@ -95,8 +102,11 @@
     min-width: 100px;
     max-width: 710px;
     height: $at-button-height-sm;
-    font-size: $font-size-base;
-    line-height: $at-button-height-sm - 2;
+
+    &--text {
+      font-size: $font-size-base;
+      line-height: $at-button-height-sm - 2;
+    }
 
     &.at-button--circle {
       border-radius: $at-button-height-sm / 2;

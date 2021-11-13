@@ -43,7 +43,7 @@
   &__dot {
     &::after {
       content: '';
-      display: inline-block;
+      //display: inline-block;
       box-sizing: border-box;
       width: $at-timeline-dot-size;
       height: $at-timeline-dot-size;

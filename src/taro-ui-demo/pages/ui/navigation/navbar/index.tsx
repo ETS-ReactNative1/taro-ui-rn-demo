@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtNavBar } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -45,8 +45,8 @@ export default class Index extends React.Component {
 
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtNavBar
@@ -76,8 +76,8 @@ export default class Index extends React.Component {
           </View>
 
           {/* 自定义左上角文案 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义左上角文案</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义左上角文案</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtNavBar
@@ -102,8 +102,8 @@ export default class Index extends React.Component {
           </View>
 
           {/* 自定义颜色 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content no-padding'>
               <AtNavBar
                 onClickRgIconSt={this.clickList.bind(this)}
@@ -119,8 +119,8 @@ export default class Index extends React.Component {
           </View>
 
           {/* 自定义图标样式 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义图标样式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义图标样式</Text></View>
             <View className='panel__content no-padding'>
               <AtNavBar
                 onClickRgIconSt={this.clickList.bind(this)}
@@ -136,8 +136,8 @@ export default class Index extends React.Component {
           </View>
 
           {/* 无下划线 */}
-          <View className='panel'>
-            <View className='panel__title'>无下划线</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>无下划线</Text></View>
             <View className='panel__content no-padding'>
               <AtNavBar
                 border={false}

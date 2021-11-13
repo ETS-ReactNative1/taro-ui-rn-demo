@@ -312,7 +312,7 @@ export default class PanelBasic extends React.Component<{}, PanelBasicState> {
         <View className='panel-header'>
           <View className='panel-header__icon'>
             {icon ? (
-              <Image src={icon} className='img' mode='widthFix' />
+              <Image src={icon} className='panel-header__icon__img' mode='widthFix' />
             ) : (
               <Text className='at-icon at-icon-list' />
             )}
@@ -330,8 +330,8 @@ export default class PanelBasic extends React.Component<{}, PanelBasicState> {
                 key={item.id}
                 onClick={this.gotoComponent.bind(this, item.id, currentId)}
               >
-                <Text className='name'>{`${item.id} ${item.name}`}</Text>
-                <Text className='at-icon at-icon-chevron-right' />
+                <Text className='component-list__item__name'>{`${item.id} ${item.name}`}</Text>
+                <Image className='component-list__item__icon' src={require('../../../assets/images/right.png')} />
               </View>
             ))}
           </View>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtButton, AtIcon, AtProgress } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -59,8 +59,8 @@ export default class ProgressPage extends React.Component<
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础进度条 */}
-          <View className='panel'>
-            <View className='panel__title'>基础进度条</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础进度条</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtProgress percent={25} />
@@ -75,8 +75,8 @@ export default class ProgressPage extends React.Component<
           </View>
 
           {/* 隐藏进度文案 */}
-          <View className='panel'>
-            <View className='panel__title'>隐藏进度文案</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>隐藏进度文案</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtProgress percent={25} isHidePercent />
@@ -88,8 +88,8 @@ export default class ProgressPage extends React.Component<
           </View>
 
           {/* 自定义进度条线宽 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义进度条线宽</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义进度条线宽</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtProgress percent={25} strokeWidth={6} />
@@ -104,8 +104,8 @@ export default class ProgressPage extends React.Component<
           </View>
 
           {/* 自定义颜色 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtProgress percent={25} color='#FF4949' />
@@ -120,8 +120,8 @@ export default class ProgressPage extends React.Component<
           </View>
 
           {/* 不同的状态 */}
-          <View className='panel'>
-            <View className='panel__title'>不同的状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不同的状态</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>暂停</View>
@@ -143,8 +143,8 @@ export default class ProgressPage extends React.Component<
           </View>
 
           {/* 实际案例 */}
-          <View className='panel'>
-            <View className='panel__title'>实际案例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实际案例</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtProgress percent={percent} />

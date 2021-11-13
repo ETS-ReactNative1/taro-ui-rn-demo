@@ -1,7 +1,7 @@
 import React from 'react'
 import { AtGrid } from '@/taro-ui'
 import { AtGridItem } from 'types/grid'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -67,8 +67,8 @@ export default class GridPage extends React.Component<{}, GridPageState> {
         <DocsHeader title='Grid 栅格' />
 
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>正方形案例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>正方形案例</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtGrid data={this.state.data} onClick={this.handleClick} />
@@ -76,8 +76,8 @@ export default class GridPage extends React.Component<{}, GridPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>矩形案例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>矩形案例</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtGrid
@@ -95,8 +95,8 @@ export default class GridPage extends React.Component<{}, GridPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>没有边框</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>没有边框</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtGrid

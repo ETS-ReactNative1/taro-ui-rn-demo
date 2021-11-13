@@ -91,30 +91,30 @@ export default class Index extends React.Component<{}, IndexState> {
     const { list } = this.state
 
     return (
-      <View className='page page-index'>
-        <View className='logo'>
-          <Image src={logoImg} className='img' mode='widthFix' />
+      <View className='page-index'>
+        <View className='page-index__logo'>
+          <Image src={logoImg} className='page-index__logo__img' mode='widthFix' />
         </View>
-        <View className='page-title'>Taro UI</View>
-        <View className='module-list'>
+        <View className='page-index__page-title'>Taro UI</View>
+        <View className='page-index__module-list'>
           {list.map((item, index) => (
             <View
-              className='module-list__item'
+              className='page-index__module-list__item'
               key={index}
               data-id={item.id}
               data-name={item.title}
               data-list={item.subpages}
               onClick={this.gotoPanel.bind(this, item.id)}
             >
-              <View className='module-list__icon'>
-                <Image src={item.icon} className='img' mode='widthFix' />
+              <View className='page-index__module-list__icon'>
+                <Image src={item.icon} className='page-index__module-list__icon__img' mode='widthFix' />
               </View>
-              <View className='module-list__info'>
-                <View className='title'>{item.title}</View>
-                <View className='content'>{item.content}</View>
+              <View className='page-index__module-list__info'>
+                <View className='page-index__module-list__info__title'>{item.title}</View>
+                <View className='page-index__module-list__info__content'>{item.content}</View>
               </View>
-              <View className='module-list__arrow'>
-                <Text className='at-icon at-icon-chevron-right' />
+              <View className='page-index__module-list__arrow'>
+                <Image className='page-index__module-list__arrow__img' src={require('../../../assets/images/right-white.png')} />
               </View>
             </View>
           ))}

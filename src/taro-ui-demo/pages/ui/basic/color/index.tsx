@@ -1,6 +1,5 @@
 import React from 'react'
 import { Text, View } from '@tarojs/components'
-import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
 
@@ -134,15 +133,17 @@ export default class BasicColor extends React.Component<{}, BasicColorState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Color 颜色'></DocsHeader>
+        <DocsHeader title='Color 颜色' />
         {/* E Header */}
 
         {/* S Body */}
         <View className='doc-body'>
           {colorData.map(item => (
-            <View className='panel' key={item.type}>
-              <View className='panel__title'>{item.type}</View>
-              <View className='panel__content'>
+            <View className='doc-body__panel' key={item.type}>
+              <View className='doc-body__panel__title'>
+                <Text className='doc-body__panel__title__text'>{item.type}</Text>
+              </View>
+              <View className='doc-body__panel__content'>
                 <View className='color-list'>
                   {item.data.map((color: Color, index: number) => (
                     <View
@@ -151,19 +152,21 @@ export default class BasicColor extends React.Component<{}, BasicColorState> {
                     >
                       <View
                         className='color-item__circle'
-                        style={`background: ${color.hex}`}
+                        style={{
+                          backgroundColor: color.hex,
+                        }}
                       >
-                        <View className='inner-circle-1'></View>
+                        <View className='color-item__circle-1' />
                         <View
-                          className='inner-circle-2'
-                          style={`border-color: ${color.hex}`}
-                        ></View>
+                          className='color-item__circle-2'
+                          style={{
+                            borderColor: color.hex,
+                          }}
+                        />
                       </View>
                       <View className='color-item__info'>
-                        <Text className='name'>{color.name}</Text>
-                        <Text className='hex' selectable>
-                          {color.hex}
-                        </Text>
+                        <Text className='color-item__info__name'>{color.name}</Text>
+                        <Text className='color-item__info__hex' selectable>{color.hex}</Text>
                       </View>
                     </View>
                   ))}

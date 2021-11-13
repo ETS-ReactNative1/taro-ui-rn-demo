@@ -1,7 +1,7 @@
 import React from 'react'
 import { AtCheckbox } from '@/taro-ui'
 import { CheckboxOption } from 'types/checkbox'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -101,8 +101,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <View className='checkbox-container'>
@@ -117,8 +117,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 含描述信息 */}
-          <View className='panel'>
-            <View className='panel__title'>含描述信息</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>含描述信息</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <View className='checkbox-container'>
@@ -133,8 +133,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 选项禁用 */}
-          <View className='panel'>
-            <View className='panel__title'>选项禁用</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>选项禁用</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <View className='checkbox-container'>

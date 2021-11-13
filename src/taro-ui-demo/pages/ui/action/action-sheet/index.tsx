@@ -65,8 +65,8 @@ export default class ActionSheetPage extends React.Component<
         {/* S Body */}
         <View className='doc-body'>
           {/* 无 Title */}
-          <View className='panel'>
-            <View className='panel__title'>无标题</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>无标题</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 1)}>
@@ -77,8 +77,8 @@ export default class ActionSheetPage extends React.Component<
           </View>
 
           {/* 含标题 */}
-          <View className='panel'>
-            <View className='panel__title'>含标题</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>含标题</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 2)}>
@@ -89,8 +89,8 @@ export default class ActionSheetPage extends React.Component<
           </View>
 
           {/* 自定义选项 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义选项</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义选项</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton onClick={this.handleClick.bind(this, 3)}>

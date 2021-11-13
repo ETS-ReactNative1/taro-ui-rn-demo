@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtSlider } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -16,8 +16,8 @@ export default class PageSlider extends React.Component {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>step=1</View>
@@ -27,8 +27,8 @@ export default class PageSlider extends React.Component {
           </View>
 
           {/* 显示当前 Value */}
-          <View className='panel'>
-            <View className='panel__title'>显示当前 Value</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>显示当前 Value</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>step=1</View>
@@ -38,8 +38,8 @@ export default class PageSlider extends React.Component {
           </View>
 
           {/* 设置最大/最小值 */}
-          <View className='panel'>
-            <View className='panel__title'>设置最大/最小值</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>设置最大/最小值</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>
@@ -57,8 +57,8 @@ export default class PageSlider extends React.Component {
           </View>
 
           {/* 自定义样式 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义样式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义样式</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>step=1, blockSize=24</View>
@@ -75,8 +75,8 @@ export default class PageSlider extends React.Component {
           </View>
 
           {/* 禁用状态 */}
-          <View className='panel'>
-            <View className='panel__title'>禁用状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用状态</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='example-item__desc'>step=1, blockSize=24</View>

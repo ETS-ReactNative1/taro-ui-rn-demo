@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtButton, AtCurtain } from '@/taro-ui'
-import { Image, View } from '@tarojs/components'
+import { Image, View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import curtainPng from '../../../../assets/images/curtain.png'
 import DocsHeader from '../../components/doc-header'
@@ -60,8 +60,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </AtCurtain>
 
           {/* 顶部关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>顶部关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>顶部关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -78,8 +78,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 底部关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>底部关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>底部关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -96,8 +96,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 左上关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>左上关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左上关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -114,8 +114,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 右上关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>右上关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右上关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -132,8 +132,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 左下关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>左下关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左下关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -150,8 +150,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 右下关闭 */}
-          <View className='panel'>
-            <View className='panel__title'>右下关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右下关闭</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton

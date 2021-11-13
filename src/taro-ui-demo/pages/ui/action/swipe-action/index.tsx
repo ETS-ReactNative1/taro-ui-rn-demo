@@ -1,7 +1,7 @@
 import React from 'react'
 import { AtButton, AtList, AtListItem, AtSwipeAction } from '@/taro-ui'
 import { SwipeActionOption } from 'types/swipe-action'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -143,8 +143,8 @@ export default class SwipeActionPage extends React.Component<
         {/* S Body */}
         <View className='doc-body'>
           {/* 无 Title */}
-          <View className='panel'>
-            <View className='panel__title'>一般用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>一般用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction onClick={this.handleClick} options={OPTIONS}>
@@ -154,8 +154,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>禁止滑动</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁止滑动</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction disabled options={OPTIONS}>
@@ -165,8 +165,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>使用变量控制开关</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>使用变量控制开关</Text></View>
             <View className='panel__controller' style='margin-bottom: 10px'>
               <AtButton size='small' onClick={this.handleStatusClick}>
                 当前状态: {isOpened2 ? '开' : '关'}{' '}
@@ -187,8 +187,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>自动关闭</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自动关闭</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction
@@ -202,8 +202,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>传递点击事件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>传递点击事件</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction onClick={this.handleClick} options={OPTIONS}>
@@ -213,8 +213,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>开启和关闭事件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>开启和关闭事件</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction
@@ -229,8 +229,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>与List组件使用</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>与List组件使用</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>
@@ -257,8 +257,8 @@ export default class SwipeActionPage extends React.Component<
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>控制只显示单个</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>控制只显示单个</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>

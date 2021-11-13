@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtList, AtListItem } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
@@ -28,8 +28,8 @@ export default class ListPage extends React.Component {
 
         <View className='doc-body'>
           {/* 基本用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基本用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>
@@ -43,8 +43,8 @@ export default class ListPage extends React.Component {
           </View>
 
           {/* 包含描述信息 */}
-          <View className='panel'>
-            <View className='panel__title'>包含描述信息</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>包含描述信息</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>
@@ -62,8 +62,8 @@ export default class ListPage extends React.Component {
           </View>
 
           {/* 包含图片 */}
-          <View className='panel'>
-            <View className='panel__title'>包含图片</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>包含图片</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>
@@ -91,8 +91,8 @@ export default class ListPage extends React.Component {
           </View>
 
           {/* 图标 */}
-          <View className='panel'>
-            <View className='panel__title'>支持图标(不能与thumb同时存在)</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>支持图标(不能与thumb同时存在)</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>
@@ -123,8 +123,8 @@ export default class ListPage extends React.Component {
           </View>
 
           {/* 无边框 */}
-          <View className='panel'>
-            <View className='panel__title'>无边框</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>无边框</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList hasBorder={false}>
@@ -146,8 +146,8 @@ export default class ListPage extends React.Component {
           </View>
 
           {/* Switch 按钮列表 */}
-          <View className='panel'>
-            <View className='panel__title'>Switch 按钮列表</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>Switch 按钮列表</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtList>

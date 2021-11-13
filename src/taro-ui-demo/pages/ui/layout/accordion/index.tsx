@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtAccordion, AtList, AtListItem } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -33,8 +33,8 @@ export default class CardPage extends React.Component<{}, CardPageState> {
       <View className='page'>
         <DocsHeader title='Accordion 手风琴' />
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtAccordion
@@ -81,8 +81,8 @@ export default class CardPage extends React.Component<{}, CardPageState> {
           </View>
 
           {/* 配置图标 */}
-          <View className='panel'>
-            <View className='panel__title'>配置图标</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>配置图标</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtAccordion
@@ -108,8 +108,8 @@ export default class CardPage extends React.Component<{}, CardPageState> {
           </View>
 
           {/* 包含描述信息 */}
-          <View className='panel'>
-            <View className='panel__title'>包含描述信息</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>包含描述信息</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtAccordion

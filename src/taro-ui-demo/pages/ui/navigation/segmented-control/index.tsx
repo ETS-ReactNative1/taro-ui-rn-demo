@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtSegmentedControl } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -38,8 +38,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View>
                 <AtSegmentedControl
@@ -53,8 +53,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
           </View>
 
           {/* 自定义 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色、字体大小</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色、字体大小</Text></View>
             <View className='panel__content'>
               <View>
                 <AtSegmentedControl
@@ -70,8 +70,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
           </View>
 
           {/* 禁用 */}
-          <View className='panel'>
-            <View className='panel__title'>禁用</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用</Text></View>
             <View className='panel__content'>
               <AtSegmentedControl disabled values={tabList1} />
             </View>

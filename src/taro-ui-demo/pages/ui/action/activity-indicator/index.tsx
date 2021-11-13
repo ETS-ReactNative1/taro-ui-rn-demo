@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtActivityIndicator, AtSwitch } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -37,8 +37,8 @@ export default class ActivityIndicatorPage extends React.Component<
         {/* S Body */}
         <View className='doc-body'>
           {/* 自定义尺寸 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义尺寸</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义尺寸</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -55,8 +55,8 @@ export default class ActivityIndicatorPage extends React.Component<
           </View>
 
           {/* 自定义颜色 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -73,8 +73,8 @@ export default class ActivityIndicatorPage extends React.Component<
           </View>
 
           {/* 自定义文字 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义文字</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义文字</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtActivityIndicator content='加载中...' />
@@ -83,8 +83,8 @@ export default class ActivityIndicatorPage extends React.Component<
           </View>
 
           {/* 状态切换 */}
-          <View className='panel'>
-            <View className='panel__title'>状态切换</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>状态切换</Text></View>
             <View className='panel__content '>
               <AtSwitch
                 border={false}
@@ -102,8 +102,8 @@ export default class ActivityIndicatorPage extends React.Component<
           </View>
 
           {/* 垂直水平居中 */}
-          <View className='panel'>
-            <View className='panel__title'>垂直水平居中</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>垂直水平居中</Text></View>
             <View className='panel__content'>
               <View className='example-item example-item--center'>
                 <AtActivityIndicator mode='center' />

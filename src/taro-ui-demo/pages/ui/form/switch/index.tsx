@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtForm, AtSwitch } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -33,8 +33,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtForm>
@@ -50,8 +50,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 禁用状态 */}
-          <View className='panel'>
-            <View className='panel__title'>禁用状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用状态</Text></View>
             <View className='panel__content no-padding'>
               <View className='example-item'>
                 <AtForm>

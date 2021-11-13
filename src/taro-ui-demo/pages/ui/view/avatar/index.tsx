@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtAvatar } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -19,8 +19,8 @@ export default class AvatarPage extends React.Component {
         {/* S Body */}
         <View className='doc-body'>
           {/* 圆形头像 */}
-          <View className='panel'>
-            <View className='panel__title'>圆形头像</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>圆形头像</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -37,8 +37,8 @@ export default class AvatarPage extends React.Component {
           </View>
 
           {/* 圆角矩形头像 */}
-          <View className='panel'>
-            <View className='panel__title'>圆角矩形头像</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>圆角矩形头像</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -55,8 +55,8 @@ export default class AvatarPage extends React.Component {
           </View>
 
           {/* 圆形头像（支持文本） */}
-          <View className='panel'>
-            <View className='panel__title'>圆形头像（支持文本）</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>圆形头像（支持文本）</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -73,8 +73,8 @@ export default class AvatarPage extends React.Component {
           </View>
 
           {/* 圆角矩形头像（支持文本） */}
-          <View className='panel'>
-            <View className='panel__title'>圆角矩形头像（支持文本）</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>圆角矩形头像（支持文本）</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -92,9 +92,9 @@ export default class AvatarPage extends React.Component {
 
           {/* openData 头像（仅微信小程序支持） */}
           {Taro.getEnv() === Taro.ENV_TYPE.WEAPP && (
-            <View className='panel'>
-              <View className='panel__title'>
-                openData 头像（仅微信小程序支持）
+            <View className='doc-body__panel'>
+              <View className='doc-body__panel__title'>
+                <Text className='doc-body__panel__title__text'>openData 头像（仅微信小程序支持）</Text>
               </View>
               <View className='panel__content'>
                 <View className='example-item'>

@@ -1,7 +1,6 @@
 import React from 'react'
 import { AtIcon } from '@/taro-ui'
-import { View } from '@tarojs/components'
-import Taro from '@tarojs/taro'
+import { View, Text } from '@tarojs/components'
 import DocsHeader from '../../components/doc-header'
 import ICONS from './icons'
 import './index.scss'
@@ -44,8 +43,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 主要 */}
-          <View className='panel'>
-            <View className='panel__title'>主要</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>主要</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.main.map((icon, index) => (
@@ -55,7 +54,7 @@ export default class IconPage extends React.Component<{}, IconPageState> {
                         value={icon}
                         color={iconColor}
                         size={iconSize}
-                      ></AtIcon>
+                      />
                     </View>
                     <View className='icon-list__name'>{icon}</View>
                   </View>
@@ -65,8 +64,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* 文件 */}
-          <View className='panel'>
-            <View className='panel__title'>文件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文件</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.file.map((icon, index) => (
@@ -76,7 +75,7 @@ export default class IconPage extends React.Component<{}, IconPageState> {
                         value={icon}
                         color={iconColor}
                         size={iconSize}
-                      ></AtIcon>
+                      />
                     </View>
                     <View className='icon-list__name'>{icon}</View>
                   </View>
@@ -86,8 +85,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* 文本 */}
-          <View className='panel'>
-            <View className='panel__title'>文本</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文本</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.text.map((icon, index) => (
@@ -97,7 +96,7 @@ export default class IconPage extends React.Component<{}, IconPageState> {
                         value={icon}
                         color={iconColor}
                         size={iconSize}
-                      ></AtIcon>
+                      />
                     </View>
                     <View className='icon-list__name'>{icon}</View>
                   </View>
@@ -107,8 +106,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* 箭头 */}
-          <View className='panel'>
-            <View className='panel__title'>箭头</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>箭头</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.arrow.map((icon, index) => (
@@ -128,8 +127,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* 媒体控制 */}
-          <View className='panel'>
-            <View className='panel__title'>媒体控制</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>媒体控制</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.media.map((icon, index) => (
@@ -149,8 +148,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* 多媒体 */}
-          <View className='panel'>
-            <View className='panel__title'>多媒体</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>多媒体</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.photo.map((icon, index) => (
@@ -170,8 +169,8 @@ export default class IconPage extends React.Component<{}, IconPageState> {
           </View>
 
           {/* Logo */}
-          <View className='panel'>
-            <View className='panel__title'>Logo</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>Logo</Text></View>
             <View className='panel__content'>
               <View className='icon-list'>
                 {icons.logo.map((icon, index) => (

@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtRate } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -37,8 +37,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtRate
@@ -50,8 +50,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义尺寸 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义尺寸</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义尺寸</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtRate
@@ -64,8 +64,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义评分数 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义评分数</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义评分数</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtRate
@@ -78,8 +78,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义星星间隔 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义星星间隔</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义星星间隔</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtRate
@@ -92,8 +92,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 只读 */}
-          <View className='panel'>
-            <View className='panel__title'>只读</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>只读</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View>评分: 3.5</View>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtTextarea } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -35,8 +35,8 @@ export default class Index extends React.Component<{}, IndexState> {
 
         {/* S Body */}
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>基础</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTextarea
@@ -48,8 +48,8 @@ export default class Index extends React.Component<{}, IndexState> {
               </View>
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>不显示字数</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不显示字数</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTextarea
@@ -62,8 +62,8 @@ export default class Index extends React.Component<{}, IndexState> {
               </View>
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>文字超出仍可输入</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文字超出仍可输入</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTextarea
@@ -76,8 +76,8 @@ export default class Index extends React.Component<{}, IndexState> {
               </View>
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>自定义高度</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义高度</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTextarea

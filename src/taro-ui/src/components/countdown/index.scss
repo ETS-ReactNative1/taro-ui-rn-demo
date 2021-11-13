@@ -9,7 +9,7 @@
 $font-size: $font-size-lg;
 
 .at-count-down {
-  display: inline-block;
+  //display: inline-block;
   min-height: $font-size;
 
   &__item {
@@ -18,7 +18,7 @@ $font-size: $font-size-lg;
   }
 
   &__time-box {
-    display: inline-block;
+    //display: inline-block;
     text-align: center;
     min-width: $font-size;
     font: {
@@ -50,7 +50,7 @@ $font-size: $font-size-lg;
       border: 1PX solid $color-border-grey;
       border-radius: $border-radius-md;
       color: #FF4949;
-      display: inline-block;
+      //display: inline-block;
       background-color: #fff;
       position: relative;
 

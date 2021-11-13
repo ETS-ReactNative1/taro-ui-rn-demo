@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtBadge, AtButton } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -18,8 +18,8 @@ export default class BadgePage extends React.Component {
         {/* S Body */}
         <View className='doc-body'>
           {/* 数字 */}
-          <View className='panel'>
-            <View className='panel__title'>数字</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>数字</Text></View>
             <View className='panel__content'>
               <View className='badge-item'>
                 <View className='subitem'>
@@ -39,8 +39,8 @@ export default class BadgePage extends React.Component {
           </View>
 
           {/* 小红点 */}
-          <View className='panel'>
-            <View className='panel__title'>小红点</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>小红点</Text></View>
             <View className='panel__content'>
               <View className='badge-item'>
                 <View className='subitem'>
@@ -60,8 +60,8 @@ export default class BadgePage extends React.Component {
           </View>
 
           {/* 文本 */}
-          <View className='panel'>
-            <View className='panel__title'>文本</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文本</Text></View>
             <View className='panel__content'>
               <View className='badge-item'>
                 <View className='subitem'>
@@ -81,8 +81,8 @@ export default class BadgePage extends React.Component {
           </View>
 
           {/* 省略号 */}
-          <View className='panel'>
-            <View className='panel__title'>省略号</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>省略号</Text></View>
             <View className='panel__content'>
               <View className='badge-item'>
                 <View className='subitem'>

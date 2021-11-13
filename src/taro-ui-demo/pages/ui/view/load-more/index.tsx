@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtLoadMore } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -41,8 +41,8 @@ export default class LoadMorePage extends React.Component<
         {/* S Body */}
         <View className='doc-body'>
           {/* 文字 */}
-          <View className='panel'>
-            <View className='panel__title'>一般用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>一般用法</Text></View>
             <View className='panel__content no-padding'>
               <AtLoadMore
                 onClick={this.handleClick.bind(this)}

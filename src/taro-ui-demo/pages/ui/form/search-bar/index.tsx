@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtSearchBar } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -43,8 +43,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtSearchBar
@@ -57,8 +57,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义按钮文字和点击事件 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义按钮文字和点击事件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义按钮文字和点击事件</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtSearchBar
@@ -72,8 +72,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 始终显示按钮 */}
-          <View className='panel'>
-            <View className='panel__title'>始终显示按钮</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>始终显示按钮</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtSearchBar
@@ -88,8 +88,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义输入框类型 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义输入框类型</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义输入框类型</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtSearchBar

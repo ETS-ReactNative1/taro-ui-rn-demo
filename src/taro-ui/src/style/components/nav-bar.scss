@@ -53,7 +53,7 @@ $at-nav-bar-back-font-size: 16px;
   }
 
   &__text {
-    display: inline-block;
+    //display: inline-block;
     padding-left: $at-nav-bar-spacing-h;
     height: 100%;
     font-size: $at-nav-bar-back-font-size;
@@ -63,7 +63,7 @@ $at-nav-bar-back-font-size: 16px;
   }
 
   &__container {
-    display: inline-block;
+    //display: inline-block;
     padding: $at-nav-bar-spacing-v $at-nav-bar-spacing-h;
     width: 50%;
     height: 100%;
@@ -77,7 +77,7 @@ $at-nav-bar-back-font-size: 16px;
     }
 
     &--hide {
-      display: inline-block;
+      //display: inline-block;
       visibility: hidden;
     }
   }

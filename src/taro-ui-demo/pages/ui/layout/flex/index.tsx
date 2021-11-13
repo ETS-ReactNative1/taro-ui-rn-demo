@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -36,8 +36,8 @@ export default class FlexPage extends React.Component {
 
         <View className='doc-body'>
           {/* 基本案例 */}
-          <View className='panel'>
-            <View className='panel__title'>基本案例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本案例</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -50,8 +50,8 @@ export default class FlexPage extends React.Component {
           </View>
 
           {/* 定义长度 */}
-          <View className='panel'>
-            <View className='panel__title'>定义长度</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>定义长度</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -65,8 +65,8 @@ export default class FlexPage extends React.Component {
           </View>
 
           {/* 定义偏移 */}
-          <View className='panel'>
-            <View className='panel__title'>定义偏移</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>定义偏移</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -79,8 +79,8 @@ export default class FlexPage extends React.Component {
           </View>
 
           {/* 超出换行 */}
-          <View className='panel'>
-            <View className='panel__title'>超出换行</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>超出换行</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row at-row--wrap'>
@@ -95,8 +95,8 @@ export default class FlexPage extends React.Component {
           </View>
 
           {/* 宽度根据内容撑开 */}
-          <View className='panel'>
-            <View className='panel__title'>宽度根据内容撑开</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>宽度根据内容撑开</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -110,8 +110,8 @@ export default class FlexPage extends React.Component {
           </View>
 
           {/* 内容自动换行 */}
-          <View className='panel'>
-            <View className='panel__title'>内容自动换行</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>内容自动换行</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -124,8 +124,8 @@ export default class FlexPage extends React.Component {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>侧轴方向的对齐方式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>侧轴方向的对齐方式</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>
@@ -162,8 +162,8 @@ export default class FlexPage extends React.Component {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>主轴方向的排列方式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>主轴方向的排列方式</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='at-row'>

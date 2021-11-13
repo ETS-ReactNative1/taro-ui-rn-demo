@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, View } from '@tarojs/components'
+import { Image, View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -14,8 +14,8 @@ export default class ArticlePage extends React.Component {
 
         {/* S Body */}
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>示例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>示例</Text></View>
             <View className='panel__content no-padding'>
               <View className='at-article'>
                 <View className='at-article__h1'>这是一级标题这是一级标题</View>

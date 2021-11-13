@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtRange } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -34,8 +34,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 数值范围：{this.state.value1[0]}~{this.state.value1[1]}
@@ -49,8 +49,8 @@ export default class Index extends React.Component<{}, IndexState> {
             </View>
           </View>
           {/* 自定义样式 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义样式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义样式</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 数值范围：{this.state.value2[0]}~{this.state.value2[1]}
@@ -63,8 +63,8 @@ export default class Index extends React.Component<{}, IndexState> {
             </View>
           </View>
           {/* 禁止状态 */}
-          <View className='panel'>
-            <View className='panel__title'>禁止状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁止状态</Text></View>
             <View className='panel__content'>
               <AtRange value={[30, 50]} disabled />
             </View>

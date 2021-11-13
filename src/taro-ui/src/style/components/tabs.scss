@@ -88,7 +88,7 @@ $at-tabs-pane-min-height: 100px;
     }
 
     #{$component}__item {
-      display: inline-block;
+      //display: inline-block;
       overflow: visible;
     }
   }
@@ -99,7 +99,7 @@ $at-tabs-pane-min-height: 100px;
     overflow: hidden;
 
     #{$component}__body {
-      display: inline-block;
+      //display: inline-block;
       flex: 1;
       height: $at-tabs-pane-min-height;
       width: auto;
@@ -114,7 +114,7 @@ $at-tabs-pane-min-height: 100px;
     }
 
     #{$component}__header {
-      display: inline-block;
+      //display: inline-block;
       width: auto;
     }
 
@@ -155,7 +155,7 @@ $at-tabs-pane-min-height: 100px;
 /* hack SWAN */
 
 .at-tabs-pane {
-  display: inline-block;
+  //display: inline-block;
   width: 100%;
   box-sizing: border-box;
   white-space: initial;

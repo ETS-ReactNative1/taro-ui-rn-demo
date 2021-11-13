@@ -1,7 +1,13 @@
 import PropTypes, { InferProps } from 'prop-types'
+import Taro from '@tarojs/taro'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { pxTransform } from '../../common/utils'
+
+let Circle;
+if (process.env.TARO_ENV === 'rn') {
+  Circle = require('react-native-animated-spinkit').Circle;
+}
 
 interface AtLoadingProps {
   size?: string | number
@@ -13,7 +19,14 @@ export default class AtLoading extends React.Component<AtLoadingProps> {
   public static propTypes: InferProps<AtLoadingProps>
 
   public render(): JSX.Element {
-    const { color, size } = this.props
+    const { color, size } = this.props;
+
+    if (process.env.TARO_ENV === 'rn') {
+      return (
+        <Circle size={Taro.pxTransform(size)} color={color} />
+      );
+    }
+
     const loadingSize = typeof size === 'string' ? size : String(size)
     const sizeStyle = {
       width: size ? `${pxTransform(parseInt(loadingSize))}` : '',
@@ -27,9 +40,9 @@ export default class AtLoading extends React.Component<AtLoadingProps> {
 
     return (
       <View className='at-loading' style={sizeStyle}>
-        <View className='at-loading__ring' style={ringStyle}></View>
-        <View className='at-loading__ring' style={ringStyle}></View>
-        <View className='at-loading__ring' style={ringStyle}></View>
+        <View className='at-loading__ring' style={ringStyle} />
+        <View className='at-loading__ring' style={ringStyle} />
+        <View className='at-loading__ring' style={ringStyle} />
       </View>
     )
   }

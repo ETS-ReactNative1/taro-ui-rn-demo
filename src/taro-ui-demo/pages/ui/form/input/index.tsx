@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtForm, AtInput } from '@/taro-ui'
-import { Image, View } from '@tarojs/components'
+import { Image, View, Text } from '@tarojs/components'
 import { BaseEventOrig } from '@tarojs/components/types/common'
 // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
 // @ts-ignore
@@ -126,8 +126,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtForm>
@@ -159,8 +159,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 输入框类型 */}
-          <View className='panel'>
-            <View className='panel__title'>输入框类型</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>输入框类型</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtForm>
@@ -219,8 +219,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 状态 */}
-          <View className='panel'>
-            <View className='panel__title'>状态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>状态</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtForm>
@@ -291,8 +291,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 自定义右边栏 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义右边栏</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义右边栏</Text></View>
             <View className='panel__content no-padding'>
               <View className='component-item'>
                 <AtForm>

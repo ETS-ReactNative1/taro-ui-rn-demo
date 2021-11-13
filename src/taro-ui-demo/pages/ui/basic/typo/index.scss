@@ -7,15 +7,15 @@
     font-size: 28px;
     border: 1PX solid #C4D9E7;
     border-radius: 8px;
+    display: flex;
+    flex-direction: row;
 
-    .thead {
-      display: inline-block;
-
-      &:nth-child(1) {
+    &__thead {
+      //display: inline-block;
+      &-0 {
         width: 44%;
       }
-
-      &:nth-child(2) {
+      &-1 {
         width: 18%;
       }
     }
@@ -29,47 +29,48 @@
     margin-top: 20px;
     padding: 0 32px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     height: 80px;
     color: #354052;
-    font-size: 28px;
 
-    &:nth-child(2n+1) {
+    &-0, &-2, &-4 {
       background-color: #FAFBFC;
     }
 
-    .col {
-      display: inline-block;
+    &__col {
+      font-size: 28px;
+      //display: inline-block;
 
-      &:nth-child(1) {
+      &-0 {
         width: 44%;
       }
 
-      &:nth-child(2) {
+      &-1 {
         width: 18%;
       }
 
-      &.h0 {
+      &-h0 {
         font-size: 40px;
       }
 
-      &.h1 {
+      &-h1 {
         font-size: 36px;
       }
 
-      &.h2 {
+      &-h2 {
         font-size: 32px;
       }
 
-      &.h3 {
+      &-h3 {
         font-size: 28px;
       }
 
-      &.h4 {
+      &-h4 {
         font-size: 24px;
       }
 
-      &.h5 {
+      &-h5 {
         font-size: 20px;
       }
     }

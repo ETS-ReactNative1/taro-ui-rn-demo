@@ -2,7 +2,7 @@
 @mixin alignhack($position: before, $margintop: 1px) {
   &::#{$position} {
     content: '';
-    display: inline-block;
+    //display: inline-block;
     vertical-align: middle;
     width: 0;
     height: 100%;

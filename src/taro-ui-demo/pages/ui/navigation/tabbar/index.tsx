@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtTabBar } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -67,8 +67,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
         <DocsHeader title='TabBar 标签栏'></DocsHeader>
 
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>文本标签栏</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文本标签栏</Text></View>
             <View className='panel__content no-padding'>
               <AtTabBar
                 tabList={tabList1}
@@ -77,8 +77,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
               />
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>图标文本标签栏</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>图标文本标签栏</Text></View>
             <View className='panel__content no-padding'>
               <AtTabBar
                 tabList={tabList2}
@@ -87,9 +87,9 @@ export default class Index extends React.Component<{}, IndexPageState> {
               />
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>
-              自定义图标颜色、字体颜色、背景颜色
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'>
+              <Text className='doc-body__panel__title__text'>自定义图标颜色、字体颜色、背景颜色</Text>
             </View>
             <View className='panel__content no-padding'>
               <AtTabBar
@@ -102,8 +102,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
               />
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>图片icon</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>图片icon</Text></View>
             <View
               className='panel__content no-padding'
               style='padding-bottom: 24px;'
@@ -115,8 +115,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
               />
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>固定底部</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>固定底部</Text></View>
             <View
               className='panel__content no-padding'
               style='padding-bottom: 24px;'

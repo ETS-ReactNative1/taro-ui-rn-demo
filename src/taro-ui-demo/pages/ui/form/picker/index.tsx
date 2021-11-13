@@ -1,5 +1,5 @@
 import React from 'react'
-import { Picker, View } from '@tarojs/components'
+import { Picker, View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
@@ -80,8 +80,8 @@ export default class Index extends React.Component<{}, IndexState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 普通选择器 */}
-          <View className='panel'>
-            <View className='panel__title'>普通选择器</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>普通选择器</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <Picker
@@ -103,8 +103,8 @@ export default class Index extends React.Component<{}, IndexState> {
 
           {/* 多列选择器 */}
           {!isAlipay && (
-            <View className='panel'>
-              <View className='panel__title'>多列选择器</View>
+            <View className='doc-body__panel'>
+              <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>多列选择器</Text></View>
               <View className='panel__content'>
                 <View className='example-item'>
                   <Picker
@@ -126,8 +126,8 @@ export default class Index extends React.Component<{}, IndexState> {
           )}
 
           {/* 时间选择器 */}
-          <View className='panel'>
-            <View className='panel__title'>时间选择器</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>时间选择器</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <Picker
@@ -145,8 +145,8 @@ export default class Index extends React.Component<{}, IndexState> {
           </View>
 
           {/* 日期选择器 */}
-          <View className='panel'>
-            <View className='panel__title'>日期选择器</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>日期选择器</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <Picker

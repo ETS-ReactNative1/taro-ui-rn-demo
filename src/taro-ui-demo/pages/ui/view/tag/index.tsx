@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtTag } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -113,8 +113,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
         {/* S Body */}
         <View className='doc-body'>
           {/* 空心标签 */}
-          <View className='panel'>
-            <View className='panel__title'>空心标签</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>空心标签</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 {this.state.hollowTagList.map((item, index) => (
@@ -134,8 +134,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 实心标签 */}
-          <View className='panel'>
-            <View className='panel__title'>实心标签</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实心标签</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 {this.state.solidTagList.map((item, index) => (
@@ -156,8 +156,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 点击事件 */}
-          <View className='panel'>
-            <View className='panel__title'>点击事件</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>点击事件</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 {this.state.tagList.map((item, index) => (
@@ -178,8 +178,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 不可点击态 */}
-          <View className='panel'>
-            <View className='panel__title'>不可点击态</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不可点击态</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
@@ -197,8 +197,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 空心标签（小） */}
-          <View className='panel'>
-            <View className='panel__title'>空心标签（小）</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>空心标签（小）</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 {this.state.hollowTagList2.map((item, index) => (
@@ -219,8 +219,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 实心标签（小） */}
-          <View className='panel'>
-            <View className='panel__title'>实心标签（小）</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实心标签（小）</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 {this.state.solidTagList2.map((item, index) => (
@@ -242,8 +242,8 @@ export default class TagPage extends React.Component<{}, TagPageState> {
           </View>
 
           {/* 不可点击态（小） */}
-          <View className='panel'>
-            <View className='panel__title'>不可点击态（小）</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不可点击态（小）</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>

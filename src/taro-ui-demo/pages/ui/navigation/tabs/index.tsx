@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtTabs, AtTabsPane } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -49,8 +49,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
 
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>等宽标签栏</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>等宽标签栏</Text></View>
             <View className='panel__content'>
               <AtTabs
                 swipeable={false}
@@ -70,8 +70,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
               </AtTabs>
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>滚动标签栏</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>滚动标签栏</Text></View>
             <View className='panel__content'>
               <AtTabs
                 swipeable={false}
@@ -101,8 +101,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
               </AtTabs>
             </View>
           </View>
-          <View className='panel'>
-            <View className='panel__title'>滑动切换内容</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>滑动切换内容</Text></View>
             <View className='panel__content'>
               <AtTabs
                 current={current3}
@@ -122,8 +122,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>垂直模式</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>垂直模式</Text></View>
             <View className='panel__content'>
               <AtTabs
                 height='200px'
@@ -179,8 +179,8 @@ export default class Index extends React.Component<{}, IndexPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>禁止内容切换动画</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁止内容切换动画</Text></View>
             <View className='panel__content'>
               <AtTabs
                 current={current5}

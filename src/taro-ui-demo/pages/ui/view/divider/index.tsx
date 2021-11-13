@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtDivider, AtIcon } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -16,16 +16,16 @@ export default class LoadMorePage extends React.Component {
         {/* S Body */}
         <View className='doc-body'>
           {/* 文字 */}
-          <View className='panel'>
-            <View className='panel__title'>一般用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>一般用法</Text></View>
             <View className='panel__content no-padding'>
               <AtDivider content='分割线' />
             </View>
           </View>
 
           {/* 自定义颜色 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content no-padding'>
               <AtDivider
                 content='没有更多了'
@@ -46,8 +46,8 @@ export default class LoadMorePage extends React.Component {
           </View>
 
           {/* 自定义内容 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义内容</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义内容</Text></View>
             <View className='panel__content no-padding'>
               <AtDivider>
                 <AtIcon value='check-circle'></AtIcon>

@@ -16,7 +16,7 @@
     word-wrap: break-word;
 
     &-icon {
-      display: inline-block;
+      //display: inline-block;
       margin-right: 12px;
       vertical-align: top;
 
@@ -65,7 +65,7 @@
     }
 
     &-icon {
-      display: inline-block;
+      //display: inline-block;
       width: $at-noticebar-font-size;
       vertical-align: middle;
       overflow: hidden;
@@ -112,7 +112,7 @@
       }
 
       &-inner {
-        display: inline-block;
+        //display: inline-block;
         white-space: nowrap;
         padding-left: 100%;
         height: $at-noticebar-font-size * 1.5;

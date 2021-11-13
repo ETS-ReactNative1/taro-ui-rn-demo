@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtTimeline } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -13,8 +13,8 @@ export default class TimelinePage extends React.Component {
 
         <View className='doc-body'>
           {/* 基础用法 */}
-          <View className='panel'>
-            <View className='panel__title'>基础用法</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTimeline
@@ -30,8 +30,8 @@ export default class TimelinePage extends React.Component {
           </View>
 
           {/* 自定义颜色 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义颜色</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTimeline
@@ -47,8 +47,8 @@ export default class TimelinePage extends React.Component {
           </View>
 
           {/* 自定义图标 */}
-          <View className='panel'>
-            <View className='panel__title'>自定义图标</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义图标</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTimeline
@@ -64,8 +64,8 @@ export default class TimelinePage extends React.Component {
           </View>
 
           {/* 幽灵节点 */}
-          <View className='panel'>
-            <View className='panel__title'>幽灵节点</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>幽灵节点</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTimeline
@@ -82,8 +82,8 @@ export default class TimelinePage extends React.Component {
           </View>
 
           {/* 丰富内容 */}
-          <View className='panel'>
-            <View className='panel__title'>丰富内容</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>丰富内容</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtTimeline

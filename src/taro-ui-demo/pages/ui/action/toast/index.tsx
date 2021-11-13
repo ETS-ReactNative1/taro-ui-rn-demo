@@ -1,6 +1,6 @@
 import React from 'react'
 import { AtButton, AtToast } from '@/taro-ui'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
@@ -65,8 +65,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
 
         {/* S Body */}
         <View className='doc-body'>
-          <View className='panel'>
-            <View className='panel__title'>基本案例</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本案例</Text></View>
             <View className='panel__content'>
               <View className='example-item'>
                 <AtButton
@@ -90,8 +90,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>自定义图片</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义图片</Text></View>
             <View className='panel__content'>
               <View className='example__item'>
                 <AtButton
@@ -107,8 +107,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>添加遮罩层</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>添加遮罩层</Text></View>
             <View className='panel__content'>
               <View className='example__item'>
                 <AtButton
@@ -123,8 +123,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>Error Toast</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>Error Toast</Text></View>
             <View className='panel__content'>
               <View className='example__item'>
                 <AtButton
@@ -140,8 +140,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>Success Toast</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>Success Toast</Text></View>
             <View className='panel__content'>
               <View className='example__item'>
                 <AtButton
@@ -157,8 +157,8 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
             </View>
           </View>
 
-          <View className='panel'>
-            <View className='panel__title'>Loading Toast</View>
+          <View className='doc-body__panel'>
+            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>Loading Toast</Text></View>
             <View className='panel__content'>
               <View className='example__item'>
                 <AtButton

@@ -1,6 +1,7 @@
 .doc-header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   padding: 60px;
   height: 180px;
 
@@ -10,17 +11,12 @@
     color: #333;
     font-size: 40px;
     font-weight: bold;
+  }
 
-    &::after {
-      content: '';
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      display: inline-block;
-      width: 120px;
-      height: 2PX;
-      border-radius: 1PX;
-      background-color: #6190E8;
-    }
+  &__line {
+    width: 120px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: #6190E8;
   }
 }
