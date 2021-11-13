@@ -31,7 +31,7 @@ export default class ActivityIndicatorPage extends React.Component<
     return (
       <View className='page activity-indicator-page'>
         {/* S Header */}
-        <DocsHeader title='Activity Indicator 活动指示器'></DocsHeader>
+        <DocsHeader title='Activity Indicator 活动指示器' />
         {/* E Header */}
 
         {/* S Body */}

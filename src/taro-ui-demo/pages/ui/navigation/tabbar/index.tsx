@@ -64,7 +64,7 @@ export default class Index extends React.Component<{}, IndexPageState> {
 
     return (
       <View className='page'>
-        <DocsHeader title='TabBar 标签栏'></DocsHeader>
+        <DocsHeader title='TabBar 标签栏' />
 
         <View className='doc-body'>
           <View className='doc-body__panel'>

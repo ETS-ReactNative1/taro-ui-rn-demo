@@ -74,7 +74,7 @@ export default class Index extends React.Component<{}, IndexState> {
     return (
       <View className='page picker__page'>
         {/* S Header */}
-        <DocsHeader title='Picker 选择器'></DocsHeader>
+        <DocsHeader title='Picker 选择器' />
         {/* E Header */}
 
         {/* S Body */}

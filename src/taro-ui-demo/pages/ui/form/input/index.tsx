@@ -120,7 +120,7 @@ export default class Index extends React.Component<{}, IndexState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Input 输入框'></DocsHeader>
+        <DocsHeader title='Input 输入框' />
         {/* E Header */}
 
         {/* S Body */}

@@ -38,7 +38,7 @@ export default class Index extends React.Component<{}, IndexState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='SearchBar 搜索栏'></DocsHeader>
+        <DocsHeader title='SearchBar 搜索栏' />
         {/* E Header */}
         {/* S Body */}
         <View className='doc-body'>

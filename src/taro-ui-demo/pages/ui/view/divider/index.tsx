@@ -10,7 +10,7 @@ export default class LoadMorePage extends React.Component {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Divider 分隔线'></DocsHeader>
+        <DocsHeader title='Divider 分隔线' />
         {/* E Header */}
 
         {/* S Body */}

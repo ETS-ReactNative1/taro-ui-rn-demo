@@ -41,7 +41,7 @@ export default class Index extends React.Component {
   public render(): JSX.Element {
     return (
       <View className='page'>
-        <DocsHeader title='NavBar 导航栏'></DocsHeader>
+        <DocsHeader title='NavBar 导航栏' />
 
         <View className='doc-body'>
           {/* 基础用法 */}

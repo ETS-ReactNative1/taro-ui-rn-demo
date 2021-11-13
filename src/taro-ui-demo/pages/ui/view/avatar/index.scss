@@ -1,8 +1,11 @@
-.panel__content {
-  .example-item {
-    .subitem {
-      margin-left: 32px;
-      vertical-align: middle;
-    }
+.avatar-example-item {
+  display: flex;
+  flex-direction: row;
+  &__sub-item {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }

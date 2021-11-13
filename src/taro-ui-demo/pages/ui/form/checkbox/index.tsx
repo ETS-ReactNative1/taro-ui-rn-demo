@@ -95,7 +95,7 @@ export default class Index extends React.Component<{}, IndexState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Checkbox 复选框'></DocsHeader>
+        <DocsHeader title='Checkbox 复选框' />
         {/* E Header */}
 
         {/* S Body */}

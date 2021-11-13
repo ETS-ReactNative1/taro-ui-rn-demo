@@ -46,7 +46,7 @@ export default class TagPage extends React.Component<{}, TagPageState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Curtain 幕帘'></DocsHeader>
+        <DocsHeader title='Curtain 幕帘' />
         {/* E Header */}
 
         {/* S Body */}
@@ -56,7 +56,13 @@ export default class TagPage extends React.Component<{}, TagPageState> {
             closeBtnPosition={closeBtnPosition}
             onClose={this.onClose.bind(this)}
           >
-            <Image style='width:100%' mode='widthFix' src={curtainPng} />
+            <Image
+              style={{
+                width: '100%',
+              }}
+              mode='widthFix'
+              src={curtainPng}
+            />
           </AtCurtain>
 
           {/* 顶部关闭 */}

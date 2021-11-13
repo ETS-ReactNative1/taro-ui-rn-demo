@@ -98,7 +98,7 @@ export default class TimelinePage extends React.Component<
 
     return (
       <View className='page'>
-        <DocsHeader title='Steps 步骤条'></DocsHeader>
+        <DocsHeader title='Steps 步骤条' />
 
         <View className='doc-body'>
           {/* 基础用法 */}

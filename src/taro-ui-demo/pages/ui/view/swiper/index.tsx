@@ -85,7 +85,7 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Swiper 滑块视图容器'></DocsHeader>
+        <DocsHeader title='Swiper 滑块视图容器' />
         {/* E Header */}
 
         {/* S Body */}

@@ -37,7 +37,7 @@ export default class IconPage extends React.Component<{}, IconPageState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='ICON 图标'></DocsHeader>
+        <DocsHeader title='ICON 图标' />
         {/* E Header */}
 
         {/* S Body */}

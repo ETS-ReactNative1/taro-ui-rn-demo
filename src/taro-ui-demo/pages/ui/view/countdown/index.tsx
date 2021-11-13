@@ -18,7 +18,7 @@ export default class CountDownPage extends React.Component {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='CountDown 倒计时'></DocsHeader>
+        <DocsHeader title='CountDown 倒计时' />
         {/* E Header */}
         {/* S Body */}
         <View className='doc-body'>

@@ -22,7 +22,7 @@ export default class NoticebarPage extends React.Component {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='NoticeBar 通告栏'></DocsHeader>
+        <DocsHeader title='NoticeBar 通告栏' />
         {/* E Header */}
 
         {/* S Body */}

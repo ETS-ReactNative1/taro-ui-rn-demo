@@ -8,11 +8,14 @@
 
 .at-countdown {
   //display: inline-block;
+  display: flex;
+  flex-direction: row;
   min-height: $at-countdown-font-size;
 
   /* elements */
   &__item {
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -38,7 +41,7 @@
   }
 
   &__separator {
-    display: inline-flex;
+    display: flex;
     padding: 0 $spacing-v-xs;
     font-size: $font-size-base;
     text-align: justify;

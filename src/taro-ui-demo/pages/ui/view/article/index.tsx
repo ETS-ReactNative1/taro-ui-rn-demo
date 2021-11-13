@@ -9,7 +9,7 @@ export default class ArticlePage extends React.Component {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Article 文章'></DocsHeader>
+        <DocsHeader title='Article 文章' />
         {/* E Header */}
 
         {/* S Body */}

@@ -10,7 +10,7 @@ export default class PageSlider extends React.Component {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Slider 滑动条'></DocsHeader>
+        <DocsHeader title='Slider 滑动条' />
         {/* E Header */}
 
         {/* S Body */}

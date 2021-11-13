@@ -30,7 +30,7 @@ export default class Index extends React.Component<{}, IndexState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Textarea 多行文本框'></DocsHeader>
+        <DocsHeader title='Textarea 多行文本框' />
         {/* E Header */}
 
         {/* S Body */}

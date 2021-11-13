@@ -32,7 +32,7 @@ export default class Index extends React.Component<{}, IndexPageState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Segmented Control 分段器'></DocsHeader>
+        <DocsHeader title='Segmented Control 分段器' />
         {/* E Header */}
 
         {/* S Body */}

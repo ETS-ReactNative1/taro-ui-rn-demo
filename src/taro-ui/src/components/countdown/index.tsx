@@ -4,6 +4,7 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import { AtCountDownProps, AtCountdownState } from '../../../types/countdown'
 import AtCountdownItem from './item'
+import '../../style/components/countdown.scss';
 
 type TimeObject = {
   day: number

@@ -74,7 +74,7 @@ export default class PageForm extends React.Component<{}, PageFormState> {
   public render(): JSX.Element {
     return (
       <View className='page'>
-        <DocsHeader title='Form 表单'></DocsHeader>
+        <DocsHeader title='Form 表单' />
         <View className='doc-body'>
           {/* 表单提交与重置 */}
           <View className='doc-body__panel'>

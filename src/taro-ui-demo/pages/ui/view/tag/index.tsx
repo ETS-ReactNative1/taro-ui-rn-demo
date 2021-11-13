@@ -107,7 +107,7 @@ export default class TagPage extends React.Component<{}, TagPageState> {
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Tag 标签'></DocsHeader>
+        <DocsHeader title='Tag 标签' />
         {/* E Header */}
 
         {/* S Body */}

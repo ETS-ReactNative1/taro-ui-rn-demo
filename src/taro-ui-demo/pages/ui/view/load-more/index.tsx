@@ -35,7 +35,7 @@ export default class LoadMorePage extends React.Component<
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='LoadMore 页面提示'></DocsHeader>
+        <DocsHeader title='LoadMore 页面提示' />
         {/* E Header */}
 
         {/* S Body */}

@@ -68,7 +68,7 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
     const { icons } = this.state
     return (
       <View className='page'>
-        <DocsHeader title='Drawer 抽屉'></DocsHeader>
+        <DocsHeader title='Drawer 抽屉' />
 
         <View className='doc-body'>
           <View className='doc-body__panel'>

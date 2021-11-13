@@ -3,6 +3,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtBadgeProps } from '../../../types/badge'
+import '../../style/components/badge.scss';
 
 export default class AtBadge extends React.Component<AtBadgeProps> {
   public static defaultProps: AtBadgeProps

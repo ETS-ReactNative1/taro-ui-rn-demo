@@ -45,7 +45,7 @@ export default class Index extends React.Component<{}, IndexPageState> {
 
     return (
       <View className='page'>
-        <DocsHeader title='Tabs 标签页'></DocsHeader>
+        <DocsHeader title='Tabs 标签页' />
 
         <View className='doc-body'>
           {/* 基础用法 */}

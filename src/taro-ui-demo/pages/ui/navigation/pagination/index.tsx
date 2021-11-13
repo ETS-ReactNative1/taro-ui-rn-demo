@@ -54,7 +54,7 @@ export default class PaginationPage extends React.Component<
     return (
       <View className='page'>
         {/* S Header */}
-        <DocsHeader title='Pagination 分页器'></DocsHeader>
+        <DocsHeader title='Pagination 分页器' />
         {/* E Header */}
 
         <View className='doc-body'>
