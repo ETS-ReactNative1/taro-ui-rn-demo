@@ -1,9 +1,14 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Image, OpenData, Text, View } from '@tarojs/components'
+import { Image, Text, View } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { AtAvatarProps, AtAvatarState } from '../../../types/avatar'
+
+let OpenData;
+if (process.env.TARO_ENV !== 'rn') {
+  OpenData = require('@tarojs/components').OpenData;
+}
 
 const SIZE_CLASS = {
   large: 'large',
@@ -38,8 +43,8 @@ export default class AtAvatar extends React.Component<
     if (text) letter = text[0]
 
     let elem: React.ReactNode
-    if (openData && openData.type === 'userAvatarUrl' && this.state.isWEAPP) {
-      elem = <OpenData type={openData.type}></OpenData>
+    if (openData && openData.type === 'userAvatarUrl' && this.state.isWEAPP && !!OpenData) {
+      elem = <OpenData type={openData.type} />
     } else if (image) {
       elem = <Image className='at-avatar__img' src={image} />
     } else {

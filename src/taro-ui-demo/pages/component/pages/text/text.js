@@ -22,7 +22,7 @@ export default class PageView extends React.Component {
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>H5、小程序通用</Text>
+              <Text className='example-header-text'>H5、小程序通用</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__text'>
@@ -35,23 +35,23 @@ export default class PageView extends React.Component {
           </View>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>仅工作在小程序</Text>
+              <Text className='example-header-text'>仅工作在小程序</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__text'>
-                <Text>不支持多          空格文字</Text>
+                <Text className='example-body__text__text'>不支持多          空格文字</Text>
               </View>
               <View className='example-body__text'>
-                <Text space='ensp'>多          空格文字(ensp)</Text>
+                <Text space='example-body__text__text ensp'>多          空格文字(ensp)</Text>
               </View>
               <View className='example-body__text'>
-                <Text space='nbsp'>多          空格文字(nbsp)</Text>
+                <Text space='example-body__text__text nbsp'>多          空格文字(nbsp)</Text>
               </View>
               <View className='example-body__text'>
-                <Text>不解码文字&gt;</Text>
+                <Text className='example-body__text__text'>不解码文字&gt;</Text>
               </View>
               <View className='example-body__text'>
-                <Text decode>解码文字&gt;</Text>
+                <Text className='example-body__text__text' decode>解码文字&gt;</Text>
               </View>
             </View>
           </View>

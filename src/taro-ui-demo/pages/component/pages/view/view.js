@@ -1,7 +1,6 @@
-import './view.scss'
-
 import React from 'react'
 import { View, Text } from '@tarojs/components'
+import './view.scss'
 
 import Header from '../../../../components/head/head'
 
@@ -10,12 +9,12 @@ export default class PageView extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='View'></Header>
+          <Header title='View' />
         </View>
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>flex-direction: row 横向布局</Text>
+              <Text className='example-header-text'>flex-direction: row 横向布局</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__list'>
@@ -27,7 +26,7 @@ export default class PageView extends React.Component {
           </View>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>flex-direction: column 纵向布局</Text>
+              <Text className='example-header-text'>flex-direction: column 纵向布局</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__list example-body__list--vertical'>

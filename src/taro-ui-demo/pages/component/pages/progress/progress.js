@@ -1,4 +1,5 @@
 import React from 'react';
+import Taro from '@tarojs/taro';
 import { View, Progress, Button } from '@tarojs/components';
 import Header from '../../../../components/head/head';
 import './progress.scss';
@@ -75,8 +76,8 @@ export default class PageView extends React.Component {
                 activeColor="#3C7FE8" />
             </View>
             <View>
-              <Button onClick={this.handleStart}>加载</Button>
-              <Button onClick={this.handleStop}>暂停</Button>
+              <Button style={{ marginBottom: Taro.pxTransform(10) }} onClick={this.handleStart}>加载</Button>
+              <Button style={{ marginBottom: Taro.pxTransform(10) }} onClick={this.handleStop}>暂停</Button>
               <Button onClick={this.handleReset}>重置</Button>
             </View>
           </View>

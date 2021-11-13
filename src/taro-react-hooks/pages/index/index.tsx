@@ -4,6 +4,8 @@ import './index.scss'
 
 export default class Index extends Component {
 
+  componentWillMount () { }
+
   componentDidMount () { }
 
   componentWillUnmount () { }
@@ -15,7 +17,7 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>Hello world!</Text>
+        <Text>Hello world! 我是React</Text>
       </View>
     )
   }

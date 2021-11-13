@@ -3,11 +3,13 @@
 .page__con__list {
   position: relative;
   display: flex;
+  flex-direction: row;
   margin-bottom: 40px;
   padding-bottom: 40px;
-  @include border(bottom, 2px, dashed, #999);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #999;
   min-height: 120px;
-
 }
 
 .icon_right {

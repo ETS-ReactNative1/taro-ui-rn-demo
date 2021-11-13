@@ -29,7 +29,7 @@ $at-action-sheet-duration: 300ms;
     width: 100%;
     text-align: center;
     background-color: $color-white;
-    transform: translate3d(0, 100%, 0);
+    //transform: translate3d(0, 100%, 0);
     transition: transform $at-action-sheet-duration $timing-func;
   }
 
@@ -38,7 +38,7 @@ $at-action-sheet-duration: 300ms;
     color: $color-black-3;
     font-size: $font-size-base;
     text-align: center;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $font-size-base;
     @include hairline-bottom();
   }
 
@@ -70,7 +70,7 @@ $at-action-sheet-duration: 300ms;
     }
 
     .at-action-sheet__container {
-      transform: translate3d(0, 0, 0);
+      //transform: translate3d(0, 0, 0);
     }
   }
 }

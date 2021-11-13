@@ -1,5 +1,6 @@
+import React from 'react';
+import Taro from '@tarojs/taro';
 import './form.scss'
-import React from 'react'
 
 import {
   View,
@@ -85,15 +86,15 @@ export default class PageForm extends React.Component {
           <View className='components-page__body'>
             <View className='components-page__body-example example'>
               <View className='example-header'>
-                <Text>switch</Text>
+                <Text className='example-header-text'>switch</Text>
               </View>
               <View className='example-body'>
-                <Switch onChange={this.onHandleChange} name='switch' className="form-switch"></Switch>
+                <Switch onChange={this.onHandleChange} name='switch' className="form-switch" />
               </View>
             </View>
             <View className='components-page__body-example example'>
               <View className='example-header'>
-                <Text>radio</Text>
+                <Text className='example-header-text'>radio</Text>
               </View>
               <View className='example-body'>
                 <RadioGroup className='example-body__radio-group' onChange={this.onRadioChange} name='radio'>
@@ -111,7 +112,7 @@ export default class PageForm extends React.Component {
             </View>
             <View className='components-page__body-example example'>
               <View className='example-header'>
-                <Text>checkbox</Text>
+                <Text className='example-header-text'>checkbox</Text>
               </View>
               <View className='example-body'>
                 <CheckboxGroup  className='example-body__checkbox-group' onChange={this.onCheckChange} name='checkbox'>
@@ -129,7 +130,7 @@ export default class PageForm extends React.Component {
             </View>
             <View className='components-page__body-example example'>
               <View className='example-header'>
-                <Text>slider</Text>
+                <Text className='example-header-text'>slider</Text>
               </View>
               <View className='example-body'>
                 <Slider
@@ -137,24 +138,29 @@ export default class PageForm extends React.Component {
                   value={this.state.sliderValue}
                   showValue
                   onChange={this.handleSliderChange}
-                  bingchanging={this.handleSliderChanging} ></Slider>
+                  bingchanging={this.handleSliderChanging}
+                />
               </View>
             </View>
             <View className='components-page__body-example example example-input'>
               <View className='example-header'>
-                <Text>input</Text>
+                <Text className='example-header-text'>input</Text>
               </View>
               <View className='example-body'>
                 <Input
                   name='input'
                   type='text'
                   placeholder={'这是一个输入框'}
-                  onChange={this.onHandleChange} ></Input>
+                  onChange={this.onHandleChange}
+                  // style={{
+                  //   backgroundColor: '#fff',
+                  // }}
+                />
               </View>
             </View>
             <View className='components-page__body-example example'>
               <View className='example-body'>
-                <Button formType='submit' type='primary'>
+                <Button formType='submit' type='primary' style={{ marginBottom: Taro.pxTransform(10) }}>
                   Submit
                 </Button>
                 <Button formType='reset' type='default'>

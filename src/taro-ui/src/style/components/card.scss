@@ -20,8 +20,8 @@
     &-title,
     &-extra {
       @include line;
-
-      line-height: $line-height-zh;
+      font-size: $font-size-base;
+      line-height: $line-height-zh * $font-size-base;
     }
 
     &-thumb {

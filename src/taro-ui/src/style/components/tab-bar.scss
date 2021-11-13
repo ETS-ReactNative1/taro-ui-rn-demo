@@ -31,7 +31,7 @@ $at-tab-bar-title-max-width: 200px;
 
   &__icon {
     font-size: $at-tab-bar-icon-font-size;
-    line-height: 1;
+    line-height: 1 * $at-tab-bar-icon-font-size;
   }
 
   &__inner-img {
@@ -48,7 +48,7 @@ $at-tab-bar-title-max-width: 200px;
     padding: $spacing-v-xs 0;
     max-width: $at-tab-bar-title-max-width;
     font-size: $at-tab-bar-font-size;
-    line-height: $line-height-base;
+    line-height: $line-height-base * $at-tab-bar-font-size;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

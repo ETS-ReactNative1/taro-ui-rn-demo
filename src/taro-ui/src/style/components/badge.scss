@@ -20,7 +20,7 @@ $at-badge-box-shadow: 0 4px 8px 0 rgba($color: $at-badge-bg-color, $alpha: 0.2);
     border-radius: 50%;
     overflow: hidden;
     background: $at-badge-bg;
-    box-shadow: $at-badge-box-shadow;
+    //box-shadow: $at-badge-box-shadow;
   }
 
   &__num {
@@ -30,11 +30,11 @@ $at-badge-box-shadow: 0 4px 8px 0 rgba($color: $at-badge-bg-color, $alpha: 0.2);
     right: -6PX;
     color: $at-badge-color;
     font-size: $at-badge-font-size;
-    line-height: 1.4;
+    line-height: 1.4 * $at-badge-font-size;
     border-radius: $at-badge-border-radius $at-badge-border-radius $at-badge-border-radius 0;
     background: $at-badge-bg;
-    box-shadow: $at-badge-box-shadow;
-    transform: translate(50%, 0);
+    //box-shadow: $at-badge-box-shadow;
+    //transform: translate(50%, 0);
     overflow: hidden;
     z-index: 1;
   }

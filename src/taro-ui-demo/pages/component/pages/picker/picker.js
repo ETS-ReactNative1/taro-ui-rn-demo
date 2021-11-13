@@ -1,8 +1,7 @@
-import './picker.scss'
-
 import Taro from '@tarojs/taro'
 import React from 'react'
 import { View, Text, Picker } from '@tarojs/components'
+import './picker.scss'
 
 import Header from '../../../../components/head/head'
 
@@ -64,7 +63,7 @@ export default class PagePicker extends React.Component {
                 value={selectorValue}
                 onChange={this.handleChange}>
                 <View className='picker'>
-                  当前选择：{selector[selectorValue]}
+                  <Text className='picker__text'>当前选择：{selector[selectorValue]}</Text>
                 </View>
               </Picker>
             </View>
@@ -81,9 +80,9 @@ export default class PagePicker extends React.Component {
                   onChange={this.handleMulitChange}
                   onColumnchange={this.handleColumnchange}>
                   <View className='picker'>
-                    当前选择： {
-                      `${this.state.multiSelector[0][mulitSelectorValues[0]]}, ${this.state.multiSelector[1][mulitSelectorValues[1]]}`
-                    }
+                    <Text className='picker__text'>
+                      当前选择： {`${this.state.multiSelector[0][mulitSelectorValues[0]]}, ${this.state.multiSelector[1][mulitSelectorValues[1]]}`}
+                    </Text>
                   </View>
                 </Picker>
               </View>
@@ -100,7 +99,9 @@ export default class PagePicker extends React.Component {
             </View>
             <View>
               <Picker mode='time' onChange={this.handleTimeChange} value={timeSel}>
-                <View className='picker'>当前选择：{timeSel}</View>
+                <View className='picker'>
+                  <Text className='picker__text'>当前选择：{timeSel}</Text>
+                </View>
               </Picker>
             </View>
           </View>
@@ -110,7 +111,9 @@ export default class PagePicker extends React.Component {
             </View>
             <View>
               <Picker mode='date' onChange={this.handleDateChange} value={dateSel}>
-                <View className='picker'>当前选择：{dateSel}</View>
+                <View className='picker'>
+                  <Text className='picker__text'>当前选择：{dateSel}</Text>
+                </View>
               </Picker>
             </View>
           </View>

@@ -21,7 +21,13 @@
     "typeRoots": [
       "node_modules/@types",
       "global.d.ts"
-    ]
+    ],
+    "paths": {
+      "@/taro-shared/*": ["./src/taro-shared/*"],
+      "@/taro-ui/*": ["./src/taro-ui/src/*"],
+      "@/react-native-legacy/*": ["./src/react-native-legacy/*"],
+      "@/taro-react-hooks/*": ["./src/taro-react-hooks/*"]
+    }
   },
   "exclude": [
     "node_modules",

@@ -104,8 +104,8 @@ export default {
       {
         pagePath: 'pages/ui/index/index',
         text: 'UI',
-        iconPath: 'assets/component/view.png',
-        selectedIconPath: 'assets/component/view_red.png',
+        iconPath: 'assets/component/icon-design-14.png',
+        selectedIconPath: 'assets/component/icon-design-14_red.png',
       },
       {
         pagePath: 'pages/about/about',

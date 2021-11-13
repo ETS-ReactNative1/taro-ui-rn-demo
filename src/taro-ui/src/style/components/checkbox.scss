@@ -22,7 +22,7 @@ $component: '.at-checkbox';
     display: inline-flex;
     color: $at-checkbox-title-color;
     font-size: $at-checkbox-title-font-size;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $at-checkbox-title-font-size;
     text-align: left;
   }
 
@@ -37,7 +37,7 @@ $component: '.at-checkbox';
     height: $at-checkbox-circle-size;
     color: transparent;
     font-size: $at-checkbox-icon-size;
-    line-height: 1;
+    line-height: 1 * $at-checkbox-icon-size;
     border: 2px solid rgba($color: $at-checkbox-icon-color, $alpha: 0.2);
     border-radius: $border-radius-circle;
     background-color: $color-bg;
@@ -51,7 +51,7 @@ $component: '.at-checkbox';
     color: $at-checkbox-desc-color;
     font-size: $at-checkbox-desc-font-size;
     text-align: left;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $at-checkbox-desc-font-size;
     letter-spacing: 0;
   }
 
@@ -73,7 +73,7 @@ $component: '.at-checkbox';
     &--selected {
       #{$component}__icon-cnt {
         color: $at-checkbox-icon-color-checked;
-        border: none;
+        border: 0;
         background-color: $at-checkbox-icon-color;
       }
     }

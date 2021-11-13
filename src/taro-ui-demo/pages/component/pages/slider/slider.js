@@ -34,7 +34,7 @@ export default class PageSlider extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>设置step</Text>
+              <Text className='example-header-text'>设置step</Text>
             </View>
             <View className='example-body'>
               <Slider step={1} value={50}></Slider>
@@ -43,7 +43,7 @@ export default class PageSlider extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>显示当前的value</Text>
+              <Text className='example-header-text'>显示当前的value</Text>
             </View>
             <View className='example-body'>
               <Slider step={1} value={50} showValue></Slider>
@@ -52,7 +52,7 @@ export default class PageSlider extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>设置最小/最大值</Text>
+              <Text className='example-header-text'>设置最小/最大值</Text>
             </View>
             <View className='example-body'>
               <Slider step={1} value={100} showValue min={50} max={200}></Slider>
@@ -61,7 +61,7 @@ export default class PageSlider extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>UI设置</Text>
+              <Text className='example-header-text'>UI设置</Text>
             </View>
             <View className='example-body'>
               <Slider step={1} value={50} activeColor='#6190E8' backgroundColor='red' blockColor='#333' blockSize={20}></Slider>
@@ -70,7 +70,7 @@ export default class PageSlider extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>数据绑定</Text>
+              <Text className='example-header-text'>数据绑定</Text>
             </View>
             <View className='example-body'>
               <Button onClick={this.setValue}>Set Value</Button>

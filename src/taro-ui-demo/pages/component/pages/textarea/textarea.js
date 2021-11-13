@@ -42,7 +42,7 @@ export default class PageTextarea extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>输入区域高度自适应，不会出现滚动条</Text>
+              <Text className='example-header-text'>输入区域高度自适应，不会出现滚动条</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__button'>
@@ -54,7 +54,7 @@ export default class PageTextarea extends React.Component {
 
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>这是一个可以自动聚焦的textarea</Text>
+              <Text className='example-header-text'>这是一个可以自动聚焦的textarea</Text>
             </View>
             <View className='example-body'>
               <Textarea autoFocus placeholder='这是一个Textarea'></Textarea>

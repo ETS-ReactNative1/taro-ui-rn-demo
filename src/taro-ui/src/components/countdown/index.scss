@@ -31,7 +31,7 @@ $font-size: $font-size-lg;
 
     text-transform: none;
     text-rendering: auto;
-    line-height: 1;
+    line-height: 1 * $font-size;
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
   }

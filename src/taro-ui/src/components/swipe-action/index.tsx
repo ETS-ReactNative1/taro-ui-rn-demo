@@ -153,7 +153,7 @@ export default class AtSwipeAction extends React.Component<
           className='at-swipe-action__area'
           style={{
             width: `${this.eleWidth + this.maxOffsetSize}px`,
-            transform: `translate(-${this.maxOffsetSize}px, 0)`
+            //transform: `translate(-${this.maxOffsetSize}px, 0)`
           }}
         >
           <MovableView
@@ -174,7 +174,7 @@ export default class AtSwipeAction extends React.Component<
                 options={options}
                 componentId={componentId}
                 customStyle={{
-                  transform: `translate(${this.maxOffsetSize}px, 0)`,
+                  //transform: `translate(${this.maxOffsetSize}px, 0)`,
                   opacity: 1
                 }}
               >

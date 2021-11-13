@@ -52,7 +52,9 @@ export default class AtGrid extends React.Component<AtGridProps> {
                 })}
                 onClick={this.handleClick.bind(this, childItem, index, i)}
                 style={{
-                  flex: `0 0 ${100 / columnNum}%`
+                  flexGrow: 0,
+                  flexShrink: 0,
+                  flexBasis: `${100 / columnNum}%`,
                 }}
               >
                 <View className='at-grid-item__content'>

@@ -31,12 +31,12 @@ export default class PageLabel extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Label'></Header>
+          <Header title='Label' />
         </View>
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>表单组件在label内</Text>
+              <Text className='example-header-text'>表单组件在label内</Text>
             </View>
             <View className='example-body'>
               <CheckboxGroup>
@@ -53,7 +53,7 @@ export default class PageLabel extends React.Component {
           </View>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>表单组件在Label外</Text>
+              <Text className='example-header-text'>表单组件在Label外</Text>
             </View>
             <View className='example-body'>
               <RadioGroup>

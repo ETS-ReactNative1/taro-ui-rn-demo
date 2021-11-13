@@ -1,8 +1,11 @@
 .components-page__body {
   padding: 0;
-  .example-body {
-    text-align: center;
-  }
+}
+
+.example-body-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .checkbox-list {
@@ -52,4 +55,9 @@
 
 .select-box {
   margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  &__text {
+  }
 }

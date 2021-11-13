@@ -1,6 +1,6 @@
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react';
-import '@/taro-ui/style/index.scss';
+import '../taro-ui/src/style/index.scss';
 import './app.scss'
 
 class App extends React.Component {

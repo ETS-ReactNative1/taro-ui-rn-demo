@@ -57,14 +57,14 @@ export default class PageCheckbox extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Checkbox'></Header>
+          <Header title='Checkbox' />
         </View>
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>默认样式</Text>
+              <Text className='example-header-text'>默认样式</Text>
             </View>
-            <View className='example-body'>
+            <View className='example-body-1'>
               <Checkbox value='选中' checked>
                 选中
               </Checkbox>
@@ -73,13 +73,13 @@ export default class PageCheckbox extends React.Component {
               </Checkbox>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
-              <Text>推荐展示样式</Text>
+              <Text className='example-header-text'>推荐展示样式</Text>
             </View>
             <View className='example-body'>
               <View className='select-box'>
-                当前选择: {this.state.selectValues.join(',')}
+                <Text className='select-box__text'>当前选择: {this.state.selectValues.join(',')}</Text>
               </View>
               <View>
                 <View className='checkbox-list'>

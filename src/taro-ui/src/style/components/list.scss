@@ -33,7 +33,7 @@ $at-list-item-horizontal-padding: 24px;
     box-sizing: border-box;
     color: $at-list-text-color;
     font-size: $font-size-lg;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $font-size-lg;
     @include active;
     @include hairline-bottom-relative($left: $spacing-h-lg);
 
@@ -56,23 +56,25 @@ $at-list-item-horizontal-padding: 24px;
 
     &--no-border::after {
       content: initial;
-      border: none;
+      border: 0;
     }
 
     .item-content {
       &__info {
         &-title {
           @include line(1);
-
-          color: inherit;
-          font-size: inherit;
-          line-height: $line-height-zh;
+          color: $at-list-text-color;
+          font-size: $font-size-lg;
+          line-height: $line-height-zh * $font-size-lg;
+          //color: inherit;
+          //font-size: inherit;
+          //line-height: $line-height-zh;
         }
 
         &-note {
           color: $at-list-content-color;
           font-size: $font-size-base;
-          line-height: $line-height-zh;
+          line-height: $line-height-zh * $font-size-base;
         }
       }
     }
@@ -110,7 +112,7 @@ $at-list-item-horizontal-padding: 24px;
       &__icon {
         right: -12px;
         top: 50%;
-        transform: translateY(-50%);
+        //transform: translateY(-50%);
         position: absolute;
 
         &-arrow {
@@ -158,7 +160,7 @@ $at-list-item-horizontal-padding: 24px;
     &::after,
     &::before {
       content: initial;
-      border: none;
+      border: 0;
     }
   }
 }

@@ -303,9 +303,9 @@ export default class AtCalendarBody extends React.Component<
               'main__body--animate': isAnimate
             })}
             style={{
-              transform: isSwiper
-                ? `translateX(-100%) translate3d(${offsetSize},0,0)`
-                : '',
+              // transform: isSwiper
+              //   ? `translateX(-100%) translate3d(${offsetSize},0,0)`
+              //   : '',
               WebkitTransform: isSwiper
                 ? `translateX(-100%) translate3d(${offsetSize}px,0,0)`
                 : ''

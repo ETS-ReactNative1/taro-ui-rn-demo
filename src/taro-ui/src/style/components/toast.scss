@@ -3,11 +3,11 @@
 
 @keyframes atRotate {
   0% {
-    transform: rotate(0deg);
+    //transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(360deg);
+    //transform: rotate(360deg);
   }
 }
 
@@ -66,14 +66,15 @@ $at-toast-bg-color: rgba($color: $color-black-0, $alpha: 0.8);
         margin-top: $spacing-v-md;
         color: $at-toast-color;
         font-size: $at-toast-font-size;
-        line-height: $line-height-zh;
+        line-height: $line-height-zh * $at-toast-font-size;
         text-align: center;
       }
     }
 
     &--text {
+      font-size: $font-size-base;
       padding: $spacing-v-sm $spacing-h-lg;
-      line-height: $line-height-zh;
+      line-height: $line-height-zh * $font-size-base;
       min-width: initial;
 
       .toast-body-content__info {

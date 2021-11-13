@@ -46,7 +46,7 @@
       width: 90%;
       height: 144px;
       background: #fff;
-      box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.04);
+      //box-shadow: 0 8px 40px 0 rgba(0, 0, 0, 0.04);
       border-radius: 10px;
 
       &:last-child {
@@ -97,7 +97,7 @@
       color: #fff;
       text-align: center;
       background: #78A4FA;
-      box-shadow: 4px 10px 30px 0 rgba(120, 164, 250, 0.30);
+      //box-shadow: 4px 10px 30px 0 rgba(120, 164, 250, 0.30);
       border-radius: 50%;
     }
   }
@@ -168,7 +168,7 @@
       border-width: 2px 2px 0 0;
       border-color: #888;
       border-style: solid;
-      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) translate(-50%);
+      //transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0) translate(-50%);
       position: absolute;
       top: 50%;
       right: 0;

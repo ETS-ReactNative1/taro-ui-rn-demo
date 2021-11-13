@@ -28,7 +28,7 @@ $float-layout-timer: 300ms;
     min-height: $float-layout-height-min;
     max-height: $float-layout-height-max;
     background-color: $color-bg;
-    transform: translate3d(0, 100%, 0);
+    //transform: translate3d(0, 100%, 0);
     transition: transform $float-layout-timer cubic-bezier(0.36, 0.66, 0.04, 1);
   }
 
@@ -36,7 +36,6 @@ $float-layout-timer: 300ms;
     &-header {
       position: relative;
       padding: $spacing-v-md;
-      line-height: $line-height-zh;
       background-color: $float-layout-header-bg-color;
 
       &__title {
@@ -44,6 +43,7 @@ $float-layout-timer: 300ms;
 
         color: $float-layout-title-color;
         font-size: $float-layout-title-font-size;
+        line-height: $line-height-zh * $float-layout-title-font-size;
         display: block;
         padding-right: 80px;
       }
@@ -55,8 +55,8 @@ $float-layout-timer: 300ms;
         right: $spacing-v-md;
         width: 40px;
         height: 100%;
-        line-height: 1;
-        transform: translate(0, -50%);
+        line-height: 1 * 40px;
+        //transform: translate(0, -50%);
 
         &::before,
         &::after {
@@ -72,11 +72,11 @@ $float-layout-timer: 300ms;
         }
 
         &::before {
-          transform: translate3d(-50%, -50%, 0) rotate(45deg);
+          //transform: translate3d(-50%, -50%, 0) rotate(45deg);
         }
 
         &::after {
-          transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+          //transform: translate3d(-50%, -50%, 0) rotate(-45deg);
         }
       }
     }
@@ -103,7 +103,7 @@ $float-layout-timer: 300ms;
     }
 
     .at-float-layout__container {
-      transform: translate3d(0, 0, 0);
+      //transform: translate3d(0, 0, 0);
     }
   }
 }

@@ -60,11 +60,11 @@ $at-curtain-btn-size: 56px;
     }
 
     &::before {
-      transform: translate3d(-50%, -50%, 0) rotate(45deg);
+      //transform: translate3d(-50%, -50%, 0) rotate(45deg);
     }
 
     &::after {
-      transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+      //transform: translate3d(-50%, -50%, 0) rotate(-45deg);
     }
 
     &--top {

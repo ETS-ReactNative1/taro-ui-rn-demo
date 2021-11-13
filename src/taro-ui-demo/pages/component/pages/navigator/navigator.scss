@@ -1,4 +1,4 @@
-.example-body{
+.example-body {
   text-align: center;
 }
 
@@ -6,6 +6,9 @@
   height: 80px;
   line-height: 80px;
   margin: 20px 100px 0;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #ccc;
 }

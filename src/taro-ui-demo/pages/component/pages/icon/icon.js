@@ -1,6 +1,6 @@
-import './icon.scss'
 import { View, Icon } from '@tarojs/components'
 import React from 'react'
+import './icon.scss'
 
 import Header from '../../../../components/head/head'
 
@@ -9,19 +9,19 @@ export default class PageView extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Icon'></Header>
+          <Header title='Icon' />
         </View>
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='page__con__list'>
-              <Icon size='30' type='success' ></Icon>
+              <Icon size='30' type='success' />
               <View className='icon_right'>
                 <View className='icon_right_head'>成功</View>
                 <View className='icon_right_tit'>用于表示操作顺利完成</View>
               </View>
             </View>
             <View className='page__con__list'>
-              <Icon size='30' type='info' ></Icon>
+              <Icon size='30' type='info' />
               <View className='icon_right'>
                 <View className='icon_right_head'>提示</View>
                 <View className='icon_right_tit'>
@@ -30,7 +30,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list'>
-              <Icon size='30' type='warn' color='#ccc' ></Icon>
+              <Icon size='30' type='warn' color='#ccc' />
               <View className='icon_right'>
                 <View className='icon_right_head'>普通警告</View>
                 <View className='icon_right_tit'>
@@ -39,7 +39,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list'>
-              <Icon size='30' type='warn' ></Icon>
+              <Icon size='30' type='warn' />
               <View className='icon_right'>
                 <View className='icon_right_head'>强烈警告</View>
                 <View className='icon_right_tit'>
@@ -48,7 +48,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list'>
-              <Icon size='30' type='waiting' ></Icon>
+              <Icon size='30' type='waiting' />
               <View className='icon_right'>
                 <View className='icon_right_head'>等待</View>
                 <View className='icon_right_tit'>
@@ -57,7 +57,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='success_no_circle' ></Icon>
+              <Icon size='30' type='success_no_circle' />
               <View className='icon_right'>
                 <View className='icon_right_head'>多选控件图标_已选择</View>
                 <View className='icon_right_tit'>
@@ -66,7 +66,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='warn' ></Icon>
+              <Icon size='30' type='warn' />
               <View className='icon_right'>
                 <View className='icon_right_head'>错误提示</View>
                 <View className='icon_right_tit'>
@@ -75,7 +75,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='success' ></Icon>
+              <Icon size='30' type='success' />
               <View className='icon_right'>
                 <View className='icon_right_head'>单选控件图标_已选择</View>
                 <View className='icon_right_tit'>
@@ -84,14 +84,14 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='download' ></Icon>
+              <Icon size='30' type='download' />
               <View className='icon_right'>
                 <View className='icon_right_head'>下载</View>
                 <View className='icon_right_tit'>用于表示可下载</View>
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='clear' color='red' ></Icon>
+              <Icon size='30' type='clear' color='red' />
               <View className='icon_right'>
                 <View className='icon_right_head'>停止或关闭</View>
                 <View className='icon_right_tit'>
@@ -100,7 +100,7 @@ export default class PageView extends React.Component {
               </View>
             </View>
             <View className='page__con__list icon_sml'>
-              <Icon size='30' type='search' ></Icon>
+              <Icon size='30' type='search' />
               <View className='icon_right'>
                 <View className='icon_right_head'>搜索</View>
                 <View className='icon_right_tit'>

@@ -35,7 +35,7 @@
     margin-right: $spacing-h-md;
     width: 172px;
     font-size: $at-input-font-size;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $at-input-font-size;
     vertical-align: middle;
     text-align: left;
 
@@ -46,7 +46,7 @@
         color: $color-error;
         font-size: 28px;
         font-family: SimSun, sans-serif;
-        line-height: 1;
+        line-height: 1 * 28px;
         content: "*";
       }
     }
@@ -58,7 +58,7 @@
     padding-right: $spacing-v-md;
     color: $at-input-text-color;
     font-size: $at-input-font-size;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $at-input-font-size;
     vertical-align: middle;
     @include placeholder($at-input-placeholder-color);
   }
@@ -67,7 +67,7 @@
     color: $at-input-text-color;
     font-size: $at-input-font-size;
     height: $at-input-font-size * 1.4;
-    line-height: $line-height-zh;
+    line-height: $line-height-zh * $at-input-font-size;
   }
 
   &__icon {
@@ -80,7 +80,7 @@
     height: 100%;
     font-size: $at-input-font-size;
     text-align: center;
-    line-height: 1;
+    line-height: 1 * $at-input-font-size;
 
     &-close {
       color: #ccc;
@@ -129,7 +129,7 @@
 
   &--without-border {
     &::after {
-      border: none;
+      border: 0;
     }
   }
 }

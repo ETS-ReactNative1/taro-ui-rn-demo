@@ -1,7 +1,6 @@
-import Taro, { Component } from '@tarojs/taro'
+import Taro from '@tarojs/taro'
 import React from 'react'
-
-import { View, PickerView, PickerViewColumn } from '@tarojs/components'
+import { View, PickerView, PickerViewColumn, Text } from '@tarojs/components'
 
 export default class Picks extends React.Component {
   constructor() {
@@ -43,8 +42,16 @@ export default class Picks extends React.Component {
   render() {
     return (
       <View>
-        <View>{this.state.year}年{this.state.month}月{this.state.day}日</View>
-        <PickerView indicatorStyle="height: 50px;" style="width: 100%; height: 300px;" value={this.state.value} onChange={this.onChange}>
+        <Text>{this.state.year}年{this.state.month}月{this.state.day}日</Text>
+        <PickerView
+          indicatorStyle="height: 50px;"
+          style={{
+            width: Taro.pxTransform(750),
+            height: Taro.pxTransform(300),
+          }}
+          value={this.state.value}
+          onChange={this.onChange}
+        >
           <PickerViewColumn>
             {this.state.years.map(item => {
               return (

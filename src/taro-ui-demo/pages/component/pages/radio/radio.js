@@ -1,7 +1,7 @@
-import './radio.scss'
 import React from 'react'
-import { Component } from '@tarojs/taro'
-import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components'
+import { View, Text, Radio, Label, RadioGroup } from '@tarojs/components';
+import classNames from 'classnames';
+import './radio.scss'
 
 import Header from '../../../../components/head/head'
 
@@ -63,9 +63,9 @@ export default class PageRadio extends React.Component {
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>默认样式</Text>
+              <Text className='example-header-text'>默认样式</Text>
             </View>
-            <View className='example-body'>
+            <View className='radio-example-body'>
               <Radio value='选中' checked>
                 选中
               </Radio>
@@ -74,23 +74,25 @@ export default class PageRadio extends React.Component {
               </Radio>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+          <View className='components-page__body-example'>
             <View className='example-header'>
-              <Text>推荐展示样式</Text>
+              <Text className='example-header-text'>推荐展示样式</Text>
             </View>
             <View className='example-body'>
               <View className='example-body__select-box'>
-                选中的值是: {this.state.selectValue}
+                <Text>选中的值是: {this.state.selectValue}</Text>
               </View>
               <View className='example-body__radios'>
                 <RadioGroup onChange={this.radioChange}>
                   {this.state.list.map((item, i) => {
                     return (
-                      <Label className='example-body__radios-item' key={i}>
+                      <Label className={classNames(['example-body__radios-item', `example-body__radios-item-${i}`])} key={i}>
                         <Radio
+                          className='example-body__radios-item__radio'
                           name='radio'
                           value={item.value}
-                          checked={item.checked}>
+                          checked={item.checked}
+                        >
                           {item.text}
                         </Radio>
                       </Label>

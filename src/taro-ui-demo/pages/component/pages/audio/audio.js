@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Audio } from '@tarojs/components';
+import { View, Text } from '@tarojs/components';
 import Header from '../../../../components/head/head';
 import './audio.scss';
 
@@ -13,15 +13,7 @@ export default class PageView extends React.Component {
         <View className="components-page__body">
           <View className="components-page__body-example example">
             <View className="example-body">
-              <Audio
-                src="http://storage.jd.com/cjj-pub-images/horse.ogv"
-                controls
-                autoplay={false}
-                loop={false}
-                muted
-                initialTime="30"
-                className="example-body__audio"
-                id="audio" />
+              <Text>TODO 改用API的能力来展示</Text>
             </View>
           </View>
         </View>

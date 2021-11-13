@@ -4,12 +4,12 @@
 @keyframes progress-active {
   from {
     opacity: 0.5;
-    transform: translate(-100%);
+    //transform: translate(-100%);
   }
 
   to {
     opacity: 0.1;
-    transform: translate(0);
+    //transform: translate(0);
   }
 }
 
@@ -19,7 +19,9 @@
 
   /* elements */
   &__outer {
-    flex: 1 1 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 100%;
     margin-right: 0;
     padding-right: 0;
 
@@ -41,7 +43,9 @@
   }
 
   &__content {
-    flex: 1 1 70px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 70px;
     margin-left: 10px;
     font-size: $at-progress-text-size;
     text-align: center;

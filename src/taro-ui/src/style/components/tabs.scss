@@ -27,7 +27,7 @@ $at-tabs-pane-min-height: 100px;
       width: 100%;
       height: $at-tabs-line-height;
       background-color: $at-tabs-color-active;
-      transform: scaleX(0);
+      //transform: scaleX(0);
       transition: all 0.15s;
     }
 
@@ -35,7 +35,7 @@ $at-tabs-pane-min-height: 100px;
       color: $at-tabs-color-active;
 
       #{$component}__item-underline {
-        transform: scaleX(1);
+        //transform: scaleX(1);
       }
     }
   }
@@ -132,12 +132,12 @@ $at-tabs-pane-min-height: 100px;
         left: auto;
         width: $at-tabs-line-height;
         height: 100%;
-        transform: scaleY(0);
+        //transform: scaleY(0);
       }
 
       &--active {
         #{$component}__item-underline {
-          transform: scaleY(1);
+          //transform: scaleY(1);
         }
       }
     }

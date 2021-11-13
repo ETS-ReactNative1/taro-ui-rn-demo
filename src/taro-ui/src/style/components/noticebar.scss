@@ -10,7 +10,8 @@
 
   /* elements */
   &__content {
-    line-height: $line-height-zh;
+    font-size: $font-size-base;
+    line-height: $line-height-zh * $font-size-base;
     word-break: break-all;
     word-wrap: break-word;
 
@@ -41,7 +42,7 @@
     left: $spacing-h-lg;
     width: $at-noticebar-btn-close-size;
     height: $at-noticebar-btn-close-size;
-    transform: translate3d(0, -50%, 0);
+    //transform: translate3d(0, -50%, 0);
 
     .at-icon {
       color: $at-noticebar-btn-close-color;
@@ -59,7 +60,7 @@
 
     .text {
       font-size: $at-noticebar-font-size;
-      line-height: $line-height-zh;
+      line-height: $line-height-zh * $at-noticebar-font-size;
       vertical-align: middle;
     }
 
@@ -116,7 +117,7 @@
         padding-left: 100%;
         height: $at-noticebar-font-size * 1.5;
         animation: marquee 1s linear infinite both;
-        transform: translateZ(0);
+        //transform: translateZ(0);
       }
     }
   }
@@ -136,6 +137,6 @@
 
 @keyframes marquee {
   100% {
-    transform: translate3d(-100%, 0, 0);
+    //transform: translate3d(-100%, 0, 0);
   }
 }

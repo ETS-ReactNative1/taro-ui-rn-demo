@@ -1,3 +1,19 @@
+const path = require("path");
+
+const projectRoot = path.resolve(__dirname, '..'); // 本项目目录
+
+// const aliasList = {
+//   '@/main': path.resolve(projectRoot, `src/${process.env.APP_NAME}`),
+//   '@/taro-ui': path.resolve(projectRoot, 'src/taro-ui/src'),
+//   '@/taro-shared': path.resolve(projectRoot, 'src/taro-shared'),
+//   '@/taro-react-hooks': path.resolve(projectRoot, 'src/taro-react-hooks'),
+//   '@/taro-ui-demo': path.resolve(projectRoot, 'src/taro-ui-demo'),
+// };
+// console.log(aliasList);
+
+// TODO 配置化
+process.env.APP_NAME = 'taro-ui-demo';
+
 const config = {
   projectName: 'TaroOne',
   date: '2021-11-12',
@@ -7,8 +23,9 @@ const config = {
     750: 1,
     828: 1.81 / 2
   },
-  sourceRoot: 'src',
+  sourceRoot: `src/${process.env.APP_NAME}`,
   outputRoot: 'dist',
+  // alias: aliasList,
   plugins: [],
   defineConstants: {
   },
@@ -19,6 +36,12 @@ const config = {
     }
   },
   framework: 'react',
+  sass: {
+    resource: [
+      `${projectRoot}/src/taro-ui/src/style/variables/default.scss`,
+      `${projectRoot}/src/taro-ui/src/style/mixins/index.scss`,
+    ],
+  },
   mini: {
     postcss: {
       pxtransform: {
@@ -79,6 +102,9 @@ const config = {
         enable: false, // 默认为 false，如需使用 css modules 功能，则设为 true
       }
     }
+  },
+  alias: {
+    '@/taro-ui': path.resolve(__dirname, '..', 'src/taro-ui/src'),
   }
 }
 

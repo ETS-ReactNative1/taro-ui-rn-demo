@@ -26,7 +26,7 @@ export default class PageSwitch extends React.Component {
               <Text>静态展示</Text>
             </View>
             <View className='switch-list'>
-              <View className='switch-list__item'>
+              <View className='switch-list__item switch-list__item-0'>
                 <View className='switch-list__text'>关闭</View>
                 <Switch></Switch>
               </View>

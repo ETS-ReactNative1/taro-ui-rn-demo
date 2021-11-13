@@ -1,10 +1,14 @@
 .example-body {
   &__radio-group {
+    display: flex;
+    flex-direction: row;
     &-item {
       margin-right: 40px;
     }
   }
   &__checkbox-group {
+    display: flex;
+    flex-direction: row;
     &-item {
       margin-right: 40px;
     }

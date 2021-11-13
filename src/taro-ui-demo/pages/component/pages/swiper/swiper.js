@@ -83,12 +83,12 @@ export default class PageView extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Swiper'></Header>
+          <Header title='Swiper' />
         </View>
-        <View className='components-page__body swiper'>
-          <View className='components-page__body-example example'>
+        <View className='swiper-components-page__body swiper'>
+          <View className='swiper-components-page__body-example'>
             <View className='example-header'>
-              <Text>Swiper 横向滑动</Text>
+              <Text className='example-header-text'>Swiper 横向滑动</Text>
             </View>
             <View className='example-body'>
               <Swiper
@@ -101,37 +101,38 @@ export default class PageView extends React.Component {
                 circular={isCircular}
                 autoplay={isAutoplay}
                 indicatorDots={hasIndicatorDots}
-                preMargin='20'>
+                preMargin='20'
+              >
                 <SwiperItem>
-                  <View className='demo-text-1'></View>
+                  <View className='demo-text-1 swiper-demo-text-1' />
                 </SwiperItem>
                 <SwiperItem>
-                  <View className='demo-text-2'></View>
+                  <View className='demo-text-2 swiper-demo-text-2' />
                 </SwiperItem>
                 <SwiperItem>
-                  <View className='demo-text-3'></View>
+                  <View className='demo-text-3 swiper-demo-text-3' />
                 </SwiperItem>
               </Swiper>
-              <View className='switch-list'>
-                <View className='switch-list__item'>
-                  <View className='switch-list__text'>指示点</View>
-                  <Switch checked={hasIndicatorDots} onChange={this.setIndicatorDots} ></Switch>
+              <View className='swiper-switch-list'>
+                <View className='swiper-switch-list__item swiper-switch-list__item-0'>
+                  <View className='swiper-switch-list__text'>指示点</View>
+                  <Switch checked={hasIndicatorDots} onChange={this.setIndicatorDots} />
                 </View>
-                <View className='switch-list__item'>
-                  <View className='switch-list__text'>自动播放</View>
-                  <Switch checked={isAutoplay} onChange={this.setAutoPlay} ></Switch>
+                <View className='swiper-switch-list__item'>
+                  <View className='swiper-switch-list__text'>自动播放</View>
+                  <Switch checked={isAutoplay} onChange={this.setAutoPlay} />
                 </View>
-                <View className='switch-list__item'>
-                  <View className='switch-list__text'>循环播放</View>
-                  <Switch checked={isCircular} onChange={this.setCircular} ></Switch>
+                <View className='swiper-switch-list__item'>
+                  <View className='swiper-switch-list__text'>循环播放</View>
+                  <Switch checked={isCircular} onChange={this.setCircular} />
                 </View>
               </View>
-              <View className='slider-list'>
-                <View className='slider-list__item'>
-                  <View className='slider-list__item-header'>
+              <View className='swiper-slider-list'>
+                <View className='swiper-slider-list__item'>
+                  <View className='swiper-slider-list__item-header'>
                     <Text>幻灯片切换时长(ms)</Text>
                   </View>
-                  <View className='slider-list__item-body'>
+                  <View className='swiper-slider-list__item-body'>
                     <Slider
                       showValue
                       step={1}
@@ -141,11 +142,11 @@ export default class PageView extends React.Component {
                       onChange={this.setDuration}></Slider>
                   </View>
                 </View>
-                <View className='slider-list__item'>
-                  <View className='slider-list__item-header'>
+                <View className='swiper-slider-list__item'>
+                  <View className='swiper-slider-list__item-header'>
                     <Text>自动播放间隔时长(ms)</Text>
                   </View>
-                  <View className='slider-list__item-body'>
+                  <View className='swiper-slider-list__item-body'>
                     <Slider
                       showValue
                       step={1}
@@ -160,7 +161,7 @@ export default class PageView extends React.Component {
           </View>
           <View className='components-page__body-example example'>
             <View className='example-header'>
-              <Text>Swiper 纵向滑动</Text>
+              <Text className='example-header-text'>Swiper 纵向滑动</Text>
             </View>
             <View className='example-body'>
               <Swiper
@@ -184,17 +185,17 @@ export default class PageView extends React.Component {
                 </SwiperItem>
               </Swiper>
             </View>
-            <View className='switch-list'>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>指示点</View>
+            <View className='swiper-switch-list'>
+              <View className='swiper-switch-list__item'>
+                <View className='swiper-switch-list__text'>指示点</View>
                 <Switch checked={verticalHasIndicatorDots} onChange={this.setVerticalIndicatorDots} ></Switch>
               </View>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>自动播放</View>
+              <View className='swiper-switch-list__item'>
+                <View className='swiper-switch-list__text'>自动播放</View>
                 <Switch checked={verticalIsAutoplay} onChange={this.setVerticalAutoPlay} ></Switch>
               </View>
-              <View className='switch-list__item'>
-                <View className='switch-list__text'>循环播放</View>
+              <View className='swiper-switch-list__item'>
+                <View className='swiper-switch-list__text'>循环播放</View>
                 <Switch checked={verticalIsCircular} onChange={this.setVerticalCircular} ></Switch>
               </View>
             </View>

@@ -3,6 +3,7 @@ import React from 'react'
 import { View, Button } from '@tarojs/components'
 
 import Header from '../../../../components/head/head'
+import Taro from "@tarojs/taro";
 
 export default class PageButton extends React.Component {
   state = {
@@ -63,19 +64,21 @@ export default class PageButton extends React.Component {
                     size={item.size ? item.size : ''}
                     type={item.type ? item.type : ''}
                     loading={item.loading ? item.loading : false}
-                    disabled={item.disabled ? item.disabled : false}>
+                    disabled={item.disabled ? item.disabled : false}
+                    style={{ marginBottom: Taro.pxTransform(10) }}
+                  >
                     {item.text}
                   </Button>
                 )
               })}
-              <Button plain type='primary'>按钮</Button>
-              <Button plain type='primary' disabled>不可点击的按钮</Button>
-              <Button plain>镂空按钮</Button>
-              <Button plain disabled>镂空按钮 Disabled</Button>
+              <Button plain type='primary' style={{ marginBottom: Taro.pxTransform(10) }}>按钮</Button>
+              <Button plain type='primary' disabled style={{ marginBottom: Taro.pxTransform(10) }}>不可点击的按钮</Button>
+              <Button plain style={{ marginBottom: Taro.pxTransform(10) }}>镂空按钮</Button>
+              <Button plain disabled style={{ marginBottom: Taro.pxTransform(10) }}>镂空按钮 Disabled</Button>
               <View className='btn-center'>
-                <Button size='mini' type='primary'>小号按钮</Button>
-                <Button size='mini'>小号按钮</Button>
-                <Button size='mini' type='warn'>小号按钮</Button>
+                <Button size='mini' type='primary' style={{ marginBottom: Taro.pxTransform(10) }}>小号按钮</Button>
+                <Button size='mini' style={{ marginBottom: Taro.pxTransform(10) }}>小号按钮</Button>
+                <Button size='mini' type='warn' style={{ marginBottom: Taro.pxTransform(10) }}>小号按钮</Button>
               </View>
             </View>
           </View>

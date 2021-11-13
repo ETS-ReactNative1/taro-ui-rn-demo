@@ -10,16 +10,16 @@
   height: $at-fab-size;
   color: $color-white;
   font-size: $font-size-base;
-  line-height: $line-height-zh;
+  line-height: $line-height-zh * $font-size-base;
   text-align: center;
   border-radius: 50%;
   background: $at-fab-bg-color;
-  box-shadow: $at-fab-box-shadow;
+  //box-shadow: $at-fab-box-shadow;
   box-sizing: border-box;
 
   &:active {
     background: $at-fab-bg-color-active;
-    box-shadow: $at-fab-box-shadow-active;
+    //box-shadow: $at-fab-box-shadow-active;
   }
 
   /* elements */

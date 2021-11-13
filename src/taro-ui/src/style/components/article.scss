@@ -4,7 +4,8 @@
 .at-article {
   word-break: break-all;
   word-wrap: break-word;
-  line-height: $line-height-zh;
+  font-size: $font-size-base;
+  line-height: $line-height-zh * $font-size-base;
 
   /* elements */
   &__h1,

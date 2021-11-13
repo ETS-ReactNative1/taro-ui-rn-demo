@@ -56,7 +56,7 @@ $component: '.at-switch';
 
   &--without-border {
     &::after {
-      border: none;
+      border: 0;
     }
   }
 }

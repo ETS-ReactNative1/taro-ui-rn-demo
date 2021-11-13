@@ -32,7 +32,7 @@
     color: $at-countdown-num-color;
     text-transform: none;
     text-rendering: auto;
-    line-height: 1;
+    line-height: 1 * $at-countdown-font-size;
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
   }

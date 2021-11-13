@@ -25,22 +25,21 @@
   &__info {
     flex: 1;
     text-align: left;
-    line-height: 1.6;
+    font-size: $font-size-lg;
+    line-height: 1.6 * $font-size-lg;
 
     &__title {
       @include line;
-
       color: inherit;
-      font-size: inherit;
-      line-height: $line-height-zh;
+      font-size: $font-size-lg;
+      line-height: $line-height-zh * $font-size-lg;
     }
 
     &__note {
       @include line;
-
       color: $at-list-content-color;
       font-size: $font-size-base;
-      line-height: $line-height-zh;
+      line-height: $line-height-zh * $font-size-base;
     }
   }
 
@@ -68,12 +67,12 @@
   &__arrow {
     color: $at-accordion-color-arrow;
     font-size: 48px;
-    line-height: 1;
+    line-height: 1 * 48px;
     transition: transform 0.2s ease;
     transform-origin: center;
 
     &--folded {
-      transform: rotate(180deg);
+      //transform: rotate(180deg);
     }
   }
 }
