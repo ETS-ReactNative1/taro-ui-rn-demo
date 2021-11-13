@@ -12,6 +12,7 @@ import {
 } from '../../../types/calendar'
 import AtCalendarBody from './body/index'
 import AtCalendarController from './controller/index'
+import '../../style/components/calendar.scss';
 
 const defaultProps: AtCalendarDefaultProps = {
   validDates: [],

@@ -17,6 +17,7 @@ import { delayQuerySelector } from '../../../common/utils'
 import generateCalendarGroup from '../common/helper'
 import AtCalendarDateList from '../ui/date-list/index'
 import AtCalendarDayList from '../ui/day-list/index'
+import '../../../style/components/calendar.scss';
 
 const ANIMTE_DURATION = 300
 

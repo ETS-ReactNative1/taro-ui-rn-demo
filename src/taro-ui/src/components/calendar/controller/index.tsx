@@ -6,6 +6,7 @@ import {
   AtCalendarControllerProps,
   AtCalendarControllerState
 } from '../../../../types/calendar'
+import '../../../style/components/calendar.scss';
 
 export default class AtCalendarController extends React.Component<
   AtCalendarControllerProps,
@@ -41,8 +42,8 @@ export default class AtCalendarController extends React.Component<
       <View className='at-calendar__controller controller'>
         {hideArrow ? null : (
           <View
-            className={classnames('controller__arrow controller__arrow--left', {
-              'controller__arrow--disabled': isMinMonth
+            className={classnames('at-calendar__controller__arrow at-calendar__controller__arrow--left', {
+              'at-calendar__controller__arrow--disabled': isMinMonth
             })}
             onClick={this.props.onPreMonth.bind(this, isMinMonth)}
           />
@@ -55,16 +56,16 @@ export default class AtCalendarController extends React.Component<
           onChange={this.props.onSelectDate}
           value={dayjsDate.format('YYYY-MM')}
         >
-          <Text className='controller__info'>
+          <Text className='at-calendar__controller__info'>
             {dayjsDate.format(monthFormat)}
           </Text>
         </Picker>
         {hideArrow ? null : (
           <View
             className={classnames(
-              'controller__arrow controller__arrow--right',
+              'at-calendar__controller__arrow at-calendar__controller__arrow--right',
               {
-                'controller__arrow--disabled': isMaxMonth
+                'at-calendar__controller__arrow--disabled': isMaxMonth
               }
             )}
             onClick={this.props.onNextMonth.bind(this, isMaxMonth)}

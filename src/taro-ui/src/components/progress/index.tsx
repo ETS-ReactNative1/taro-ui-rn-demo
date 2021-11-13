@@ -1,8 +1,10 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
-import React from 'react'
+import React from 'react';
+import Taro from '@tarojs/taro';
 import { Text, View } from '@tarojs/components'
 import { AtProgressProps } from '../../../types/progress'
+import '../../style/components/progress.scss';
 
 export default class AtProgress extends React.Component<AtProgressProps> {
   public static propTypes: InferProps<AtProgressProps>
@@ -36,7 +38,7 @@ export default class AtProgress extends React.Component<AtProgressProps> {
 
     const progressStyle = {
       width: percent && `${+percent}%`,
-      height: strokeWidth && `${+strokeWidth}px`,
+      height: strokeWidth && Taro.pxTransform(+strokeWidth),
       backgroundColor: color
     }
 
@@ -56,7 +58,7 @@ export default class AtProgress extends React.Component<AtProgressProps> {
             {!status || status === 'progress' ? (
               `${percent}%`
             ) : (
-              <Text className={iconClass}></Text>
+              <Text className={iconClass} />
             )}
           </View>
         )}

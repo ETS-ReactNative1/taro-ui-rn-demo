@@ -196,7 +196,7 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
             <AtIndexes
               list={mockData}
               topKey='Top'
-              customStyle={{ height: '400px' }}
+              customStyle={{ height: Taro.pxTransform(400) }}
             >
               <View className='custom-area'>用户自定义内容</View>
             </AtIndexes>

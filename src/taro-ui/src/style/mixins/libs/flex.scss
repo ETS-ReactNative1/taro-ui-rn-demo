@@ -40,7 +40,7 @@
   flex-grow: $fg;
   flex-shrink: $fs;
   flex-basis: $fb;
-  -webkit-box-flex: $fg;
+  //-webkit-box-flex: $fg;
 }
 
 @mixin flex-order($n) {
