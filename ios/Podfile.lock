@@ -21,6 +21,9 @@ PODS:
   - EXFileSystem (11.1.3):
     - ExpoModulesCore
     - UMCore
+  - EXFont (9.1.0):
+    - UMCore
+    - UMFontInterface
   - EXImageLoader (2.2.0):
     - ExpoModulesCore
     - React-Core
@@ -360,6 +363,7 @@ PODS:
   - TZImagePickerController (3.6.7)
   - UMAppLoader (2.2.0)
   - UMCore (7.1.2)
+  - UMFontInterface (6.1.0)
   - UMPermissionsInterface (5.3.0):
     - UMCore
   - UMReactNativeAdapter (6.3.9):
@@ -384,6 +388,7 @@ DEPENDENCIES:
   - EXCamera (from `../node_modules/expo-camera/ios`)
   - EXConstants (from `../node_modules/expo-constants/ios`)
   - EXFileSystem (from `../node_modules/expo-file-system/ios`)
+  - EXFont (from `../node_modules/expo-font/ios`)
   - EXImageLoader (from `../node_modules/expo-image-loader/ios`)
   - EXImagePicker (from `../node_modules/expo-image-picker/ios`)
   - EXKeepAwake (from `../node_modules/expo-keep-awake/ios`)
@@ -439,6 +444,7 @@ DEPENDENCIES:
   - RNSyanImagePicker (from `../node_modules/react-native-syan-image-picker`)
   - UMAppLoader (from `../node_modules/unimodules-app-loader/ios`)
   - "UMCore (from `../node_modules/@unimodules/core/ios`)"
+  - UMFontInterface (from `../node_modules/unimodules-font-interface/ios`)
   - UMPermissionsInterface (from `../node_modules/unimodules-permissions-interface/ios`)
   - "UMReactNativeAdapter (from `../node_modules/@unimodules/react-native-adapter/ios`)"
   - UMTaskManagerInterface (from `../node_modules/unimodules-task-manager-interface/ios`)
@@ -467,6 +473,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/expo-constants/ios"
   EXFileSystem:
     :path: "../node_modules/expo-file-system/ios"
+  EXFont:
+    :path: "../node_modules/expo-font/ios"
   EXImageLoader:
     :path: "../node_modules/expo-image-loader/ios"
   EXImagePicker:
@@ -573,6 +581,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/unimodules-app-loader/ios"
   UMCore:
     :path: "../node_modules/@unimodules/core/ios"
+  UMFontInterface:
+    :path: "../node_modules/unimodules-font-interface/ios"
   UMPermissionsInterface:
     :path: "../node_modules/unimodules-permissions-interface/ios"
   UMReactNativeAdapter:
@@ -591,6 +601,7 @@ SPEC CHECKSUMS:
   EXCamera: 042b334f6ee9b918855fe4c4f155d4c372300a5f
   EXConstants: 4cb52b6d8f636c767104a44bf7db3873e9c01a6f
   EXFileSystem: 0a04aba8da751b9ac954065911bcf166503f8267
+  EXFont: d6fb79f9863120f0d0b26b0c2d1453bc9511e9df
   EXImageLoader: d3531a3fe530b22925c19977cb53bb43e3821fe6
   EXImagePicker: 414a3663910fd6604248e84c9c77a0501ae0d18b
   EXKeepAwake: f4105ef469be7b283f66ce2d7234bb71ac80cd26
@@ -646,6 +657,7 @@ SPEC CHECKSUMS:
   TZImagePickerController: 679ae9fa11e189a9a81291ae96f0a4463be8edc1
   UMAppLoader: 21af63390e55c82e037fb9752d93114a80ecf16e
   UMCore: ce3a4faa010239063b8343895b29a6d97b01069d
+  UMFontInterface: 5843cff7db85a42ba629aaac53d33091c35524d3
   UMPermissionsInterface: 4f21b0c2aaf953cf041109ff44231b2a69e22836
   UMReactNativeAdapter: d03cefd0e4e4179ab8c490408589f1c8a6c8b785
   UMTaskManagerInterface: 2be431101b73604e64fbfffcf759336f9d8fccbb

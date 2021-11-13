@@ -4,14 +4,17 @@
 .at-noticebar {
   position: relative;
   padding: $spacing-v-sm $spacing-h-lg;
-  color: $at-noticebar-text-color;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-size: 0;
   background: $at-noticebar-bg-color;
 
   /* elements */
   &__content {
-    font-size: $font-size-base;
-    line-height: $line-height-zh * $font-size-base;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
     word-break: break-all;
     word-wrap: break-word;
 
@@ -27,12 +30,16 @@
     }
 
     &-text {
-      display: inline;
+      //display: inline;
       font-size: $at-noticebar-font-size;
+      &__text {
+        color: $at-noticebar-text-color;
+        font-size: $at-noticebar-font-size;
+      }
     }
 
     &-inner {
-      display: inline;
+      //display: inline;
     }
   }
 
@@ -55,16 +62,19 @@
   }
 
   &__more {
-    color: $color-grey-2;
     font-size: 0;
+    display: flex;
+    flex-direction: row;
 
-    .text {
+    &-text {
+      color: $color-grey-2;
       font-size: $at-noticebar-font-size;
       line-height: $line-height-zh * $at-noticebar-font-size;
       vertical-align: middle;
     }
 
     &-icon {
+      color: $color-grey-2;
       //display: inline-block;
       width: $at-noticebar-font-size;
       vertical-align: middle;
@@ -81,7 +91,7 @@
     display: flex;
     justify-content: space-between;
 
-    .at-noticebar__content {
+    &__content {
       flex: 1;
       display: flex;
       flex-direction: row;
@@ -100,7 +110,7 @@
   }
 
   &--marquee {
-    .at-noticebar__content {
+    &__content {
       display: flex;
       flex-direction: row;
       justify-content: center;

@@ -5,6 +5,8 @@ import { Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtNoticeBarProps, AtNoticeBarState } from '../../../types/noticebar'
+import NoticeText from "./text";
+import '../../style/components/noticebar.scss'
 
 export default class AtNoticebar extends React.Component<
   AtNoticeBarProps,
@@ -150,6 +152,12 @@ export default class AtNoticebar extends React.Component<
       'at-noticebar--weapp': marquee && (isWEAPP || isALIPAY),
       'at-noticebar--single': !marquee && single
     }
+    if (marquee) {
+      innerClassName.push('at-noticebar--marquee__content-inner');
+    }
+    if (!marquee && single) {
+      innerClassName.push('at-noticebar--single__content-inner');
+    }
 
     const iconClass = ['at-icon']
     if (icon) iconClass.push(`at-icon-${icon}`)
@@ -165,24 +173,40 @@ export default class AtNoticebar extends React.Component<
               className='at-noticebar__close'
               onClick={this.onClose.bind(this)}
             >
-              <Text className='at-icon at-icon-close'></Text>
+              <Text className='at-icon at-icon-close' />
             </View>
           )}
-          <View className='at-noticebar__content'>
-            {icon && (
+          <View
+            className={classNames({
+              'at-noticebar__content': true,
+              'at-noticebar--marquee__content': marquee,
+              'at-noticebar--single__content': !marquee && single,
+            })}
+          >
+            {!!icon && (
               <View className='at-noticebar__content-icon'>
                 {/* start hack 百度小程序 */}
                 <Text className={classNames(iconClass, iconClass)}></Text>
               </View>
             )}
-            <View className='at-noticebar__content-text'>
+            <View
+              className={classNames({
+                'at-noticebar__content-text': true,
+                'at-noticebar--marquee__content-text': marquee,
+                'at-noticebar--single__content-text': !marquee && single,
+              })}
+            >
               <View
                 id={animElemId}
                 animation={animationData}
                 className={classNames(innerClassName)}
                 style={style}
               >
-                {this.props.children}
+                <NoticeText
+                  text={this.props.children}
+                  marquee={marquee}
+                  single={single}
+                />
               </View>
             </View>
           </View>
@@ -191,9 +215,9 @@ export default class AtNoticebar extends React.Component<
               className='at-noticebar__more'
               onClick={this.onGotoMore.bind(this)}
             >
-              <Text className='text'>{moreText}</Text>
+              <Text className='at-noticebar__more-text'>{moreText}</Text>
               <View className='at-noticebar__more-icon'>
-                <Text className='at-icon at-icon-chevron-right'></Text>
+                <Text className='at-icon at-icon-chevron-right' />
               </View>
             </View>
           )}

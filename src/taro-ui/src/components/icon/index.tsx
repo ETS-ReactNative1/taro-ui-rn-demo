@@ -1,9 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Text } from '@tarojs/components'
 import { AtIconProps } from '../../../types/icon'
-import { mergeStyle, pxTransform } from '../../common/utils'
+import { mergeStyle } from '../../common/utils'
+import '../../style/components/icon.scss'
 
 export default class AtIcon extends React.Component<AtIconProps> {
   public static defaultProps: AtIconProps
@@ -24,8 +26,8 @@ export default class AtIcon extends React.Component<AtIconProps> {
     } = this.props
 
     const rootStyle = {
-      fontSize: `${pxTransform(parseInt(String(size)) * 2)}`,
-      color
+      fontSize: Taro.pxTransform(parseInt(String(size)) * 2),
+      color,
     }
 
     const iconName = value ? `${prefixClass}-${value}` : ''
@@ -34,7 +36,7 @@ export default class AtIcon extends React.Component<AtIconProps> {
         className={classNames(prefixClass, iconName, className)}
         style={mergeStyle(rootStyle, customStyle as object)}
         onClick={this.handleClick.bind(this)}
-      ></Text>
+      />
     )
   }
 }

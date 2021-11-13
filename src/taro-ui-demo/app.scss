@@ -57,6 +57,10 @@ view {
  * Example 样式
  */
 .panel__content {
+  &__padding {
+    padding: 20px;
+  }
+
   .example-item {
     margin-bottom: 20px;
 

@@ -31,13 +31,13 @@ export default class NoticebarPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>文字</Text></View>
             <View className='panel__content'>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar single>
                   [单行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
@@ -50,17 +50,17 @@ export default class NoticebarPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>跑马灯</Text></View>
             <View className='panel__content'>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar marquee>
                   [纯文字]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar marquee icon='volume-plus'>
                   [带icon]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar marquee>
                   [超长文本]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
                 </AtNoticebar>
@@ -72,13 +72,13 @@ export default class NoticebarPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>图标</Text></View>
             <View className='panel__content'>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar icon='volume-plus' single>
                   [单行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar icon='volume-plus'>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
@@ -91,7 +91,7 @@ export default class NoticebarPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>查看更多</Text></View>
             <View className='panel__content'>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   showMore
                   single
@@ -101,7 +101,7 @@ export default class NoticebarPage extends React.Component {
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   showMore
                   icon='volume-plus'
@@ -112,7 +112,7 @@ export default class NoticebarPage extends React.Component {
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   showMore
                   moreText='更多内容'
@@ -122,7 +122,7 @@ export default class NoticebarPage extends React.Component {
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   showMore
                   moreText='更多内容'
@@ -140,19 +140,19 @@ export default class NoticebarPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>关闭按钮</Text></View>
             <View className='panel__content'>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar close single>
                   [单行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar close icon='volume-plus' single>
                   [单行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   close
                   onGotoMore={this.onGotoMore.bind(this)}
@@ -163,7 +163,7 @@ export default class NoticebarPage extends React.Component {
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   close
                   icon='volume-plus'
@@ -175,19 +175,19 @@ export default class NoticebarPage extends React.Component {
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar close>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar close>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
-              <View className='bar-item'>
+              <View className='notice-bar-demo-item'>
                 <AtNoticebar close icon='volume-plus'>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
