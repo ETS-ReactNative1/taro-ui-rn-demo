@@ -50,7 +50,7 @@ export default class LoadMorePage extends React.Component {
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义内容</Text></View>
             <View className='panel__content no-padding'>
               <AtDivider>
-                <AtIcon value='check-circle'></AtIcon>
+                <AtIcon value='check-circle' />
               </AtDivider>
             </View>
           </View>

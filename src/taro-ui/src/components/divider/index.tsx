@@ -1,9 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { View } from '@tarojs/components'
+import Taro from '@tarojs/taro'
+import { View, Text } from '@tarojs/components'
 import { AtDividerProps } from '../../../types/divider'
-import { mergeStyle, pxTransform } from '../../common/utils'
+import { mergeStyle } from '../../common/utils'
+import '../../style/components/divider.scss';
 
 export default class AtDivider extends React.Component<AtDividerProps> {
   public static defaultProps: AtDividerProps
@@ -21,27 +23,32 @@ export default class AtDivider extends React.Component<AtDividerProps> {
     } = this.props
 
     const rootStyle = {
-      height: height ? `${pxTransform(Number(height))}` : ''
+      height: height ? Taro.pxTransform(Number(height)) : 0
     }
 
     const fontStyle = {
       color: fontColor,
-      'font-size': fontSize ? `${pxTransform(Number(fontSize))}` : ''
+      fontSize: fontSize ? Taro.pxTransform(Number(fontSize)) : 0
     }
 
-    const lineStyle: React.CSSProperties = {
+    const lineStyle: React.CSSProperties = lineColor ? {
       backgroundColor: lineColor
-    }
+    } : {};
 
     return (
       <View
         className={classNames('at-divider', className)}
         style={mergeStyle(rootStyle, customStyle as object)}
       >
-        <View className='at-divider__content' style={fontStyle}>
-          {content === '' ? this.props.children : content}
+        <View className='at-divider__line at-divider__line__left' style={lineStyle} />
+        <View className='at-divider__content'>
+          {
+            content === ''
+              ? this.props.children
+              : (React.isValidElement(content) ? content : <Text className='at-divider__content__text' style={fontStyle}>{content}</Text>)
+          }
         </View>
-        <View className='at-divider__line' style={lineStyle}></View>
+        <View className='at-divider__line at-divider__line__right' style={lineStyle} />
       </View>
     )
   }
