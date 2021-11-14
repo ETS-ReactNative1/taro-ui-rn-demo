@@ -2,9 +2,16 @@
 @import "../mixins/index.scss";
 
 .at-grid {
+  display: flex;
+  flex-direction: column;
+
   /* elements */
   &__flex-item {
-    @include hairline-surround();
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: $color-border-light;
+    padding-top: $spacing-v-xl;
+    padding-bottom: $spacing-v-xl;
 
     &::after {
       border-top: none;
@@ -13,15 +20,53 @@
   }
 
   &__flex {
-    @include display-flex;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    &--border {
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: $color-border-light;
+    }
+    &-0 {
+      border-top-width: 0;
+    }
 
     &:last-child {
       .at-grid__flex-item::after {
         border-bottom: none;
       }
     }
+  }
 
-    .content-inner {
+  &__item {
+    @include flex(1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    &__content {
+      //position: absolute;
+      //width: 100%;
+      //height: 100%;
+      //left: 0;
+      //top: 0;
+    }
+
+    &__content-inner {
+      display: flex;
+      flex-direction: column;
+      @include align-items(center);
+      @include justify-content(center);
+      @include active;
+
+      height: 100%;
+      overflow: hidden;
+
       &__text {
         flex: 0 0 auto;
         margin-top: 12px;
@@ -43,83 +88,54 @@
       }
     }
 
-    .at-grid-item {
-      @include flex(1);
+    &--last {
+      border-right-width: 0;
+      &::after {
+        border-right: none;
+      }
+    }
 
-      display: block;
-      position: relative;
-
-      &__content {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
-
-        &-inner {
-          @include display-flex;
-          @include align-items(center);
-          @include justify-content(center);
-          @include active;
-
-          height: 100%;
-          flex-direction: column;
-          overflow: hidden;
-        }
+    &--rect {
+      &::before {
+        display: block;
+        content: " ";
+        padding-bottom: 130px;
       }
 
-      &--last {
-        &::after {
-          border-right: none;
+      &__content-inner {
+        flex-direction: row;
+        &__text {
+          margin-left: 12px;
+          //margin-top: initial;
+          text-align: left;
+        }
+        &__img {
+          width: $at-gird-img-size-sm;
+          height: $at-gird-img-size-sm;
         }
       }
+    }
 
-      &--rect {
-        &::before {
-          display: block;
-          content: " ";
-          padding-bottom: 130px;
-        }
-
-        .at-grid-item__content-inner {
-          flex-direction: row;
-
-          &__text {
-            margin-top: initial;
-          }
-
-          .content-inner__img {
-            width: $at-gird-img-size-sm;
-            height: $at-gird-img-size-sm;
-          }
-        }
-
-        .content-inner {
-          &__text {
-            margin-left: 12px;
-            margin-top: initial;
-            text-align: left;
-          }
-        }
+    &--square {
+      &::before {
+        display: block;
+        content: " ";
+        padding-bottom: 100%;
       }
+    }
 
-      &--square {
-        &::before {
-          display: block;
-          content: " ";
-          padding-bottom: 100%;
-        }
+    &--no-border {
+      border-top-width: 0;
+      border-right-width: 0;
+      border-left-width: 0;
+      border-bottom-width: 0;
+      &::after {
+        border: 0;
       }
+    }
 
-      &--no-border {
-        &::after {
-          border: 0;
-        }
-      }
-
-      &--active {
-        background-color: $color-grey-6;
-      }
+    &--active {
+      background-color: $color-grey-6;
     }
   }
 }

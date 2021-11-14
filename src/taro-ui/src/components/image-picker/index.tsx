@@ -6,6 +6,8 @@ import { ITouchEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtImagePickerProps, File } from '../../../types/image-picker'
 import { uuid } from '../../common/utils'
+import '../../style/components/image-picker.scss';
+import IconFont from '../icon'
 
 interface MatrixFile extends Partial<File> {
   type: 'blank' | 'btn'
@@ -84,8 +86,8 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
   }
 
   private handleRemoveImg = (idx: number, event: ITouchEvent): void => {
-    event.stopPropagation()
-    event.preventDefault()
+    event && event.stopPropagation && event.stopPropagation()
+    event && event.preventDefault && event.preventDefault()
     const { files = [] } = this.props
     if (ENV === Taro.ENV_TYPE.WEB) {
       window.URL.revokeObjectURL(files[idx].url)
@@ -106,10 +108,9 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
     const rowLength = length <= 0 ? 1 : length
     // 行数
     const matrix = generateMatrix(files as MatrixFile[], rowLength, showAddBtn)
-    const rootCls = classNames('at-image-picker', className)
 
     return (
-      <View className={rootCls} style={customStyle}>
+      <View className={classNames('at-image-picker', className)} style={customStyle}>
         {matrix.map((row, i) => (
           <View className='at-image-picker__flex-box' key={i + 1}>
             {row.map((item, j) =>
@@ -120,9 +121,14 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
                 >
                   <View className='at-image-picker__item'>
                     <View
-                      className='at-image-picker__remove-btn'
+                      className={classNames(['at-image-picker__remove-btn', `at-image-picker__remove-btn-${Taro.getEnv()}`])}
                       onClick={this.handleRemoveImg.bind(this, i * length + j)}
-                    ></View>
+                    >
+                      <IconFont
+                        name='close-circle-fill'
+                        size={32}
+                      />
+                    </View>
                     <Image
                       className='at-image-picker__preview-img'
                       mode={mode}
@@ -141,8 +147,7 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
                       className='at-image-picker__item at-image-picker__choose-btn'
                       onClick={this.chooseFile}
                     >
-                      <View className='add-bar'></View>
-                      <View className='add-bar'></View>
+                      <IconFont name='plus' size={72} color='#666' />
                     </View>
                   )}
                 </View>

@@ -1,17 +1,18 @@
 @import '../variables/default.scss';
 @import '../mixins/index.scss';
 
-$at-search-bar-font-size: 14px;
-$at-search-bar-input-height: 30px;
-$at-search-bar-input-padding: 25px;
-$at-search-bar-btn-padding: 10px;
-$at-search-bar-placeholder-padding: 12px;
+$at-search-bar-font-size: 28px;
+$at-search-bar-input-height: 60px;
+$at-search-bar-input-padding: 50px;
+$at-search-bar-btn-padding: 20px;
+$at-search-bar-placeholder-padding: 24px;
 $at-search-bar-input-bg-color: $color-bg-grey;
 $at-search-bar-input-color: $color-black-0;
 $at-search-bar-placholder-color: $color-grey-2;
 
 .at-search-bar {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding: $spacing-v-sm $spacing-v-md;
   background-color: $color-bg;
@@ -29,6 +30,7 @@ $at-search-bar-placholder-color: $color-grey-2;
     border-radius: $at-search-bar-input-height / 2;
     overflow: hidden;
     display: flex;
+    flex-direction: row;
   }
 
   &__placeholder-wrap {
@@ -37,6 +39,7 @@ $at-search-bar-placholder-color: $color-grey-2;
     // left: 0;
 
     display: flex;
+    flex-direction: row;
     align-self: center;
     align-items: center;
     justify-content: center;
@@ -65,14 +68,13 @@ $at-search-bar-placholder-color: $color-grey-2;
 
   &__input {
     position: absolute;
-    display: block;
     top: 0;
     left: 0;
     width: 100%;
-    height: $at-search-bar-input-height !important;
+    height: $at-search-bar-input-height;
     padding: 0 $at-search-bar-input-padding + $at-search-bar-placeholder-padding;
     color: $at-search-bar-input-color;
-    font-size: $at-search-bar-font-size !important;
+    font-size: $at-search-bar-font-size;
     text-align: left;
     background-color: transparent;
     transition: width 0.3s;
@@ -96,17 +98,22 @@ $at-search-bar-placholder-color: $color-grey-2;
 
   &__action {
     flex: none;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-left: 10PX;
     padding: 0 $at-search-bar-btn-padding;
     height: $at-search-bar-input-height;
-    color: $at-search-bar-btn-color;
-    font-size: $at-search-bar-font-size;
-    line-height: $at-search-bar-input-height;
     border-radius: 4px;
     background-color: $at-search-bar-btn-bg-color;
     transition: margin-right 0.3s, opacity 0.3s;
     opacity: 0;
+    &__text {
+      color: $at-search-bar-btn-color;
+      font-size: $at-search-bar-font-size;
+      line-height: $at-search-bar-input-height;
+    }
   }
 
   /* modifiers */

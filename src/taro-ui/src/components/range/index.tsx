@@ -9,6 +9,7 @@ import {
   getEventDetail,
   mergeStyle
 } from '../../common/utils'
+import '../../style/components/range.scss';
 
 export default class AtRange extends React.Component<
   AtRangeProps,
@@ -147,11 +148,14 @@ export default class AtRange extends React.Component<
     )
 
     const { aX, bX } = this.state
-    const sliderCommonStyle = {
-      width: blockSize ? `${blockSize}PX` : '',
-      height: blockSize ? `${blockSize}PX` : '',
-      marginLeft: blockSize ? `${-blockSize / 2}PX` : ''
+
+    const sliderCommonStyle: React.CSSProperties = {};
+    if (blockSize) {
+      sliderCommonStyle.width = Taro.pxTransform(blockSize);
+      sliderCommonStyle.height = Taro.pxTransform(blockSize);
+      sliderCommonStyle.marginLeft = Taro.pxTransform(-blockSize / 2);
     }
+
     const sliderAStyle = {
       ...sliderCommonStyle,
       left: `${aX}%`
@@ -160,9 +164,12 @@ export default class AtRange extends React.Component<
       ...sliderCommonStyle,
       left: `${bX}%`
     }
-    const containerStyle = {
-      height: blockSize ? `${blockSize}PX` : ''
+
+    const containerStyle: React.CSSProperties = {};
+    if (blockSize) {
+      containerStyle.height = Taro.pxTransform(blockSize);
     }
+
     const smallerX = Math.min(aX, bX)
     const deltaX = Math.abs(aX - bX)
     const atTrackStyle = {
@@ -173,23 +180,23 @@ export default class AtRange extends React.Component<
     return (
       <View className={rootCls} style={customStyle} onClick={this.handleClick}>
         <View className='at-range__container' style={containerStyle}>
-          <View className='at-range__rail' style={railStyle}></View>
+          <View className='at-range__rail' style={railStyle} />
           <View
             className='at-range__track'
             style={mergeStyle(atTrackStyle, trackStyle!)}
-          ></View>
+          />
           <View
             className='at-range__slider'
             style={mergeStyle(sliderAStyle, sliderStyle!)}
             onTouchMove={this.handleTouchMove.bind(this, 'aX')}
             onTouchEnd={this.handleTouchEnd.bind(this, 'aX')}
-          ></View>
+          />
           <View
             className='at-range__slider'
             style={mergeStyle(sliderBStyle, sliderStyle!)}
             onTouchMove={this.handleTouchMove.bind(this, 'bX')}
             onTouchEnd={this.handleTouchEnd.bind(this, 'bX')}
-          ></View>
+          />
         </View>
       </View>
     )

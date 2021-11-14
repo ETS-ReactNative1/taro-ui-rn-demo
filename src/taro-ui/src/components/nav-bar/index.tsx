@@ -1,10 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro';
 import { Text, View } from '@tarojs/components'
 import { ITouchEvent } from '@tarojs/components/types/common'
 import { AtNavBarProps } from '../../../types/nav-bar'
-import { mergeStyle, pxTransform } from '../../common/utils'
+import { mergeStyle } from '../../common/utils'
 import '../../style/components/nav-bar.scss';
 
 export default class AtNavBar extends React.Component<AtNavBarProps> {
@@ -106,9 +107,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
               style={mergeStyle(
                 {
                   color: leftIconInfo.color,
-                  fontSize: `${pxTransform(
-                    parseInt(leftIconInfo.size.toString()) * 2
-                  )}`
+                  fontSize: Taro.pxTransform(parseInt(leftIconInfo.size.toString()) * 2),
                 },
                 leftIconInfo.customStyle
               )}
@@ -134,9 +133,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
                 style={mergeStyle(
                   {
                     color: rightSecondIconInfo.color,
-                    fontSize: `${pxTransform(
-                      parseInt(rightSecondIconInfo.size.toString()) * 2
-                    )}`
+                    fontSize: Taro.pxTransform(parseInt(rightSecondIconInfo.size.toString()) * 2),
                   },
                   rightSecondIconInfo.customStyle
                 )}
@@ -157,9 +154,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
                 style={mergeStyle(
                   {
                     color: rightFirstIconInfo.color,
-                    fontSize: `${pxTransform(
-                      parseInt(rightFirstIconInfo.size.toString()) * 2
-                    )}`
+                    fontSize: Taro.pxTransform(parseInt(rightFirstIconInfo.size.toString()) * 2),
                   },
                   rightFirstIconInfo.customStyle
                 )}

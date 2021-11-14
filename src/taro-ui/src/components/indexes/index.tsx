@@ -8,7 +8,6 @@ import { AtIndexesProps, AtIndexesState, Item } from '../../../types/indexes'
 import {
   delayQuerySelector,
   isTest,
-  pxTransform,
   uuid
 } from '../../common/utils'
 import AtList from '../list/index'
@@ -181,7 +180,7 @@ export default class AtIndexes extends React.Component<
       isWEB
     } = this.state
 
-    const toastStyle = { minWidth: pxTransform(100) }
+    const toastStyle = { minWidth: Taro.pxTransform(100) }
     const rootCls = classNames('at-indexes', className)
 
     const menuList = list.map((dataList, i) => {

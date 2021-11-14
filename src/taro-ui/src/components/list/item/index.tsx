@@ -4,7 +4,8 @@ import React from 'react'
 import { Image, Switch, Text, View } from '@tarojs/components'
 import { CommonEvent, ITouchEvent } from '@tarojs/components/types/common'
 import { AtListItemProps } from '../../../../types/list'
-import { mergeStyle } from '../../../common/utils'
+import '../../../style/components/list.scss';
+import IconFont from '../../icon'
 
 export default class AtListItem extends React.Component<AtListItemProps> {
   public static defaultProps: AtListItemProps
@@ -71,51 +72,40 @@ export default class AtListItem extends React.Component<AtListItemProps> {
     return (
       <View className={rootClass} onClick={this.handleClick}>
         <View className='at-list__item-container'>
-          {thumb && (
-            <View className='at-list__item-thumb item-thumb'>
+          {!!thumb && (
+            <View className='at-list__item-thumb'>
               <Image
-                className='item-thumb__info'
+                className='at-list__item-thumb__image'
                 mode='scaleToFill'
                 src={thumb}
               />
             </View>
           )}
           {iconInfo && iconInfo.value && (
-            <View className='at-list__item-icon item-icon'>
-              <Text
-                className={iconClass}
-                style={mergeStyle(
-                  {
-                    color: iconInfo.color || '',
-                    fontSize: `${iconInfo.size || 24}px`
-                  },
-                  iconInfo.customStyle || ''
-                )}
-              ></Text>
+            <View className='at-list__item-icon'>
+              <IconFont name={iconInfo.value} size={iconInfo.size} color={iconInfo.color} />
             </View>
           )}
-          <View className='at-list__item-content item-content'>
-            <View className='item-content__info'>
-              <View className='item-content__info-title'>{title}</View>
-              {note && <View className='item-content__info-note'>{note}</View>}
-            </View>
+          <View className='at-list__item-content'>
+            <Text className='at-list__item-content__title' numberOfLines={1}>{title}</Text>
+            {!!note && <Text className='at-list__item-content__note' numberOfLines={1}>{note}</Text>}
           </View>
-          <View className='at-list__item-extra item-extra'>
-            {extraText && <View className='item-extra__info'>{extraText}</View>}
+          <View className='at-list__item-extra'>
+            {!!extraText && <Text className='at-list__item-extra__info' numberOfLines={1}>{extraText}</Text>}
 
-            {extraThumb && !extraText && (
-              <View className='item-extra__image'>
+            {!!extraThumb && !extraText && (
+              <View className='at-list__item-extra__image'>
                 <Image
-                  className='item-extra__image-info'
+                  className='at-list__item-extra__image-info'
                   mode='aspectFit'
                   src={extraThumb}
                 />
               </View>
             )}
 
-            {isSwitch && !extraThumb && !extraText && (
+            {!!isSwitch && !extraThumb && !extraText && (
               <View
-                className='item-extra__switch'
+                className='at-list__item-extra__switch'
                 onClick={this.handleSwitchClick}
               >
                 <Switch
@@ -127,13 +117,11 @@ export default class AtListItem extends React.Component<AtListItemProps> {
               </View>
             )}
 
-            {arrow ? (
-              <View className='item-extra__icon'>
-                <Text
-                  className={`at-icon item-extra__icon-arrow at-icon-chevron-${arrow}`}
-                />
+            {!!arrow && (
+              <View className='at-list__item-extra__icon'>
+                <IconFont name='right' size={48} color='#666' />
               </View>
-            ) : null}
+            )}
           </View>
         </View>
       </View>

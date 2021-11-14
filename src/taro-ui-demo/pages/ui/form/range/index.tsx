@@ -37,9 +37,9 @@ export default class Index extends React.Component<{}, IndexState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <Text className='example-item'>
                 数值范围：{this.state.value1[0]}~{this.state.value1[1]}
-              </View>
+              </Text>
               <AtRange
                 min={30}
                 max={90}
@@ -52,9 +52,9 @@ export default class Index extends React.Component<{}, IndexState> {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义样式</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
+              <Text className='example-item'>
                 数值范围：{this.state.value2[0]}~{this.state.value2[1]}
-              </View>
+              </Text>
               <AtRange
                 sliderStyle={{ backgroundColor: '#6190E8' }}
                 value={this.state.value2}

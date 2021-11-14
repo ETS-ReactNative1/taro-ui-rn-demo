@@ -1,9 +1,12 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Input, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtSearchBarProps, AtSearchBarState } from '../../../types/search-bar'
+import IconFont from '../icon'
+import '../../style/components/search-bar.scss';
 
 type ExtendEvent = {
   target: {
@@ -85,18 +88,17 @@ export default class AtSearchBar extends React.Component<
     const actionStyle: React.CSSProperties = {}
     if (isFocus || (!isFocus && value)) {
       actionStyle.opacity = 1
-      actionStyle.marginRight = `0`
+      actionStyle.marginRight = Taro.pxTransform(0)
       placeholderWrapStyle.flexGrow = 0
     } else if (!isFocus && !value) {
       placeholderWrapStyle.flexGrow = 1
       actionStyle.opacity = 0
-      actionStyle.marginRight = `-${
-        (actionName.length + 1) * fontSize + fontSize / 2 + 10
-      }px`
+      actionStyle.display = 'none';
+      actionStyle.marginRight = Taro.pxTransform((actionName.length + 1) * fontSize + fontSize / 2 + 10);
     }
     if (showActionButton) {
       actionStyle.opacity = 1
-      actionStyle.marginRight = `0`
+      actionStyle.marginRight = Taro.pxTransform(0)
     }
 
     const clearIconStyle: React.CSSProperties = { display: 'flex' }
@@ -113,7 +115,7 @@ export default class AtSearchBar extends React.Component<
             className='at-search-bar__placeholder-wrap'
             style={placeholderWrapStyle}
           >
-            <Text className='at-icon at-icon-search'></Text>
+            <IconFont name='search' size={32} />
             <Text
               className='at-search-bar__placeholder'
               style={placeholderStyle}
@@ -139,7 +141,7 @@ export default class AtSearchBar extends React.Component<
             style={clearIconStyle}
             onTouchStart={this.handleClear}
           >
-            <Text className='at-icon at-icon-close-circle'></Text>
+            <IconFont name='close' size={32} />
           </View>
         </View>
         <View
@@ -147,7 +149,7 @@ export default class AtSearchBar extends React.Component<
           style={actionStyle}
           onClick={this.handleActionClick}
         >
-          {actionName}
+          <Text className='at-search-bar__action__text'>{actionName}</Text>
         </View>
       </View>
     )

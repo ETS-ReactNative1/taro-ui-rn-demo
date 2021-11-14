@@ -3,6 +3,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtListProps } from '../../../types/list'
+import '../../style/components/list.scss';
 
 export default class AtList extends React.Component<AtListProps> {
   public static defaultProps: AtListProps

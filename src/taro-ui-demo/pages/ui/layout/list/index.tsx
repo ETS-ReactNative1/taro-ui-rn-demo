@@ -31,14 +31,12 @@ export default class ListPage extends React.Component {
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本用法</Text></View>
             <View className='panel__content no-padding'>
-              <View className='example-item'>
-                <AtList>
-                  <AtListItem title='标题文字' onClick={this.handleClick} />
-                  <AtListItem title='标题文字' arrow='right' />
-                  <AtListItem title='标题文字' extraText='详细信息' />
-                  <AtListItem title='禁用状态' disabled extraText='详细信息' />
-                </AtList>
-              </View>
+              <AtList>
+                <AtListItem title='标题文字' onClick={this.handleClick} />
+                <AtListItem title='标题文字' arrow='right' />
+                <AtListItem title='标题文字' extraText='详细信息' />
+                <AtListItem title='禁用状态' disabled extraText='详细信息' />
+              </AtList>
             </View>
           </View>
 
@@ -53,7 +51,7 @@ export default class ListPage extends React.Component {
                   <AtListItem
                     arrow='right'
                     note='描述信息'
-                    title='我是一个很长很长很长的标题文字'
+                    title='我是一个很长很长很长的标题文字，放不下啦'
                     extraText='详细信息详细信息详细信息详细信息'
                   />
                 </AtList>

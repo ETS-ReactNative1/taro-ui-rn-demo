@@ -2,7 +2,6 @@ import PropTypes, { InferProps } from 'prop-types'
 import Taro from '@tarojs/taro'
 import React from 'react'
 import { View } from '@tarojs/components'
-import { pxTransform } from '../../common/utils'
 
 let Circle;
 if (process.env.TARO_ENV === 'rn') {
@@ -28,10 +27,13 @@ export default class AtLoading extends React.Component<AtLoadingProps> {
     }
 
     const loadingSize = typeof size === 'string' ? size : String(size)
-    const sizeStyle = {
-      width: size ? `${pxTransform(parseInt(loadingSize))}` : '',
-      height: size ? `${pxTransform(parseInt(loadingSize))}` : ''
+
+    const sizeStyle: any = {};
+    if (size) {
+      sizeStyle.width = Taro.pxTransform(parseInt(loadingSize));
+      sizeStyle.height = Taro.pxTransform(parseInt(loadingSize));
     }
+
     const colorStyle = {
       border: color ? `1px solid ${color}` : '',
       borderColor: color ? `${color} transparent transparent transparent` : ''

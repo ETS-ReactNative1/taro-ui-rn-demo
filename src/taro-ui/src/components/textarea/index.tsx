@@ -74,7 +74,12 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
 
     const _maxLength = parseInt(maxLength.toString())
     const actualMaxLength = getMaxLength(_maxLength, textOverflowForbidden)
-    const textareaStyle = height ? `height:${pxTransform(Number(height))}` : ''
+
+    const textareaStyle: any = {};
+    if (height) {
+      textareaStyle.height = Taro.pxTransform(Number(height));
+    }
+
     const rootCls = classNames(
       'at-textarea',
       `at-textarea--${ENV}`,

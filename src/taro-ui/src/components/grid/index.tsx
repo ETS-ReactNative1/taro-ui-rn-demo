@@ -6,6 +6,7 @@ import { Image, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtGridItem, AtGridProps } from '../../../types/grid'
 import { mergeStyle } from '../../common/utils'
+import '../../style/components/grid.scss';
 
 export default class AtGrid extends React.Component<AtGridProps> {
   public static defaultProps: AtGridProps
@@ -33,22 +34,21 @@ export default class AtGrid extends React.Component<AtGridProps> {
 
     const gridGroup = _chunk(data, columnNum)
 
-    const bodyClass = classNames(
-      ['at-grid__flex-item', 'at-grid-item', `at-grid-item--${mode}`],
-      {
-        'at-grid-item--no-border': !hasBorder
-      }
-    )
-
     return (
       <View className={classNames('at-grid', this.props.className)}>
         {gridGroup.map((item, i) => (
-          <View className='at-grid__flex' key={`at-grid-group-${i}`}>
+          <View
+            className={classNames({
+              'at-grid__flex--border': hasBorder,
+            }, ['at-grid__flex', `at-grid__flex-${i}`])}
+            key={`at-grid-group-${i}`}
+          >
             {item.map((childItem, index) => (
               <View
-                key={`at-grid-item-${index}`}
-                className={classNames(bodyClass, {
-                  'at-grid-item--last': index === columnNum - 1
+                key={`at-grid__item-${index}`}
+                className={classNames(['at-grid__flex-item', `at-grid__flex-item-${index}`, 'at-grid__item', `at-grid__item--${mode}`], {
+                  'at-grid__item--no-border': !hasBorder,
+                  'at-grid__item--last': index === columnNum - 1
                 })}
                 onClick={this.handleClick.bind(this, childItem, index, i)}
                 style={{
@@ -57,12 +57,25 @@ export default class AtGrid extends React.Component<AtGridProps> {
                   flexBasis: `${100 / columnNum}%`,
                 }}
               >
-                <View className='at-grid-item__content'>
-                  <View className='at-grid-item__content-inner'>
+                <View
+                  className={classNames([
+                    'at-grid__item__content',
+                    `at-grid__item--${mode}__content`,
+                  ])}
+                >
+                  <View
+                    className={classNames([
+                      'at-grid__item__content-inner',
+                      `at-grid__item--${mode}__content-inner`,
+                    ])}
+                  >
                     <View className='content-inner__icon'>
                       {childItem.image && (
                         <Image
-                          className='content-inner__img'
+                          className={classNames([
+                            'at-grid__item__content-inner__img',
+                            `at-grid__item--${mode}__content-inner__img`,
+                          ])}
                           src={childItem.image}
                           mode='scaleToFill'
                         />
@@ -90,7 +103,12 @@ export default class AtGrid extends React.Component<AtGridProps> {
                         />
                       )}
                     </View>
-                    <Text className='content-inner__text'>
+                    <Text
+                      className={classNames([
+                        'at-grid__item__content-inner__text',
+                        `at-grid__item--${mode}__content-inner__text`,
+                      ])}
+                    >
                       {childItem.value}
                     </Text>
                   </View>
