@@ -4,6 +4,8 @@
 .at-rate {
   font-size: 0;
   line-height: 0;
+  display: flex;
+  flex-direction: row;
 
   /* elements */
   &__left {

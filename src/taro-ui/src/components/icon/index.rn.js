@@ -1,39 +1,17 @@
+/* eslint-disable */
+
+import React from 'react';
 import Taro from '@tarojs/taro';
-import { useFonts, loadAsync } from 'expo-font';
-import { Text } from 'react-native';
+import Icon from './rn';
 
-// TODO 最终还是不行，不知道为啥
+const IconFont = (props) => {
+  const { name, size, color, style } = props;
 
-loadAsync({
-  iconfont: require('./font.ttf'),
-});
-const map = require('./font.json');
+  return <Icon name={name} size={parseFloat(Taro.pxTransform(size))} color={color} style={style} />;
+};
 
-function AtIcon({
-  customStyle = {},
-  value,
-  size = 24,
-  color
-}) {
-  const [loaded] = useFonts({
-    iconfont: require('./font.ttf'),
-  });
+IconFont.defaultProps = {
+  size: 18,
+};
 
-  if (!loaded) {
-    return null;
-  }
-  return (
-    <Text
-      style={{
-        // fontFamily: 'iconfont',
-        fontSize: Taro.pxTransform(size),
-        color: color ? color : '#333',
-        ...customStyle,
-      }}
-    >
-      {String.fromCharCode(map[value] === undefined ? map.help : map[value])}
-    </Text>
-  );
-}
-
-export default AtIcon;
+export default IconFont;

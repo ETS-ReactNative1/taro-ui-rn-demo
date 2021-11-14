@@ -30,7 +30,7 @@
     font-size: 0;
     text-align: center;
     vertical-align: middle;
-    border-radius: $border-radius-circle;
+    border-radius: $at-timeline-dot-size / 2;
     background: $at-timeline-dot-color;
     box-sizing: border-box;
     z-index: 1;
@@ -48,7 +48,7 @@
       width: $at-timeline-dot-size;
       height: $at-timeline-dot-size;
       border: 1px solid transparent;
-      border-radius: $border-radius-circle;
+      border-radius: $at-timeline-dot-size / 2;
       border-color: $at-timeline-dot-border-color;
     }
 

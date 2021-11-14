@@ -1,8 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtCheckboxProps } from '../../../types/checkbox'
+import '../../style/components/checkbox.scss';
+import IconFont from '../icon'
 
 export default class AtCheckbox extends React.Component<AtCheckboxProps<any>> {
   public static defaultProps: AtCheckboxProps<any>
@@ -26,15 +29,16 @@ export default class AtCheckbox extends React.Component<AtCheckboxProps<any>> {
   public render(): JSX.Element {
     const { customStyle, className, options, selectedList } = this.props
 
-    const rootCls = classNames('at-checkbox', className)
+    const rootCls = classNames(['at-checkbox', `at-checkbox-${Taro.getEnv()}`], className)
 
     return (
       <View className={rootCls} style={customStyle}>
         {options.map((option, idx) => {
-          const { value, disabled, label, desc } = option
-          const optionCls = classNames('at-checkbox__option', {
+          const { value, disabled, label, desc } = option;
+          const selected = selectedList.includes(value);
+          const optionCls = classNames(['at-checkbox__option', `at-checkbox__option-${idx}`], {
             'at-checkbox__option--disabled': disabled,
-            'at-checkbox__option--selected': selectedList.includes(value)
+            'at-checkbox__option--selected': selected,
           })
 
           return (
@@ -43,14 +47,24 @@ export default class AtCheckbox extends React.Component<AtCheckboxProps<any>> {
               key={value}
               onClick={this.handleClick.bind(this, idx)}
             >
-              <View className='at-checkbox__option-wrap'>
+              <View
+                className={classNames([
+                  'at-checkbox__option-wrap',
+                  `at-checkbox__option-wrap-${idx}`,
+                  `at-checkbox__option-wrap-${Taro.getEnv()}`,
+                  `at-checkbox__option-wrap-${Taro.getEnv()}-${idx}`,
+                ])}
+              >
                 <View className='at-checkbox__option-cnt'>
                   <View className='at-checkbox__icon-cnt'>
-                    <Text className='at-icon at-icon-check'></Text>
+                    <IconFont
+                      name={selected ? 'check-circle-fill' : 'check-circle'}
+                      size={40}
+                    />
                   </View>
-                  <View className='at-checkbox__title'>{label}</View>
+                  <Text className='at-checkbox__title'>{label}</Text>
                 </View>
-                {desc && <View className='at-checkbox__desc'>{desc}</View>}
+                {desc && <Text className='at-checkbox__desc'>{desc}</Text>}
               </View>
             </View>
           )

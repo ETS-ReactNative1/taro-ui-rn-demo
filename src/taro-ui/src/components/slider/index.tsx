@@ -1,9 +1,10 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Slider, View } from '@tarojs/components'
+import { Slider, View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtSliderProps, AtSliderState } from '../../../types/slider'
+import '../../style/components/slider.scss'
 
 export default class AtSlider extends React.Component<
   AtSliderProps,
@@ -92,9 +93,9 @@ export default class AtSlider extends React.Component<
             blockColor={blockColor}
             onChanging={this.handleChanging.bind(this)}
             onChange={this.handleChange.bind(this)}
-          ></Slider>
+          />
         </View>
-        {showValue && <View className='at-slider__text'>{`${_value}`}</View>}
+        {showValue && <Text className='at-slider__text'>{`${_value}`}</Text>}
       </View>
     )
   }

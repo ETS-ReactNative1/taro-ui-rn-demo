@@ -1,9 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Switch, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
-import { AtSwitchProps } from '../../../types/switch'
+import { AtSwitchProps } from '../../../types/switch';
+import '../../style/components/switch.scss';
 
 export default class AtSwitch extends React.Component<AtSwitchProps> {
   public static defaultProps: AtSwitchProps
@@ -41,9 +43,15 @@ export default class AtSwitch extends React.Component<AtSwitchProps> {
       <View className={rootCls} style={customStyle}>
         <View className='at-switch__title'>{title}</View>
         <View className={containerCls}>
-          <View className='at-switch__mask'></View>
+          <View
+            className={classNames(['at-switch__mask', `at-switch__mask-${Taro.getEnv()}`], {
+              'at-switch__mask--disabled': disabled,
+            })}
+          />
           <Switch
-            className='at-switch__switch'
+            className={classNames(['at-switch__switch'], {
+              'at-switch__switch--disabled': disabled,
+            })}
             checked={checked}
             color={color}
             onChange={this.handleChange}

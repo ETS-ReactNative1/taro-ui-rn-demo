@@ -5,6 +5,7 @@ import { Image, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtToastProps, AtToastState } from '../../../types/toast'
 import statusImg from './img.json'
+import IconFont from '../icon'
 
 export default class AtToast extends React.Component<
   AtToastProps,
@@ -107,10 +108,6 @@ export default class AtToast extends React.Component<
       [`at-toast__body--${status}`]: !!status
     })
 
-    const iconClass = classNames('at-icon', {
-      [`at-icon-${icon}`]: icon
-    })
-
     return _isOpened ? (
       <View className={classNames('at-toast', this.props.className)}>
         {hasMask && <View className='at-toast__overlay' />}
@@ -130,11 +127,9 @@ export default class AtToast extends React.Component<
               </View>
             ) : null}
             {isRenderIcon && (
-              <View className='toast-body-content__icon'>
-                <Text className={iconClass} />
-              </View>
+              <IconFont name={icon} size={80} />
             )}
-            {text && (
+            {!!text && (
               <View className='toast-body-content__info'>
                 <Text>{text}</Text>
               </View>

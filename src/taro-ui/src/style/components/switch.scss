@@ -5,6 +5,7 @@ $component: '.at-switch';
 
 #{$component} {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: $color-bg;
@@ -31,6 +32,9 @@ $component: '.at-switch';
 
   &__switch {
     //display: inline-block;
+    &--disabled {
+      opacity: $opacity-disabled;
+    }
   }
 
   &__mask {
@@ -41,16 +45,8 @@ $component: '.at-switch';
     right: 0;
     bottom: 0;
     z-index: $zindex-form;
-  }
-
-  /* modifiers */
-  &--disabled {
-    #{$component}__switch {
-      opacity: $opacity-disabled;
-    }
-
-    #{$component}__mask {
-      display: block;
+    &--disabled {
+      display: flex;
     }
   }
 

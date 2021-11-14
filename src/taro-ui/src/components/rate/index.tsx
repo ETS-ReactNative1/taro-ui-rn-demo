@@ -5,6 +5,7 @@ import { Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtRateProps } from '../../../types/rate'
 import { pxTransform } from '../../common/utils'
+import '../../style/components/rate.scss'
 
 export default class AtRate extends React.Component<AtRateProps> {
   public static defaultProps: AtRateProps
@@ -57,12 +58,12 @@ export default class AtRate extends React.Component<AtRateProps> {
             <Text
               className='at-icon at-icon-star-2'
               style={starIconStyle}
-            ></Text>
+            />
             <View className='at-rate__left'>
               <Text
                 className='at-icon at-icon-star-2'
                 style={starIconStyle}
-              ></Text>
+              />
             </View>
           </View>
         ))}

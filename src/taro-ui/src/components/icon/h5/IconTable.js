@@ -1,0 +1,27 @@
+/* eslint-disable */
+
+import React from 'react';
+import { getIconColor } from './helper';
+
+const DEFAULT_STYLE = {
+  display: 'block',
+};
+
+const IconTable = ({ size, color, style: _style, ...rest }) => {
+  const style = _style ? { ...DEFAULT_STYLE, ..._style } : DEFAULT_STYLE;
+
+  return (
+    <svg viewBox="0 0 1024 1024" width={size + 'rem'} height={size + 'rem'} style={style} {...rest}>
+      <path
+        d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32z m-40 208H676V232h212v136z m0 224H676V432h212v160zM412 432h200v160H412V432z m200-64H412V232h200v136z m-476 64h212v160H136V432z m0-200h212v136H136V232z m0 424h212v136H136V656z m276 0h200v136H412V656z m476 136H676V656h212v136z"
+        fill={getIconColor(color, 0, '#333333')}
+      />
+    </svg>
+  );
+};
+
+IconTable.defaultProps = {
+  size: 18,
+};
+
+export default IconTable;

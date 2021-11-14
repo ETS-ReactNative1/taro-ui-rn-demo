@@ -2,8 +2,6 @@ import React from 'react'
 import { AtForm, AtInput } from '@/taro-ui'
 import { Image, View, Text } from '@tarojs/components'
 import { BaseEventOrig } from '@tarojs/components/types/common'
-// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-// @ts-ignore
 import { InputProps } from '@tarojs/components/types/Input'
 import Taro from '@tarojs/taro'
 import verificationCode from '../../../../assets/images/verification_code.png'

@@ -47,11 +47,11 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 基础用法 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
-                <View className='example-item__desc'>
+                <Text className='example-item__desc'>
                   min=0, max=10, step=1
-                </View>
+                </Text>
                 <AtInputNumber
                   min={0}
                   max={10}
@@ -66,11 +66,11 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 小数 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>小数</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
-                <View className='example-item__desc'>
+                <Text className='example-item__desc'>
                   min=0, max=10, step=0.1
-                </View>
+                </Text>
                 <AtInputNumber
                   type='digit'
                   min={0}
@@ -86,7 +86,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 禁用状态 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用状态</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtInputNumber
                   disabled
@@ -102,7 +102,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 禁用输入状态 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁用输入状态</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtInputNumber
                   disabledInput
@@ -119,7 +119,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 自定义宽度 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义宽度</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtInputNumber
                   width={200}
@@ -136,7 +136,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 大尺寸 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>大尺寸</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtInputNumber
                   size='large'

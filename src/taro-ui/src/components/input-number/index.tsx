@@ -2,10 +2,12 @@ import classNames from 'classnames'
 import _toString from 'lodash/toString'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Input, Text, View } from '@tarojs/components'
+import Taro from '@tarojs/taro'
+import { Input, View } from '@tarojs/components'
 import { CommonEvent, ITouchEvent } from '@tarojs/components/types/common'
 import { AtInputNumberProps, InputError } from '../../../types/input-number'
-import { pxTransform } from '../../common/utils'
+import IconFont from '../icon'
+import '../../style/components/input-number.scss';
 
 // TODO: Check all types
 
@@ -139,9 +141,11 @@ export default class AtInputNumber extends React.Component<AtInputNumberProps> {
       disabledInput
     } = this.props
 
-    const inputStyle = {
-      width: width ? `${pxTransform(width)}` : ''
+    const inputStyle: any = {};
+    if (width) {
+      inputStyle.width = Taro.pxTransform(width);
     }
+
     const inputValue = Number(this.handleValue(value))
     const rootCls = classNames(
       'at-input-number',
@@ -150,10 +154,10 @@ export default class AtInputNumber extends React.Component<AtInputNumberProps> {
       },
       className
     )
-    const minusBtnCls = classNames('at-input-number__btn', {
+    const minusBtnCls = classNames(['at-input-number__btn', 'at-input-number__btn-minus'], {
       'at-input-number--disabled': inputValue <= min || disabled
     })
-    const plusBtnCls = classNames('at-input-number__btn', {
+    const plusBtnCls = classNames(['at-input-number__btn', 'at-input-number__btn-plus'], {
       'at-input-number--disabled': inputValue >= max || disabled
     })
 
@@ -163,7 +167,7 @@ export default class AtInputNumber extends React.Component<AtInputNumberProps> {
           className={minusBtnCls}
           onClick={this.handleClick.bind(this, 'minus')}
         >
-          <Text className='at-icon at-icon-subtract at-input-number__btn-subtract'></Text>
+          <IconFont name='minus' size={36} />
         </View>
         <Input
           className='at-input-number__input'
@@ -178,7 +182,7 @@ export default class AtInputNumber extends React.Component<AtInputNumberProps> {
           className={plusBtnCls}
           onClick={this.handleClick.bind(this, 'plus')}
         >
-          <Text className='at-icon at-icon-add at-input-number__btn-add'></Text>
+          <IconFont name='plus' size={36} />
         </View>
       </View>
     )

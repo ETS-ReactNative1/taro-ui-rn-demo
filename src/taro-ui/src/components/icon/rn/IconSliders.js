@@ -1,0 +1,24 @@
+/* eslint-disable */
+
+import React from 'react';
+import { Svg, Path } from 'react-native-svg';
+import { getIconColor } from './helper';
+
+let IconSliders = ({ size, color, ...rest }) => {
+  return (
+    <Svg viewBox="0 0 1024 1024" width={size} height={size} {...rest}>
+      <Path
+        d="M320 224h-66v-56c0-4.4-3.6-8-8-8h-52c-4.4 0-8 3.6-8 8v56h-66c-4.4 0-8 3.6-8 8v560c0 4.4 3.6 8 8 8h66v56c0 4.4 3.6 8 8 8h52c4.4 0 8-3.6 8-8v-56h66c4.4 0 8-3.6 8-8V232c0-4.4-3.6-8-8-8z m-60 508h-80V292h80v440zM904 296h-66v-96c0-4.4-3.6-8-8-8h-52c-4.4 0-8 3.6-8 8v96h-66c-4.4 0-8 3.6-8 8v416c0 4.4 3.6 8 8 8h66v96c0 4.4 3.6 8 8 8h52c4.4 0 8-3.6 8-8v-96h66c4.4 0 8-3.6 8-8V304c0-4.4-3.6-8-8-8z m-60 364h-80V364h80v296zM612 404h-66V232c0-4.4-3.6-8-8-8h-52c-4.4 0-8 3.6-8 8v172h-66c-4.4 0-8 3.6-8 8v200c0 4.4 3.6 8 8 8h66v172c0 4.4 3.6 8 8 8h52c4.4 0 8-3.6 8-8V620h66c4.4 0 8-3.6 8-8V412c0-4.4-3.6-8-8-8z m-60 145c0 1.6-1.3 3-3 3h-74c-1.6 0-3-1.3-3-3v-74c0-1.6 1.3-3 3-3h74c1.6 0 3 1.3 3 3v74z"
+        fill={getIconColor(color, 0, '#333333')}
+      />
+    </Svg>
+  );
+};
+
+IconSliders.defaultProps = {
+  size: 18,
+};
+
+IconSliders = React.memo ? React.memo(IconSliders) : IconSliders;
+
+export default IconSliders;

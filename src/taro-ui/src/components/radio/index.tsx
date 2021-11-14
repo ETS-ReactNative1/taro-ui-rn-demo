@@ -1,9 +1,12 @@
 import classNames from 'classnames'
+import Taro from '@tarojs/taro'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Text, View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtRadioProps, RadioOption } from '../../../types/radio'
+import '../../style/components/radio.scss';
+import IconFont from '../icon'
 
 export default class AtRadio extends React.Component<AtRadioProps<any>> {
   public static defaultProps: AtRadioProps<any>
@@ -18,8 +21,8 @@ export default class AtRadio extends React.Component<AtRadioProps<any>> {
     const { customStyle, className, options, value } = this.props
 
     return (
-      <View className={classNames('at-radio', className)} style={customStyle}>
-        {options.map(option => (
+      <View className={classNames(['at-radio', `at-radio-${Taro.getEnv()}`], className)} style={customStyle}>
+        {options.map((option, i) => (
           <View
             key={option.value}
             onClick={this.handleClick.bind(this, option)}
@@ -28,20 +31,34 @@ export default class AtRadio extends React.Component<AtRadioProps<any>> {
               'at-radio__option--disabled': option.disabled
             })}
           >
-            <View className='at-radio__option-wrap'>
-              <View className='at-radio__option-container'>
-                <View className='at-radio__title'>{option.label}</View>
-                <View
-                  className={classNames({
-                    'at-radio__icon': true,
-                    'at-radio__icon--checked': value === option.value
-                  })}
-                >
-                  <Text className='at-icon at-icon-check'></Text>
-                </View>
+            <View
+              className={classNames([
+                'at-radio__option-wrap',
+                `at-radio__option-wrap-${i}`,
+                `at-radio__option-wrap-${Taro.getEnv()}`,
+                `at-radio__option-wrap-${Taro.getEnv()}-${i}`,
+              ], {
+                'at-radio__option-wrap--disabled': option.disabled,
+              })}
+            >
+              <View
+                className={classNames(['at-radio__option-container'], {
+                  'at-radio__option-container--disabled': option.disabled,
+                })}
+              >
+                <Text className='at-radio__title'>{option.label}</Text>
+                {value === option.value && (
+                  <IconFont name='check' size={40} />
+                )}
               </View>
               {option.desc && (
-                <View className='at-radio__desc'>{option.desc}</View>
+                <Text
+                  className={classNames(['at-radio__desc'], {
+                    'at-radio__desc--disabled': option.disabled,
+                  })}
+                >
+                  {option.desc}
+                </Text>
               )}
             </View>
           </View>

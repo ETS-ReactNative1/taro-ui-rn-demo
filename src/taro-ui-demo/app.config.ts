@@ -74,8 +74,6 @@ export default {
     'pages/ui/form/textarea/index',
     'pages/ui/form/switch/index',
     'pages/ui/form/rate/index',
-    'pages/ui/form/picker/index',
-    'pages/ui/form/picker-view/index',
     'pages/ui/form/slider/index',
     'pages/ui/form/search-bar/index',
     'pages/ui/form/image-picker/index',

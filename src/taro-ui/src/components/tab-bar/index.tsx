@@ -127,7 +127,7 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
                     mode='widthFix'
                     src={item.selectedImage || item.image}
                     style={imgStyle}
-                  ></Image>
+                  />
                   <Image
                     className={classNames('at-tab-bar__inner-img', {
                       'at-tab-bar__inner-img--inactive': current === i
@@ -135,7 +135,7 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
                     mode='widthFix'
                     src={item.image}
                     style={imgStyle}
-                  ></Image>
+                  />
                 </View>
               </AtBadge>
             ) : null}

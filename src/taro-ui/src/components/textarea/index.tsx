@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { Textarea, View } from '@tarojs/components'
+import { Textarea, View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtTextareaProps } from '../../../types/textarea'
 import { pxTransform } from '../../common/utils'
+import '../../style/components/textarea.scss';
 
 type ExtendEvent = {
   target: {
@@ -109,9 +110,9 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
           onLineChange={this.handleLinechange}
         />
         {count && (
-          <View className='at-textarea__counter'>
+          <Text className='at-textarea__counter'>
             {value.length}/{_maxLength}
-          </View>
+          </Text>
         )}
       </View>
     )

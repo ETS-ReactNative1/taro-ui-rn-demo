@@ -5,6 +5,7 @@ import { Text, View } from '@tarojs/components'
 import { ITouchEvent } from '@tarojs/components/types/common'
 import { AtNavBarProps } from '../../../types/nav-bar'
 import { mergeStyle, pxTransform } from '../../common/utils'
+import '../../style/components/nav-bar.scss';
 
 export default class AtNavBar extends React.Component<AtNavBarProps> {
   public static defaultProps: AtNavBarProps
@@ -111,7 +112,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
                 },
                 leftIconInfo.customStyle
               )}
-            ></Text>
+            />
           )}
           <Text className='at-nav-bar__text'>{leftText}</Text>
         </View>
@@ -139,7 +140,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
                   },
                   rightSecondIconInfo.customStyle
                 )}
-              ></Text>
+              />
             )}
           </View>
           <View
@@ -162,7 +163,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
                   },
                   rightFirstIconInfo.customStyle
                 )}
-              ></Text>
+              />
             )}
           </View>
         </View>

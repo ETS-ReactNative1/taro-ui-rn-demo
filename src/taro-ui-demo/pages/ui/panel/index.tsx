@@ -194,14 +194,6 @@ export default class PanelBasic extends React.Component<{}, PanelBasicState> {
             name: '多行文本框'
           },
           {
-            id: 'Picker',
-            name: '选择器'
-          },
-          {
-            id: 'Picker-View',
-            name: '滚动选择器'
-          },
-          {
             id: 'Slider',
             name: '滑动条'
           },
