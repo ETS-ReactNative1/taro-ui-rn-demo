@@ -8,6 +8,7 @@ import {
   AtFloatLayoutState
 } from '../../../types/float-layout'
 import { handleTouchScroll } from '../../common/utils'
+import '../../style/components/float-layout.scss';
 
 export default class AtFloatLayout extends React.Component<
   AtFloatLayoutProps,
@@ -86,14 +87,14 @@ export default class AtFloatLayout extends React.Component<
     return (
       <View className={rootClass} onTouchMove={this.handleTouchMove}>
         <View onClick={this.close} className='at-float-layout__overlay' />
-        <View className='at-float-layout__container layout'>
+        <View className='at-float-layout__container'>
           {title ? (
-            <View className='layout-header'>
-              <Text className='layout-header__title'>{title}</Text>
-              <View className='layout-header__btn-close' onClick={this.close} />
+            <View className='at-float-layout-header'>
+              <Text className='at-float-layout-header__title'>{title}</Text>
+              <View className='at-float-layout-header__btn-close' onClick={this.close} />
             </View>
           ) : null}
-          <View className='layout-body'>
+          <View className='at-float-layout-body'>
             <ScrollView
               scrollY={scrollY}
               scrollX={scrollX}
@@ -111,7 +112,7 @@ export default class AtFloatLayout extends React.Component<
               // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
               // @ts-ignore // TODO: Fix typings
               onScrollToUpper={this.props.onScrollToUpper}
-              className='layout-body__content'
+              className='at-float-layout-body__content'
             >
               {this.props.children}
             </ScrollView>

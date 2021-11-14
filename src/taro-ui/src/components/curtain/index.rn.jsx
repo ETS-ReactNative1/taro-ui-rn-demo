@@ -53,6 +53,10 @@ function AtCurtain({ customStyle, className, isOpened = false, closeBtnPosition 
     } else {
       sibling && setSibling(null);
     }
+
+    return () => {
+      sibling && sibling.destroy();
+    };
   }, [children, className, closeBtnPosition, customStyle, isOpened, onClose]);
 
   return null;

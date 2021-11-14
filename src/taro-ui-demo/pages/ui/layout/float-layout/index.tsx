@@ -72,11 +72,9 @@ export default class FloatLayoutPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本用法</Text></View>
             <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton onClick={this.handleClick.bind(this, 1)}>
-                  打开 Float Layout
-                </AtButton>
-              </View>
+              <AtButton onClick={this.handleClick.bind(this, 1)}>
+                打开 Float Layout
+              </AtButton>
             </View>
           </View>
 
