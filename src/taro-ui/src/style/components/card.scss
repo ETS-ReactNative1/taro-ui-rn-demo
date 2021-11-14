@@ -2,17 +2,19 @@
 @import '../mixins/index.scss';
 
 .at-card {
-  @include border-thin($color: $color-border-light, $width: 1PX);
-
+  @include border-thin($color: $color-border-light, $width: 1px);
+  display: flex;
+  flex-direction: column;
   margin: 0 $spacing-h-lg;
   border-radius: $border-radius-lg;
   background-color: $color-bg;
 
   /* elements */
   &__header {
-    @include display-flex;
-    @include align-items(center);
-    @include border-thin-bottom($width: 1PX);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include border-thin-bottom($width: 1px);
 
     padding: $spacing-v-md $spacing-h-lg;
     position: relative;
@@ -25,11 +27,12 @@
     }
 
     &-thumb {
-      @include flex(0, 0, $at-card-thumb-size);
-
+      width: $at-card-thumb-size;
       height: $at-card-thumb-size;
-      display: block;
-      line-height: 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       margin-right: $spacing-h-md;
 
       &-info {
@@ -40,20 +43,20 @@
 
     &-icon {
       margin-right: $spacing-h-md;
-      font-size: $at-card-icon-size;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     &-title {
-      @include flex(auto);
-
-      display: block;
+      display: flex;
       color: $at-card-title-color;
       font-size: $font-size-lg;
+      flex: 1;
     }
 
     &-extra {
-      @include flex(0, 0, auto);
-
       max-width: 200px;
       margin-left: $spacing-h-lg;
       color: $at-card-extra-color;

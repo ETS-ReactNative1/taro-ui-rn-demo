@@ -1,8 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import isFunction from 'lodash/isFunction'
 import { Image, Text, View } from '@tarojs/components'
 import { AtCardProps } from '../../../types/card'
+import IconFont from '../icon'
+import '../../style/components/card.scss';
 
 export default class AtCard extends React.Component<AtCardProps> {
   public static defaultProps: AtCardProps
@@ -33,21 +36,11 @@ export default class AtCard extends React.Component<AtCardProps> {
       },
       this.props.className
     )
-    const iconClass = classNames({
-      'at-icon': true,
-      [`at-icon-${icon && icon.value}`]: icon && icon.value,
-      'at-card__header-icon': true
-    })
-
-    const iconStyle = {
-      color: (icon && icon.color) || '',
-      fontSize: (icon && `${icon.size}px`) || ''
-    }
 
     return (
       <View onClick={this.handleClick} className={rootClass}>
         <View className='at-card__header'>
-          {thumb && (
+          {!!thumb && (
             <View className='at-card__header-thumb'>
               <Image
                 className='at-card__header-thumb-info'
@@ -56,13 +49,16 @@ export default class AtCard extends React.Component<AtCardProps> {
               />
             </View>
           )}
-          {renderIcon || ''}
-          {!thumb && icon && icon.value && (
-            <Text className={iconClass} style={iconStyle}></Text>
+          {React.isValidElement(renderIcon) && renderIcon}
+          {isFunction(renderIcon) && renderIcon()}
+          {!thumb && !!icon && !!icon.value && (
+            <View className='at-card__header-icon'>
+              <IconFont name={icon.value} color={icon.color} size={icon.size || 36} />
+            </View>
           )}
 
           <Text className='at-card__header-title'>{title}</Text>
-          {extra && (
+          {!!extra && (
             <Text style={{ ...extraStyle }} className='at-card__header-extra'>
               {extra}
             </Text>
@@ -70,7 +66,7 @@ export default class AtCard extends React.Component<AtCardProps> {
         </View>
         <View className='at-card__content'>
           <View className='at-card__content-info'>{this.props.children}</View>
-          {note && <View className='at-card__content-note'>{note}</View>}
+          {!!note && <Text className='at-card__content-note'>{note}</Text>}
         </View>
       </View>
     )
