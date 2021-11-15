@@ -7,6 +7,7 @@ import { ITouchEvent } from '@tarojs/components/types/common'
 import { AtNavBarProps } from '../../../types/nav-bar'
 import { mergeStyle } from '../../common/utils'
 import '../../style/components/nav-bar.scss';
+import IconFont from '../icon';
 
 export default class AtNavBar extends React.Component<AtNavBarProps> {
   public static defaultProps: AtNavBarProps
@@ -101,22 +102,15 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
           onClick={this.handleClickLeftView.bind(this)}
           style={linkStyle}
         >
-          {leftIconType && (
-            <Text
-              className={leftIconClass}
-              style={mergeStyle(
-                {
-                  color: leftIconInfo.color,
-                  fontSize: Taro.pxTransform(parseInt(leftIconInfo.size.toString()) * 2),
-                },
-                leftIconInfo.customStyle
-              )}
-            />
+          {!!leftIconType && (
+            <IconFont name={leftIconInfo.value} size={48} />
           )}
-          <Text className='at-nav-bar__text'>{leftText}</Text>
+          <Text className='at-nav-bar__left-view__text'>{leftText}</Text>
         </View>
         <View className='at-nav-bar__title'>
-          {title || this.props.children}
+          <Text className='at-nav-bar__title__text' numberOfLines={1}>
+            {title || this.props.children}
+          </Text>
         </View>
         <View className='at-nav-bar__right-view'>
           <View
