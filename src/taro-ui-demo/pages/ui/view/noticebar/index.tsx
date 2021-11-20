@@ -56,7 +56,7 @@ export default class NoticebarPage extends React.Component {
                 </AtNoticebar>
               </View>
               <View className='notice-bar-demo-item'>
-                <AtNoticebar marquee icon='volume-plus'>
+                <AtNoticebar marquee icon='rocket'>
                   [带icon]这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏[结束]
                 </AtNoticebar>
               </View>

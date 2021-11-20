@@ -22,11 +22,6 @@
       //display: inline-block;
       margin-right: 12px;
       vertical-align: top;
-
-      .at-icon {
-        font-size: $at-noticebar-icon-size;
-        line-height: $at-noticebar-font-size * 1.5;
-      }
     }
 
     &-text {
@@ -118,7 +113,8 @@
 
       &-text {
         flex: 1;
-        overflow: hidden;
+        //overflow: hidden;
+        //background-color: #00CC88;
       }
 
       &-inner {

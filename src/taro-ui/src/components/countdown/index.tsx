@@ -149,12 +149,12 @@ export default class AtCountdown extends React.Component<
         )}
         style={customStyle}
       >
-        {isShowDay && <AtCountdownItem num={_day} separator={format!.day} />}
+        {isShowDay && <AtCountdownItem isCard={isCard} num={_day} separator={format!.day} />}
         {isShowHour && (
-          <AtCountdownItem num={_hours} separator={format!.hours} />
+          <AtCountdownItem isCard={isCard} num={_hours} separator={format!.hours} />
         )}
-        <AtCountdownItem num={_minutes} separator={format!.minutes} />
-        <AtCountdownItem num={_seconds} separator={format!.seconds} />
+        <AtCountdownItem isCard={isCard} num={_minutes} separator={format!.minutes} />
+        <AtCountdownItem isCard={isCard} num={_seconds} separator={format!.seconds} />
       </View>
     )
   }

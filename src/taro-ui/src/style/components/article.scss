@@ -47,8 +47,11 @@
   }
 
   &__img {
-    display: block;
-    margin: 20px auto 0;
+    //display: block;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
     width: 690px;
     border-radius: 4px;
   }

@@ -49,9 +49,9 @@ export default class TimelinePage extends React.Component {
               <AtTimeline
                 items={[
                   { title: '刷牙洗脸', icon: 'check-circle' },
-                  { title: '吃早餐', icon: 'clock' },
-                  { title: '上班', icon: 'clock' },
-                  { title: '睡觉', icon: 'clock' }
+                  { title: '吃早餐', icon: 'time-circle' },
+                  { title: '上班', icon: 'time-circle' },
+                  { title: '睡觉', icon: 'time-circle' }
                 ]}
               />
             </View>
@@ -88,14 +88,14 @@ export default class TimelinePage extends React.Component {
                   {
                     title: '吃早餐',
                     content: ['牛奶+面包', '餐后记得吃药'],
-                    icon: 'clock'
+                    icon: 'time-circle'
                   },
                   {
                     title: '上班',
                     content: ['查看邮件', '写PPT', '发送PPT给领导'],
-                    icon: 'clock'
+                    icon: 'time-circle'
                   },
-                  { title: '睡觉', content: ['不超过23:00'], icon: 'clock' }
+                  { title: '睡觉', content: ['不超过23:00'], icon: 'time-circle' }
                 ]}
               />
             </View>

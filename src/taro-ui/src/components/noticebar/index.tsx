@@ -7,6 +7,7 @@ import Taro from '@tarojs/taro'
 import { AtNoticeBarProps, AtNoticeBarState } from '../../../types/noticebar'
 import NoticeText from "./text";
 import '../../style/components/noticebar.scss'
+import IconFont from '../icon-font'
 
 export default class AtNoticebar extends React.Component<
   AtNoticeBarProps,
@@ -185,8 +186,7 @@ export default class AtNoticebar extends React.Component<
           >
             {!!icon && (
               <View className='at-noticebar__content-icon'>
-                {/* start hack 百度小程序 */}
-                <Text className={classNames(iconClass, iconClass)}></Text>
+                <IconFont name={icon} size={36} color='#DE8C17' />
               </View>
             )}
             <View

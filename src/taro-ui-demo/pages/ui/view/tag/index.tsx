@@ -169,7 +169,7 @@ export default class TagPage extends React.Component<{}, TagPageState> {
                       circle={index % 2 === 0}
                       onClick={this.onClick.bind(this)}
                     >
-                      标签{index + 1}
+                      标签
                     </AtTag>
                   </View>
                 ))}

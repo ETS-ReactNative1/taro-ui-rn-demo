@@ -1,8 +1,9 @@
 import classNames from 'classnames'
 import {useEffect, useState} from 'react'
-import { View, Image } from '@tarojs/components'
+import { View } from '@tarojs/components'
 import RootSiblings from 'react-native-root-siblings';
 import noop from 'lodash/noop';
+import IconFont from '../icon-font';
 import '../../style/components/curtain.scss';
 
 function AtCurtain({ customStyle, className, isOpened = false, closeBtnPosition = 'bottom', onClose = noop, children }) {
@@ -37,14 +38,15 @@ function AtCurtain({ customStyle, className, isOpened = false, closeBtnPosition 
             <View className='at-curtain__container'>
               <View className='at-curtain__body'>
                 {children}
-                <Image
-                  src={require('../../assets/close.png')}
+                <View
                   className={btnCloseClass}
                   onClick={(e) => {
                     e && e.stopPropagation && e.stopPropagation()
                     onClose(e)
                   }}
-                />
+                >
+                  <IconFont name='close-circle' size={48} color='#fff' />
+                </View>
               </View>
             </View>
           </View>

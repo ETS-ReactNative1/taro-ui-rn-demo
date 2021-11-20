@@ -9,14 +9,19 @@
   &__content {
     margin-left: $at-timeline-offset-left;
     min-height: 56px;
-    color: $at-timeline-title-color;
-    font-size: $at-timeline-title-font-size;
-    line-height: $line-height-zh * $at-timeline-title-font-size;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    &-item {
+      color: $at-timeline-title-color;
+      font-size: $at-timeline-title-font-size;
+      line-height: $line-height-zh * $at-timeline-title-font-size;
+      text-align: left;
+    }
 
     &--sub {
       color: $at-timeline-desc-color;
       font-size: $at-timeline-desc-font-size;
+      line-height: $at-timeline-desc-font-size * $line-height-zh;
     }
   }
 
@@ -41,6 +46,42 @@
   }
 
   &__dot {
+    &--RN {
+      margin-top: 5px;
+      width: $at-timeline-dot-size;
+      height: $at-timeline-dot-size;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: $at-timeline-dot-border-color;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: $at-timeline-dot-border-color;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-left-color: $at-timeline-dot-border-color;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: $at-timeline-dot-border-color;
+      border-radius: $at-timeline-dot-size / 2;
+      &--green {
+        border-top-color: $color-success;
+        border-bottom-color: $color-success;
+        border-left-color: $color-success;
+        border-right-color: $color-success;
+      }
+      &--red {
+        border-top-color: $color-error;
+        border-bottom-color: $color-error;
+        border-left-color: $color-error;
+        border-right-color: $color-error;
+      }
+      &--yellow {
+        border-top-color: $color-warning;
+        border-bottom-color: $color-warning;
+        border-left-color: $color-warning;
+        border-right-color: $color-warning;
+      }
+    }
     &::after {
       content: '';
       //display: inline-block;
@@ -57,10 +98,38 @@
         border-color: transparent;
       }
     }
+
+    &--green {
+      &::after {
+        border-color: $color-success;
+      }
+    }
+    &--red {
+      &::after {
+        border-color: $color-error;
+      }
+    }
+    &--yellow {
+      &::after {
+        border-color: $color-warning;
+      }
+    }
   }
 
   &__icon {
     color: $at-timeline-dot-border-color;
+    &--RN {
+      margin-top: 4px;
+    }
+    &--green {
+      color: $color-success;
+    }
+    &--red {
+      color: $color-error;
+    }
+    &--yellow {
+      color: $color-warning;
+    }
   }
 
   &__tail {
@@ -68,42 +137,16 @@
     top: $at-timeline-dot-size / 2;
     bottom: -$at-timeline-dot-size / 2;
     left: $at-timeline-dot-size / 2 - 2px;
-    border-left: 1PX solid $at-timeline-line-color;
-  }
-
-  /* modifiers */
-  &--green {
-    .at-timeline-item__icon {
-      color: $color-success;
-    }
-
-    .at-timeline-item__dot {
-      &::after {
-        border-color: $color-success;
-      }
-    }
-  }
-
-  &--red {
-    .at-timeline-item__icon {
-      color: $color-error;
-    }
-
-    .at-timeline-item__dot {
-      &::after {
-        border-color: $color-error;
-      }
-    }
-  }
-
-  &--yellow {
-    .at-timeline-item__icon {
-      color: $color-warning;
-    }
-
-    .at-timeline-item__dot {
-      &::after {
-        border-color: $color-warning;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $at-timeline-line-color;
+    &--RN {
+      left: $at-timeline-dot-size / 2 - 1px;
+      //background-color: #00CC88;
+      width: 1px;
+      //border-left-color: #000;
+      &--last {
+        border-left-width: 0;
       }
     }
   }

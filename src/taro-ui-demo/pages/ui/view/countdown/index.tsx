@@ -25,16 +25,16 @@ export default class CountDownPage extends React.Component {
           {/* 一般用法 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>一般用法</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown minutes={1} seconds={10} />
             </View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown hours={48} minutes={0} seconds={3} />
             </View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown isShowDay hours={1} minutes={1} seconds={10} />
             </View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown isShowHour={false} minutes={1} seconds={10} />
             </View>
           </View>
@@ -42,7 +42,7 @@ export default class CountDownPage extends React.Component {
           {/* 自定义格式化 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义格式化</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown
                 format={{ hours: ':', minutes: ':', seconds: '' }}
                 minutes={1}
@@ -54,10 +54,10 @@ export default class CountDownPage extends React.Component {
           {/* 卡片式 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>卡片式</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown isCard minutes={1} seconds={10} />
             </View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown
                 isCard
                 isShowDay
@@ -72,7 +72,7 @@ export default class CountDownPage extends React.Component {
           {/* 自定义倒计时回调事件 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义倒计时回调事件</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <AtCountdown
                 format={{ hours: ':', minutes: ':', seconds: '' }}
                 seconds={10}

@@ -105,6 +105,9 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
                   autoplay={isAutoplay}
                   indicatorDots={hasIndicatorDots}
                   previousMargin='20'
+                  style={{
+                    height: Taro.pxTransform(360),
+                  }}
                 >
                   {imgUrls.map((item, idx) => (
                     <SwiperItem key={idx}>
@@ -138,7 +141,7 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
                   <View className='slider-list'>
                     <View className='slider-list__item'>
                       <View className='slider-list__item-header'>
-                        <Text>幻灯片切换时长(ms)</Text>
+                        <Text className='slider-list__item-header__text'>幻灯片切换时长(ms)</Text>
                       </View>
                       <View className='slider-list__item-body'>
                         <Slider
@@ -154,7 +157,7 @@ export default class SwiperPage extends React.Component<{}, SwiperPageState> {
                     </View>
                     <View className='slider-list__item'>
                       <View className='slider-list__item-header'>
-                        <Text>自动播放间隔时长(ms)</Text>
+                        <Text className='slider-list__item-header__text'>自动播放间隔时长(ms)</Text>
                       </View>
                       <View className='slider-list__item-body'>
                         <Slider

@@ -23,8 +23,11 @@
     position: absolute;
     width: $at-loading-size;
     height: $at-loading-size;
-    margin: 1PX;
-    border-width: 1PX;
+    margin: 1px;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
     border-style: solid;
     border-color: $at-loading-color transparent transparent transparent;
     border-radius: $at-loading-size / 2;

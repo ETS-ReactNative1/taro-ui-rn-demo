@@ -49,15 +49,7 @@
   }
 
   &__single-icon {
-    font-size: $at-steps-circle-size;
-
-    &--success {
-      color: $color-success;
-    }
-
-    &--error {
-      color: $color-error;
-    }
+    background-color: #fff;
   }
 
   &__circle-icon {

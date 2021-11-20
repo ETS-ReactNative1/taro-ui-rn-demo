@@ -10,6 +10,7 @@ function NoticeText({ text, marquee, single }) {
   }
 
   if (marquee) {
+    // TODO 实测下面不行，不知道为啥
     return (
       <TextTicker
         style={{ fontSize: 24, backgroundColor: 'red' }}

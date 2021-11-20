@@ -1,9 +1,11 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtTimelineProps } from '../../../types/timeline'
 import '../../style/components/timeline.scss';
+import IconFont from '../icon-font'
 
 export default class AtTimeline extends React.Component<AtTimelineProps> {
   public static defaultProps: AtTimelineProps
@@ -21,11 +23,7 @@ export default class AtTimeline extends React.Component<AtTimelineProps> {
 
     const itemElems = items.map((item, index) => {
       const { title = '', color, icon, content = [] } = item
-
-      const iconClass = classNames({
-        'at-icon': true,
-        [`at-icon-${icon}`]: icon
-      })
+      const isLast = index === items.length - 1;
 
       const itemRootClassName = ['at-timeline-item']
       if (color) itemRootClassName.push(`at-timeline-item--${color}`)
@@ -33,8 +31,14 @@ export default class AtTimeline extends React.Component<AtTimelineProps> {
       const dotClass: string[] = []
       if (icon) {
         dotClass.push('at-timeline-item__icon')
+        dotClass.push(`at-timeline-item__icon--${color}`)
+        dotClass.push(`at-timeline-item__icon--${Taro.getEnv()}`)
+        dotClass.push(`at-timeline-item__icon--${Taro.getEnv()}--${color}`)
       } else {
-        dotClass.push('at-timeline-item__dot')
+        dotClass.push('at-timeline-item__dot');
+        dotClass.push(`at-timeline-item__dot--${color}`);
+        dotClass.push(`at-timeline-item__dot--${Taro.getEnv()}`);
+        dotClass.push(`at-timeline-item__dot--${Taro.getEnv()}--${color}`);
       }
 
       return (
@@ -42,14 +46,19 @@ export default class AtTimeline extends React.Component<AtTimelineProps> {
           className={classNames(itemRootClassName)}
           key={`at-timeline-item-${index}`}
         >
-          <View className='at-timeline-item__tail'></View>
+          <View
+            className={classNames('at-timeline-item__tail', `at-timeline-item__tail--${Taro.getEnv()}`, {
+              'at-timeline-item__tail--last': isLast,
+              [`at-timeline-item__tail--${Taro.getEnv()}--last`]: isLast,
+            })}
+          />
           <View className={classNames(dotClass)}>
-            {icon && <Text className={iconClass}></Text>}
+            {!!icon && <IconFont name={icon} size={30} color='#78A4F4' />}
           </View>
           <View className='at-timeline-item__content'>
-            <View className='at-timeline-item__content-item'>{title}</View>
+            <Text className='at-timeline-item__content-item'>{title}</Text>
             {content.map((sub, subIndex) => (
-              <View
+              <Text
                 className={classNames([
                   'at-timeline-item__content-item',
                   'at-timeline-item__content--sub',
@@ -57,7 +66,7 @@ export default class AtTimeline extends React.Component<AtTimelineProps> {
                 key={subIndex}
               >
                 {sub}
-              </View>
+              </Text>
             ))}
           </View>
         </View>

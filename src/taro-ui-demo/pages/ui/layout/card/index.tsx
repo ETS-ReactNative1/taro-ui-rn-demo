@@ -70,7 +70,7 @@ export default class CardPage extends React.Component {
                       value='image'
                       size='16'
                       color='#6190e8'
-                      customStyle={{ marginRight: '8px' }}
+                      customStyle={{ marginRight: Taro.pxTransform(16) }}
                     />
                   }
                 >

@@ -51,30 +51,30 @@ export default class TimelinePage extends React.Component<
         title: '步骤一',
         desc: '这里是额外的信息，最多两行',
         icon: {
-          value: 'sound',
+          value: 'trophy',
           activeColor: '#fff',
           inactiveColor: '#78A4FA',
-          size: '14'
+          size: 30
         }
       },
       {
         title: '步骤二',
         desc: '这里是额外的信息，最多两行',
         icon: {
-          value: 'shopping-cart',
+          value: 'bug',
           activeColor: '#fff',
           inactiveColor: '#78A4FA',
-          size: '14'
+          size: 30
         }
       },
       {
         title: '步骤三',
         desc: '这里是额外的信息，最多两行',
         icon: {
-          value: 'camera',
+          value: 'transaction',
           activeColor: '#fff',
           inactiveColor: '#78A4FA',
-          size: '14'
+          size: 30
         }
       }
     ]

@@ -38,32 +38,25 @@
     line-height: 1 * $at-countdown-font-size;
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
-  }
 
-  &__separator {
-    display: flex;
-    padding: 0 $spacing-v-xs;
-    font-size: $font-size-base;
-    text-align: justify;
-    align-items: center;
-  }
-
-  /* modifiers */
-  &--card {
-    .at-countdown__time-box {
+    &--card {
       //display: inline-block;
       position: relative;
-      padding: $spacing-v-xs 0;
-      color: $at-countdown-card-num-color;
-      border: 1PX solid $color-border-grey;
+      padding: $spacing-v-xs;
+      border-top-width: 1px;
+      border-top-style: solid;
+      border-top-color: $color-border-grey;
+      border-right-width: 1px;
+      border-right-style: solid;
+      border-right-color: $color-border-grey;
+      border-left-width: 1px;
+      border-left-style: solid;
+      border-left-color: $color-border-grey;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: $color-border-grey;
       border-radius: $border-radius-md;
       background-color: $at-countdown-card-num-bg-color;
-
-      .at-countdown__time {
-        position: relative;
-        z-index: $zindex-divider + 1;
-      }
-
       &::after {
         content: '';
         position: absolute;
@@ -75,5 +68,21 @@
         z-index: $zindex-divider;
       }
     }
+  }
+
+  &__time {
+    &--card {
+      position: relative;
+      z-index: $zindex-divider + 1;
+      color: $at-countdown-card-num-color;
+    }
+  }
+
+  &__separator {
+    display: flex;
+    padding: 0 $spacing-v-xs;
+    font-size: $font-size-base;
+    text-align: justify;
+    align-items: center;
   }
 }
