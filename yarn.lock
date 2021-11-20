@@ -16798,6 +16798,11 @@ unimodules-app-loader@~2.2.0:
   resolved "https://registry.npmmirror.com/unimodules-app-loader/download/unimodules-app-loader-2.2.0.tgz#8f8543630ada0f9092ce95050d05738990d1f4ab"
   integrity sha1-j4VDYwraD5CSzpUFDQVziZDR9Ks=
 
+unimodules-constants-interface@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.nlark.com/unimodules-constants-interface/download/unimodules-constants-interface-6.1.0.tgz#0b5a48831dcbc9a73e660f7cc7fe87317470dd42"
+  integrity sha1-C1pIgx3Lyac+Zg98x/6HMXRw3UI=
+
 unimodules-font-interface@^6.1.0:
   version "6.1.0"
   resolved "https://registry.npm.taobao.org/unimodules-font-interface/download/unimodules-font-interface-6.1.0.tgz#825737e504238b135f3ad603c35ef0924f1034be"
