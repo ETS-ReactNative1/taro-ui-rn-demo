@@ -209,6 +209,10 @@ function handleTouchScroll(flag: any): void {
   }
 }
 
+/**
+ * @deprecated 直接使用Taro.pxTransform
+ * @param size
+ */
 function pxTransform(size: number): string {
   if (!size) return ''
   const designWidth = 750

@@ -1,10 +1,12 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { View } from '@tarojs/components'
+import Taro from '@tarojs/taro';
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtSegmentedControlProps } from '../../../types/segmented-control'
-import { mergeStyle, pxTransform } from '../../common/utils'
+import { mergeStyle } from '../../common/utils'
+import '../../style/components/segmented-control.scss'
 
 export default class AtSegmentedControl extends React.Component<
   AtSegmentedControlProps
@@ -19,7 +21,7 @@ export default class AtSegmentedControl extends React.Component<
 
   public render(): JSX.Element {
     const {
-      customStyle = '',
+      customStyle = {},
       className,
       disabled,
       values,
@@ -29,21 +31,41 @@ export default class AtSegmentedControl extends React.Component<
       fontSize = 28
     } = this.props
 
-    const rootStyle = {
-      borderColor: selectedColor
+    const rootStyle: React.CSSProperties = {
     }
-    const itemStyle = {
-      color: selectedColor,
-      fontSize: pxTransform(fontSize),
-      borderColor: selectedColor,
-      backgroundColor: color
+    const itemStyle: React.CSSProperties = {
+      fontSize: Taro.pxTransform(fontSize),
     }
-    const selectedItemStyle = {
-      color,
-      fontSize: pxTransform(fontSize),
-      borderColor: selectedColor,
-      backgroundColor: selectedColor
+    const textStyle: React.CSSProperties = {};
+    const selectedItemStyle: React.CSSProperties = {
+      fontSize: Taro.pxTransform(fontSize),
     }
+
+    if (color && color.length > 0) {
+      itemStyle.backgroundColor = color;
+      selectedItemStyle.color = color;
+    }
+    if (selectedColor && selectedColor?.length > 0) {
+      rootStyle.borderTopColor = selectedColor;
+      rootStyle.borderBottomColor = selectedColor;
+      rootStyle.borderLeftColor = selectedColor;
+      rootStyle.borderRightColor = selectedColor;
+
+      itemStyle.color = selectedColor;
+      itemStyle.borderTopColor = selectedColor;
+      itemStyle.borderBottomColor = selectedColor;
+      itemStyle.borderLeftColor = selectedColor;
+      itemStyle.borderRightColor = selectedColor;
+
+      selectedItemStyle.borderTopColor = selectedColor;
+      selectedItemStyle.borderBottomColor = selectedColor;
+      selectedItemStyle.borderLeftColor = selectedColor;
+      selectedItemStyle.borderRightColor = selectedColor;
+      selectedItemStyle.backgroundColor = selectedColor;
+
+      textStyle.color = selectedColor;
+    }
+
     const rootCls = classNames(
       'at-segmented-control',
       {
@@ -53,26 +75,48 @@ export default class AtSegmentedControl extends React.Component<
     )
 
     return (
-      <View className={rootCls} style={mergeStyle(rootStyle, customStyle)}>
-        {values.map((value, i) => (
-          <View
-            className={classNames('at-segmented-control__item', {
-              'at-segmented-control__item--active': current === i
-            })}
-            style={current === i ? selectedItemStyle : itemStyle}
-            key={value}
-            onClick={this.handleClick.bind(this, i)}
-          >
-            {value}
-          </View>
-        ))}
+      <View
+        className={rootCls}
+        style={{
+          ...rootStyle,
+          ...customStyle,
+        }}
+      >
+        {values.map((value, i) => {
+          const extraTextStyle: React.CSSProperties = {};
+          if (current === i) {
+            extraTextStyle.color = '#fff';
+          }
+          return (
+            <View
+              className={classNames('at-segmented-control__item', {
+                'at-segmented-control__item--active': current === i
+              })}
+              style={current === i ? selectedItemStyle : itemStyle}
+              key={`${i}-${value}`}
+              onClick={this.handleClick.bind(this, i)}
+            >
+              <Text
+                className={classNames('at-segmented-control__item__text', {
+                  'at-segmented-control__item__text--active': current === i
+                })}
+                style={{
+                  ...textStyle,
+                  ...extraTextStyle,
+                }}
+              >
+                {value}
+              </Text>
+            </View>
+          );
+        })}
       </View>
     )
   }
 }
 
 AtSegmentedControl.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   current: 0,
   color: '',
