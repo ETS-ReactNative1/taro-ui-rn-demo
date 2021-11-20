@@ -4,6 +4,8 @@ import React from 'react'
 import { Text, View } from '@tarojs/components'
 import { AtPaginationProps, AtPaginationState } from '../../../types/pagination'
 import AtButton from '../button/index'
+import '../../style/components/pagination.scss'
+import IconFont from '../icon'
 
 const MIN_MAXPAGE = 1
 const getMaxPage = (maxPage = 0): number => {
@@ -114,7 +116,7 @@ export default class AtPagination extends React.Component<
               size='small'
               disabled={prevDisabled}
             >
-              <Text className='at-icon at-icon-chevron-left'></Text>
+              <IconFont name='left' size={32} />
             </AtButton>
           )}
           {!icon && (
@@ -128,8 +130,9 @@ export default class AtPagination extends React.Component<
           )}
         </View>
         <View className='at-pagination__number'>
-          <Text className='at-pagination__number-current'>{currentPage}</Text>/
-          {maxPage}
+          <Text className='at-pagination__number-current'>{currentPage}</Text>
+          <Text className='at-pagination__number-divider'>/</Text>
+          <Text className='at-pagination__number-max'>{maxPage}</Text>
         </View>
         <View className='at-pagination__btn-next'>
           {icon && (
@@ -138,7 +141,7 @@ export default class AtPagination extends React.Component<
               size='small'
               disabled={nextDisabled}
             >
-              <Text className='at-icon at-icon-chevron-right'></Text>
+              <IconFont name='right' size={32} />
             </AtButton>
           )}
           {!icon && (

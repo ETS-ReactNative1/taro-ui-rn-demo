@@ -67,7 +67,7 @@ export default class PaginationPage extends React.Component<
                   total={20}
                   pageSize={10}
                   current={1}
-                ></AtPagination>
+                />
               </View>
             </View>
           </View>
@@ -82,7 +82,7 @@ export default class PaginationPage extends React.Component<
                   total={20}
                   pageSize={10}
                   current={1}
-                ></AtPagination>
+                />
               </View>
             </View>
           </View>
@@ -113,11 +113,10 @@ export default class PaginationPage extends React.Component<
                   pageSize={this.state.pageSize}
                   current={this.state.current}
                   onPageChange={this.onPage.bind(this)}
-                ></AtPagination>
-                <View className='btn-item'>
-                  当前页：{this.state.current}，当前数据：{len}条，分页大小：
-                  {this.state.pageSize}
-                </View>
+                />
+                <Text className='btn-item'>
+                  当前页：{this.state.current}，当前数据：{len}条，分页大小：{this.state.pageSize}
+                </Text>
                 <View className='btn-item'>
                   <AtButton
                     type='primary'
