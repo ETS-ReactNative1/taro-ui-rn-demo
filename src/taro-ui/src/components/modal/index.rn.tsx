@@ -1,9 +1,10 @@
-import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { Button, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
+import classNames from 'classnames'
+import Modal from "react-native-modal";
 import { AtModalProps, AtModalState } from '../../../types/modal'
 import { handleTouchScroll } from '../../common/utils'
 import AtModalAction from './action/index'
@@ -23,7 +24,6 @@ export default class AtModal extends React.Component<
     const { isOpened } = props
     this.state = {
       _isOpened: isOpened,
-      isWEB: Taro.getEnv() === Taro.ENV_TYPE.WEB
     }
   }
 
@@ -71,30 +71,27 @@ export default class AtModal extends React.Component<
     }
   }
 
-  private handleTouchMove = (e: CommonEvent): void => {
-    e.stopPropagation()
-  }
-
   public render(): JSX.Element {
-    const { _isOpened, isWEB } = this.state
+    const { _isOpened } = this.state
     const { title, content, cancelText, confirmText } = this.props
-    const rootClass = classNames(
-      'at-modal',
-      {
-        'at-modal--active': _isOpened
-      },
-      this.props.className
-    )
 
     if (title || content) {
-      const isRenderAction = cancelText || confirmText
+      const isRenderAction = cancelText || confirmText;
+
       return (
-        <View className={rootClass}>
-          <View
-            onClick={this.handleClickOverlay}
-            className='at-modal__overlay'
-          />
-          <View className='at-modal__container'>
+        <Modal
+          animationIn='zoomIn'
+          animationOut='zoomOut'
+          isVisible={_isOpened}
+          hasBackdrop
+          onModalHide={this.handleClose}
+          onBackButtonPress={this.handleClickOverlay}
+          onBackdropPress={this.handleClickOverlay}
+          style={{
+            margin: 0,
+          }}
+        >
+          <View className={classNames('at-modal__container', `at-modal__container--${Taro.getEnv()}`)}>
             {title && (
               <AtModalHeader>
                 <Text>{title}</Text>
@@ -103,17 +100,7 @@ export default class AtModal extends React.Component<
             {content && (
               <AtModalContent>
                 <View className='content-simple'>
-                  {isWEB ? (
-                    <Text
-                      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
-                      // @ts-ignore
-                      dangerouslySetInnerHTML={{
-                        __html: content.replace(/\n/g, '<br/>')
-                      }}
-                    />
-                  ) : (
-                    <Text>{content}</Text>
-                  )}
+                  <Text>{content}</Text>
                 </View>
               </AtModalContent>
             )}
@@ -128,16 +115,28 @@ export default class AtModal extends React.Component<
               </AtModalAction>
             )}
           </View>
-        </View>
-      )
+        </Modal>
+      );
     }
 
     return (
-      <View onTouchMove={this.handleTouchMove} className={rootClass}>
-        <View className='at-modal__overlay' onClick={this.handleClickOverlay} />
-        <View className='at-modal__container'>{this.props.children}</View>
-      </View>
-    )
+      <Modal
+        animationIn='zoomIn'
+        animationOut='zoomOut'
+        isVisible={_isOpened}
+        hasBackdrop
+        onModalHide={this.handleClose}
+        onBackButtonPress={this.handleClickOverlay}
+        onBackdropPress={this.handleClickOverlay}
+        style={{
+          margin: 0,
+        }}
+      >
+        <View className={classNames('at-modal__container', `at-modal__container--${Taro.getEnv()}`)}>
+          {this.props.children}
+        </View>
+      </Modal>
+    );
   }
 }
 

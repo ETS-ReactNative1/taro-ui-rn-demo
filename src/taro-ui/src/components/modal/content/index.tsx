@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import { ScrollView } from '@tarojs/components'
 import { AtModalContentProps } from '../../../../types/modal'
+import '../../../style/components/modal.scss'
 
 export default class AtModalContent extends React.Component<
   AtModalContentProps

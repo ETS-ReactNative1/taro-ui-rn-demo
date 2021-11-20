@@ -2,6 +2,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import Taro from '@tarojs/taro'
 import React from 'react'
 import { View } from '@tarojs/components'
+import '../../style/components/loading.scss'
 
 let Circle;
 if (process.env.TARO_ENV === 'rn') {

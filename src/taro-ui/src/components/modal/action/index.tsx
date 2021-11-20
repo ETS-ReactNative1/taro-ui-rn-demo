@@ -3,6 +3,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtModalActionProps } from '../../../../types/modal'
+import '../../../style/components/modal.scss'
 
 export default class AtModalAction extends React.Component<AtModalActionProps> {
   public static defaultProps: AtModalActionProps

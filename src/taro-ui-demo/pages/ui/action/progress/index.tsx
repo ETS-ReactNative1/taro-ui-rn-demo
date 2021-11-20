@@ -4,6 +4,7 @@ import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
+import IconFont from '@/taro-ui/components/icon-font'
 
 const OFFSET = 15
 
@@ -61,7 +62,7 @@ export default class ProgressPage extends React.Component<
           {/* 基础进度条 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础进度条</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtProgress percent={25} />
               </View>
@@ -77,7 +78,7 @@ export default class ProgressPage extends React.Component<
           {/* 隐藏进度文案 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>隐藏进度文案</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtProgress percent={25} isHidePercent />
               </View>
@@ -90,7 +91,7 @@ export default class ProgressPage extends React.Component<
           {/* 自定义进度条线宽 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义进度条线宽</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtProgress percent={25} strokeWidth={6} />
               </View>
@@ -106,7 +107,7 @@ export default class ProgressPage extends React.Component<
           {/* 自定义颜色 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtProgress percent={25} color='#FF4949' />
               </View>
@@ -122,7 +123,7 @@ export default class ProgressPage extends React.Component<
           {/* 不同的状态 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不同的状态</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <View className='example-item__desc'>暂停</View>
                 <AtProgress percent={25} />
@@ -145,20 +146,16 @@ export default class ProgressPage extends React.Component<
           {/* 实际案例 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实际案例</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content panel__content__padding'>
               <View className='example-item'>
                 <AtProgress percent={percent} />
                 <View className='example-item__buttons'>
-                  <View className='btn'>
-                    <AtButton size='small' onClick={this.reduce}>
-                      <AtIcon value='subtract' size={12} />
-                    </AtButton>
-                  </View>
-                  <View className='btn'>
-                    <AtButton size='small' onClick={this.increase}>
-                      <AtIcon value='add' size={12} />
-                    </AtButton>
-                  </View>
+                  <AtButton size='small' onClick={this.reduce}>
+                    <IconFont name='minus' size={24} />
+                  </AtButton>
+                  <AtButton size='small' onClick={this.increase}>
+                    <IconFont name='plus' size={24} />
+                  </AtButton>
                 </View>
               </View>
             </View>

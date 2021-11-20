@@ -1,7 +1,6 @@
 import React from 'react'
 import { AtActivityIndicator, AtSwitch } from '@/taro-ui'
 import { View, Text } from '@tarojs/components'
-import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
 
@@ -42,13 +41,13 @@ export default class ActivityIndicatorPage extends React.Component<
             <View className='panel__content'>
               <View className='example-item'>
                 <View className='subitem'>
-                  <AtActivityIndicator size={20}></AtActivityIndicator>
+                  <AtActivityIndicator size={40} />
                 </View>
                 <View className='subitem'>
-                  <AtActivityIndicator size={24} />
+                  <AtActivityIndicator size={48} />
                 </View>
                 <View className='subitem'>
-                  <AtActivityIndicator size={32} />
+                  <AtActivityIndicator size={64} />
                 </View>
               </View>
             </View>

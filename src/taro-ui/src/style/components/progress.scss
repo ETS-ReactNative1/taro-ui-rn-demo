@@ -15,6 +15,7 @@
 
 .at-progress {
   display: flex;
+  flex-direction: row;
   align-items: center;
 
   /* elements */
@@ -30,6 +31,9 @@
       background-color: $at-progress-inner-bg-color;
       border-radius: $at-progress-height / 2;
       vertical-align: middle;
+      display: flex;
+      flex-direction: row;
+      height: $at-progress-height;
 
       &-background {
         position: relative;
@@ -38,6 +42,12 @@
         background-color: $at-progress-bar-bg-color;
         transition: all 0.3s $ease-in-out-quad;
         overflow: hidden;
+        &--error {
+          background: $color-error;
+        }
+        &--success {
+          background: $color-success;
+        }
       }
     }
   }
@@ -72,20 +82,12 @@
   }
 
   &--error {
-    .at-progress__outer-inner-background {
-      background: $color-error;
-    }
-
     .at-icon {
       color: $color-error;
     }
   }
 
   &--success {
-    .at-progress__outer-inner-background {
-      background: $color-success;
-    }
-
     .at-icon {
       color: $color-success;
     }

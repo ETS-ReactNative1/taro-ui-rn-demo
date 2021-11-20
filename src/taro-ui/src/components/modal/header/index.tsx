@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtModalHeaderProps } from '../../../../types/modal'
+import '../../../style/components/modal.scss'
 
 export default class AtModalHeader extends React.Component<AtModalHeaderProps> {
   public render(): JSX.Element {

@@ -36,10 +36,16 @@ export default class AtProgress extends React.Component<AtProgressProps> {
       'at-icon-check-circle': status === 'success'
     })
 
-    const progressStyle = {
-      width: percent && `${+percent}%`,
-      height: strokeWidth && Taro.pxTransform(+strokeWidth),
-      backgroundColor: color
+    const progressStyle: React.CSSProperties = {}
+    if (percent) {
+      progressStyle.width = `${+percent}%`;
+    }
+    if (strokeWidth) {
+      progressStyle.height = Taro.pxTransform(+strokeWidth);
+      progressStyle.borderRadius = Taro.pxTransform(strokeWidth / 2);
+    }
+    if (color) {
+      progressStyle.backgroundColor = color;
     }
 
     return (
@@ -47,7 +53,10 @@ export default class AtProgress extends React.Component<AtProgressProps> {
         <View className='at-progress__outer'>
           <View className='at-progress__outer-inner'>
             <View
-              className='at-progress__outer-inner-background'
+              className={classNames({
+                'at-progress__outer-inner-background': true,
+                [`at-progress__outer-inner-background--${status}`]: status,
+              })}
               style={progressStyle}
             />
           </View>

@@ -3,6 +3,7 @@
 
 .at-activity-indicator {
   @include display-flex();
+  flex-direction: row;
 
   visibility: hidden;
   opacity: 0;
@@ -27,7 +28,11 @@
 
   /* modifiers */
   &--center {
-    @include absolute-center;
+    //@include absolute-center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   &--isopened {
