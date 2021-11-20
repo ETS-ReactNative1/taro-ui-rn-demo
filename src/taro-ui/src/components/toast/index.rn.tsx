@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { Image, Text, View } from '@tarojs/components'
+import Modal from "react-native-modal";
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtToastProps, AtToastState } from '../../../types/toast'
 import statusImg from './img.json'
@@ -110,15 +111,26 @@ export default class AtToast extends React.Component<
     })
 
     return _isOpened ? (
-      <View className={classNames('at-toast', this.props.className)}>
-        {hasMask && <View className='at-toast__overlay' />}
+      <Modal
+        animationIn='zoomIn'
+        animationOut='zoomOut'
+        isVisible={_isOpened}
+        hasBackdrop={hasMask}
+        backdropOpacity={0}
+        onModalHide={this.handleClose}
+        onBackButtonPress={this.handleClick}
+        onBackdropPress={this.handleClick}
+        style={{
+          margin: 0,
+        }}
+      >
         <View
           className={bodyClass}
           style={customStyle}
           onClick={this.handleClick}
         >
           <View className='toast-body-content'>
-            {realImg ? (
+            {!!realImg && (
               <View className='toast-body-content__img'>
                 <Image
                   className='toast-body-content__img-item'
@@ -126,18 +138,18 @@ export default class AtToast extends React.Component<
                   mode='scaleToFill'
                 />
               </View>
-            ) : null}
+            )}
             {isRenderIcon && (
               <IconFont name={icon} size={80} />
             )}
             {!!text && (
               <View className='toast-body-content__info'>
-                <Text>{text}</Text>
+                <Text className='toast-body-content__info__text'>{text}</Text>
               </View>
             )}
           </View>
         </View>
-      </View>
+      </Modal>
     ) : null
   }
 }
