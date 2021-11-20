@@ -1,6 +1,7 @@
 import classnames from 'classnames'
 import dayjs from 'dayjs'
 import React from 'react'
+import Taro from '@tarojs/taro';
 import { Swiper, SwiperItem, View } from '@tarojs/components'
 import {
   BaseEventOrig,
@@ -343,7 +344,7 @@ export default class AtCalendarBody extends React.Component<
           circular
           current={1}
           skipHiddenItemLayout
-          className={classnames('main__body')}
+          className={classnames('at-calendar-slider__main__body', `at-calendar-slider__main__body-${Taro.getEnv()}`)}
           onChange={this.handleChange}
           vertical={this.props.isVertical}
           onAnimationFinish={this.handleAnimateFinish}

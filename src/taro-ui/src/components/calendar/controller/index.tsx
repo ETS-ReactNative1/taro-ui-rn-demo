@@ -6,6 +6,7 @@ import {
   AtCalendarControllerProps,
   AtCalendarControllerState
 } from '../../../../types/calendar'
+import IconFont from '../../icon';
 import '../../../style/components/calendar.scss';
 
 export default class AtCalendarController extends React.Component<
@@ -46,7 +47,9 @@ export default class AtCalendarController extends React.Component<
               'at-calendar__controller__arrow--disabled': isMinMonth
             })}
             onClick={this.props.onPreMonth.bind(this, isMinMonth)}
-          />
+          >
+            <IconFont size={32} name='left' color='#999' />
+          </View>
         )}
         <Picker
           mode='date'
@@ -69,7 +72,9 @@ export default class AtCalendarController extends React.Component<
               }
             )}
             onClick={this.props.onNextMonth.bind(this, isMaxMonth)}
-          />
+          >
+            <IconFont size={32} name='right' color='#999' />
+          </View>
         )}
       </View>
     )

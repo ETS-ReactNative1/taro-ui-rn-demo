@@ -3,6 +3,7 @@ import React from 'react'
 import { Text, View } from '@tarojs/components'
 import { Calendar } from '../../../../../types/calendar'
 import * as constant from '../../common/constant'
+import '../../../../style/components/calendar.scss';
 
 const MAP: { [key: number]: string } = {
   [constant.TYPE_PRE_MONTH]: 'pre',
@@ -36,32 +37,46 @@ export default class AtCalendarList extends React.Component<Props> {
     if (!list || list.length === 0) return null
 
     return (
-      <View className='at-calendar__list flex'>
+      <View className='at-calendar__list'>
         {list.map((item: Calendar.Item) => (
           <View
             key={`list-item-${item.value}`}
             onClick={this.handleClick.bind(this, item)}
             onLongPress={this.handleLongClick.bind(this, item)}
             className={classnames(
-              'flex__item',
-              `flex__item--${MAP[item.type]}`,
+              'at-calendar__list__item',
+              `at-calendar__list__item--${MAP[item.type]}`,
               {
-                'flex__item--today': item.isToday,
-                'flex__item--active': item.isActive,
-                'flex__item--selected': item.isSelected,
-                'flex__item--selected-head': item.isSelectedHead,
-                'flex__item--selected-tail': item.isSelectedTail,
-                'flex__item--blur':
+                'at-calendar__list__item--today': item.isToday,
+                'at-calendar__list__item--active': item.isActive,
+                'at-calendar__list__item--selected': item.isSelected,
+                'at-calendar__list__item--selected-head': item.isSelectedHead,
+                'at-calendar__list__item--selected-tail': item.isSelectedTail,
+                'at-calendar__list__item--blur':
                   item.isDisabled ||
                   item.type === constant.TYPE_PRE_MONTH ||
                   item.type === constant.TYPE_NEXT_MONTH
               }
             )}
           >
-            <View className='flex__item-container'>
-              <View className='container-text'>{item.text}</View>
+            <View className='at-calendar__list__item-container'>
+              <Text
+                className={classnames('at-calendar__list__item-container__text', {
+                  'at-calendar__list__item-container__text--today': item.isToday,
+                  'at-calendar__list__item-container__text--active': item.isActive,
+                  'at-calendar__list__item-container__text--selected': item.isSelected,
+                  'at-calendar__list__item-container__text--selected-head': item.isSelectedHead,
+                  'at-calendar__list__item-container__text--selected-tail': item.isSelectedTail,
+                  'at-calendar__list__item-container__text--blur':
+                    item.isDisabled ||
+                    item.type === constant.TYPE_PRE_MONTH ||
+                    item.type === constant.TYPE_NEXT_MONTH
+                })}
+              >
+                {item.text}
+              </Text>
             </View>
-            <View className='flex__item-extra extra'>
+            <View className='at-calendar__list__item-extra extra'>
               {item.marks && item.marks.length > 0 ? (
                 <View className='extra-marks'>
                   {item.marks.map((mark, key) => (

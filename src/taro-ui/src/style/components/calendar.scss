@@ -6,8 +6,9 @@
 
   /* elements */
   &__header {
-    .header__flex {
+    &__flex {
       @include display-flex;
+      flex-direction: row;
       @include align-items(center);
 
       height: 72px;
@@ -15,105 +16,132 @@
       text-align: center;
 
       &-item {
-        @include flex(0 0 calc(100% / 7));
+        flex-shrink: 0;
+        flex-grow: 0;
+        flex-basis: 14.2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-        font-size: 30px;
+        &__text {
+          font-size: 30px;
+        }
       }
     }
   }
 
   &__list {
-    &.flex {
-      @include display-flex;
-      @include align-items();
-      @include flex-wrap(wrap);
+    @include display-flex;
+    flex-direction: row;
+    @include align-items();
+    @include flex-wrap(wrap);
 
-      color: $at-calendar-day-color;
+    color: $at-calendar-day-color;
 
-      .flex__item {
-        @include flex(0 0 calc(100% / 7));
+    &__item {
+      flex-shrink: 0;
+      flex-grow: 0;
+      flex-basis: 14.2%;
 
-        font-size: 30px;
-        text-align: center;
-        position: relative;
-        margin: 5px 0;
+      font-size: 30px;
+      text-align: center;
+      position: relative;
+      margin: 5px 0;
 
-        &-container {
-          @include align-items(center);
-          @include display-flex;
+      &-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
 
-          width: $at-calendar-day-size;
-          height: $at-calendar-day-size;
-          margin-left: auto;
-          margin-right: auto;
-          border-radius: $at-calendar-day-size / 2;
+        width: $at-calendar-day-size;
+        height: $at-calendar-day-size;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: $at-calendar-day-size / 2;
 
-          .container-text {
-            @include flex;
+        &__text {
+          display: flex;
+          flex-direction: row;
+          color: $at-calendar-day-color;
+
+          &--today {
+            color: $at-calendar-main-color;
+            //font-weight: bolder;
+          }
+
+          &--blur {
+            color: #e1e4e7;
+          }
+
+          &--selected {
+            color: white;
+            //background-color: rgba($color: $at-calendar-main-color, $alpha: 0.7);
           }
         }
+      }
 
-        &-extra {
-          .extra-marks {
-            position: absolute;
-            bottom: 5px;
-            line-height: 0;
-            left: 50%;
-            //transform: translateX(-50%);
+      &-extra {
+        .extra-marks {
+          position: absolute;
+          bottom: 5px;
+          line-height: 0;
+          left: 50%;
+          //transform: translateX(-50%);
 
-            .mark {
-              width: $at-calendar-mark-size;
-              height: $at-calendar-mark-size;
-              margin-right: 4px;
-              //display: inline-block;
-              background-color: $at-calendar-main-color;
-              border-radius: $at-calendar-mark-size / 2;
-              overflow: hidden;
+          .mark {
+            width: $at-calendar-mark-size;
+            height: $at-calendar-mark-size;
+            margin-right: 4px;
+            //display: inline-block;
+            background-color: $at-calendar-main-color;
+            border-radius: $at-calendar-mark-size / 2;
+            overflow: hidden;
 
-              &:last-child {
-                margin-right: 0;
-              }
+            &:last-child {
+              margin-right: 0;
             }
           }
         }
+      }
 
-        &--today {
-          color: $at-calendar-main-color;
-          font-weight: bolder;
+      &--today {
+        color: $at-calendar-main-color;
+        font-weight: bolder;
+      }
+
+      &--blur {
+        color: #e1e4e7;
+      }
+
+      &--selected {
+        color: white;
+        background-color: rgba($color: $at-calendar-main-color, $alpha: 0.7);
+
+        &-head {
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
         }
 
-        &--blur {
-          color: #e1e4e7;
+        &-tail {
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
         }
 
-        &--selected {
-          color: white;
-          background-color: rgba($color: $at-calendar-main-color, $alpha: 0.7);
+        /* stylelint-disable-next-line */
+        .extra-marks .mark {
+          background-color: white;
+        }
 
-          &-head {
-            border-top-left-radius: 40px;
-            border-bottom-left-radius: 40px;
-          }
+        &-head.flex__item--selected-tail {
+          background-color: transparent;
 
-          &-tail {
-            border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
-          }
-
-          /* stylelint-disable-next-line */
-          .extra-marks .mark {
-            background-color: white;
-          }
-
-          &-head.flex__item--selected-tail {
-            background-color: transparent;
-
-            .flex__item-container {
-              background-color: rgba(
-                $color: $at-calendar-main-color,
-                $alpha: 0.7
-              );
-            }
+          .flex__item-container {
+            background-color: rgba(
+              $color: $at-calendar-main-color,
+              $alpha: 0.7
+            );
           }
         }
       }
@@ -121,23 +149,22 @@
   }
 
   &__controller {
-    @include display-flex;
+    display: flex;
+    flex-direction: row;
     @include align-items(center);
     @include justify-content(center);
 
     margin-bottom: 20px;
 
     &__arrow {
-      //@include flex(0 0 40px);
-
       height: 40px;
+      width: 40px;
       border-radius: 12px;
-      //display: inline-block;
-      background-size: 16px 24px;
-      background-position: center;
       background-color: #f7f8fc;
-      background-repeat: no-repeat;
-      background-image: url('../../assets/calendar-arrow.png');
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
 
       &--right {
         //transform: rotate(180deg);
@@ -159,9 +186,10 @@
 }
 
 .at-calendar-slider__main {
-  .main__body {
+  &__body {
     @include display-flex;
-
+    flex-direction: row;
+    height: 480px;
     width: 100%;
 
     &--animate {
@@ -173,8 +201,8 @@
     }
   }
 
-  &--weapp,
-  &--swan {
+  &--WEAPP,
+  &--SWAN {
     .main__body {
       height: 480px;
     }
