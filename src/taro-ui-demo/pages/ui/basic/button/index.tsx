@@ -4,6 +4,7 @@ import { Form, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro, { ShareAppMessageReturn } from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
+import IconFont from '@/taro-ui/components/icon-font'
 import './index.scss'
 
 interface ButtonPageState {
@@ -313,7 +314,7 @@ export default class ButtonPage extends React.Component<{}, ButtonPageState> {
                 <View className='at-article__p'>右侧是浮动操作按钮👉</View>
                 <View className='panel__content__btn-demo-fab'>
                   <AtFab onClick={this.onButtonClick.bind(this)}>
-                    <Text className='at-fab__icon at-icon at-icon-menu' />
+                    <IconFont name='menu' size={48} color='#fff' />
                   </AtFab>
                 </View>
               </View>

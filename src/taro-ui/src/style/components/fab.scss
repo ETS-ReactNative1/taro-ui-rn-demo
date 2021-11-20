@@ -2,6 +2,12 @@
 @import '../mixins/index.scss';
 
 .at-fab {
+  /*postcss-pxtransform rn eject enable*/
+  position: fixed;
+  /*postcss-pxtransform rn eject disable*/
+  right: 50px;
+  bottom: 60px;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +22,11 @@
   background: $at-fab-bg-color;
   //box-shadow: $at-fab-box-shadow;
   box-sizing: border-box;
+  &__RN {
+    position: absolute;
+    //right: 0;
+    //bottom: 0;
+  }
 
   &:active {
     background: $at-fab-bg-color-active;
