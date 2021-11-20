@@ -5,7 +5,7 @@ import Taro from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { AtCheckboxProps } from '../../../types/checkbox'
 import '../../style/components/checkbox.scss';
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 
 export default class AtCheckbox extends React.Component<AtCheckboxProps<any>> {
   public static defaultProps: AtCheckboxProps<any>

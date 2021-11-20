@@ -5,7 +5,7 @@ import { Image, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtToastProps, AtToastState } from '../../../types/toast'
 import statusImg from './img.json'
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 
 export default class AtToast extends React.Component<
   AtToastProps,

@@ -6,7 +6,7 @@ import Taro from '@tarojs/taro'
 import { Input, View } from '@tarojs/components'
 import { CommonEvent, ITouchEvent } from '@tarojs/components/types/common'
 import { AtInputNumberProps, InputError } from '../../../types/input-number'
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 import '../../style/components/input-number.scss';
 
 // TODO: Check all types

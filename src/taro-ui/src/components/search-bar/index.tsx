@@ -5,7 +5,7 @@ import Taro from '@tarojs/taro'
 import { Input, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtSearchBarProps, AtSearchBarState } from '../../../types/search-bar'
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 import '../../style/components/search-bar.scss';
 
 type ExtendEvent = {

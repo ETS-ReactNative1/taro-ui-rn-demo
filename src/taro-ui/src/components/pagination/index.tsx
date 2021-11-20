@@ -5,7 +5,7 @@ import { Text, View } from '@tarojs/components'
 import { AtPaginationProps, AtPaginationState } from '../../../types/pagination'
 import AtButton from '../button/index'
 import '../../style/components/pagination.scss'
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 
 const MIN_MAXPAGE = 1
 const getMaxPage = (maxPage = 0): number => {

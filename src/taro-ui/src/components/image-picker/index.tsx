@@ -7,7 +7,7 @@ import Taro from '@tarojs/taro'
 import { AtImagePickerProps, File } from '../../../types/image-picker'
 import { uuid } from '../../common/utils'
 import '../../style/components/image-picker.scss';
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 
 interface MatrixFile extends Partial<File> {
   type: 'blank' | 'btn'

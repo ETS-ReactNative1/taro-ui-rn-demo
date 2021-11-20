@@ -7,7 +7,7 @@ import { ITouchEvent } from '@tarojs/components/types/common'
 import { AtNavBarProps } from '../../../types/nav-bar'
 import { mergeStyle } from '../../common/utils'
 import '../../style/components/nav-bar.scss';
-import IconFont from '../icon';
+import IconFont from '../icon-font';
 
 export default class AtNavBar extends React.Component<AtNavBarProps> {
   public static defaultProps: AtNavBarProps

@@ -6,7 +6,7 @@ import {
   AtCalendarControllerProps,
   AtCalendarControllerState
 } from '../../../../types/calendar'
-import IconFont from '../../icon';
+import IconFont from '../../icon-font';
 import '../../../style/components/calendar.scss';
 
 export default class AtCalendarController extends React.Component<

@@ -5,7 +5,7 @@ import Taro from '@tarojs/taro';
 import isFunction from 'lodash/isFunction';
 import RootSiblings from 'react-native-root-siblings';
 import noop from 'lodash/noop';
-import IconFont from '../icon';
+import IconFont from '../icon-font';
 import '../../style/components/float-layout.scss';
 
 function AtFloatLayout({

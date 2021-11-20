@@ -4,7 +4,7 @@ import React from 'react'
 import isFunction from 'lodash/isFunction'
 import { Image, Text, View } from '@tarojs/components'
 import { AtCardProps } from '../../../types/card'
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 import '../../style/components/card.scss';
 
 export default class AtCard extends React.Component<AtCardProps> {

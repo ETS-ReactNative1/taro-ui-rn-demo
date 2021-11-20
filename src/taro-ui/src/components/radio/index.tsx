@@ -6,7 +6,7 @@ import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtRadioProps, RadioOption } from '../../../types/radio'
 import '../../style/components/radio.scss';
-import IconFont from '../icon'
+import IconFont from '../icon-font'
 
 export default class AtRadio extends React.Component<AtRadioProps<any>> {
   public static defaultProps: AtRadioProps<any>

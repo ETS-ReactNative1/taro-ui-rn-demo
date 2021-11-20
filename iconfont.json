@@ -1,6 +1,6 @@
 {
     "symbol_url": "//at.alicdn.com/t/font_2936359_uhpiielbcq.js",
-    "save_dir": "./src/taro-ui/src/components/icon",
+    "save_dir": "./src/taro-ui/src/components/icon-font",
     "use_typescript": false,
     "platforms": "*",
     "use_rpx": true,
