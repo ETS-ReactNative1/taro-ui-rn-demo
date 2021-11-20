@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtActionSheetBodyProps } from '../../../../types/action-sheet'
+import '../../../style/components/action-sheet.scss'
 
 export default class AtActionSheetBody extends React.Component<
   AtActionSheetBodyProps

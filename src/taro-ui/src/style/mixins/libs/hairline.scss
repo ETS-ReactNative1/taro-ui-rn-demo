@@ -119,16 +119,18 @@
   $left: 0
 ) {
   position: relative;
+  border-bottom-width: $width;
+  border-bottom-style: $style;
+  border-bottom-color: $color;
 
   &::after {
-    @include hairline-common();
-
-    top: auto;
-    left: $left;
-    right: 0;
-    bottom: 0;
-    //transform: scaleY(0.5);
-    border-bottom: $width $style $color;
+    //@include hairline-common();
+    //top: auto;
+    //left: $left;
+    //right: 0;
+    //bottom: 0;
+    ////transform: scaleY(0.5);
+    //border-bottom: $width $style $color;
   }
 }
 

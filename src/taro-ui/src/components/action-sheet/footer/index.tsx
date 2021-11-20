@@ -1,8 +1,9 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { AtActionSheetFooterProps } from '../../../../types/action-sheet'
+import '../../../style/components/action-sheet.scss'
 
 export default class AtActionSheetFooter extends React.Component<
   AtActionSheetFooterProps
@@ -24,7 +25,9 @@ export default class AtActionSheetFooter extends React.Component<
 
     return (
       <View onClick={this.handleClick} className={rootClass}>
-        {this.props.children}
+        {React.isValidElement(this.props.children)
+          ? this.props.children
+          : <Text className='at-action-sheet__footer__text'>{this.props.children}</Text>}
       </View>
     )
   }

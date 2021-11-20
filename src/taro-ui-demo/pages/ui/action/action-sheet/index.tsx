@@ -156,7 +156,7 @@ export default class ActionSheetPage extends React.Component<
           <AtActionSheetItem
             onClick={this.showToast.bind(this, '成功清除位置')}
           >
-            <Text className='danger'>清除位置信息并退出</Text>
+            <Text className='demo-action-sheet-danger'>清除位置信息并退出</Text>
           </AtActionSheetItem>
         </AtActionSheet>
       </View>

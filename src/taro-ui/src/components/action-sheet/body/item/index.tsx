@@ -1,8 +1,9 @@
+import React from 'react';
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
-import React from 'react'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { AtActionSheetItemProps } from '../../../../../types/action-sheet'
+import '../../../../style/components/action-sheet.scss'
 
 export default class AtActionSheetItem extends React.Component<
   AtActionSheetItemProps
@@ -21,7 +22,9 @@ export default class AtActionSheetItem extends React.Component<
 
     return (
       <View className={rootClass} onClick={this.handleClick}>
-        {this.props.children}
+        {React.isValidElement(this.props.children)
+          ? this.props.children
+          : <Text numberOfLines={1} className='at-action-sheet__item__text'>{this.props.children}</Text>}
       </View>
     )
   }

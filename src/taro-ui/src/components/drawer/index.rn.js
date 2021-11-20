@@ -1,4 +1,4 @@
-import {View, Text} from "@tarojs/components";
+import {View} from "@tarojs/components";
 import Modal from "react-native-modal";
 import Taro from '@tarojs/taro';
 import noop from 'lodash/noop';
