@@ -5,9 +5,26 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
+  padding-right: 40px;
   padding-bottom: 40px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: #999;
-  min-height: 120px;
+  //min-height: 120px;
+}
+
+.icon_right {
+  display: flex;
+  flex-direction: column;
+  &_head {
+    padding-left: 20px;
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+  &_tit {
+    padding-left: 20px;
+    font-size: 24px;
+    color: #aaa;
+    line-height: 36px;
+  }
 }

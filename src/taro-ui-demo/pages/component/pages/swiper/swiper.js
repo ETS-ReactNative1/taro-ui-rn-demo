@@ -1,7 +1,5 @@
-import './swiper.scss'
 import React from 'react'
-
-import { Component } from '@tarojs/taro'
+import Taro from '@tarojs/taro';
 import {
   View,
   Text,
@@ -10,6 +8,7 @@ import {
   Switch,
   Slider
 } from '@tarojs/components'
+import './swiper.scss'
 
 import Header from '../../../../components/head/head'
 
@@ -85,6 +84,7 @@ export default class PageView extends React.Component {
         <View className='components-page__header'>
           <Header title='Swiper' />
         </View>
+
         <View className='swiper-components-page__body swiper'>
           <View className='swiper-components-page__body-example'>
             <View className='example-header'>
@@ -102,6 +102,9 @@ export default class PageView extends React.Component {
                 autoplay={isAutoplay}
                 indicatorDots={hasIndicatorDots}
                 preMargin='20'
+                style={{
+                  height: Taro.pxTransform(300),
+                }}
               >
                 <SwiperItem>
                   <View className='demo-text-1 swiper-demo-text-1' />
@@ -139,7 +142,8 @@ export default class PageView extends React.Component {
                       min={500}
                       max={2000}
                       value={duration}
-                      onChange={this.setDuration}></Slider>
+                      onChange={this.setDuration}
+                    />
                   </View>
                 </View>
                 <View className='swiper-slider-list__item'>
@@ -153,13 +157,15 @@ export default class PageView extends React.Component {
                       min={2000}
                       max={10000}
                       value={this.state.interval}
-                      onChange={this.setInterval} ></Slider>
+                      onChange={this.setInterval}
+                    />
                   </View>
                 </View>
               </View>
             </View>
           </View>
-          <View className='components-page__body-example example'>
+
+          <View className='swiper-components-page__body-example'>
             <View className='example-header'>
               <Text className='example-header-text'>Swiper 纵向滑动</Text>
             </View>
@@ -173,30 +179,34 @@ export default class PageView extends React.Component {
                 circular={verticalIsCircular}
                 indicatorDots={verticalHasIndicatorDots}
                 autoplay={verticalIsAutoplay}
-                preMargin='20'>
+                preMargin='20'
+                style={{
+                  height: Taro.pxTransform(300),
+                }}
+              >
                 <SwiperItem>
-                  <View className='demo-text-1'></View>
+                  <View className='demo-text-1 swiper-demo-text-1' />
                 </SwiperItem>
                 <SwiperItem>
-                  <View className='demo-text-2'></View>
+                  <View className='demo-text-2 swiper-demo-text-2' />
                 </SwiperItem>
                 <SwiperItem>
-                  <View className='demo-text-3'></View>
+                  <View className='demo-text-3 swiper-demo-text-3' />
                 </SwiperItem>
               </Swiper>
             </View>
             <View className='swiper-switch-list'>
               <View className='swiper-switch-list__item'>
                 <View className='swiper-switch-list__text'>指示点</View>
-                <Switch checked={verticalHasIndicatorDots} onChange={this.setVerticalIndicatorDots} ></Switch>
+                <Switch checked={verticalHasIndicatorDots} onChange={this.setVerticalIndicatorDots} />
               </View>
               <View className='swiper-switch-list__item'>
                 <View className='swiper-switch-list__text'>自动播放</View>
-                <Switch checked={verticalIsAutoplay} onChange={this.setVerticalAutoPlay} ></Switch>
+                <Switch checked={verticalIsAutoplay} onChange={this.setVerticalAutoPlay} />
               </View>
               <View className='swiper-switch-list__item'>
                 <View className='swiper-switch-list__text'>循环播放</View>
-                <Switch checked={verticalIsCircular} onChange={this.setVerticalCircular} ></Switch>
+                <Switch checked={verticalIsCircular} onChange={this.setVerticalCircular} />
               </View>
             </View>
           </View>
