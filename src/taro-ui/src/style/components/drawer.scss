@@ -20,9 +20,13 @@ $at-drawer-duration: 300ms !default;
   }
 
   &__content {
+    position: absolute;
+    /*postcss-pxtransform rn eject enable*/
     position: fixed;
+    /*postcss-pxtransform rn eject disable*/
     top: 0;
     bottom: 0;
+    //left: 0;
     width: $at-drawer-content-width;
     text-align: left;
     background-color: $color-bg;
@@ -30,6 +34,19 @@ $at-drawer-duration: 300ms !default;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     z-index: 1;
+    &-RN {
+      opacity: 1;
+      display: flex;
+      flex-direction: column;
+      padding-top: 100px;
+      &--right {
+        right: 0;
+      }
+    }
+
+    &--right {
+      //right: 0;
+    }
   }
 
   /* modifiers */

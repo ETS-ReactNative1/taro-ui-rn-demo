@@ -5,6 +5,7 @@ import { View } from '@tarojs/components'
 import { AtDrawerProps, AtDrawerState } from '../../../types/drawer'
 import AtList from '../list/index'
 import AtListItem from '../list/item/index'
+import '../../style/components/drawer.scss'
 
 export default class AtDrawer extends React.Component<
   AtDrawerProps,
@@ -96,7 +97,7 @@ export default class AtDrawer extends React.Component<
           className='at-drawer__mask'
           style={maskStyle}
           onClick={this.onMaskClick.bind(this)}
-        ></View>
+        />
 
         <View className='at-drawer__content' style={listStyle}>
           {!!items && items.length ? (
@@ -108,7 +109,7 @@ export default class AtDrawer extends React.Component<
                   onClick={this.onItemClick.bind(this, index)}
                   title={name}
                   arrow='right'
-                ></AtListItem>
+                />
               ))}
             </AtList>
           ) : (

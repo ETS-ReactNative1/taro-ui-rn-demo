@@ -84,7 +84,7 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
                   onItemClick={this.onItemClick.bind(this)}
                   onClose={this.onClose.bind(this)}
                   items={['菜单1', '菜单2']}
-                ></AtDrawer>
+                />
               </View>
             </View>
           </View>
@@ -103,7 +103,7 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
                   onItemClick={this.onItemClick.bind(this)}
                   onClose={this.onClose.bind(this)}
                   items={['菜单1', '菜单2']}
-                ></AtDrawer>
+                />
               </View>
             </View>
           </View>
