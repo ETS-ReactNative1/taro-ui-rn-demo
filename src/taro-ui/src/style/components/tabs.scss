@@ -4,51 +4,23 @@
 $component:'.at-tabs';
 $at-tabs-pane-min-height: 100px;
 
-#{$component} {
+.at-tabs {
   width: 100%;
-  height: 100%;
+  //height: 100%;
   overflow: hidden;
-
-  /* elements */
-  &__item {
-    position: relative;
-    flex: 1;
-    padding: $spacing-v-lg $spacing-h-lg;
-    color: $at-tabs-color;
-    font-size: $at-tabs-font-size;
-    text-overflow: ellipsis;
-    overflow: hidden;
-
-    &-underline {
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: $at-tabs-line-height;
-      background-color: $at-tabs-color-active;
-      //transform: scaleX(0);
-      transition: all 0.15s;
-    }
-
-    &--active {
-      color: $at-tabs-color-active;
-
-      #{$component}__item-underline {
-        //transform: scaleX(1);
-      }
-    }
-  }
 
   &__header {
     position: relative;
     display: flex;
+    flex-direction: row;
     width: 100%;
     text-align: center;
     white-space: nowrap;
     background-color: $at-tabs-bg-color;
     box-sizing: border-box;
+    /*postcss-pxtransform rn eject enable*/
     overflow: -moz-scrollbars-none;
+    /*postcss-pxtransform rn eject disable*/
 
     &::-webkit-scrollbar {
       display: none;
@@ -56,10 +28,49 @@ $at-tabs-pane-min-height: 100px;
       height: 0 !important;
       background: transparent;
     }
+
+    /* elements */
+    &__item {
+      position: relative;
+      flex: 1;
+      text-overflow: ellipsis;
+      overflow: hidden;
+
+      &-underline {
+        //display: block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: $at-tabs-line-height;
+        background-color: $at-tabs-underline-color;
+        //transform: scaleX(0);
+        transition: all 0.15s;
+        &--active {
+          background-color: $at-tabs-color-active;
+        }
+      }
+
+      &--active {
+        //#{$component}__item-underline {
+        //  //transform: scaleX(1);
+        //}
+      }
+
+      &__text {
+        padding: $spacing-v-lg $spacing-h-lg;
+        color: $at-tabs-color;
+        font-size: $at-tabs-font-size;
+        text-align: center;
+        &--active {
+          color: $at-tabs-color-active;
+        }
+      }
+    }
   }
 
   &__body {
-    display: block;
+    display: flex;
     width: 100%;
     white-space: nowrap;
     transition: all 0.3s;
@@ -68,7 +79,7 @@ $at-tabs-pane-min-height: 100px;
   }
 
   &__underline {
-    display: block;
+    display: flex;
     position: absolute;
     top: 0;
     left: 0;
@@ -95,6 +106,7 @@ $at-tabs-pane-min-height: 100px;
 
   &--vertical {
     display: flex;
+    flex-direction: row;
     flex: 1;
     overflow: hidden;
 
@@ -155,7 +167,8 @@ $at-tabs-pane-min-height: 100px;
 /* hack SWAN */
 
 .at-tabs-pane {
-  //display: inline-block;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   box-sizing: border-box;
   white-space: initial;
@@ -172,7 +185,7 @@ $at-tabs-pane-min-height: 100px;
   }
 
   &--vertical {
-    display: block;
+    //display: block;
     height: 100%;
     overflow: scroll;
   }

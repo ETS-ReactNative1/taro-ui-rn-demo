@@ -3,6 +3,7 @@ import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtTabsPaneProps } from '../../../types/tabs-pane'
+import '../../style/components/tabs.scss'
 
 export default class AtTabsPane extends React.Component<AtTabsPaneProps> {
   public static defaultProps: AtTabsPaneProps
@@ -31,7 +32,7 @@ export default class AtTabsPane extends React.Component<AtTabsPaneProps> {
 }
 
 AtTabsPane.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   tabDirection: 'horizontal',
   index: 0,

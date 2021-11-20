@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { ScrollView, View } from '@tarojs/components'
+import { ScrollView, View, Text } from '@tarojs/components'
 import { CommonEvent, ITouchEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtTabsProps, AtTabsState } from '../../../types/tabs'
 import { isTest, mergeStyle, uuid } from '../../common/utils'
+import '../../style/components/tabs.scss'
 
 const ENV = Taro.getEnv()
 const MIN_DISTANCE = 100
@@ -64,7 +65,7 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
           break
         }
         default: {
-          console.warn('AtTab 组件在该环境还未适配')
+          // console.warn('AtTab 组件在该环境还未适配')
           break
         }
       }
@@ -78,6 +79,9 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
   private handleTouchStart(e: ITouchEvent): void {
     const { swipeable, tabDirection } = this.props
     if (!swipeable || tabDirection === 'vertical') return
+    if (!e.touches) {
+      return;
+    }
     // 获取触摸时的原点
     this._touchDot = e.touches[0].pageX
     // 使用js计时器记录时间
@@ -147,7 +151,7 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
 
   public render(): JSX.Element {
     const {
-      customStyle = '',
+      customStyle = {},
       className,
       height,
       tabDirection,
@@ -158,10 +162,14 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
     } = this.props
     const { _scrollLeft, _scrollTop, _scrollIntoView } = this.state
 
-    const heightStyle = { height }
+    const heightStyle: React.CSSProperties = {}
+    if (height) {
+      heightStyle.height = Taro.pxTransform(height);
+    }
+
     const underlineStyle = {
-      height: tabDirection === 'vertical' ? `${tabList.length * 100}%` : '1PX',
-      width: tabDirection === 'horizontal' ? `${tabList.length * 100}%` : '1PX'
+      height: tabDirection === 'vertical' ? `${tabList.length * 100}%` : Taro.pxTransform(1),
+      width: tabDirection === 'horizontal' ? `${tabList.length * 100}%` : Taro.pxTransform(1),
     }
     const bodyStyle: React.CSSProperties = {}
     let transformStyle = `translate3d(0px, -${current * 100}%, 0px)`
@@ -177,41 +185,60 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
     }
 
     const tabItems = tabList.map((item, idx) => {
-      const itemCls = classNames({
-        'at-tabs__item': true,
-        'at-tabs__item--active': current === idx
-      })
-
       return (
         <View
-          className={itemCls}
+          className={classNames({
+            'at-tabs__header__item': true,
+            'at-tabs__header__item--active': current === idx
+          })}
           id={`tab${this._tabId}${idx}`}
           key={`at-tabs-item-${idx}`}
           onClick={this.handleClick.bind(this, idx)}
         >
-          {item.title}
-          <View className='at-tabs__item-underline'></View>
+          <Text
+            className={classNames({
+              'at-tabs__header__item__text': true,
+              'at-tabs__header__item__text--active': current === idx
+            })}
+          >
+            {item.title}
+          </Text>
+          <View
+            className={classNames({
+              'at-tabs__header__item-underline': true,
+              'at-tabs__header__item-underline--active': current === idx
+            })}
+          />
         </View>
       )
     })
-    const rootCls = classNames(
-      {
-        'at-tabs': true,
-        'at-tabs--scroll': scroll,
-        [`at-tabs--${tabDirection}`]: true,
-        [`at-tabs--${ENV}`]: true
-      },
-      className
-    )
+
     const scrollX = tabDirection === 'horizontal'
     const scrollY = tabDirection === 'vertical'
 
     return (
-      <View className={rootCls} style={mergeStyle(heightStyle, customStyle)}>
+      <View
+        className={classNames(
+          {
+            'at-tabs': true,
+            'at-tabs--scroll': scroll,
+            [`at-tabs--${tabDirection}`]: true,
+            [`at-tabs--${ENV}`]: true
+          },
+          className
+        )}
+        style={{
+          ...heightStyle,
+          ...customStyle,
+        }}
+      >
         {scroll ? (
           <ScrollView
             id={this._tabId}
-            className='at-tabs__header'
+            className={classNames({
+              'at-tabs__header': true,
+              [`at-tabs__header--${tabDirection}`]: true,
+            })}
             style={heightStyle}
             scrollX={scrollX}
             scrollY={scrollY}
@@ -234,7 +261,7 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
           onTouchMove={this.handleTouchMove.bind(this)}
           style={mergeStyle(bodyStyle, heightStyle)}
         >
-          <View className='at-tabs__underline' style={underlineStyle}></View>
+          <View className='at-tabs__underline' style={underlineStyle} />
           {this.props.children}
         </View>
       </View>
@@ -243,7 +270,7 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
 }
 
 AtTabs.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   tabDirection: 'horizontal',
   height: '',

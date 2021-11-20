@@ -70,6 +70,7 @@ export default class Index extends React.Component<{}, IndexPageState> {
               </AtTabs>
             </View>
           </View>
+
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>滚动标签栏</Text></View>
             <View className='panel__content'>
@@ -126,7 +127,7 @@ export default class Index extends React.Component<{}, IndexPageState> {
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>垂直模式</Text></View>
             <View className='panel__content'>
               <AtTabs
-                height='200px'
+                height={400}
                 scroll
                 tabDirection='vertical'
                 current={current4}
@@ -138,42 +139,54 @@ export default class Index extends React.Component<{}, IndexPageState> {
                   current={current4}
                   index={0}
                 >
-                  <View className='tab-content--vertical'>标签页一的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页一的内容</Text>
+                  </View>
                 </AtTabsPane>
                 <AtTabsPane
                   tabDirection='vertical'
                   current={current4}
                   index={1}
                 >
-                  <View className='tab-content--vertical'>标签页二的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页二的内容</Text>
+                  </View>
                 </AtTabsPane>
                 <AtTabsPane
                   tabDirection='vertical'
                   current={current4}
                   index={2}
                 >
-                  <View className='tab-content--vertical'>标签页三的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页三的内容</Text>
+                  </View>
                 </AtTabsPane>
                 <AtTabsPane
                   tabDirection='vertical'
                   current={current4}
                   index={3}
                 >
-                  <View className='tab-content--vertical'>标签页四的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页四的内容</Text>
+                  </View>
                 </AtTabsPane>
                 <AtTabsPane
                   tabDirection='vertical'
                   current={current4}
                   index={4}
                 >
-                  <View className='tab-content--vertical'>标签页五的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页五的内容</Text>
+                  </View>
                 </AtTabsPane>
                 <AtTabsPane
                   tabDirection='vertical'
                   current={current4}
                   index={5}
                 >
-                  <View className='tab-content--vertical'>标签页六的内容</View>
+                  <View className='tab-content--vertical'>
+                    <Text className='tab-content--vertical--text'>标签页六的内容</Text>
+                  </View>
                 </AtTabsPane>
               </AtTabs>
             </View>
