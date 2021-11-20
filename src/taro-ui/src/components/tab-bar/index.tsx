@@ -1,11 +1,13 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Image, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtTabBarProps, TabItem } from '../../../types/tab-bar'
 import { mergeStyle } from '../../common/utils'
 import AtBadge from '../badge/index'
+import '../../style/components/tab-bar.scss'
 
 export default class AtTabBar extends React.Component<AtTabBarProps> {
   public static defaultProps: AtTabBarProps
@@ -35,7 +37,7 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
 
   public render(): JSX.Element {
     const {
-      customStyle = '',
+      customStyle = {},
       className,
       fixed,
       backgroundColor,
@@ -47,21 +49,30 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
       selectedColor
     } = this.props
     // const { isIPhoneX } = this.state
-    const defaultStyle = {
-      color: color || ''
+
+    const defaultStyle: React.CSSProperties = {}
+    if (color) {
+      defaultStyle.color = color;
     }
-    const selectedStyle = {
-      color: selectedColor || ''
+
+    const selectedStyle: React.CSSProperties = {}
+    if (selectedColor) {
+      selectedStyle.color = selectedColor;
     }
-    const titleStyle = {
-      fontSize: fontSize ? `${fontSize}px` : ''
+
+    const titleStyle: React.CSSProperties = {}
+    if (fontSize) {
+      titleStyle.fontSize = Taro.pxTransform(fontSize);
     }
-    const rootStyle = {
-      backgroundColor: backgroundColor || ''
+
+    const rootStyle: React.CSSProperties = {}
+    if (backgroundColor) {
+      rootStyle.backgroundColor = backgroundColor;
     }
+
     const imgStyle = {
-      width: `${iconSize}px`,
-      height: `${iconSize}px`
+      width: Taro.pxTransform(iconSize),
+      height: Taro.pxTransform(iconSize),
     }
 
     return (
@@ -106,9 +117,9 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
                     )}
                     style={{
                       color: current === i ? selectedColor : color,
-                      fontSize: iconSize ? `${iconSize}px` : ''
+                      fontSize: Taro.pxTransform(iconSize ? iconSize : 36),
                     }}
-                  ></Text>
+                  />
                 </View>
               </AtBadge>
             ) : null}
@@ -140,17 +151,17 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
               </AtBadge>
             ) : null}
 
-            <View>
-              <AtBadge
-                dot={item.iconType || item.image ? false : !!item.dot}
-                value={item.iconType || item.image ? '' : item.text}
-                maxValue={item.iconType || item.image ? 0 : Number(item.max)}
-              >
-                <View className='at-tab-bar__title' style={titleStyle}>
+            <AtBadge
+              dot={item.iconType || item.image ? false : !!item.dot}
+              value={item.iconType || item.image ? '' : item.text}
+              maxValue={item.iconType || item.image ? 0 : Number(item.max)}
+            >
+              <View className='at-tab-bar__title' style={titleStyle}>
+                <Text className='at-tab-bar__title__text'>
                   {item.title}
-                </View>
-              </AtBadge>
-            </View>
+                </Text>
+              </View>
+            </AtBadge>
           </View>
         ))}
       </View>
@@ -159,7 +170,7 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
 }
 
 AtTabBar.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   fixed: false,
   current: 0,

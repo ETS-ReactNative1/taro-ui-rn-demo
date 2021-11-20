@@ -43,13 +43,15 @@
   $style: solid,
   $width: 1px
 ) {
-  position: relative;
+  //position: relative;
+  border-top-color: $color;
+  border-top-style: $style;
+  border-top-width: $width;
 
-  &::after {
-    @include hairline-base($color, $style);
-
-    border-top-width: $width;
-  }
+  //&::after {
+  //  @include hairline-base($color, $style);
+  //  border-top-width: $width;
+  //}
 }
 
 @mixin hairline-bottom(
