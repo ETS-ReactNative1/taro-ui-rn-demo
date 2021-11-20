@@ -54,9 +54,9 @@ export default class Index extends React.Component<{}, IndexesState> {
 
   public render(): JSX.Element {
     return (
-      <View className='page' style='height: 100vh;'>
+      <View className='page ui-navigation-indexes'>
         {/* 基础用法 */}
-        <View style='height: 100%;'>
+        <View style={{ height: '100%' }}>
           <AtIndexes
             list={mockData}
             topKey='Top'

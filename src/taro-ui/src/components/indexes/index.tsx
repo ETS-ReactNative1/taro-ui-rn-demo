@@ -13,6 +13,7 @@ import {
 import AtList from '../list/index'
 import AtListItem from '../list/item/index'
 import AtToast from '../toast/index'
+import '../../style/components/indexes.scss'
 
 const ENV = Taro.getEnv()
 

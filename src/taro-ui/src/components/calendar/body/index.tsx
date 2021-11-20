@@ -336,7 +336,7 @@ export default class AtCalendarBody extends React.Component<
         className={classnames(
           'main',
           'at-calendar-slider__main',
-          `at-calendar-slider__main--${process.env.TARO_ENV}`
+          `at-calendar-slider__main--${Taro.getEnv()}`
         )}
       >
         <AtCalendarDayList />
