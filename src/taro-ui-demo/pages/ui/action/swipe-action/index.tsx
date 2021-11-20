@@ -167,7 +167,7 @@ export default class SwipeActionPage extends React.Component<
 
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>使用变量控制开关</Text></View>
-            <View className='panel__controller' style='margin-bottom: 10px'>
+            <View className='panel__controller' style={{ marginBottom: Taro.pxTransform(20) }}>
               <AtButton size='small' onClick={this.handleStatusClick}>
                 当前状态: {isOpened2 ? '开' : '关'}{' '}
               </AtButton>

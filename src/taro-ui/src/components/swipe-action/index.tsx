@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Text, View, MovableArea, MovableView } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import {
@@ -10,6 +11,7 @@ import {
 } from '../../../types/swipe-action'
 import { uuid } from '../../common/utils'
 import AtSwipeActionOptions from './options/index'
+import '../../style/components/swipe-action.scss'
 
 export default class AtSwipeAction extends React.Component<
   AtSwipeActionProps,
@@ -146,13 +148,13 @@ export default class AtSwipeAction extends React.Component<
         id={`swipeAction-${componentId}`}
         className={rootClass}
         style={{
-          width: `${this.eleWidth}px`
+          width: Taro.pxTransform(this.eleWidth),
         }}
       >
         <MovableArea
           className='at-swipe-action__area'
           style={{
-            width: `${this.eleWidth + this.maxOffsetSize}px`,
+            width: Taro.pxTransform(this.eleWidth + this.maxOffsetSize),
             //transform: `translate(-${this.maxOffsetSize}px, 0)`
           }}
         >
@@ -164,8 +166,8 @@ export default class AtSwipeAction extends React.Component<
             onTouchEnd={this.onTouchEnd}
             onChange={this.onChange}
             style={{
-              width: `${this.eleWidth}px`,
-              left: `${this.maxOffsetSize}px`
+              width: Taro.pxTransform(this.eleWidth),
+              left: Taro.pxTransform(this.maxOffsetSize),
             }}
           >
             {this.props.children}

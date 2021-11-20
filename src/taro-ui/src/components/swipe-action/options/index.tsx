@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import { View } from '@tarojs/components'
 import { AtSwipeActionOptionsProps } from '../../../../types/swipe-action'
+import '../../../style/components/swipe-action.scss'
 
 export default class AtSwipeActionOptions extends React.Component<
   AtSwipeActionOptionsProps
