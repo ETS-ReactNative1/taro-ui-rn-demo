@@ -304,7 +304,14 @@ export default class Index extends React.Component<{}, IndexState> {
                     value={this.state.value14}
                     onChange={this.handleInput.bind(this, 'value14')}
                   >
-                    <Image src={verificationCode} />
+                    <Image
+                      src={verificationCode}
+                      mode='aspectFill'
+                      style={{
+                        width: Taro.pxTransform(145),
+                        height: Taro.pxTransform(60),
+                      }}
+                    />
                   </AtInput>
                   <AtInput
                     name='value15'
@@ -317,9 +324,9 @@ export default class Index extends React.Component<{}, IndexState> {
                   >
                     <View
                       style={{
-                        color: this.state.disabled ? '#FF4949' : '',
-                        fontSize: '12px',
-                        width: '90px'
+                        color: this.state.disabled ? '#FF4949' : '#000',
+                        fontSize: Taro.pxTransform(24),
+                        width: Taro.pxTransform(180),
                       }}
                       onClick={this.sendCode.bind(this)}
                     >

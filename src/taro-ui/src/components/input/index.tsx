@@ -12,6 +12,8 @@ import {
   InputEventDetail,
   KeyboardHeightEventDetail
 } from '../../../types/input'
+import '../../style/components/input.scss'
+import IconFont from '../icon-font'
 
 type PickAtInputProps = Pick<
   AtInputProps,
@@ -131,17 +133,6 @@ export default class AtInput extends React.Component<AtInputProps> {
     } = this.props
     const { type, maxlength, disabled, password } = getInputProps(this.props)
 
-    const rootCls = classNames(
-      'at-input',
-      {
-        'at-input--without-border': !border
-      },
-      className
-    )
-    const containerCls = classNames('at-input__container', {
-      'at-input--error': error,
-      'at-input--disabled': disabled
-    })
     const overlayCls = classNames('at-input__overlay', {
       'at-input__overlay--hidden': !disabled
     })
@@ -149,18 +140,38 @@ export default class AtInput extends React.Component<AtInputProps> {
 
     const id = name && { id: name }
     return (
-      <View className={rootCls} style={customStyle}>
-        <View className={containerCls}>
-          <View className={overlayCls} onClick={this.handleClick}></View>
-          {title && (
-            <Label
-              className={`at-input__title ${
-                required && 'at-input__title--required'
-              }`}
-              for={name}
-            >
-              {title}
-            </Label>
+      <View
+        className={classNames(
+          'at-input',
+          {
+            'at-input--without-border': !border
+          },
+          className
+        )}
+        style={customStyle}
+      >
+        <View
+          className={classNames('at-input__container', {
+            'at-input--error': error,
+            'at-input--disabled': disabled
+          })}
+        >
+          <View className={overlayCls} onClick={this.handleClick} />
+          {!!title && (
+            <>
+              {!!required && (
+                <Text className='at-input--required'>*</Text>
+              )}
+              <Label
+                className={classNames('at-input__title', {
+                  'at-input__title--error': error,
+                  'at-input__title--disabled': disabled
+                })}
+                for={name}
+              >
+                {title}
+              </Label>
+            </>
           )}
           <Input
             className='at-input__input'
@@ -189,20 +200,22 @@ export default class AtInput extends React.Component<AtInputProps> {
             // @ts-ignore
             onKeyboardHeightChange={this.handleKeyboardHeightChange}
           />
-          {clear && value && (
+          {!!clear && !!value && (
             <View className='at-input__icon' onTouchEnd={this.handleClearValue}>
-              <Text className='at-icon at-icon-close-circle at-input__icon-close'></Text>
+              <IconFont name='close-circle' size={32} color='#ccc' />
             </View>
           )}
-          {error && (
+          {!!error && (
             <View
               className='at-input__icon'
               onTouchStart={this.handleErrorClick}
             >
-              <Text className='at-icon at-icon-alert-circle at-input__icon-alert'></Text>
+              <IconFont name='alert' size={32} color='#FF4949' />
             </View>
           )}
-          <View className='at-input__children'>{this.props.children}</View>
+          {React.isValidElement(this.props.children) && (
+            <View className='at-input__children'>{this.props.children}</View>
+          )}
         </View>
       </View>
     )
