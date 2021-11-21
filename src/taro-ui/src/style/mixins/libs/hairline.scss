@@ -140,12 +140,14 @@
   $width: 1px,
   $left: 0
 ) {
-  position: relative;
+  //position: relative;
+  border-top-width: $width;
+  border-top-style: $style;
+  border-top-color: $color;
 
   &::before {
     /*postcss-pxtransform rn eject enable*/
     @include hairline-common();
-
     top: 0;
     left: $left;
     right: 0;

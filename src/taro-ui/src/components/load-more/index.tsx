@@ -62,9 +62,9 @@ export default class AtLoadMore extends React.Component<AtLoadMoreProps> {
 }
 
 AtLoadMore.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
-  noMoreTextStyle: '',
+  noMoreTextStyle: {},
   moreBtnStyle: '',
   status: 'more',
   loadingText: '加载中',

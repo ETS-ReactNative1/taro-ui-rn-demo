@@ -73,13 +73,13 @@ export default class NoticebarPage extends React.Component {
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>图标</Text></View>
             <View className='panel__content'>
               <View className='notice-bar-demo-item'>
-                <AtNoticebar icon='volume-plus' single>
+                <AtNoticebar icon='comment' single>
                   [单行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
               </View>
               <View className='notice-bar-demo-item'>
-                <AtNoticebar icon='volume-plus'>
+                <AtNoticebar icon='smile'>
                   [多行]
                   这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏，这是NoticeBar通告栏
                 </AtNoticebar>
@@ -104,7 +104,7 @@ export default class NoticebarPage extends React.Component {
               <View className='notice-bar-demo-item'>
                 <AtNoticebar
                   showMore
-                  icon='volume-plus'
+                  icon='crown'
                   single
                   onGotoMore={this.onGotoMore.bind(this)}
                 >
@@ -126,7 +126,7 @@ export default class NoticebarPage extends React.Component {
                 <AtNoticebar
                   showMore
                   moreText='更多内容'
-                  icon='volume-plus'
+                  icon='plus'
                   onGotoMore={this.onGotoMore.bind(this)}
                 >
                   [多行]

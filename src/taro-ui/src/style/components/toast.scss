@@ -44,10 +44,14 @@ $at-toast-bg-color: rgba($color: $color-black-0, $alpha: 0.8);
   /*postcss-pxtransform rn eject disable*/
 
   padding: $spacing-v-lg $spacing-h-xl;
-  min-width: $at-toast-min-width;
+  width: $at-toast-min-width;
   border-radius: $border-radius-md;
   background-color: $at-toast-bg-color;
   z-index: $zindex-toast;
+
+  &--RN {
+    left: (750px - $at-toast-min-width) / 2;
+  }
 
   &-content {
     display: flex;
@@ -73,6 +77,10 @@ $at-toast-bg-color: rgba($color: $color-black-0, $alpha: 0.8);
 
     &__info {
       margin-top: $spacing-v-md;
+      &--text {
+        margin-top: 0;
+      }
+
       &__text {
         color: $at-toast-color;
         font-size: $at-toast-font-size;
@@ -89,10 +97,6 @@ $at-toast-bg-color: rgba($color: $color-black-0, $alpha: 0.8);
     /*postcss-pxtransform rn eject enable*/
     min-width: initial;
     /*postcss-pxtransform rn eject disable*/
-
-    .toast-body-content__info {
-      margin-top: 0;
-    }
   }
 
   &.at-toast__body--custom-image,

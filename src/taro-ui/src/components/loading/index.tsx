@@ -29,15 +29,20 @@ export default class AtLoading extends React.Component<AtLoadingProps> {
 
     const loadingSize = typeof size === 'string' ? size : String(size)
 
-    const sizeStyle: any = {};
+    const sizeStyle: React.CSSProperties = {};
     if (size) {
       sizeStyle.width = Taro.pxTransform(parseInt(loadingSize));
       sizeStyle.height = Taro.pxTransform(parseInt(loadingSize));
     }
 
-    const colorStyle = {
-      border: color ? `1px solid ${color}` : '',
-      borderColor: color ? `${color} transparent transparent transparent` : ''
+    const colorStyle: React.CSSProperties = {}
+    if (color) {
+      colorStyle.borderTopColor = color;
+      colorStyle.borderRightColor = 'transparent';
+      colorStyle.borderBottomColor = 'transparent';
+      colorStyle.borderLeftColor = 'transparent';
+      colorStyle.borderTopWidth = Taro.pxTransform(1);
+      colorStyle.borderTopStyle = 'solid';
     }
     const ringStyle = Object.assign({}, colorStyle, sizeStyle)
 

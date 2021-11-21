@@ -161,7 +161,7 @@ export default class AtCountdown extends React.Component<
 }
 
 AtCountdown.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   isCard: false,
   isShowDay: false,

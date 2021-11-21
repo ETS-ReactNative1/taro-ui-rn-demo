@@ -88,7 +88,7 @@ export default class AtMessage extends React.Component<
 }
 
 AtMessage.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: ''
 }
 

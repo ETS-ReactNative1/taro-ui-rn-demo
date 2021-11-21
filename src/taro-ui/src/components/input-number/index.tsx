@@ -190,7 +190,7 @@ export default class AtInputNumber extends React.Component<AtInputNumberProps> {
 }
 
 AtInputNumber.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   disabled: false,
   disabledInput: false,

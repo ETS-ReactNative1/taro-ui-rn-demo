@@ -211,7 +211,7 @@ export default class AtInput extends React.Component<AtInputProps> {
 
 AtInput.defaultProps = {
   className: '',
-  customStyle: '',
+  customStyle: {},
   value: '',
   name: '',
   placeholder: '',

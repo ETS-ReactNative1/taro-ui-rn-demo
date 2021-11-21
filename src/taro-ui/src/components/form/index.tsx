@@ -35,7 +35,7 @@ export default class AtForm extends React.Component<AtFormProps> {
 }
 
 AtForm.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   reportSubmit: false
 }

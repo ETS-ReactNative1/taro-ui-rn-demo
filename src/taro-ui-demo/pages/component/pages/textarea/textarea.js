@@ -1,9 +1,7 @@
-import './textarea.scss'
-
 import React from 'react'
 import { View, Text, Textarea, Button } from '@tarojs/components'
-
 import Header from '../../../../components/head/head'
+import './textarea.scss'
 
 export default class PageTextarea extends React.Component {
   state = {
@@ -36,7 +34,7 @@ export default class PageTextarea extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Textarea'></Header>
+          <Header title='Textarea' />
         </View>
         <View className='components-page__body'>
 
@@ -57,7 +55,7 @@ export default class PageTextarea extends React.Component {
               <Text className='example-header-text'>这是一个可以自动聚焦的textarea</Text>
             </View>
             <View className='example-body'>
-              <Textarea autoFocus placeholder='这是一个Textarea'></Textarea>
+              <Textarea autoFocus placeholder='这是一个Textarea' />
             </View>
           </View>
 

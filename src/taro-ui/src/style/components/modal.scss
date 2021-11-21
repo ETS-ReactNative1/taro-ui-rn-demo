@@ -33,7 +33,9 @@ $at-modal-duration: 200ms;
     background-color: $at-modal-bg-color;
     overflow: hidden;
     &--RN {
+      flex: 1;
       opacity: 1;
+      top: 35%;
       left: (750px - $at-modal-width) / 2;
     }
   }
@@ -60,46 +62,48 @@ $at-modal-duration: 200ms;
 
   &__footer {
     @include hairline-top-relative($color: $color-grey-4);
-
-    .at-modal__action {
-      @include display-flex;
-      flex-direction: row;
-
-      & > button {
-        @include flex(auto);
-        @include line(1);
-        @include active;
-
-        margin-top: 0;
-        min-width: 160px;
-        height: 88px;
-        color: $at-modal-btn-default-color;
-        font-size: $font-size-base;
-        line-height: 86px;
-        outline: 0;
-        border: 0;
-        border-radius: 0;
-        background-color: transparent;
-
-        &::after {
-          border: 0;
-          border-radius: 0;
-          width: initial;
-          height: initial;
-        }
-
-        &:not(:first-child) {
-          @include hairline-left-relative($color: $color-grey-4);
-        }
-
-        &:last-child {
-          color: $at-modal-btn-confirm-color;
-        }
-      }
-    }
+    display: flex;
+    flex-direction: row;
 
     &--simple .at-modal__action > button:last-child:nth-child(2) {
       color: $at-modal-btn-confirm-color;
+    }
+  }
+
+  &__action {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    & > button {
+      @include flex(auto);
+      @include line(1);
+      @include active;
+
+      margin-top: 0;
+      min-width: 160px;
+      height: 88px;
+      color: $at-modal-btn-default-color;
+      font-size: $font-size-base;
+      line-height: 86px;
+      outline: 0;
+      border: 0;
+      border-radius: 0;
+      background-color: transparent;
+
+      &::after {
+        border: 0;
+        border-radius: 0;
+        width: initial;
+        height: initial;
+      }
+
+      &:not(:first-child) {
+        @include hairline-left-relative($color: $color-grey-4);
+      }
+
+      &:last-child {
+        color: $at-modal-btn-confirm-color;
+      }
     }
   }
 
@@ -110,6 +114,21 @@ $at-modal-duration: 200ms;
     .at-modal__overlay,
     .at-modal__container {
       opacity: 1;
+    }
+  }
+
+  &__button {
+    background-color: transparent;
+    flex: 1;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $color-grey-4;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $color-grey-4;
+    border-radius: 0;
+    &-0 {
+      border-left-width: 0;
     }
   }
 }

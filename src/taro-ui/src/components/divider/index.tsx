@@ -26,9 +26,12 @@ export default class AtDivider extends React.Component<AtDividerProps> {
       height: height ? Taro.pxTransform(Number(height)) : 0
     }
 
-    const fontStyle = {
-      color: fontColor,
-      fontSize: fontSize ? Taro.pxTransform(Number(fontSize)) : 0
+    const fontStyle: React.CSSProperties = { }
+    if (fontColor) {
+      fontStyle.color = fontColor;
+    }
+    if (fontSize) {
+      fontStyle.fontSize = Taro.pxTransform(Number(fontSize));
     }
 
     const lineStyle: React.CSSProperties = lineColor ? {

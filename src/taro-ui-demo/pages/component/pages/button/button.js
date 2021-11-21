@@ -1,9 +1,8 @@
-import './button.scss'
 import React from 'react'
 import { View, Button } from '@tarojs/components'
-
-import Header from '../../../../components/head/head'
 import Taro from "@tarojs/taro";
+import Header from '../../../../components/head/head'
+import './button.scss'
 
 export default class PageButton extends React.Component {
   state = {
@@ -53,14 +52,15 @@ export default class PageButton extends React.Component {
     return (
       <View className='components-page'>
         <View className='components-page__header'>
-          <Header title='Button'></Header>
+          <Header title='Button' />
         </View>
         <View className='components-page__body'>
           <View className='components-page__body-example example'>
             <View className='example-body'>
-              {this.state.btn.map(item => {
+              {this.state.btn.map((item, i) => {
                 return (
                   <Button
+                    key={`${i}-${item.text}`}
                     size={item.size ? item.size : ''}
                     type={item.type ? item.type : ''}
                     loading={item.loading ? item.loading : false}

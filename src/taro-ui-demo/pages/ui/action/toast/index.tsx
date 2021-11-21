@@ -81,7 +81,7 @@ export default class ToastPage extends React.Component<{}, ToastPageState> {
                 <AtButton
                   onClick={this.handleClick.bind(this, {
                     text: '文本内容',
-                    icon: 'analytics'
+                    icon: 'crown'
                   })}
                 >
                   文本 + ICON

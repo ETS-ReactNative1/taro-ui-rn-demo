@@ -10,6 +10,7 @@ import navPng from '../../assets/component/nav.png'
 import mediaPng from '../../assets/component/media.png'
 import mapPng from '../../assets/component/map.png'
 import canvasPng from '../../assets/component/canvas.png'
+import TabBarPlaceholder from "../../components/tab-bar-placeholder";
 import './index.scss'
 
 const PNGS = {
@@ -163,6 +164,7 @@ export default class Index extends React.Component {
               })}
           </View>
         </View>
+        <TabBarPlaceholder />
       </View>
     )
   }

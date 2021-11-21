@@ -162,7 +162,7 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
 
 AtImagePicker.defaultProps = {
   className: '',
-  customStyle: '',
+  customStyle: {},
   files: [],
   mode: 'aspectFill',
   showAddBtn: true,

@@ -167,7 +167,7 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
       heightStyle.height = Taro.pxTransform(height);
     }
 
-    const underlineStyle = {
+    const underlineStyle: React.CSSProperties = {
       height: tabDirection === 'vertical' ? `${tabList.length * 100}%` : Taro.pxTransform(1),
       width: tabDirection === 'horizontal' ? `${tabList.length * 100}%` : Taro.pxTransform(1),
     }

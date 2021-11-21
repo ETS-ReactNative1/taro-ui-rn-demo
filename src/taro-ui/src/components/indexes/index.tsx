@@ -272,7 +272,7 @@ AtIndexes.propTypes = {
 }
 
 AtIndexes.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   animation: false,
   topKey: 'Top',

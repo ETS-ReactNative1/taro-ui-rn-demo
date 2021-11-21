@@ -38,7 +38,8 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
       rightFirstIconType,
       rightSecondIconType
     } = this.props
-    const linkStyle = { color }
+
+    const linkStyle: React.CSSProperties = { color }
 
     const defaultIconInfo = {
       customStyle: '',
@@ -162,7 +163,7 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
 }
 
 AtNavBar.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   fixed: false,
   border: true,

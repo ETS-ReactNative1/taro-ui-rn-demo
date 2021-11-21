@@ -148,7 +148,7 @@ export default class SwipeActionPage extends React.Component<
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction onClick={this.handleClick} options={OPTIONS}>
-                  <View className='normal'>AtSwipeAction 一般使用场景</View>
+                  <View className='demo-swipe-action-normal'>AtSwipeAction 一般使用场景</View>
                 </AtSwipeAction>
               </View>
             </View>
@@ -159,7 +159,7 @@ export default class SwipeActionPage extends React.Component<
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction disabled options={OPTIONS}>
-                  <View className='normal'>禁止滑动展示</View>
+                  <View className='demo-swipe-action-normal'>禁止滑动展示</View>
                 </AtSwipeAction>
               </View>
             </View>
@@ -181,7 +181,7 @@ export default class SwipeActionPage extends React.Component<
                   onClosed={this.handleStatusClosed}
                   onOpened={this.handleStatusOpened}
                 >
-                  <View className='normal'>使用变量控制开关</View>
+                  <View className='demo-swipe-action-normal'>使用变量控制开关</View>
                 </AtSwipeAction>
               </View>
             </View>
@@ -196,7 +196,7 @@ export default class SwipeActionPage extends React.Component<
                   autoClose
                   options={OPTIONS}
                 >
-                  <View className='normal'>点击按钮自动关闭</View>
+                  <View className='demo-swipe-action-normal'>点击按钮自动关闭</View>
                 </AtSwipeAction>
               </View>
             </View>
@@ -207,7 +207,7 @@ export default class SwipeActionPage extends React.Component<
             <View className='panel__content no-padding'>
               <View className='example-item example-item--border'>
                 <AtSwipeAction onClick={this.handleClick} options={OPTIONS}>
-                  <View className='normal'>点击事件触发</View>
+                  <View className='demo-swipe-action-normal'>点击事件触发</View>
                 </AtSwipeAction>
               </View>
             </View>
@@ -223,7 +223,7 @@ export default class SwipeActionPage extends React.Component<
                   onOpened={this.handleOpened}
                   onClosed={this.handleClosed}
                 >
-                  <View className='normal'>开启和关闭时触发事件</View>
+                  <View className='demo-swipe-action-normal'>开启和关闭时触发事件</View>
                 </AtSwipeAction>
               </View>
             </View>

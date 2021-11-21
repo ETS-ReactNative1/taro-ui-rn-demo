@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Text, View } from '@tarojs/components'
+import { Image, View } from '@tarojs/components'
 import Taro, { ShareAppMessageReturn } from '@tarojs/taro'
 import iconAction from '../../../assets/images/icon-list-action.png'
 import iconBasic from '../../../assets/images/icon-list-basic.png'
@@ -9,6 +9,7 @@ import iconLayout from '../../../assets/images/icon-list-layout.png'
 import iconNavigation from '../../../assets/images/icon-list-navigation.png'
 import iconView from '../../../assets/images/icon-list-view.png'
 import logoImg from '../../../assets/images/logo_taro.png'
+import TabBarPlaceholder from "../../../components/tab-bar-placeholder";
 import './index.scss'
 
 interface IndexState {
@@ -119,6 +120,7 @@ export default class Index extends React.Component<{}, IndexState> {
             </View>
           ))}
         </View>
+        <TabBarPlaceholder />
       </View>
     )
   }

@@ -3,7 +3,7 @@ import { Text, View } from '@tarojs/components'
 import AtLoading from '../loading/index'
 import '../../style/components/activity-indicator.scss'
 
-function AtActivityIndicator({ color = '#6190E8', size = 40, mode, content, isOpened = true, className }) {
+function AtActivityIndicator({ color = '#6190E8', size = 40, mode, content, isOpened = true, className = '' }) {
   return (
     <View
       className={classNames(

@@ -169,12 +169,12 @@ export default class AtNoticebar extends React.Component<
           className={classNames(rootClassName, classObject, className)}
           style={customStyle}
         >
-          {close && (
+          {!!close && (
             <View
               className='at-noticebar__close'
               onClick={this.onClose.bind(this)}
             >
-              <Text className='at-icon at-icon-close' />
+              <IconFont name='close' size={36} color='#aaa' />
             </View>
           )}
           <View
@@ -216,9 +216,7 @@ export default class AtNoticebar extends React.Component<
               onClick={this.onGotoMore.bind(this)}
             >
               <Text className='at-noticebar__more-text'>{moreText}</Text>
-              <View className='at-noticebar__more-icon'>
-                <Text className='at-icon at-icon-chevron-right' />
-              </View>
+              <IconFont size={28} name='right' color='#999' />
             </View>
           )}
         </View>

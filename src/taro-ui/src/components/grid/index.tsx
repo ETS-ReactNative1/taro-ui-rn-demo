@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import _chunk from 'lodash/chunk'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Image, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtGridItem, AtGridProps } from '../../../types/grid'
@@ -95,7 +96,7 @@ export default class AtGrid extends React.Component<AtGridProps> {
                           style={mergeStyle(
                             {
                               color: childItem.iconInfo.color,
-                              fontSize: `${childItem.iconInfo.size || 24}px`
+                              fontSize: Taro.pxTransform(Number(childItem.iconInfo.size || 24))
                             },
                             // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
                             childItem.iconInfo!.customStyle!

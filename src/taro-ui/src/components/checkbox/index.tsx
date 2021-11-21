@@ -75,7 +75,7 @@ export default class AtCheckbox extends React.Component<AtCheckboxProps<any>> {
 }
 
 AtCheckbox.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   options: [],
   selectedList: [],

@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { View } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtTagProps } from '../../../types/tag'
 import '../../style/components/tag.scss';
@@ -58,7 +58,19 @@ export default class AtTag extends React.Component<AtTagProps> {
         style={customStyle}
         onClick={this.onClick.bind(this)}
       >
-        {this.props.children}
+        {React.isValidElement(this.props.children) ? this.props.children : (
+          <Text
+            className={classNames({
+              [`at-tag--${SIZE_CLASS[size]}__text`]: SIZE_CLASS[size],
+              [`at-tag--${type}__text`]: TYPE_CLASS[type],
+              'at-tag--disabled__text': disabled,
+              'at-tag--active__text': active,
+              'at-tag--circle__text': circle
+            })}
+          >
+            {this.props.children}
+          </Text>
+        )}
       </View>
     )
   }

@@ -55,7 +55,7 @@ export default class AtCurtain extends React.Component<AtCurtainProps> {
 }
 
 AtCurtain.defaultProps = {
-  customStyle: '',
+  customStyle: {},
   className: '',
   isOpened: false,
   closeBtnPosition: 'bottom',

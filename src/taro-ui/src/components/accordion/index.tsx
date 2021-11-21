@@ -101,21 +101,27 @@ export default class AtAccordion extends React.Component<
       'at-accordion__content--inactive':
         (!open && this.isCompleted) || this.startOpen
     })
-    const iconStyle = {
-      color: (icon && icon.color) || '',
-      fontSize: (icon && `${icon.size}px`) || ''
-    }
-    const contentStyle = { height: `${wrapperHeight}px` }
 
+    const iconStyle: React.CSSProperties = {}
+    if (icon && icon.color) {
+      iconStyle.color = icon.color;
+    }
+    if (icon && icon.size) {
+      iconStyle.fontSize = Taro.pxTransform(Number(icon.size));
+    }
+
+    const contentStyle: React.CSSProperties = {
+      height: Taro.pxTransform(wrapperHeight),
+    }
     if (this.isCompleted) {
-      contentStyle.height = ''
+      contentStyle.height = Taro.pxTransform(0)
     }
 
     return (
       <View className={rootCls} style={customStyle}>
         <View className={headerCls} onClick={this.handleClick}>
           {icon && icon.value && (
-            <Text className={iconCls} style={iconStyle}></Text>
+            <Text className={iconCls} style={iconStyle} />
           )}
           <View className='at-accordion__info'>
             <View className='at-accordion__info__title'>{title}</View>
@@ -135,7 +141,7 @@ export default class AtAccordion extends React.Component<
 
 AtAccordion.defaultProps = {
   open: false,
-  customStyle: '',
+  customStyle: {},
   className: '',
   title: '',
   note: '',

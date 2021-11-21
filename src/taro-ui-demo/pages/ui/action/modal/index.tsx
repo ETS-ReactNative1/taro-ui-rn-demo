@@ -12,6 +12,7 @@ import Taro from '@tarojs/taro'
 import DocsHeader from '../../components/doc-header'
 import mockData from '../../navigation/indexes/mock-data'
 import './index.scss'
+import AtModalButton from '@/taro-ui/components/modal/button'
 
 interface ModalPageState {
   [key: string]: boolean
@@ -139,12 +140,8 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
             </View>
           </AtModalContent>
           <AtModalAction>
-            <Button onClick={this.closeModal.bind(this, 1, '点击了取消')}>
-              取消
-            </Button>
-            <Button onClick={this.closeModal.bind(this, 1, '点击了确定')}>
-              确定
-            </Button>
+            <AtModalButton index={0} title='取消' onClick={this.closeModal.bind(this, 1, '点击了取消')} />
+            <AtModalButton index={1} title='确定' onClick={this.closeModal.bind(this, 1, '点击了确定')} />
           </AtModalAction>
         </AtModal>
 
@@ -160,9 +157,7 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
             </View>
           </AtModalContent>
           <AtModalAction>
-            <Button onClick={this.closeModal.bind(this, 2, '点击了确定')}>
-              确定
-            </Button>
+            <AtModalButton index={0} title='取消' onClick={this.closeModal.bind(this, 2, '点击了确定')} />
           </AtModalAction>
         </AtModal>
 
@@ -177,7 +172,7 @@ export default class ModalPage extends React.Component<{}, ModalPageState> {
           onConfirm={this.closeModalConfirm.bind(this, 3, '点击了确认')}
           cancelText='取消'
           confirmText='确认'
-        ></AtModal>
+        />
 
         {/* 简化使用 */}
         <AtModal

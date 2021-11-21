@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Image, Text, View } from '@tarojs/components'
 import Modal from "react-native-modal";
 import { CommonEvent } from '@tarojs/components/types/common'
@@ -104,16 +105,17 @@ export default class AtToast extends React.Component<
     const isRenderIcon = !!(icon && !(image || statusImg[status!]))
     /* eslint-enable @typescript-eslint/no-non-null-assertion */
 
-    const bodyClass = classNames('toast-body', {
+    const bodyClass = classNames('toast-body', `toast-body--${Taro.getEnv()}`, {
       'at-toast__body--custom-image': image,
       'toast-body--text': !realImg && !icon,
-      [`at-toast__body--${status}`]: !!status
+      [`toast-body--${Taro.getEnv()}--text`]: !realImg && !icon,
+      [`at-toast__body--${status}`]: !!status,
     })
 
     return _isOpened ? (
       <Modal
-        animationIn='zoomIn'
-        animationOut='zoomOut'
+        animationIn='pulse'
+        animationOut='fadeOut'
         isVisible={_isOpened}
         hasBackdrop={hasMask}
         backdropOpacity={0}
@@ -143,7 +145,15 @@ export default class AtToast extends React.Component<
               <IconFont name={icon} size={80} />
             )}
             {!!text && (
-              <View className='toast-body-content__info'>
+              <View
+                className={classNames([
+                  'toast-body-content__info',
+                  `toast-body-content__info--${Taro.getEnv()}`,
+                ], {
+                  'toast-body-content__info--text': !realImg && !icon,
+                  [`toast-body-content__info--text--${Taro.getEnv()}`]: !realImg && !icon,
+                })}
+              >
                 <Text className='toast-body-content__info__text'>{text}</Text>
               </View>
             )}

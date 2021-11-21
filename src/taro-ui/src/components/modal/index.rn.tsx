@@ -11,6 +11,7 @@ import AtModalAction from './action/index'
 import AtModalContent from './content/index'
 import AtModalHeader from './header/index'
 import '../../style/components/modal.scss'
+import AtModalButton from './button'
 
 export default class AtModal extends React.Component<
   AtModalProps,
@@ -80,8 +81,8 @@ export default class AtModal extends React.Component<
 
       return (
         <Modal
-          animationIn='zoomIn'
-          animationOut='zoomOut'
+          animationIn='pulse'
+          animationOut='fadeOut'
           isVisible={_isOpened}
           hasBackdrop
           onModalHide={this.handleClose}
@@ -106,11 +107,11 @@ export default class AtModal extends React.Component<
             )}
             {isRenderAction && (
               <AtModalAction isSimple>
-                {cancelText && (
-                  <Button onClick={this.handleCancel}>{cancelText}</Button>
+                {!!cancelText && (
+                  <AtModalButton title={cancelText} onClick={this.handleCancel} index={0} />
                 )}
-                {confirmText && (
-                  <Button onClick={this.handleConfirm}>{confirmText}</Button>
+                {!!confirmText && (
+                  <AtModalButton title={confirmText} onClick={this.handleConfirm} index={1} />
                 )}
               </AtModalAction>
             )}
@@ -121,8 +122,8 @@ export default class AtModal extends React.Component<
 
     return (
       <Modal
-        animationIn='zoomIn'
-        animationOut='zoomOut'
+        animationIn='pulse'
+        animationOut='fadeOut'
         isVisible={_isOpened}
         hasBackdrop
         onModalHide={this.handleClose}

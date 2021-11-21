@@ -3,8 +3,8 @@ import { AtButton, AtFab, AtForm } from '@/taro-ui'
 import { Form, Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro, { ShareAppMessageReturn } from '@tarojs/taro'
-import DocsHeader from '../../components/doc-header'
 import IconFont from '@/taro-ui/components/icon-font'
+import DocsHeader from '../../components/doc-header'
 import './index.scss'
 
 interface ButtonPageState {

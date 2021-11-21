@@ -1,10 +1,10 @@
 import React from 'react'
-import { AtButton, AtIcon, AtProgress } from '@/taro-ui'
+import { AtButton, AtProgress } from '@/taro-ui'
 import { View, Text } from '@tarojs/components'
 import Taro from '@tarojs/taro'
+import IconFont from '@/taro-ui/components/icon-font'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
-import IconFont from '@/taro-ui/components/icon-font'
 
 const OFFSET = 15
 
@@ -63,13 +63,13 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础进度条</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={25} />
               </View>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={50} />
               </View>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={75} />
               </View>
             </View>
@@ -79,10 +79,10 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>隐藏进度文案</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={25} isHidePercent />
               </View>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={75} isHidePercent />
               </View>
             </View>
@@ -92,14 +92,14 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义进度条线宽</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
-                <AtProgress percent={25} strokeWidth={6} />
+              <View className='ui-action-progress-example-item'>
+                <AtProgress percent={25} strokeWidth={12} />
               </View>
-              <View className='example-item'>
-                <AtProgress percent={50} strokeWidth={8} />
+              <View className='ui-action-progress-example-item'>
+                <AtProgress percent={50} strokeWidth={16} />
               </View>
-              <View className='example-item'>
-                <AtProgress percent={75} strokeWidth={10} />
+              <View className='ui-action-progress-example-item'>
+                <AtProgress percent={75} strokeWidth={20} />
               </View>
             </View>
           </View>
@@ -108,13 +108,13 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义颜色</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={25} color='#FF4949' />
               </View>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={50} color='#13CE66' />
               </View>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={75} color='#FFC82C' />
               </View>
             </View>
@@ -124,20 +124,20 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>不同的状态</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
-                <View className='example-item__desc'>暂停</View>
+              <View className='ui-action-progress-example-item'>
+                <View className='ui-action-progress-example-item__desc'>暂停</View>
                 <AtProgress percent={25} />
               </View>
-              <View className='example-item'>
-                <View className='example-item__desc'>进行中</View>
+              <View className='ui-action-progress-example-item'>
+                <View className='ui-action-progress-example-item__desc'>进行中</View>
                 <AtProgress percent={50} status='progress' />
               </View>
-              <View className='example-item'>
-                <View className='example-item__desc'>错误</View>
+              <View className='ui-action-progress-example-item'>
+                <View className='ui-action-progress-example-item__desc'>错误</View>
                 <AtProgress percent={75} status='error' />
               </View>
-              <View className='example-item'>
-                <View className='example-item__desc'>已完成</View>
+              <View className='ui-action-progress-example-item'>
+                <View className='ui-action-progress-example-item__desc'>已完成</View>
                 <AtProgress percent={100} status='success' />
               </View>
             </View>
@@ -147,9 +147,9 @@ export default class ProgressPage extends React.Component<
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>实际案例</Text></View>
             <View className='panel__content panel__content__padding'>
-              <View className='example-item'>
+              <View className='ui-action-progress-example-item'>
                 <AtProgress percent={percent} />
-                <View className='example-item__buttons'>
+                <View className='ui-action-progress-example-item__buttons'>
                   <AtButton size='small' onClick={this.reduce}>
                     <IconFont name='minus' size={24} />
                   </AtButton>
