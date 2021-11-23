@@ -32,6 +32,7 @@
     "android": "react-native run-android --no-packager",
     "ios": "react-native run-ios --no-packager",
     "start": "npm run dev:rn",
+    "assemble-android": "yarn build:rn:andoird && cd android && ./gradlew assembleRelease",
     "podInstall": "pod-install",
     "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn@3.3.13 -o -Y && install-peerdeps @tarojs/components-rn@3.3.13 -o -Y && install-peerdeps @tarojs/router-rn@3.3.13 -o -Y && pod-install"
   },
