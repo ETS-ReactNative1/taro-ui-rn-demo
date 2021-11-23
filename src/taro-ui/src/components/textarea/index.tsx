@@ -5,7 +5,6 @@ import { Textarea, View, Text } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtTextareaProps } from '../../../types/textarea'
-import { pxTransform } from '../../common/utils'
 import '../../style/components/textarea.scss';
 
 type ExtendEvent = {
@@ -80,18 +79,20 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
       textareaStyle.height = Taro.pxTransform(Number(height));
     }
 
-    const rootCls = classNames(
-      'at-textarea',
-      `at-textarea--${ENV}`,
-      {
-        'at-textarea--error': _maxLength < value.length
-      },
-      className
-    )
     const placeholderCls = classNames('placeholder', placeholderClass)
 
     return (
-      <View className={rootCls} style={customStyle}>
+      <View
+        className={classNames(
+          'at-textarea',
+          `at-textarea--${ENV}`,
+          {
+            'at-textarea--error': _maxLength < value.length
+          },
+          className
+        )}
+        style={customStyle}
+      >
         <Textarea
           className='at-textarea__textarea'
           style={textareaStyle}

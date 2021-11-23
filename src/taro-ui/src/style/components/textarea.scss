@@ -5,7 +5,7 @@ $component: '.at-textarea';
 $at-textarea-input-height: $at-textarea-font-size * 4;
 $at-textarea-bg-color: $color-bg;
 
-#{$component} {
+.at-textarea {
   padding: $spacing-v-md;
   width: 100%;
   font-size: $at-textarea-font-size;
@@ -16,6 +16,8 @@ $at-textarea-bg-color: $color-bg;
   @include border-thin($width: 1PX);
 
   &__textarea {
+    // https://github.com/facebook/react-native/issues/13897 貌似是RN的BUG
+    text-align-vertical: top;
     width: 100%;
     height: $at-textarea-input-height;
     font-size: $at-textarea-font-size;

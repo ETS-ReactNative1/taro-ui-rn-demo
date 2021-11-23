@@ -32,7 +32,7 @@ export default class IconPage extends React.Component<{}, IconPageState> {
   public render(): JSX.Element {
     const { icons } = this.state
     const iconColor = '#999'
-    const iconSize = 30
+    const iconSize = 64
 
     return (
       <View className='page'>
@@ -49,13 +49,11 @@ export default class IconPage extends React.Component<{}, IconPageState> {
               <View className='icon-list'>
                 {icons.main.map((icon, index) => (
                   <View className='icon-list__item' key={`at-icon-${index}`}>
-                    <View className='icon-list__icon'>
-                      <AtIcon
-                        value={icon}
-                        color={iconColor}
-                        size={iconSize}
-                      />
-                    </View>
+                    <AtIcon
+                      value={icon}
+                      color={iconColor}
+                      size={iconSize}
+                    />
                     <View className='icon-list__name'>{icon}</View>
                   </View>
                 ))}
