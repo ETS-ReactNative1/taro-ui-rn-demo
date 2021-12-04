@@ -47,7 +47,7 @@ const map = {
   // TODO https://taro-ui.jd.com/#/docs/icon 太多了，找时间人工处理。。
 };
 
-function AtIcon({ value, size, color = '#333' }) {
+function AtIcon({ value, size = 48, color = '#333' }) {
   return (<IconFont name={map[value] === undefined ? value : map[value]} size={size} color={color} />);
 }
 

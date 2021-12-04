@@ -7,6 +7,7 @@ import Modal from "react-native-modal";
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtToastProps, AtToastState } from '../../../types/toast'
 import statusImg from './img.json'
+import AtActivityIndicator from "../activity-indicator";
 import IconFont from '../icon-font'
 import '../../style/components/toast.scss'
 
@@ -102,8 +103,11 @@ export default class AtToast extends React.Component<
 
     /* eslint-disable @typescript-eslint/no-non-null-assertion */
     const realImg = image || statusImg[status!] || null
-    const isRenderIcon = !!(icon && !(image || statusImg[status!]))
+    let isRenderIcon = !!(icon && !(image || statusImg[status!]))
     /* eslint-enable @typescript-eslint/no-non-null-assertion */
+    if (status === 'loading') {
+      isRenderIcon = false;
+    }
 
     const bodyClass = classNames('toast-body', `toast-body--${Taro.getEnv()}`, {
       'at-toast__body--custom-image': image,
@@ -132,7 +136,7 @@ export default class AtToast extends React.Component<
           onClick={this.handleClick}
         >
           <View className='toast-body-content'>
-            {!!realImg && (
+            {status !== 'loading' && !!realImg && (
               <View className='toast-body-content__img'>
                 <Image
                   className='toast-body-content__img-item'
@@ -141,8 +145,11 @@ export default class AtToast extends React.Component<
                 />
               </View>
             )}
-            {isRenderIcon && (
+            {isRenderIcon && status !== 'loading' && (
               <IconFont name={icon} size={80} />
+            )}
+            {status === 'loading' && (
+              <AtActivityIndicator color='#fff' size={120} />
             )}
             {!!text && (
               <View

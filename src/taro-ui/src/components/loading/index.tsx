@@ -4,9 +4,9 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import '../../style/components/loading.scss'
 
-let Circle;
+let ActivityIndicator: any;
 if (process.env.TARO_ENV === 'rn') {
-  Circle = require('react-native-animated-spinkit').Circle;
+  ActivityIndicator = require('react-native').ActivityIndicator;
 }
 
 interface AtLoadingProps {
@@ -23,7 +23,7 @@ export default class AtLoading extends React.Component<AtLoadingProps> {
 
     if (process.env.TARO_ENV === 'rn') {
       return (
-        <Circle size={Taro.pxTransform(size)} color={color} />
+        <ActivityIndicator size={Taro.pxTransform(size)} color={color} />
       );
     }
 

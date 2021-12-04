@@ -20,3 +20,15 @@
     }
   }
 }
+
+.demo-activity-indicator {
+  &__example-item {
+    @include display-flex;
+    flex-direction: row;
+    @include align-items(center);
+  }
+  &__sub-item {
+    margin-left: 32px;
+    @include flex(0, 0, auto);
+  }
+}
