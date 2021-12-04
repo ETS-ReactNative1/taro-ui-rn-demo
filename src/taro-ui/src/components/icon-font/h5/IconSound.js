@@ -21,7 +21,7 @@ const IconSound = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSound.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSound;

@@ -16,7 +16,7 @@ let IconCustomerserviceFill = ({ size, color, ...rest }) => {
 };
 
 IconCustomerserviceFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCustomerserviceFill = React.memo ? React.memo(IconCustomerserviceFill) : IconCustomerserviceFill;

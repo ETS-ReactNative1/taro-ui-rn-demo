@@ -16,7 +16,7 @@ let IconHighlightFill = ({ size, color, ...rest }) => {
 };
 
 IconHighlightFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconHighlightFill = React.memo ? React.memo(IconHighlightFill) : IconHighlightFill;

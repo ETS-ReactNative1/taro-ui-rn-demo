@@ -16,7 +16,7 @@ let IconPhoneFill = ({ size, color, ...rest }) => {
 };
 
 IconPhoneFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPhoneFill = React.memo ? React.memo(IconPhoneFill) : IconPhoneFill;

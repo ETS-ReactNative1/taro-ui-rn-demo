@@ -21,7 +21,7 @@ const IconPushpinFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPushpinFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPushpinFill;

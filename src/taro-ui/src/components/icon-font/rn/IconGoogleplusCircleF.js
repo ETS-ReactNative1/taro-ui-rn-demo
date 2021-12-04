@@ -16,7 +16,7 @@ let IconGoogleplusCircleF = ({ size, color, ...rest }) => {
 };
 
 IconGoogleplusCircleF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGoogleplusCircleF = React.memo ? React.memo(IconGoogleplusCircleF) : IconGoogleplusCircleF;

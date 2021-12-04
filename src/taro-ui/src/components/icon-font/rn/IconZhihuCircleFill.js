@@ -20,7 +20,7 @@ let IconZhihuCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconZhihuCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconZhihuCircleFill = React.memo ? React.memo(IconZhihuCircleFill) : IconZhihuCircleFill;

@@ -21,7 +21,7 @@ const IconFireFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFireFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFireFill;

@@ -21,7 +21,7 @@ const IconVerticalAlignMiddl = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVerticalAlignMiddl.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVerticalAlignMiddl;

@@ -21,7 +21,7 @@ const IconTwitter = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTwitter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTwitter;

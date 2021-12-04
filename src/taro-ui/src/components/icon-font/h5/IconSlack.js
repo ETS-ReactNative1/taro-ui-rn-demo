@@ -21,7 +21,7 @@ const IconSlack = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSlack.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSlack;

@@ -20,7 +20,7 @@ let IconAlipaySquareFill = ({ size, color, ...rest }) => {
 };
 
 IconAlipaySquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlipaySquareFill = React.memo ? React.memo(IconAlipaySquareFill) : IconAlipaySquareFill;

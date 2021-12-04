@@ -20,7 +20,7 @@ let IconTagsFill = ({ size, color, ...rest }) => {
 };
 
 IconTagsFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTagsFill = React.memo ? React.memo(IconTagsFill) : IconTagsFill;

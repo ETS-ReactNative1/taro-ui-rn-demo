@@ -25,7 +25,7 @@ const IconAmazon = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAmazon.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAmazon;

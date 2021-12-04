@@ -16,7 +16,7 @@ let IconVerticalright = ({ size, color, ...rest }) => {
 };
 
 IconVerticalright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconVerticalright = React.memo ? React.memo(IconVerticalright) : IconVerticalright;

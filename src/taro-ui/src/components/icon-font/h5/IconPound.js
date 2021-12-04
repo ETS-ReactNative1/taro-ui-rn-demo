@@ -25,7 +25,7 @@ const IconPound = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPound.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPound;

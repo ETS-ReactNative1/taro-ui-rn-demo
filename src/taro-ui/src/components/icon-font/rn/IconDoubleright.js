@@ -20,7 +20,7 @@ let IconDoubleright = ({ size, color, ...rest }) => {
 };
 
 IconDoubleright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDoubleright = React.memo ? React.memo(IconDoubleright) : IconDoubleright;

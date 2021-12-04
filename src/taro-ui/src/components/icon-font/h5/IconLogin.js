@@ -21,7 +21,7 @@ const IconLogin = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLogin.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLogin;

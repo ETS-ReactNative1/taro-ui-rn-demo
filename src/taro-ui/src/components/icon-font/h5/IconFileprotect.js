@@ -29,7 +29,7 @@ const IconFileprotect = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileprotect.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileprotect;

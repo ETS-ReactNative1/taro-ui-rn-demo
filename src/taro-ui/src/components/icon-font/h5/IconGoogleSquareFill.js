@@ -21,7 +21,7 @@ const IconGoogleSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGoogleSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGoogleSquareFill;

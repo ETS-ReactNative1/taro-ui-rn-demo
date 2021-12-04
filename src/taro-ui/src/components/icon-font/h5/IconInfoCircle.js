@@ -29,7 +29,7 @@ const IconInfoCircle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInfoCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInfoCircle;

@@ -16,7 +16,7 @@ let IconGoogleCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconGoogleCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGoogleCircleFill = React.memo ? React.memo(IconGoogleCircleFill) : IconGoogleCircleFill;

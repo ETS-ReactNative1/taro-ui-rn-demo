@@ -25,7 +25,7 @@ const IconFileWord = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileWord.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileWord;

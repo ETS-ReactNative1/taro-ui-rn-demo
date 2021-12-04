@@ -21,7 +21,7 @@ const IconHtmlFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconHtmlFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconHtmlFill;

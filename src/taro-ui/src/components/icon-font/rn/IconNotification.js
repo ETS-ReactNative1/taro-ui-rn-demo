@@ -16,7 +16,7 @@ let IconNotification = ({ size, color, ...rest }) => {
 };
 
 IconNotification.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconNotification = React.memo ? React.memo(IconNotification) : IconNotification;

@@ -20,7 +20,7 @@ let IconLink = ({ size, color, ...rest }) => {
 };
 
 IconLink.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLink = React.memo ? React.memo(IconLink) : IconLink;

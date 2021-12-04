@@ -21,7 +21,7 @@ const IconLaptop = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLaptop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLaptop;

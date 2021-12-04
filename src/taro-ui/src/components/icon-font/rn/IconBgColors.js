@@ -16,7 +16,7 @@ let IconBgColors = ({ size, color, ...rest }) => {
 };
 
 IconBgColors.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBgColors = React.memo ? React.memo(IconBgColors) : IconBgColors;

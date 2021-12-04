@@ -24,7 +24,7 @@ let IconIssuesclose = ({ size, color, ...rest }) => {
 };
 
 IconIssuesclose.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconIssuesclose = React.memo ? React.memo(IconIssuesclose) : IconIssuesclose;

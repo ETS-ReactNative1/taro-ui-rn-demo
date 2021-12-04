@@ -32,7 +32,7 @@ let IconRedditSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconRedditSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRedditSquareFill = React.memo ? React.memo(IconRedditSquareFill) : IconRedditSquareFill;

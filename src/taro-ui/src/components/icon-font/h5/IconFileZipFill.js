@@ -21,7 +21,7 @@ const IconFileZipFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileZipFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileZipFill;

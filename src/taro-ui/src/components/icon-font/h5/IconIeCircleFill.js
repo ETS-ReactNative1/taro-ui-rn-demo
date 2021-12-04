@@ -29,7 +29,7 @@ const IconIeCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconIeCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconIeCircleFill;

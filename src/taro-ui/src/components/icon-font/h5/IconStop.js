@@ -21,7 +21,7 @@ const IconStop = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStop;

@@ -16,7 +16,7 @@ let IconYuanCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconYuanCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYuanCircleFill = React.memo ? React.memo(IconYuanCircleFill) : IconYuanCircleFill;

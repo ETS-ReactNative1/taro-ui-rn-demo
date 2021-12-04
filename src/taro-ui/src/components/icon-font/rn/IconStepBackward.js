@@ -16,7 +16,7 @@ let IconStepBackward = ({ size, color, ...rest }) => {
 };
 
 IconStepBackward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconStepBackward = React.memo ? React.memo(IconStepBackward) : IconStepBackward;

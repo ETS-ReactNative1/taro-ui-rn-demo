@@ -2,6 +2,9 @@
 
 import React from 'react';
 
+import IconStarempty from './IconStarempty';
+import IconStarfull from './IconStarfull';
+import IconStarhalf from './IconStarhalf';
 import IconIdcard from './IconIdcard';
 import IconTaobao from './IconTaobao';
 import IconCreditcard from './IconCreditcard';
@@ -601,6 +604,9 @@ import IconMail from './IconMail';
 import IconSlack from './IconSlack';
 import IconTable from './IconTable';
 import IconAlipay from './IconAlipay';
+export { default as IconStarempty } from './IconStarempty';
+export { default as IconStarfull } from './IconStarfull';
+export { default as IconStarhalf } from './IconStarhalf';
 export { default as IconIdcard } from './IconIdcard';
 export { default as IconTaobao } from './IconTaobao';
 export { default as IconCreditcard } from './IconCreditcard';
@@ -1203,1204 +1209,1210 @@ export { default as IconAlipay } from './IconAlipay';
 
 let IconFont = ({ name, ...rest }) => {
   switch (name) {
+    case 'starempty':
+      return <IconStarempty key="1" {...rest} />;
+    case 'starfull':
+      return <IconStarfull key="2" {...rest} />;
+    case 'starhalf':
+      return <IconStarhalf key="3" {...rest} />;
     case 'idcard':
-      return <IconIdcard key="1" {...rest} />;
+      return <IconIdcard key="4" {...rest} />;
     case 'taobao':
-      return <IconTaobao key="2" {...rest} />;
+      return <IconTaobao key="5" {...rest} />;
     case 'creditcard':
-      return <IconCreditcard key="3" {...rest} />;
+      return <IconCreditcard key="6" {...rest} />;
     case 'zhihu':
-      return <IconZhihu key="4" {...rest} />;
+      return <IconZhihu key="7" {...rest} />;
     case 'heart':
-      return <IconHeart key="5" {...rest} />;
+      return <IconHeart key="8" {...rest} />;
     case 'HTML':
-      return <IconHtml key="6" {...rest} />;
+      return <IconHtml key="9" {...rest} />;
     case 'block':
-      return <IconBlock key="7" {...rest} />;
+      return <IconBlock key="10" {...rest} />;
     case 'linkedin':
-      return <IconLinkedin key="8" {...rest} />;
+      return <IconLinkedin key="11" {...rest} />;
     case 'error':
-      return <IconError key="9" {...rest} />;
+      return <IconError key="12" {...rest} />;
     case 'yahoo':
-      return <IconYahoo key="10" {...rest} />;
+      return <IconYahoo key="13" {...rest} />;
     case 'star':
-      return <IconStar key="11" {...rest} />;
+      return <IconStar key="14" {...rest} />;
     case 'facebook':
-      return <IconFacebook key="12" {...rest} />;
+      return <IconFacebook key="15" {...rest} />;
     case 'gold':
-      return <IconGold key="13" {...rest} />;
+      return <IconGold key="16" {...rest} />;
     case 'skype':
-      return <IconSkype key="14" {...rest} />;
+      return <IconSkype key="17" {...rest} />;
     case 'heatmap':
-      return <IconHeatmap key="15" {...rest} />;
+      return <IconHeatmap key="18" {...rest} />;
     case 'CodeSandbox':
-      return <IconCodeSandbox key="16" {...rest} />;
+      return <IconCodeSandbox key="19" {...rest} />;
     case 'wifi':
-      return <IconWifi key="17" {...rest} />;
+      return <IconWifi key="20" {...rest} />;
     case 'chrome':
-      return <IconChrome key="18" {...rest} />;
+      return <IconChrome key="21" {...rest} />;
     case 'attachment':
-      return <IconAttachment key="19" {...rest} />;
+      return <IconAttachment key="22" {...rest} />;
     case 'codepen':
-      return <IconCodepen key="20" {...rest} />;
+      return <IconCodepen key="23" {...rest} />;
     case 'edit':
-      return <IconEdit key="21" {...rest} />;
+      return <IconEdit key="24" {...rest} />;
     case 'aliwangwang':
-      return <IconAliwangwang key="22" {...rest} />;
+      return <IconAliwangwang key="25" {...rest} />;
     case 'key':
-      return <IconKey key="23" {...rest} />;
+      return <IconKey key="26" {...rest} />;
     case 'apple':
-      return <IconApple key="24" {...rest} />;
+      return <IconApple key="27" {...rest} />;
     case 'api':
-      return <IconApi key="25" {...rest} />;
+      return <IconApi key="28" {...rest} />;
     case 'android':
-      return <IconAndroid key="26" {...rest} />;
+      return <IconAndroid key="29" {...rest} />;
     case 'disconnect':
-      return <IconDisconnect key="27" {...rest} />;
+      return <IconDisconnect key="30" {...rest} />;
     case 'sketch':
-      return <IconSketch key="28" {...rest} />;
+      return <IconSketch key="31" {...rest} />;
     case 'highlight':
-      return <IconHighlight key="29" {...rest} />;
+      return <IconHighlight key="32" {...rest} />;
     case 'Gitlab':
-      return <IconGitlab key="30" {...rest} />;
+      return <IconGitlab key="33" {...rest} />;
     case 'monitor':
-      return <IconMonitor key="31" {...rest} />;
+      return <IconMonitor key="34" {...rest} />;
     case 'dribbble':
-      return <IconDribbble key="32" {...rest} />;
+      return <IconDribbble key="35" {...rest} />;
     case 'link':
-      return <IconLink key="33" {...rest} />;
+      return <IconLink key="36" {...rest} />;
     case 'instagram':
-      return <IconInstagram key="34" {...rest} />;
+      return <IconInstagram key="37" {...rest} />;
     case 'man':
-      return <IconMan key="35" {...rest} />;
+      return <IconMan key="38" {...rest} />;
     case 'reddit':
-      return <IconReddit key="36" {...rest} />;
+      return <IconReddit key="39" {...rest} />;
     case 'percentage':
-      return <IconPercentage key="37" {...rest} />;
+      return <IconPercentage key="40" {...rest} />;
     case 'windows':
-      return <IconWindows key="38" {...rest} />;
+      return <IconWindows key="41" {...rest} />;
     case 'pushpin':
-      return <IconPushpin key="39" {...rest} />;
+      return <IconPushpin key="42" {...rest} />;
     case 'yuque':
-      return <IconYuque key="40" {...rest} />;
+      return <IconYuque key="43" {...rest} />;
     case 'phone':
-      return <IconPhone key="41" {...rest} />;
+      return <IconPhone key="44" {...rest} />;
     case 'Youtube':
-      return <IconYoutube key="42" {...rest} />;
+      return <IconYoutube key="45" {...rest} />;
     case 'shake':
-      return <IconShake key="43" {...rest} />;
+      return <IconShake key="46" {...rest} />;
     case 'Gitlab-fill':
-      return <IconGitlabFill key="44" {...rest} />;
+      return <IconGitlabFill key="47" {...rest} />;
     case 'tag':
-      return <IconTag key="45" {...rest} />;
+      return <IconTag key="48" {...rest} />;
     case 'dropbox':
-      return <IconDropbox key="46" {...rest} />;
+      return <IconDropbox key="49" {...rest} />;
     case 'wrench':
-      return <IconWrench key="47" {...rest} />;
+      return <IconWrench key="50" {...rest} />;
     case 'dingtalk':
-      return <IconDingtalk key="48" {...rest} />;
+      return <IconDingtalk key="51" {...rest} />;
     case 'tags':
-      return <IconTags key="49" {...rest} />;
+      return <IconTags key="52" {...rest} />;
     case 'android-fill':
-      return <IconAndroidFill key="50" {...rest} />;
+      return <IconAndroidFill key="53" {...rest} />;
     case 'scissor':
-      return <IconScissor key="51" {...rest} />;
+      return <IconScissor key="54" {...rest} />;
     case 'apple-fill':
-      return <IconAppleFill key="52" {...rest} />;
+      return <IconAppleFill key="55" {...rest} />;
     case 'mr':
-      return <IconMr key="53" {...rest} />;
+      return <IconMr key="56" {...rest} />;
     case 'HTML-fill':
-      return <IconHtmlFill key="54" {...rest} />;
+      return <IconHtmlFill key="57" {...rest} />;
     case 'share':
-      return <IconShare key="55" {...rest} />;
+      return <IconShare key="58" {...rest} />;
     case 'windows-fill':
-      return <IconWindowsFill key="56" {...rest} />;
+      return <IconWindowsFill key="59" {...rest} />;
     case 'branches':
-      return <IconBranches key="57" {...rest} />;
+      return <IconBranches key="60" {...rest} />;
     case 'QQ':
-      return <IconQq key="58" {...rest} />;
+      return <IconQq key="61" {...rest} />;
     case 'fork':
-      return <IconFork key="59" {...rest} />;
+      return <IconFork key="62" {...rest} />;
     case 'twitter':
-      return <IconTwitter key="60" {...rest} />;
+      return <IconTwitter key="63" {...rest} />;
     case 'shrink':
-      return <IconShrink key="61" {...rest} />;
+      return <IconShrink key="64" {...rest} />;
     case 'skype-fill':
-      return <IconSkypeFill key="62" {...rest} />;
+      return <IconSkypeFill key="65" {...rest} />;
     case 'arrawsalt':
-      return <IconArrawsalt key="63" {...rest} />;
+      return <IconArrawsalt key="66" {...rest} />;
     case 'weibo':
-      return <IconWeibo key="64" {...rest} />;
+      return <IconWeibo key="67" {...rest} />;
     case 'verticalright':
-      return <IconVerticalright key="65" {...rest} />;
+      return <IconVerticalright key="68" {...rest} />;
     case 'yuque-fill':
-      return <IconYuqueFill key="66" {...rest} />;
+      return <IconYuqueFill key="69" {...rest} />;
     case 'verticalleft':
-      return <IconVerticalleft key="67" {...rest} />;
+      return <IconVerticalleft key="70" {...rest} />;
     case 'Youtube-fill':
-      return <IconYoutubeFill key="68" {...rest} />;
+      return <IconYoutubeFill key="71" {...rest} />;
     case 'right':
-      return <IconRight key="69" {...rest} />;
+      return <IconRight key="72" {...rest} />;
     case 'yahoo-fill':
-      return <IconYahooFill key="70" {...rest} />;
+      return <IconYahooFill key="73" {...rest} />;
     case 'left':
-      return <IconLeft key="71" {...rest} />;
+      return <IconLeft key="74" {...rest} />;
     case 'wechat-fill':
-      return <IconWechatFill key="72" {...rest} />;
+      return <IconWechatFill key="75" {...rest} />;
     case 'up':
-      return <IconUp key="73" {...rest} />;
+      return <IconUp key="76" {...rest} />;
     case 'chrome-fill':
-      return <IconChromeFill key="74" {...rest} />;
+      return <IconChromeFill key="77" {...rest} />;
     case 'down':
-      return <IconDown key="75" {...rest} />;
+      return <IconDown key="78" {...rest} />;
     case 'alipay-circle-fill':
-      return <IconAlipayCircleFill key="76" {...rest} />;
+      return <IconAlipayCircleFill key="79" {...rest} />;
     case 'fullscreen':
-      return <IconFullscreen key="77" {...rest} />;
+      return <IconFullscreen key="80" {...rest} />;
     case 'aliwangwang-fill':
-      return <IconAliwangwangFill key="78" {...rest} />;
+      return <IconAliwangwangFill key="81" {...rest} />;
     case 'fullscreen-exit':
-      return <IconFullscreenExit key="79" {...rest} />;
+      return <IconFullscreenExit key="82" {...rest} />;
     case 'behance-circle-fill':
-      return <IconBehanceCircleFill key="80" {...rest} />;
+      return <IconBehanceCircleFill key="83" {...rest} />;
     case 'doubleleft':
-      return <IconDoubleleft key="81" {...rest} />;
+      return <IconDoubleleft key="84" {...rest} />;
     case 'amazon-circle-fill':
-      return <IconAmazonCircleFill key="82" {...rest} />;
+      return <IconAmazonCircleFill key="85" {...rest} />;
     case 'doubleright':
-      return <IconDoubleright key="83" {...rest} />;
+      return <IconDoubleright key="86" {...rest} />;
     case 'codepen-circle-fill':
-      return <IconCodepenCircleFill key="84" {...rest} />;
+      return <IconCodepenCircleFill key="87" {...rest} />;
     case 'arrowright':
-      return <IconArrowright key="85" {...rest} />;
+      return <IconArrowright key="88" {...rest} />;
     case 'CodeSandbox-circle-f':
-      return <IconCodeSandboxCircleF key="86" {...rest} />;
+      return <IconCodeSandboxCircleF key="89" {...rest} />;
     case 'arrowup':
-      return <IconArrowup key="87" {...rest} />;
+      return <IconArrowup key="90" {...rest} />;
     case 'dropbox-circle-fill':
-      return <IconDropboxCircleFill key="88" {...rest} />;
+      return <IconDropboxCircleFill key="91" {...rest} />;
     case 'arrowleft':
-      return <IconArrowleft key="89" {...rest} />;
+      return <IconArrowleft key="92" {...rest} />;
     case 'github-fill':
-      return <IconGithubFill key="90" {...rest} />;
+      return <IconGithubFill key="93" {...rest} />;
     case 'arrowdown':
-      return <IconArrowdown key="91" {...rest} />;
+      return <IconArrowdown key="94" {...rest} />;
     case 'dribbble-circle-fill':
-      return <IconDribbbleCircleFill key="92" {...rest} />;
+      return <IconDribbbleCircleFill key="95" {...rest} />;
     case 'upload':
-      return <IconUpload key="93" {...rest} />;
+      return <IconUpload key="96" {...rest} />;
     case 'googleplus-circle-f':
-      return <IconGoogleplusCircleF key="94" {...rest} />;
+      return <IconGoogleplusCircleF key="97" {...rest} />;
     case 'colum-height':
-      return <IconColumHeight key="95" {...rest} />;
+      return <IconColumHeight key="98" {...rest} />;
     case 'medium-circle-fill':
-      return <IconMediumCircleFill key="96" {...rest} />;
+      return <IconMediumCircleFill key="99" {...rest} />;
     case 'vertical-align-botto':
-      return <IconVerticalAlignBotto key="97" {...rest} />;
+      return <IconVerticalAlignBotto key="100" {...rest} />;
     case 'QQ-circle-fill':
-      return <IconQqCircleFill key="98" {...rest} />;
+      return <IconQqCircleFill key="101" {...rest} />;
     case 'vertical-align-middl':
-      return <IconVerticalAlignMiddl key="99" {...rest} />;
+      return <IconVerticalAlignMiddl key="102" {...rest} />;
     case 'IE-circle-fill':
-      return <IconIeCircleFill key="100" {...rest} />;
+      return <IconIeCircleFill key="103" {...rest} />;
     case 'totop':
-      return <IconTotop key="101" {...rest} />;
+      return <IconTotop key="104" {...rest} />;
     case 'google-circle-fill':
-      return <IconGoogleCircleFill key="102" {...rest} />;
+      return <IconGoogleCircleFill key="105" {...rest} />;
     case 'vertical-align-top':
-      return <IconVerticalAlignTop key="103" {...rest} />;
+      return <IconVerticalAlignTop key="106" {...rest} />;
     case 'dingtalk-circle-fill':
-      return <IconDingtalkCircleFill key="104" {...rest} />;
+      return <IconDingtalkCircleFill key="107" {...rest} />;
     case 'download':
-      return <IconDownload key="105" {...rest} />;
+      return <IconDownload key="108" {...rest} />;
     case 'sketch-circle-fill':
-      return <IconSketchCircleFill key="106" {...rest} />;
+      return <IconSketchCircleFill key="109" {...rest} />;
     case 'sort-descending':
-      return <IconSortDescending key="107" {...rest} />;
+      return <IconSortDescending key="110" {...rest} />;
     case 'slack-circle-fill':
-      return <IconSlackCircleFill key="108" {...rest} />;
+      return <IconSlackCircleFill key="111" {...rest} />;
     case 'sort-ascending':
-      return <IconSortAscending key="109" {...rest} />;
+      return <IconSortAscending key="112" {...rest} />;
     case 'twitter-circle-fill':
-      return <IconTwitterCircleFill key="110" {...rest} />;
+      return <IconTwitterCircleFill key="113" {...rest} />;
     case 'fall':
-      return <IconFall key="111" {...rest} />;
+      return <IconFall key="114" {...rest} />;
     case 'taobao-circle-fill':
-      return <IconTaobaoCircleFill key="112" {...rest} />;
+      return <IconTaobaoCircleFill key="115" {...rest} />;
     case 'swap':
-      return <IconSwap key="113" {...rest} />;
+      return <IconSwap key="116" {...rest} />;
     case 'weibo-circle-fill':
-      return <IconWeiboCircleFill key="114" {...rest} />;
+      return <IconWeiboCircleFill key="117" {...rest} />;
     case 'stock':
-      return <IconStock key="115" {...rest} />;
+      return <IconStock key="118" {...rest} />;
     case 'zhihu-circle-fill':
-      return <IconZhihuCircleFill key="116" {...rest} />;
+      return <IconZhihuCircleFill key="119" {...rest} />;
     case 'rise':
-      return <IconRise key="117" {...rest} />;
+      return <IconRise key="120" {...rest} />;
     case 'reddit-circle-fill':
-      return <IconRedditCircleFill key="118" {...rest} />;
+      return <IconRedditCircleFill key="121" {...rest} />;
     case 'indent':
-      return <IconIndent key="119" {...rest} />;
+      return <IconIndent key="122" {...rest} />;
     case 'alipay-square-fill':
-      return <IconAlipaySquareFill key="120" {...rest} />;
+      return <IconAlipaySquareFill key="123" {...rest} />;
     case 'outdent':
-      return <IconOutdent key="121" {...rest} />;
+      return <IconOutdent key="124" {...rest} />;
     case 'dingtalk-square-fill':
-      return <IconDingtalkSquareFill key="122" {...rest} />;
+      return <IconDingtalkSquareFill key="125" {...rest} />;
     case 'menu':
-      return <IconMenu key="123" {...rest} />;
+      return <IconMenu key="126" {...rest} />;
     case 'CodeSandbox-square-f':
-      return <IconCodeSandboxSquareF key="124" {...rest} />;
+      return <IconCodeSandboxSquareF key="127" {...rest} />;
     case 'unorderedlist':
-      return <IconUnorderedlist key="125" {...rest} />;
+      return <IconUnorderedlist key="128" {...rest} />;
     case 'behance-square-fill':
-      return <IconBehanceSquareFill key="126" {...rest} />;
+      return <IconBehanceSquareFill key="129" {...rest} />;
     case 'orderedlist':
-      return <IconOrderedlist key="127" {...rest} />;
+      return <IconOrderedlist key="130" {...rest} />;
     case 'amazon-square-fill':
-      return <IconAmazonSquareFill key="128" {...rest} />;
+      return <IconAmazonSquareFill key="131" {...rest} />;
     case 'align-right':
-      return <IconAlignRight key="129" {...rest} />;
+      return <IconAlignRight key="132" {...rest} />;
     case 'codepen-square-fill':
-      return <IconCodepenSquareFill key="130" {...rest} />;
+      return <IconCodepenSquareFill key="133" {...rest} />;
     case 'align-center':
-      return <IconAlignCenter key="131" {...rest} />;
+      return <IconAlignCenter key="134" {...rest} />;
     case 'dribbble-square-fill':
-      return <IconDribbbleSquareFill key="132" {...rest} />;
+      return <IconDribbbleSquareFill key="135" {...rest} />;
     case 'align-left':
-      return <IconAlignLeft key="133" {...rest} />;
+      return <IconAlignLeft key="136" {...rest} />;
     case 'dropbox-square-fill':
-      return <IconDropboxSquareFill key="134" {...rest} />;
+      return <IconDropboxSquareFill key="137" {...rest} />;
     case 'pic-center':
-      return <IconPicCenter key="135" {...rest} />;
+      return <IconPicCenter key="138" {...rest} />;
     case 'facebook-fill':
-      return <IconFacebookFill key="136" {...rest} />;
+      return <IconFacebookFill key="139" {...rest} />;
     case 'pic-right':
-      return <IconPicRight key="137" {...rest} />;
+      return <IconPicRight key="140" {...rest} />;
     case 'googleplus-square-f':
-      return <IconGoogleplusSquareF key="138" {...rest} />;
+      return <IconGoogleplusSquareF key="141" {...rest} />;
     case 'pic-left':
-      return <IconPicLeft key="139" {...rest} />;
+      return <IconPicLeft key="142" {...rest} />;
     case 'google-square-fill':
-      return <IconGoogleSquareFill key="140" {...rest} />;
+      return <IconGoogleSquareFill key="143" {...rest} />;
     case 'bold':
-      return <IconBold key="141" {...rest} />;
+      return <IconBold key="144" {...rest} />;
     case 'instagram-fill':
-      return <IconInstagramFill key="142" {...rest} />;
+      return <IconInstagramFill key="145" {...rest} />;
     case 'font-colors':
-      return <IconFontColors key="143" {...rest} />;
+      return <IconFontColors key="146" {...rest} />;
     case 'IE-square-fill':
-      return <IconIeSquareFill key="144" {...rest} />;
+      return <IconIeSquareFill key="147" {...rest} />;
     case 'exclaimination':
-      return <IconExclaimination key="145" {...rest} />;
+      return <IconExclaimination key="148" {...rest} />;
     case 'medium-square-fill':
-      return <IconMediumSquareFill key="146" {...rest} />;
+      return <IconMediumSquareFill key="149" {...rest} />;
     case 'check-circle':
-      return <IconCheckCircle key="147" {...rest} />;
+      return <IconCheckCircle key="150" {...rest} />;
     case 'font-size':
-      return <IconFontSize key="148" {...rest} />;
+      return <IconFontSize key="151" {...rest} />;
     case 'linkedin-fill':
-      return <IconLinkedinFill key="149" {...rest} />;
+      return <IconLinkedinFill key="152" {...rest} />;
     case 'CI':
-      return <IconCi key="150" {...rest} />;
+      return <IconCi key="153" {...rest} />;
     case 'infomation':
-      return <IconInfomation key="151" {...rest} />;
+      return <IconInfomation key="154" {...rest} />;
     case 'QQ-square-fill':
-      return <IconQqSquareFill key="152" {...rest} />;
+      return <IconQqSquareFill key="155" {...rest} />;
     case 'Dollar':
-      return <IconDollar key="153" {...rest} />;
+      return <IconDollar key="156" {...rest} />;
     case 'line-height':
-      return <IconLineHeight key="154" {...rest} />;
+      return <IconLineHeight key="157" {...rest} />;
     case 'reddit-square-fill':
-      return <IconRedditSquareFill key="155" {...rest} />;
+      return <IconRedditSquareFill key="158" {...rest} />;
     case 'compass':
-      return <IconCompass key="156" {...rest} />;
+      return <IconCompass key="159" {...rest} />;
     case 'strikethrough':
-      return <IconStrikethrough key="157" {...rest} />;
+      return <IconStrikethrough key="160" {...rest} />;
     case 'twitter-square-fill':
-      return <IconTwitterSquareFill key="158" {...rest} />;
+      return <IconTwitterSquareFill key="161" {...rest} />;
     case 'close-circle':
-      return <IconCloseCircle key="159" {...rest} />;
+      return <IconCloseCircle key="162" {...rest} />;
     case 'underline':
-      return <IconUnderline key="160" {...rest} />;
+      return <IconUnderline key="163" {...rest} />;
     case 'sketch-square-fill':
-      return <IconSketchSquareFill key="161" {...rest} />;
+      return <IconSketchSquareFill key="164" {...rest} />;
     case 'frown':
-      return <IconFrown key="162" {...rest} />;
+      return <IconFrown key="165" {...rest} />;
     case 'number':
-      return <IconNumber key="163" {...rest} />;
+      return <IconNumber key="166" {...rest} />;
     case 'slack-square-fill':
-      return <IconSlackSquareFill key="164" {...rest} />;
+      return <IconSlackSquareFill key="167" {...rest} />;
     case 'info-circle':
-      return <IconInfoCircle key="165" {...rest} />;
+      return <IconInfoCircle key="168" {...rest} />;
     case 'italic':
-      return <IconItalic key="166" {...rest} />;
+      return <IconItalic key="169" {...rest} />;
     case 'taobao-square-fill':
-      return <IconTaobaoSquareFill key="167" {...rest} />;
+      return <IconTaobaoSquareFill key="170" {...rest} />;
     case 'left-circle':
-      return <IconLeftCircle key="168" {...rest} />;
+      return <IconLeftCircle key="171" {...rest} />;
     case 'code':
-      return <IconCode key="169" {...rest} />;
+      return <IconCode key="172" {...rest} />;
     case 'weibo-square-fill':
-      return <IconWeiboSquareFill key="170" {...rest} />;
+      return <IconWeiboSquareFill key="173" {...rest} />;
     case 'down-circle':
-      return <IconDownCircle key="171" {...rest} />;
+      return <IconDownCircle key="174" {...rest} />;
     case 'column-width':
-      return <IconColumnWidth key="172" {...rest} />;
+      return <IconColumnWidth key="175" {...rest} />;
     case 'zhihu-square-fill':
-      return <IconZhihuSquareFill key="173" {...rest} />;
+      return <IconZhihuSquareFill key="176" {...rest} />;
     case 'EURO':
-      return <IconEuro key="174" {...rest} />;
+      return <IconEuro key="177" {...rest} />;
     case 'check':
-      return <IconCheck key="175" {...rest} />;
+      return <IconCheck key="178" {...rest} />;
     case 'zoomout':
-      return <IconZoomout key="176" {...rest} />;
+      return <IconZoomout key="179" {...rest} />;
     case 'copyright':
-      return <IconCopyright key="177" {...rest} />;
+      return <IconCopyright key="180" {...rest} />;
     case 'ellipsis':
-      return <IconEllipsis key="178" {...rest} />;
+      return <IconEllipsis key="181" {...rest} />;
     case 'apartment':
-      return <IconApartment key="179" {...rest} />;
+      return <IconApartment key="182" {...rest} />;
     case 'minus-circle':
-      return <IconMinusCircle key="180" {...rest} />;
+      return <IconMinusCircle key="183" {...rest} />;
     case 'dash':
-      return <IconDash key="181" {...rest} />;
+      return <IconDash key="184" {...rest} />;
     case 'audio':
-      return <IconAudio key="182" {...rest} />;
+      return <IconAudio key="185" {...rest} />;
     case 'meh':
-      return <IconMeh key="183" {...rest} />;
+      return <IconMeh key="186" {...rest} />;
     case 'close':
-      return <IconClose key="184" {...rest} />;
+      return <IconClose key="187" {...rest} />;
     case 'audio-fill':
-      return <IconAudioFill key="185" {...rest} />;
+      return <IconAudioFill key="188" {...rest} />;
     case 'plus-circle':
-      return <IconPlusCircle key="186" {...rest} />;
+      return <IconPlusCircle key="189" {...rest} />;
     case 'enter':
-      return <IconEnter key="187" {...rest} />;
+      return <IconEnter key="190" {...rest} />;
     case 'robot':
-      return <IconRobot key="188" {...rest} />;
+      return <IconRobot key="191" {...rest} />;
     case 'play-circle':
-      return <IconPlayCircle key="189" {...rest} />;
+      return <IconPlayCircle key="192" {...rest} />;
     case 'line':
-      return <IconLine key="190" {...rest} />;
+      return <IconLine key="193" {...rest} />;
     case 'zoomin':
-      return <IconZoomin key="191" {...rest} />;
+      return <IconZoomin key="194" {...rest} />;
     case 'question-circle':
-      return <IconQuestionCircle key="192" {...rest} />;
+      return <IconQuestionCircle key="195" {...rest} />;
     case 'minus':
-      return <IconMinus key="193" {...rest} />;
+      return <IconMinus key="196" {...rest} />;
     case 'robot-fill':
-      return <IconRobotFill key="194" {...rest} />;
+      return <IconRobotFill key="197" {...rest} />;
     case 'Pound':
-      return <IconPound key="195" {...rest} />;
+      return <IconPound key="198" {...rest} />;
     case 'question':
-      return <IconQuestion key="196" {...rest} />;
+      return <IconQuestion key="199" {...rest} />;
     case 'bug-fill':
-      return <IconBugFill key="197" {...rest} />;
+      return <IconBugFill key="200" {...rest} />;
     case 'right-circle':
-      return <IconRightCircle key="198" {...rest} />;
+      return <IconRightCircle key="201" {...rest} />;
     case 'rollback':
-      return <IconRollback key="199" {...rest} />;
+      return <IconRollback key="202" {...rest} />;
     case 'bug':
-      return <IconBug key="200" {...rest} />;
+      return <IconBug key="203" {...rest} />;
     case 'smile':
-      return <IconSmile key="201" {...rest} />;
+      return <IconSmile key="204" {...rest} />;
     case 'small-dash':
-      return <IconSmallDash key="202" {...rest} />;
+      return <IconSmallDash key="205" {...rest} />;
     case 'audiostatic':
-      return <IconAudiostatic key="203" {...rest} />;
+      return <IconAudiostatic key="206" {...rest} />;
     case 'trademark':
-      return <IconTrademark key="204" {...rest} />;
+      return <IconTrademark key="207" {...rest} />;
     case 'pause':
-      return <IconPause key="205" {...rest} />;
+      return <IconPause key="208" {...rest} />;
     case 'comment':
-      return <IconComment key="206" {...rest} />;
+      return <IconComment key="209" {...rest} />;
     case 'time-circle':
-      return <IconTimeCircle key="207" {...rest} />;
+      return <IconTimeCircle key="210" {...rest} />;
     case 'bg-colors':
-      return <IconBgColors key="208" {...rest} />;
+      return <IconBgColors key="211" {...rest} />;
     case 'signal-fill':
-      return <IconSignalFill key="209" {...rest} />;
+      return <IconSignalFill key="212" {...rest} />;
     case 'timeout':
-      return <IconTimeout key="210" {...rest} />;
+      return <IconTimeout key="213" {...rest} />;
     case 'crown':
-      return <IconCrown key="211" {...rest} />;
+      return <IconCrown key="214" {...rest} />;
     case 'verified':
-      return <IconVerified key="212" {...rest} />;
+      return <IconVerified key="215" {...rest} />;
     case 'earth':
-      return <IconEarth key="213" {...rest} />;
+      return <IconEarth key="216" {...rest} />;
     case 'drag':
-      return <IconDrag key="214" {...rest} />;
+      return <IconDrag key="217" {...rest} />;
     case 'shortcut-fill':
-      return <IconShortcutFill key="215" {...rest} />;
+      return <IconShortcutFill key="218" {...rest} />;
     case 'YUAN':
-      return <IconYuan key="216" {...rest} />;
+      return <IconYuan key="219" {...rest} />;
     case 'desktop':
-      return <IconDesktop key="217" {...rest} />;
+      return <IconDesktop key="220" {...rest} />;
     case 'videocameraadd':
-      return <IconVideocameraadd key="218" {...rest} />;
+      return <IconVideocameraadd key="221" {...rest} />;
     case 'up-circle':
-      return <IconUpCircle key="219" {...rest} />;
+      return <IconUpCircle key="222" {...rest} />;
     case 'gift':
-      return <IconGift key="220" {...rest} />;
+      return <IconGift key="223" {...rest} />;
     case 'switchuser':
-      return <IconSwitchuser key="221" {...rest} />;
+      return <IconSwitchuser key="224" {...rest} />;
     case 'warning-circle':
-      return <IconWarningCircle key="222" {...rest} />;
+      return <IconWarningCircle key="225" {...rest} />;
     case 'stop':
-      return <IconStop key="223" {...rest} />;
+      return <IconStop key="226" {...rest} />;
     case 'whatsapp':
-      return <IconWhatsapp key="224" {...rest} />;
+      return <IconWhatsapp key="227" {...rest} />;
     case 'sync':
-      return <IconSync key="225" {...rest} />;
+      return <IconSync key="228" {...rest} />;
     case 'fire':
-      return <IconFire key="226" {...rest} />;
+      return <IconFire key="229" {...rest} />;
     case 'appstoreadd':
-      return <IconAppstoreadd key="227" {...rest} />;
+      return <IconAppstoreadd key="230" {...rest} />;
     case 'transaction':
-      return <IconTransaction key="228" {...rest} />;
+      return <IconTransaction key="231" {...rest} />;
     case 'thunderbolt':
-      return <IconThunderbolt key="229" {...rest} />;
+      return <IconThunderbolt key="232" {...rest} />;
     case 'caret-down':
-      return <IconCaretDown key="230" {...rest} />;
+      return <IconCaretDown key="233" {...rest} />;
     case 'undo':
-      return <IconUndo key="231" {...rest} />;
+      return <IconUndo key="234" {...rest} />;
     case 'check-circle-fill':
-      return <IconCheckCircleFill key="232" {...rest} />;
+      return <IconCheckCircleFill key="235" {...rest} />;
     case 'backward':
-      return <IconBackward key="233" {...rest} />;
+      return <IconBackward key="236" {...rest} />;
     case 'redo':
-      return <IconRedo key="234" {...rest} />;
+      return <IconRedo key="237" {...rest} />;
     case 'left-circle-fill':
-      return <IconLeftCircleFill key="235" {...rest} />;
+      return <IconLeftCircleFill key="238" {...rest} />;
     case 'caret-up':
-      return <IconCaretUp key="236" {...rest} />;
+      return <IconCaretUp key="239" {...rest} />;
     case 'reload':
-      return <IconReload key="237" {...rest} />;
+      return <IconReload key="240" {...rest} />;
     case 'down-circle-fill':
-      return <IconDownCircleFill key="238" {...rest} />;
+      return <IconDownCircleFill key="241" {...rest} />;
     case 'caret-right':
-      return <IconCaretRight key="239" {...rest} />;
+      return <IconCaretRight key="242" {...rest} />;
     case 'reloadtime':
-      return <IconReloadtime key="240" {...rest} />;
+      return <IconReloadtime key="243" {...rest} />;
     case 'minus-circle-fill':
-      return <IconMinusCircleFill key="241" {...rest} />;
+      return <IconMinusCircleFill key="244" {...rest} />;
     case 'caret-left':
-      return <IconCaretLeft key="242" {...rest} />;
+      return <IconCaretLeft key="245" {...rest} />;
     case 'message':
-      return <IconMessage key="243" {...rest} />;
+      return <IconMessage key="246" {...rest} />;
     case 'close-circle-fill':
-      return <IconCloseCircleFill key="244" {...rest} />;
+      return <IconCloseCircleFill key="247" {...rest} />;
     case 'fast-backward':
-      return <IconFastBackward key="245" {...rest} />;
+      return <IconFastBackward key="248" {...rest} />;
     case 'dashboard':
-      return <IconDashboard key="246" {...rest} />;
+      return <IconDashboard key="249" {...rest} />;
     case 'info-circle-fill':
-      return <IconInfoCircleFill key="247" {...rest} />;
+      return <IconInfoCircleFill key="250" {...rest} />;
     case 'forward':
-      return <IconForward key="248" {...rest} />;
+      return <IconForward key="251" {...rest} />;
     case 'issuesclose':
-      return <IconIssuesclose key="249" {...rest} />;
+      return <IconIssuesclose key="252" {...rest} />;
     case 'up-circle-fill':
-      return <IconUpCircleFill key="250" {...rest} />;
+      return <IconUpCircleFill key="253" {...rest} />;
     case 'fast-forward':
-      return <IconFastForward key="251" {...rest} />;
+      return <IconFastForward key="254" {...rest} />;
     case 'poweroff':
-      return <IconPoweroff key="252" {...rest} />;
+      return <IconPoweroff key="255" {...rest} />;
     case 'right-circle-fill':
-      return <IconRightCircleFill key="253" {...rest} />;
+      return <IconRightCircleFill key="256" {...rest} />;
     case 'search':
-      return <IconSearch key="254" {...rest} />;
+      return <IconSearch key="257" {...rest} />;
     case 'logout':
-      return <IconLogout key="255" {...rest} />;
+      return <IconLogout key="258" {...rest} />;
     case 'plus-circle-fill':
-      return <IconPlusCircleFill key="256" {...rest} />;
+      return <IconPlusCircleFill key="259" {...rest} />;
     case 'retweet':
-      return <IconRetweet key="257" {...rest} />;
+      return <IconRetweet key="260" {...rest} />;
     case 'piechart':
-      return <IconPiechart key="258" {...rest} />;
+      return <IconPiechart key="261" {...rest} />;
     case 'question-circle-fill':
-      return <IconQuestionCircleFill key="259" {...rest} />;
+      return <IconQuestionCircleFill key="262" {...rest} />;
     case 'login':
-      return <IconLogin key="260" {...rest} />;
+      return <IconLogin key="263" {...rest} />;
     case 'setting':
-      return <IconSetting key="261" {...rest} />;
+      return <IconSetting key="264" {...rest} />;
     case 'EURO-circle-fill':
-      return <IconEuroCircleFill key="262" {...rest} />;
+      return <IconEuroCircleFill key="265" {...rest} />;
     case 'step-backward':
-      return <IconStepBackward key="263" {...rest} />;
+      return <IconStepBackward key="266" {...rest} />;
     case 'eye':
-      return <IconEye key="264" {...rest} />;
+      return <IconEye key="267" {...rest} />;
     case 'frown-fill':
-      return <IconFrownFill key="265" {...rest} />;
+      return <IconFrownFill key="268" {...rest} />;
     case 'step-forward':
-      return <IconStepForward key="266" {...rest} />;
+      return <IconStepForward key="269" {...rest} />;
     case 'location':
-      return <IconLocation key="267" {...rest} />;
+      return <IconLocation key="270" {...rest} />;
     case 'copyright-circle-fil':
-      return <IconCopyrightCircleFil key="268" {...rest} />;
+      return <IconCopyrightCircleFil key="271" {...rest} />;
     case 'swap-right':
-      return <IconSwapRight key="269" {...rest} />;
+      return <IconSwapRight key="272" {...rest} />;
     case 'edit-square':
-      return <IconEditSquare key="270" {...rest} />;
+      return <IconEditSquare key="273" {...rest} />;
     case 'CI-circle-fill':
-      return <IconCiCircleFill key="271" {...rest} />;
+      return <IconCiCircleFill key="274" {...rest} />;
     case 'swap-left':
-      return <IconSwapLeft key="272" {...rest} />;
+      return <IconSwapLeft key="275" {...rest} />;
     case 'export':
-      return <IconExport key="273" {...rest} />;
+      return <IconExport key="276" {...rest} />;
     case 'compass-fill':
-      return <IconCompassFill key="274" {...rest} />;
+      return <IconCompassFill key="277" {...rest} />;
     case 'woman':
-      return <IconWoman key="275" {...rest} />;
+      return <IconWoman key="278" {...rest} />;
     case 'save':
-      return <IconSave key="276" {...rest} />;
+      return <IconSave key="279" {...rest} />;
     case 'Dollar-circle-fill':
-      return <IconDollarCircleFill key="277" {...rest} />;
+      return <IconDollarCircleFill key="280" {...rest} />;
     case 'plus':
-      return <IconPlus key="278" {...rest} />;
+      return <IconPlus key="281" {...rest} />;
     case 'Import':
-      return <IconImport key="279" {...rest} />;
+      return <IconImport key="282" {...rest} />;
     case 'poweroff-circle-fill':
-      return <IconPoweroffCircleFill key="280" {...rest} />;
+      return <IconPoweroffCircleFill key="283" {...rest} />;
     case 'eyeclose-fill':
-      return <IconEyecloseFill key="281" {...rest} />;
+      return <IconEyecloseFill key="284" {...rest} />;
     case 'appstore':
-      return <IconAppstore key="282" {...rest} />;
+      return <IconAppstore key="285" {...rest} />;
     case 'meh-fill':
-      return <IconMehFill key="283" {...rest} />;
+      return <IconMehFill key="286" {...rest} />;
     case 'eye-close':
-      return <IconEyeClose key="284" {...rest} />;
+      return <IconEyeClose key="287" {...rest} />;
     case 'close-square':
-      return <IconCloseSquare key="285" {...rest} />;
+      return <IconCloseSquare key="288" {...rest} />;
     case 'play-circle-fill':
-      return <IconPlayCircleFill key="286" {...rest} />;
+      return <IconPlayCircleFill key="289" {...rest} />;
     case 'clear':
-      return <IconClear key="287" {...rest} />;
+      return <IconClear key="290" {...rest} />;
     case 'down-square':
-      return <IconDownSquare key="288" {...rest} />;
+      return <IconDownSquare key="291" {...rest} />;
     case 'Pound-circle-fill':
-      return <IconPoundCircleFill key="289" {...rest} />;
+      return <IconPoundCircleFill key="292" {...rest} />;
     case 'collapse':
-      return <IconCollapse key="290" {...rest} />;
+      return <IconCollapse key="293" {...rest} />;
     case 'layout':
-      return <IconLayout key="291" {...rest} />;
+      return <IconLayout key="294" {...rest} />;
     case 'smile-fill':
-      return <IconSmileFill key="292" {...rest} />;
+      return <IconSmileFill key="295" {...rest} />;
     case 'expand':
-      return <IconExpand key="293" {...rest} />;
+      return <IconExpand key="296" {...rest} />;
     case 'left-square':
-      return <IconLeftSquare key="294" {...rest} />;
+      return <IconLeftSquare key="297" {...rest} />;
     case 'stop-fill':
-      return <IconStopFill key="295" {...rest} />;
+      return <IconStopFill key="298" {...rest} />;
     case 'deletecolumn':
-      return <IconDeletecolumn key="296" {...rest} />;
+      return <IconDeletecolumn key="299" {...rest} />;
     case 'play-square':
-      return <IconPlaySquare key="297" {...rest} />;
+      return <IconPlaySquare key="300" {...rest} />;
     case 'warning-circle-fill':
-      return <IconWarningCircleFill key="298" {...rest} />;
+      return <IconWarningCircleFill key="301" {...rest} />;
     case 'merge-cells':
-      return <IconMergeCells key="299" {...rest} />;
+      return <IconMergeCells key="302" {...rest} />;
     case 'control':
-      return <IconControl key="300" {...rest} />;
+      return <IconControl key="303" {...rest} />;
     case 'time-circle-fill':
-      return <IconTimeCircleFill key="301" {...rest} />;
+      return <IconTimeCircleFill key="304" {...rest} />;
     case 'subnode':
-      return <IconSubnode key="302" {...rest} />;
+      return <IconSubnode key="305" {...rest} />;
     case 'codelibrary':
-      return <IconCodelibrary key="303" {...rest} />;
+      return <IconCodelibrary key="306" {...rest} />;
     case 'trademark-circle-fil':
-      return <IconTrademarkCircleFil key="304" {...rest} />;
+      return <IconTrademarkCircleFil key="307" {...rest} />;
     case 'rotate-left':
-      return <IconRotateLeft key="305" {...rest} />;
+      return <IconRotateLeft key="308" {...rest} />;
     case 'detail':
-      return <IconDetail key="306" {...rest} />;
+      return <IconDetail key="309" {...rest} />;
     case 'YUAN-circle-fill':
-      return <IconYuanCircleFill key="307" {...rest} />;
+      return <IconYuanCircleFill key="310" {...rest} />;
     case 'rotate-right':
-      return <IconRotateRight key="308" {...rest} />;
+      return <IconRotateRight key="311" {...rest} />;
     case 'minus-square':
-      return <IconMinusSquare key="309" {...rest} />;
+      return <IconMinusSquare key="312" {...rest} />;
     case 'heart-fill':
-      return <IconHeartFill key="310" {...rest} />;
+      return <IconHeartFill key="313" {...rest} />;
     case 'insertrowbelow':
-      return <IconInsertrowbelow key="311" {...rest} />;
+      return <IconInsertrowbelow key="314" {...rest} />;
     case 'plus-square':
-      return <IconPlusSquare key="312" {...rest} />;
+      return <IconPlusSquare key="315" {...rest} />;
     case 'piechart-circle-fil':
-      return <IconPiechartCircleFil key="313" {...rest} />;
+      return <IconPiechartCircleFil key="316" {...rest} />;
     case 'insertrowabove':
-      return <IconInsertrowabove key="314" {...rest} />;
+      return <IconInsertrowabove key="317" {...rest} />;
     case 'right-square':
-      return <IconRightSquare key="315" {...rest} />;
+      return <IconRightSquare key="318" {...rest} />;
     case 'dashboard-fill':
-      return <IconDashboardFill key="316" {...rest} />;
+      return <IconDashboardFill key="319" {...rest} />;
     case 'table1':
-      return <IconTable1 key="317" {...rest} />;
+      return <IconTable1 key="320" {...rest} />;
     case 'project':
-      return <IconProject key="318" {...rest} />;
+      return <IconProject key="321" {...rest} />;
     case 'message-fill':
-      return <IconMessageFill key="319" {...rest} />;
+      return <IconMessageFill key="322" {...rest} />;
     case 'solit-cells':
-      return <IconSolitCells key="320" {...rest} />;
+      return <IconSolitCells key="323" {...rest} />;
     case 'wallet':
-      return <IconWallet key="321" {...rest} />;
+      return <IconWallet key="324" {...rest} />;
     case 'check-square-fill':
-      return <IconCheckSquareFill key="322" {...rest} />;
+      return <IconCheckSquareFill key="325" {...rest} />;
     case 'formatpainter':
-      return <IconFormatpainter key="323" {...rest} />;
+      return <IconFormatpainter key="326" {...rest} />;
     case 'up-square':
-      return <IconUpSquare key="324" {...rest} />;
+      return <IconUpSquare key="327" {...rest} />;
     case 'down-square-fill':
-      return <IconDownSquareFill key="325" {...rest} />;
+      return <IconDownSquareFill key="328" {...rest} />;
     case 'insertrowright':
-      return <IconInsertrowright key="326" {...rest} />;
+      return <IconInsertrowright key="329" {...rest} />;
     case 'calculator':
-      return <IconCalculator key="327" {...rest} />;
+      return <IconCalculator key="330" {...rest} />;
     case 'minus-square-fill':
-      return <IconMinusSquareFill key="328" {...rest} />;
+      return <IconMinusSquareFill key="331" {...rest} />;
     case 'formatpainter-fill':
-      return <IconFormatpainterFill key="329" {...rest} />;
+      return <IconFormatpainterFill key="332" {...rest} />;
     case 'interation':
-      return <IconInteration key="330" {...rest} />;
+      return <IconInteration key="333" {...rest} />;
     case 'close-square-fill':
-      return <IconCloseSquareFill key="331" {...rest} />;
+      return <IconCloseSquareFill key="334" {...rest} />;
     case 'insertrowleft':
-      return <IconInsertrowleft key="332" {...rest} />;
+      return <IconInsertrowleft key="335" {...rest} />;
     case 'check-square':
-      return <IconCheckSquare key="333" {...rest} />;
+      return <IconCheckSquare key="336" {...rest} />;
     case 'codelibrary-fill':
-      return <IconCodelibraryFill key="334" {...rest} />;
+      return <IconCodelibraryFill key="337" {...rest} />;
     case 'translate':
-      return <IconTranslate key="335" {...rest} />;
+      return <IconTranslate key="338" {...rest} />;
     case 'border':
-      return <IconBorder key="336" {...rest} />;
+      return <IconBorder key="339" {...rest} />;
     case 'left-square-fill':
-      return <IconLeftSquareFill key="337" {...rest} />;
+      return <IconLeftSquareFill key="340" {...rest} />;
     case 'deleterow':
-      return <IconDeleterow key="338" {...rest} />;
+      return <IconDeleterow key="341" {...rest} />;
     case 'border-outer':
-      return <IconBorderOuter key="339" {...rest} />;
+      return <IconBorderOuter key="342" {...rest} />;
     case 'play-square-fill':
-      return <IconPlaySquareFill key="340" {...rest} />;
+      return <IconPlaySquareFill key="343" {...rest} />;
     case 'sisternode':
-      return <IconSisternode key="341" {...rest} />;
+      return <IconSisternode key="344" {...rest} />;
     case 'border-top':
-      return <IconBorderTop key="342" {...rest} />;
+      return <IconBorderTop key="345" {...rest} />;
     case 'up-square-fill':
-      return <IconUpSquareFill key="343" {...rest} />;
+      return <IconUpSquareFill key="346" {...rest} />;
     case 'Field-number':
-      return <IconFieldNumber key="344" {...rest} />;
+      return <IconFieldNumber key="347" {...rest} />;
     case 'border-bottom':
-      return <IconBorderBottom key="345" {...rest} />;
+      return <IconBorderBottom key="348" {...rest} />;
     case 'right-square-fill':
-      return <IconRightSquareFill key="346" {...rest} />;
+      return <IconRightSquareFill key="349" {...rest} />;
     case 'Field-String':
-      return <IconFieldString key="347" {...rest} />;
+      return <IconFieldString key="350" {...rest} />;
     case 'border-left':
-      return <IconBorderLeft key="348" {...rest} />;
+      return <IconBorderLeft key="351" {...rest} />;
     case 'plus-square-fill':
-      return <IconPlusSquareFill key="349" {...rest} />;
+      return <IconPlusSquareFill key="352" {...rest} />;
     case 'Function':
-      return <IconFunction key="350" {...rest} />;
+      return <IconFunction key="353" {...rest} />;
     case 'border-right':
-      return <IconBorderRight key="351" {...rest} />;
+      return <IconBorderRight key="354" {...rest} />;
     case 'accountbook-fill':
-      return <IconAccountbookFill key="352" {...rest} />;
+      return <IconAccountbookFill key="355" {...rest} />;
     case 'Field-time':
-      return <IconFieldTime key="353" {...rest} />;
+      return <IconFieldTime key="356" {...rest} />;
     case 'border-inner':
-      return <IconBorderInner key="354" {...rest} />;
+      return <IconBorderInner key="357" {...rest} />;
     case 'carryout-fill':
-      return <IconCarryoutFill key="355" {...rest} />;
+      return <IconCarryoutFill key="358" {...rest} />;
     case 'GIF':
-      return <IconGif key="356" {...rest} />;
+      return <IconGif key="359" {...rest} />;
     case 'border-verticle':
-      return <IconBorderVerticle key="357" {...rest} />;
+      return <IconBorderVerticle key="360" {...rest} />;
     case 'calendar-fill':
-      return <IconCalendarFill key="358" {...rest} />;
+      return <IconCalendarFill key="361" {...rest} />;
     case 'Partition':
-      return <IconPartition key="359" {...rest} />;
+      return <IconPartition key="362" {...rest} />;
     case 'border-horizontal':
-      return <IconBorderHorizontal key="360" {...rest} />;
+      return <IconBorderHorizontal key="363" {...rest} />;
     case 'calculator-fill':
-      return <IconCalculatorFill key="361" {...rest} />;
+      return <IconCalculatorFill key="364" {...rest} />;
     case 'index':
-      return <IconIndex key="362" {...rest} />;
+      return <IconIndex key="365" {...rest} />;
     case 'radius-bottomleft':
-      return <IconRadiusBottomleft key="363" {...rest} />;
+      return <IconRadiusBottomleft key="366" {...rest} />;
     case 'interation-fill':
-      return <IconInterationFill key="364" {...rest} />;
+      return <IconInterationFill key="367" {...rest} />;
     case 'Storedprocedure':
-      return <IconStoredprocedure key="365" {...rest} />;
+      return <IconStoredprocedure key="368" {...rest} />;
     case 'radius-bottomright':
-      return <IconRadiusBottomright key="366" {...rest} />;
+      return <IconRadiusBottomright key="369" {...rest} />;
     case 'project-fill':
-      return <IconProjectFill key="367" {...rest} />;
+      return <IconProjectFill key="370" {...rest} />;
     case 'Field-Binary':
-      return <IconFieldBinary key="368" {...rest} />;
+      return <IconFieldBinary key="371" {...rest} />;
     case 'radius-upleft':
-      return <IconRadiusUpleft key="369" {...rest} />;
+      return <IconRadiusUpleft key="372" {...rest} />;
     case 'detail-fill':
-      return <IconDetailFill key="370" {...rest} />;
+      return <IconDetailFill key="373" {...rest} />;
     case 'Console-SQL':
-      return <IconConsoleSql key="371" {...rest} />;
+      return <IconConsoleSql key="374" {...rest} />;
     case 'radius-upright':
-      return <IconRadiusUpright key="372" {...rest} />;
+      return <IconRadiusUpright key="375" {...rest} />;
     case 'save-fill':
-      return <IconSaveFill key="373" {...rest} />;
+      return <IconSaveFill key="376" {...rest} />;
     case 'icon-test':
-      return <IconIconTest key="374" {...rest} />;
+      return <IconIconTest key="377" {...rest} />;
     case 'radius-setting':
-      return <IconRadiusSetting key="375" {...rest} />;
+      return <IconRadiusSetting key="378" {...rest} />;
     case 'wallet-fill':
-      return <IconWalletFill key="376" {...rest} />;
+      return <IconWalletFill key="379" {...rest} />;
     case 'aim':
-      return <IconAim key="377" {...rest} />;
+      return <IconAim key="380" {...rest} />;
     case 'adduser':
-      return <IconAdduser key="378" {...rest} />;
+      return <IconAdduser key="381" {...rest} />;
     case 'control-fill':
-      return <IconControlFill key="379" {...rest} />;
+      return <IconControlFill key="382" {...rest} />;
     case 'compress':
-      return <IconCompress key="380" {...rest} />;
+      return <IconCompress key="383" {...rest} />;
     case 'deleteteam':
-      return <IconDeleteteam key="381" {...rest} />;
+      return <IconDeleteteam key="384" {...rest} />;
     case 'layout-fill':
-      return <IconLayoutFill key="382" {...rest} />;
+      return <IconLayoutFill key="385" {...rest} />;
     case 'expend':
-      return <IconExpend key="383" {...rest} />;
+      return <IconExpend key="386" {...rest} />;
     case 'deleteuser':
-      return <IconDeleteuser key="384" {...rest} />;
+      return <IconDeleteuser key="387" {...rest} />;
     case 'appstore-fill':
-      return <IconAppstoreFill key="385" {...rest} />;
+      return <IconAppstoreFill key="388" {...rest} />;
     case 'folder-view':
-      return <IconFolderView key="386" {...rest} />;
+      return <IconFolderView key="389" {...rest} />;
     case 'addteam':
-      return <IconAddteam key="387" {...rest} />;
+      return <IconAddteam key="390" {...rest} />;
     case 'mobile-fill':
-      return <IconMobileFill key="388" {...rest} />;
+      return <IconMobileFill key="391" {...rest} />;
     case 'file-GIF':
-      return <IconFileGif key="389" {...rest} />;
+      return <IconFileGif key="392" {...rest} />;
     case 'user':
-      return <IconUser key="390" {...rest} />;
+      return <IconUser key="393" {...rest} />;
     case 'tablet-fill':
-      return <IconTabletFill key="391" {...rest} />;
+      return <IconTabletFill key="394" {...rest} />;
     case 'group':
-      return <IconGroup key="392" {...rest} />;
+      return <IconGroup key="395" {...rest} />;
     case 'team':
-      return <IconTeam key="393" {...rest} />;
+      return <IconTeam key="396" {...rest} />;
     case 'book-fill':
-      return <IconBookFill key="394" {...rest} />;
+      return <IconBookFill key="397" {...rest} />;
     case 'send':
-      return <IconSend key="395" {...rest} />;
+      return <IconSend key="398" {...rest} />;
     case 'areachart':
-      return <IconAreachart key="396" {...rest} />;
+      return <IconAreachart key="399" {...rest} />;
     case 'redenvelope-fill':
-      return <IconRedenvelopeFill key="397" {...rest} />;
+      return <IconRedenvelopeFill key="400" {...rest} />;
     case 'Report':
-      return <IconReport key="398" {...rest} />;
+      return <IconReport key="401" {...rest} />;
     case 'linechart':
-      return <IconLinechart key="399" {...rest} />;
+      return <IconLinechart key="402" {...rest} />;
     case 'safetycertificate-f':
-      return <IconSafetycertificateF key="400" {...rest} />;
+      return <IconSafetycertificateF key="403" {...rest} />;
     case 'View':
-      return <IconView key="401" {...rest} />;
+      return <IconView key="404" {...rest} />;
     case 'barchart':
-      return <IconBarchart key="402" {...rest} />;
+      return <IconBarchart key="405" {...rest} />;
     case 'propertysafety-fill':
-      return <IconPropertysafetyFill key="403" {...rest} />;
+      return <IconPropertysafetyFill key="406" {...rest} />;
     case 'shortcut':
-      return <IconShortcut key="404" {...rest} />;
+      return <IconShortcut key="407" {...rest} />;
     case 'pointmap':
-      return <IconPointmap key="405" {...rest} />;
+      return <IconPointmap key="408" {...rest} />;
     case 'insurance-fill':
-      return <IconInsuranceFill key="406" {...rest} />;
+      return <IconInsuranceFill key="409" {...rest} />;
     case 'ungroup':
-      return <IconUngroup key="407" {...rest} />;
+      return <IconUngroup key="410" {...rest} />;
     case 'container':
-      return <IconContainer key="408" {...rest} />;
+      return <IconContainer key="411" {...rest} />;
     case 'securityscan-fill':
-      return <IconSecurityscanFill key="409" {...rest} />;
+      return <IconSecurityscanFill key="412" {...rest} />;
     case 'database':
-      return <IconDatabase key="410" {...rest} />;
+      return <IconDatabase key="413" {...rest} />;
     case 'file-exclamation-fil':
-      return <IconFileExclamationFil key="411" {...rest} />;
+      return <IconFileExclamationFil key="414" {...rest} />;
     case 'sever':
-      return <IconSever key="412" {...rest} />;
+      return <IconSever key="415" {...rest} />;
     case 'file-add-fill':
-      return <IconFileAddFill key="413" {...rest} />;
+      return <IconFileAddFill key="416" {...rest} />;
     case 'mobile':
-      return <IconMobile key="414" {...rest} />;
+      return <IconMobile key="417" {...rest} />;
     case 'file-fill':
-      return <IconFileFill key="415" {...rest} />;
+      return <IconFileFill key="418" {...rest} />;
     case 'tablet':
-      return <IconTablet key="416" {...rest} />;
+      return <IconTablet key="419" {...rest} />;
     case 'file-excel-fill':
-      return <IconFileExcelFill key="417" {...rest} />;
+      return <IconFileExcelFill key="420" {...rest} />;
     case 'redenvelope':
-      return <IconRedenvelope key="418" {...rest} />;
+      return <IconRedenvelope key="421" {...rest} />;
     case 'file-markdown-fill':
-      return <IconFileMarkdownFill key="419" {...rest} />;
+      return <IconFileMarkdownFill key="422" {...rest} />;
     case 'book':
-      return <IconBook key="420" {...rest} />;
+      return <IconBook key="423" {...rest} />;
     case 'file-text-fill':
-      return <IconFileTextFill key="421" {...rest} />;
+      return <IconFileTextFill key="424" {...rest} />;
     case 'filedone':
-      return <IconFiledone key="422" {...rest} />;
+      return <IconFiledone key="425" {...rest} />;
     case 'file-ppt-fill':
-      return <IconFilePptFill key="423" {...rest} />;
+      return <IconFilePptFill key="426" {...rest} />;
     case 'reconciliation':
-      return <IconReconciliation key="424" {...rest} />;
+      return <IconReconciliation key="427" {...rest} />;
     case 'file-unknown-fill':
-      return <IconFileUnknownFill key="425" {...rest} />;
+      return <IconFileUnknownFill key="428" {...rest} />;
     case 'file-exception':
-      return <IconFileException key="426" {...rest} />;
+      return <IconFileException key="429" {...rest} />;
     case 'file-word-fill':
-      return <IconFileWordFill key="427" {...rest} />;
+      return <IconFileWordFill key="430" {...rest} />;
     case 'filesync':
-      return <IconFilesync key="428" {...rest} />;
+      return <IconFilesync key="431" {...rest} />;
     case 'file-zip-fill':
-      return <IconFileZipFill key="429" {...rest} />;
+      return <IconFileZipFill key="432" {...rest} />;
     case 'filesearch':
-      return <IconFilesearch key="430" {...rest} />;
+      return <IconFilesearch key="433" {...rest} />;
     case 'file-pdf-fill':
-      return <IconFilePdfFill key="431" {...rest} />;
+      return <IconFilePdfFill key="434" {...rest} />;
     case 'solution':
-      return <IconSolution key="432" {...rest} />;
+      return <IconSolution key="435" {...rest} />;
     case 'file-image-fill':
-      return <IconFileImageFill key="433" {...rest} />;
+      return <IconFileImageFill key="436" {...rest} />;
     case 'fileprotect':
-      return <IconFileprotect key="434" {...rest} />;
+      return <IconFileprotect key="437" {...rest} />;
     case 'diff-fill':
-      return <IconDiffFill key="435" {...rest} />;
+      return <IconDiffFill key="438" {...rest} />;
     case 'file-add':
-      return <IconFileAdd key="436" {...rest} />;
+      return <IconFileAdd key="439" {...rest} />;
     case 'file-copy-fill':
-      return <IconFileCopyFill key="437" {...rest} />;
+      return <IconFileCopyFill key="440" {...rest} />;
     case 'file-excel':
-      return <IconFileExcel key="438" {...rest} />;
+      return <IconFileExcel key="441" {...rest} />;
     case 'snippets-fill':
-      return <IconSnippetsFill key="439" {...rest} />;
+      return <IconSnippetsFill key="442" {...rest} />;
     case 'file-exclamation':
-      return <IconFileExclamation key="440" {...rest} />;
+      return <IconFileExclamation key="443" {...rest} />;
     case 'batchfolding-fill':
-      return <IconBatchfoldingFill key="441" {...rest} />;
+      return <IconBatchfoldingFill key="444" {...rest} />;
     case 'file-pdf':
-      return <IconFilePdf key="442" {...rest} />;
+      return <IconFilePdf key="445" {...rest} />;
     case 'reconciliation-fill':
-      return <IconReconciliationFill key="443" {...rest} />;
+      return <IconReconciliationFill key="446" {...rest} />;
     case 'file-image':
-      return <IconFileImage key="444" {...rest} />;
+      return <IconFileImage key="447" {...rest} />;
     case 'folder-add-fill':
-      return <IconFolderAddFill key="445" {...rest} />;
+      return <IconFolderAddFill key="448" {...rest} />;
     case 'file-markdown':
-      return <IconFileMarkdown key="446" {...rest} />;
+      return <IconFileMarkdown key="449" {...rest} />;
     case 'folder-fill':
-      return <IconFolderFill key="447" {...rest} />;
+      return <IconFolderFill key="450" {...rest} />;
     case 'file-unknown':
-      return <IconFileUnknown key="448" {...rest} />;
+      return <IconFileUnknown key="451" {...rest} />;
     case 'folder-open-fill':
-      return <IconFolderOpenFill key="449" {...rest} />;
+      return <IconFolderOpenFill key="452" {...rest} />;
     case 'file-ppt':
-      return <IconFilePpt key="450" {...rest} />;
+      return <IconFilePpt key="453" {...rest} />;
     case 'database-fill':
-      return <IconDatabaseFill key="451" {...rest} />;
+      return <IconDatabaseFill key="454" {...rest} />;
     case 'file-word':
-      return <IconFileWord key="452" {...rest} />;
+      return <IconFileWord key="455" {...rest} />;
     case 'container-fill':
-      return <IconContainerFill key="453" {...rest} />;
+      return <IconContainerFill key="456" {...rest} />;
     case 'file':
-      return <IconFile key="454" {...rest} />;
+      return <IconFile key="457" {...rest} />;
     case 'sever-fill':
-      return <IconSeverFill key="455" {...rest} />;
+      return <IconSeverFill key="458" {...rest} />;
     case 'file-zip':
-      return <IconFileZip key="456" {...rest} />;
+      return <IconFileZip key="459" {...rest} />;
     case 'calendar-check-fill':
-      return <IconCalendarCheckFill key="457" {...rest} />;
+      return <IconCalendarCheckFill key="460" {...rest} />;
     case 'file-text':
-      return <IconFileText key="458" {...rest} />;
+      return <IconFileText key="461" {...rest} />;
     case 'image-fill':
-      return <IconImageFill key="459" {...rest} />;
+      return <IconImageFill key="462" {...rest} />;
     case 'file-copy':
-      return <IconFileCopy key="460" {...rest} />;
+      return <IconFileCopy key="463" {...rest} />;
     case 'idcard-fill':
-      return <IconIdcardFill key="461" {...rest} />;
+      return <IconIdcardFill key="464" {...rest} />;
     case 'snippets':
-      return <IconSnippets key="462" {...rest} />;
+      return <IconSnippets key="465" {...rest} />;
     case 'creditcard-fill':
-      return <IconCreditcardFill key="463" {...rest} />;
+      return <IconCreditcardFill key="466" {...rest} />;
     case 'audit':
-      return <IconAudit key="464" {...rest} />;
+      return <IconAudit key="467" {...rest} />;
     case 'fund-fill':
-      return <IconFundFill key="465" {...rest} />;
+      return <IconFundFill key="468" {...rest} />;
     case 'diff':
-      return <IconDiff key="466" {...rest} />;
+      return <IconDiff key="469" {...rest} />;
     case 'read-fill':
-      return <IconReadFill key="467" {...rest} />;
+      return <IconReadFill key="470" {...rest} />;
     case 'Batchfolding':
-      return <IconBatchfolding key="468" {...rest} />;
+      return <IconBatchfolding key="471" {...rest} />;
     case 'contacts-fill':
-      return <IconContactsFill key="469" {...rest} />;
+      return <IconContactsFill key="472" {...rest} />;
     case 'securityscan':
-      return <IconSecurityscan key="470" {...rest} />;
+      return <IconSecurityscan key="473" {...rest} />;
     case 'delete-fill':
-      return <IconDeleteFill key="471" {...rest} />;
+      return <IconDeleteFill key="474" {...rest} />;
     case 'propertysafety':
-      return <IconPropertysafety key="472" {...rest} />;
+      return <IconPropertysafety key="475" {...rest} />;
     case 'notification-fill':
-      return <IconNotificationFill key="473" {...rest} />;
+      return <IconNotificationFill key="476" {...rest} />;
     case 'safetycertificate':
-      return <IconSafetycertificate key="474" {...rest} />;
+      return <IconSafetycertificate key="477" {...rest} />;
     case 'flag-fill':
-      return <IconFlagFill key="475" {...rest} />;
+      return <IconFlagFill key="478" {...rest} />;
     case 'insurance':
-      return <IconInsurance key="476" {...rest} />;
+      return <IconInsurance key="479" {...rest} />;
     case 'moneycollect-fill':
-      return <IconMoneycollectFill key="477" {...rest} />;
+      return <IconMoneycollectFill key="480" {...rest} />;
     case 'alert':
-      return <IconAlert key="478" {...rest} />;
+      return <IconAlert key="481" {...rest} />;
     case 'medicinebox-fill':
-      return <IconMedicineboxFill key="479" {...rest} />;
+      return <IconMedicineboxFill key="482" {...rest} />;
     case 'delete':
-      return <IconDelete key="480" {...rest} />;
+      return <IconDelete key="483" {...rest} />;
     case 'rest-fill':
-      return <IconRestFill key="481" {...rest} />;
+      return <IconRestFill key="484" {...rest} />;
     case 'hourglass':
-      return <IconHourglass key="482" {...rest} />;
+      return <IconHourglass key="485" {...rest} />;
     case 'shopping-fill':
-      return <IconShoppingFill key="483" {...rest} />;
+      return <IconShoppingFill key="486" {...rest} />;
     case 'bulb':
-      return <IconBulb key="484" {...rest} />;
+      return <IconBulb key="487" {...rest} />;
     case 'skin-fill':
-      return <IconSkinFill key="485" {...rest} />;
+      return <IconSkinFill key="488" {...rest} />;
     case 'experiment':
-      return <IconExperiment key="486" {...rest} />;
+      return <IconExperiment key="489" {...rest} />;
     case 'video-fill':
-      return <IconVideoFill key="487" {...rest} />;
+      return <IconVideoFill key="490" {...rest} />;
     case 'bell':
-      return <IconBell key="488" {...rest} />;
+      return <IconBell key="491" {...rest} />;
     case 'sound-fill':
-      return <IconSoundFill key="489" {...rest} />;
+      return <IconSoundFill key="492" {...rest} />;
     case 'trophy':
-      return <IconTrophy key="490" {...rest} />;
+      return <IconTrophy key="493" {...rest} />;
     case 'bulb-fill':
-      return <IconBulbFill key="491" {...rest} />;
+      return <IconBulbFill key="494" {...rest} />;
     case 'rest':
-      return <IconRest key="492" {...rest} />;
+      return <IconRest key="495" {...rest} />;
     case 'bell-fill':
-      return <IconBellFill key="493" {...rest} />;
+      return <IconBellFill key="496" {...rest} />;
     case 'USB':
-      return <IconUsb key="494" {...rest} />;
+      return <IconUsb key="497" {...rest} />;
     case 'filter-fill':
-      return <IconFilterFill key="495" {...rest} />;
+      return <IconFilterFill key="498" {...rest} />;
     case 'skin':
-      return <IconSkin key="496" {...rest} />;
+      return <IconSkin key="499" {...rest} />;
     case 'fire-fill':
-      return <IconFireFill key="497" {...rest} />;
+      return <IconFireFill key="500" {...rest} />;
     case 'home':
-      return <IconHome key="498" {...rest} />;
+      return <IconHome key="501" {...rest} />;
     case 'funnelplot-fill':
-      return <IconFunnelplotFill key="499" {...rest} />;
+      return <IconFunnelplotFill key="502" {...rest} />;
     case 'bank':
-      return <IconBank key="500" {...rest} />;
+      return <IconBank key="503" {...rest} />;
     case 'gift-fill':
-      return <IconGiftFill key="501" {...rest} />;
+      return <IconGiftFill key="504" {...rest} />;
     case 'filter':
-      return <IconFilter key="502" {...rest} />;
+      return <IconFilter key="505" {...rest} />;
     case 'hourglass-fill':
-      return <IconHourglassFill key="503" {...rest} />;
+      return <IconHourglassFill key="506" {...rest} />;
     case 'funnelplot':
-      return <IconFunnelplot key="504" {...rest} />;
+      return <IconFunnelplot key="507" {...rest} />;
     case 'home-fill':
-      return <IconHomeFill key="505" {...rest} />;
+      return <IconHomeFill key="508" {...rest} />;
     case 'like':
-      return <IconLike key="506" {...rest} />;
+      return <IconLike key="509" {...rest} />;
     case 'trophy-fill':
-      return <IconTrophyFill key="507" {...rest} />;
+      return <IconTrophyFill key="510" {...rest} />;
     case 'unlike':
-      return <IconUnlike key="508" {...rest} />;
+      return <IconUnlike key="511" {...rest} />;
     case 'location-fill':
-      return <IconLocationFill key="509" {...rest} />;
+      return <IconLocationFill key="512" {...rest} />;
     case 'unlock':
-      return <IconUnlock key="510" {...rest} />;
+      return <IconUnlock key="513" {...rest} />;
     case 'cloud-fill':
-      return <IconCloudFill key="511" {...rest} />;
+      return <IconCloudFill key="514" {...rest} />;
     case 'lock':
-      return <IconLock key="512" {...rest} />;
+      return <IconLock key="515" {...rest} />;
     case 'customerservice-fill':
-      return <IconCustomerserviceFill key="513" {...rest} />;
+      return <IconCustomerserviceFill key="516" {...rest} />;
     case 'customerservice':
-      return <IconCustomerservice key="514" {...rest} />;
+      return <IconCustomerservice key="517" {...rest} />;
     case 'experiment-fill':
-      return <IconExperimentFill key="515" {...rest} />;
+      return <IconExperimentFill key="518" {...rest} />;
     case 'flag':
-      return <IconFlag key="516" {...rest} />;
+      return <IconFlag key="519" {...rest} />;
     case 'eye-fill':
-      return <IconEyeFill key="517" {...rest} />;
+      return <IconEyeFill key="520" {...rest} />;
     case 'moneycollect':
-      return <IconMoneycollect key="518" {...rest} />;
+      return <IconMoneycollect key="521" {...rest} />;
     case 'like-fill':
-      return <IconLikeFill key="519" {...rest} />;
+      return <IconLikeFill key="522" {...rest} />;
     case 'medicinebox':
-      return <IconMedicinebox key="520" {...rest} />;
+      return <IconMedicinebox key="523" {...rest} />;
     case 'lock-fill':
-      return <IconLockFill key="521" {...rest} />;
+      return <IconLockFill key="524" {...rest} />;
     case 'shop':
-      return <IconShop key="522" {...rest} />;
+      return <IconShop key="525" {...rest} />;
     case 'unlike-fill':
-      return <IconUnlikeFill key="523" {...rest} />;
+      return <IconUnlikeFill key="526" {...rest} />;
     case 'rocket':
-      return <IconRocket key="524" {...rest} />;
+      return <IconRocket key="527" {...rest} />;
     case 'star-fill':
-      return <IconStarFill key="525" {...rest} />;
+      return <IconStarFill key="528" {...rest} />;
     case 'shopping':
-      return <IconShopping key="526" {...rest} />;
+      return <IconShopping key="529" {...rest} />;
     case 'unlock-fill':
-      return <IconUnlockFill key="527" {...rest} />;
+      return <IconUnlockFill key="530" {...rest} />;
     case 'folder':
-      return <IconFolder key="528" {...rest} />;
+      return <IconFolder key="531" {...rest} />;
     case 'alert-fill':
-      return <IconAlertFill key="529" {...rest} />;
+      return <IconAlertFill key="532" {...rest} />;
     case 'folder-open':
-      return <IconFolderOpen key="530" {...rest} />;
+      return <IconFolderOpen key="533" {...rest} />;
     case 'api-fill':
-      return <IconApiFill key="531" {...rest} />;
+      return <IconApiFill key="534" {...rest} />;
     case 'folder-add':
-      return <IconFolderAdd key="532" {...rest} />;
+      return <IconFolderAdd key="535" {...rest} />;
     case 'highlight-fill':
-      return <IconHighlightFill key="533" {...rest} />;
+      return <IconHighlightFill key="536" {...rest} />;
     case 'deploymentunit':
-      return <IconDeploymentunit key="534" {...rest} />;
+      return <IconDeploymentunit key="537" {...rest} />;
     case 'phone-fill':
-      return <IconPhoneFill key="535" {...rest} />;
+      return <IconPhoneFill key="538" {...rest} />;
     case 'accountbook':
-      return <IconAccountbook key="536" {...rest} />;
+      return <IconAccountbook key="539" {...rest} />;
     case 'edit-fill':
-      return <IconEditFill key="537" {...rest} />;
+      return <IconEditFill key="540" {...rest} />;
     case 'contacts':
-      return <IconContacts key="538" {...rest} />;
+      return <IconContacts key="541" {...rest} />;
     case 'pushpin-fill':
-      return <IconPushpinFill key="539" {...rest} />;
+      return <IconPushpinFill key="542" {...rest} />;
     case 'carryout':
-      return <IconCarryout key="540" {...rest} />;
+      return <IconCarryout key="543" {...rest} />;
     case 'rocket-fill':
-      return <IconRocketFill key="541" {...rest} />;
+      return <IconRocketFill key="544" {...rest} />;
     case 'calendar-check':
-      return <IconCalendarCheck key="542" {...rest} />;
+      return <IconCalendarCheck key="545" {...rest} />;
     case 'thunderbolt-fill':
-      return <IconThunderboltFill key="543" {...rest} />;
+      return <IconThunderboltFill key="546" {...rest} />;
     case 'calendar':
-      return <IconCalendar key="544" {...rest} />;
+      return <IconCalendar key="547" {...rest} />;
     case 'tag-fill':
-      return <IconTagFill key="545" {...rest} />;
+      return <IconTagFill key="548" {...rest} />;
     case 'scan':
-      return <IconScan key="546" {...rest} />;
+      return <IconScan key="549" {...rest} />;
     case 'wrench-fill':
-      return <IconWrenchFill key="547" {...rest} />;
+      return <IconWrenchFill key="550" {...rest} />;
     case 'select':
-      return <IconSelect key="548" {...rest} />;
+      return <IconSelect key="551" {...rest} />;
     case 'tags-fill':
-      return <IconTagsFill key="549" {...rest} />;
+      return <IconTagsFill key="552" {...rest} />;
     case 'boxplot':
-      return <IconBoxplot key="550" {...rest} />;
+      return <IconBoxplot key="553" {...rest} />;
     case 'bank-fill':
-      return <IconBankFill key="551" {...rest} />;
+      return <IconBankFill key="554" {...rest} />;
     case 'build':
-      return <IconBuild key="552" {...rest} />;
+      return <IconBuild key="555" {...rest} />;
     case 'camera-fill':
-      return <IconCameraFill key="553" {...rest} />;
+      return <IconCameraFill key="556" {...rest} />;
     case 'sliders':
-      return <IconSliders key="554" {...rest} />;
+      return <IconSliders key="557" {...rest} />;
     case 'error-fill':
-      return <IconErrorFill key="555" {...rest} />;
+      return <IconErrorFill key="558" {...rest} />;
     case 'laptop':
-      return <IconLaptop key="556" {...rest} />;
+      return <IconLaptop key="559" {...rest} />;
     case 'crown-fill':
-      return <IconCrownFill key="557" {...rest} />;
+      return <IconCrownFill key="560" {...rest} />;
     case 'barcode':
-      return <IconBarcode key="558" {...rest} />;
+      return <IconBarcode key="561" {...rest} />;
     case 'mail-fill':
-      return <IconMailFill key="559" {...rest} />;
+      return <IconMailFill key="562" {...rest} />;
     case 'camera':
-      return <IconCamera key="560" {...rest} />;
+      return <IconCamera key="563" {...rest} />;
     case 'car-fill':
-      return <IconCarFill key="561" {...rest} />;
+      return <IconCarFill key="564" {...rest} />;
     case 'cluster':
-      return <IconCluster key="562" {...rest} />;
+      return <IconCluster key="565" {...rest} />;
     case 'printer-fill':
-      return <IconPrinterFill key="563" {...rest} />;
+      return <IconPrinterFill key="566" {...rest} />;
     case 'gateway':
-      return <IconGateway key="564" {...rest} />;
+      return <IconGateway key="567" {...rest} />;
     case 'shop-fill':
-      return <IconShopFill key="565" {...rest} />;
+      return <IconShopFill key="568" {...rest} />;
     case 'car':
-      return <IconCar key="566" {...rest} />;
+      return <IconCar key="569" {...rest} />;
     case 'setting-fill':
-      return <IconSettingFill key="567" {...rest} />;
+      return <IconSettingFill key="570" {...rest} />;
     case 'printer':
-      return <IconPrinter key="568" {...rest} />;
+      return <IconPrinter key="571" {...rest} />;
     case 'USB-fill':
-      return <IconUsbFill key="569" {...rest} />;
+      return <IconUsbFill key="572" {...rest} />;
     case 'read':
-      return <IconRead key="570" {...rest} />;
+      return <IconRead key="573" {...rest} />;
     case 'golden-fill':
-      return <IconGoldenFill key="571" {...rest} />;
+      return <IconGoldenFill key="574" {...rest} />;
     case 'cloud-server':
-      return <IconCloudServer key="572" {...rest} />;
+      return <IconCloudServer key="575" {...rest} />;
     case 'build-fill':
-      return <IconBuildFill key="573" {...rest} />;
+      return <IconBuildFill key="576" {...rest} />;
     case 'cloud-upload':
-      return <IconCloudUpload key="574" {...rest} />;
+      return <IconCloudUpload key="577" {...rest} />;
     case 'boxplot-fill':
-      return <IconBoxplotFill key="575" {...rest} />;
+      return <IconBoxplotFill key="578" {...rest} />;
     case 'cloud':
-      return <IconCloud key="576" {...rest} />;
+      return <IconCloud key="579" {...rest} />;
     case 'sliders-fill':
-      return <IconSlidersFill key="577" {...rest} />;
+      return <IconSlidersFill key="580" {...rest} />;
     case 'cloud-download':
-      return <IconCloudDownload key="578" {...rest} />;
+      return <IconCloudDownload key="581" {...rest} />;
     case 'alibaba':
-      return <IconAlibaba key="579" {...rest} />;
+      return <IconAlibaba key="582" {...rest} />;
     case 'cloud-sync':
-      return <IconCloudSync key="580" {...rest} />;
+      return <IconCloudSync key="583" {...rest} />;
     case 'antdesign':
-      return <IconAntdesign key="581" {...rest} />;
+      return <IconAntdesign key="584" {...rest} />;
     case 'video':
-      return <IconVideo key="582" {...rest} />;
+      return <IconVideo key="585" {...rest} />;
     case 'ant-cloud':
-      return <IconAntCloud key="583" {...rest} />;
+      return <IconAntCloud key="586" {...rest} />;
     case 'notification':
-      return <IconNotification key="584" {...rest} />;
+      return <IconNotification key="587" {...rest} />;
     case 'behance':
-      return <IconBehance key="585" {...rest} />;
+      return <IconBehance key="588" {...rest} />;
     case 'sound':
-      return <IconSound key="586" {...rest} />;
+      return <IconSound key="589" {...rest} />;
     case 'googleplus':
-      return <IconGoogleplus key="587" {...rest} />;
+      return <IconGoogleplus key="590" {...rest} />;
     case 'radarchart':
-      return <IconRadarchart key="588" {...rest} />;
+      return <IconRadarchart key="591" {...rest} />;
     case 'medium':
-      return <IconMedium key="589" {...rest} />;
+      return <IconMedium key="592" {...rest} />;
     case 'qrcode':
-      return <IconQrcode key="590" {...rest} />;
+      return <IconQrcode key="593" {...rest} />;
     case 'google':
-      return <IconGoogle key="591" {...rest} />;
+      return <IconGoogle key="594" {...rest} />;
     case 'fund':
-      return <IconFund key="592" {...rest} />;
+      return <IconFund key="595" {...rest} />;
     case 'IE':
-      return <IconIe key="593" {...rest} />;
+      return <IconIe key="596" {...rest} />;
     case 'image':
-      return <IconImage key="594" {...rest} />;
+      return <IconImage key="597" {...rest} />;
     case 'amazon':
-      return <IconAmazon key="595" {...rest} />;
+      return <IconAmazon key="598" {...rest} />;
     case 'mail':
-      return <IconMail key="596" {...rest} />;
+      return <IconMail key="599" {...rest} />;
     case 'slack':
-      return <IconSlack key="597" {...rest} />;
+      return <IconSlack key="600" {...rest} />;
     case 'table':
-      return <IconTable key="598" {...rest} />;
+      return <IconTable key="601" {...rest} />;
     case 'alipay':
-      return <IconAlipay key="599" {...rest} />;
+      return <IconAlipay key="602" {...rest} />;
   }
 
   return null;

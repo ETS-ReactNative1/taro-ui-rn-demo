@@ -28,7 +28,7 @@ let IconSmile = ({ size, color, ...rest }) => {
 };
 
 IconSmile.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSmile = React.memo ? React.memo(IconSmile) : IconSmile;

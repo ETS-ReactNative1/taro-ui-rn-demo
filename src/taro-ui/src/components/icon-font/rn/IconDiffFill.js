@@ -20,7 +20,7 @@ let IconDiffFill = ({ size, color, ...rest }) => {
 };
 
 IconDiffFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDiffFill = React.memo ? React.memo(IconDiffFill) : IconDiffFill;

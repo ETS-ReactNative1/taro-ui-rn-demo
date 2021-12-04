@@ -21,7 +21,7 @@ const IconSwap = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSwap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSwap;

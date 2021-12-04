@@ -21,7 +21,7 @@ const IconDeletecolumn = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDeletecolumn.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDeletecolumn;

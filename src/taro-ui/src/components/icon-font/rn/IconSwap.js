@@ -16,7 +16,7 @@ let IconSwap = ({ size, color, ...rest }) => {
 };
 
 IconSwap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSwap = React.memo ? React.memo(IconSwap) : IconSwap;

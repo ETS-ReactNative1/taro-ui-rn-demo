@@ -24,7 +24,7 @@ let IconAudit = ({ size, color, ...rest }) => {
 };
 
 IconAudit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAudit = React.memo ? React.memo(IconAudit) : IconAudit;

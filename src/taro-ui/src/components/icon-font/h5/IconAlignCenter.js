@@ -21,7 +21,7 @@ const IconAlignCenter = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlignCenter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlignCenter;

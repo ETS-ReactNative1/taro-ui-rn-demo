@@ -16,7 +16,7 @@ let IconForward = ({ size, color, ...rest }) => {
 };
 
 IconForward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconForward = React.memo ? React.memo(IconForward) : IconForward;

@@ -16,7 +16,7 @@ let IconIndent = ({ size, color, ...rest }) => {
 };
 
 IconIndent.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconIndent = React.memo ? React.memo(IconIndent) : IconIndent;

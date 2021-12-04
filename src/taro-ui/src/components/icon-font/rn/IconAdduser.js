@@ -16,7 +16,7 @@ let IconAdduser = ({ size, color, ...rest }) => {
 };
 
 IconAdduser.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAdduser = React.memo ? React.memo(IconAdduser) : IconAdduser;

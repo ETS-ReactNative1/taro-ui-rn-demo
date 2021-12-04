@@ -21,7 +21,7 @@ const IconCheckCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCheckCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCheckCircleFill;

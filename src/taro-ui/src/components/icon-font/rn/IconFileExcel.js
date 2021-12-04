@@ -20,7 +20,7 @@ let IconFileExcel = ({ size, color, ...rest }) => {
 };
 
 IconFileExcel.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileExcel = React.memo ? React.memo(IconFileExcel) : IconFileExcel;

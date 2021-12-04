@@ -20,7 +20,7 @@ let IconApple = ({ size, color, ...rest }) => {
 };
 
 IconApple.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconApple = React.memo ? React.memo(IconApple) : IconApple;

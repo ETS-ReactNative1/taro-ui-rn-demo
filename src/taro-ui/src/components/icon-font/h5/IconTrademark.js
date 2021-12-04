@@ -25,7 +25,7 @@ const IconTrademark = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTrademark.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTrademark;

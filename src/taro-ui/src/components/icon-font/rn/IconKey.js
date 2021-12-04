@@ -16,7 +16,7 @@ let IconKey = ({ size, color, ...rest }) => {
 };
 
 IconKey.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconKey = React.memo ? React.memo(IconKey) : IconKey;

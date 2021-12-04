@@ -16,7 +16,7 @@ let IconDeleteuser = ({ size, color, ...rest }) => {
 };
 
 IconDeleteuser.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeleteuser = React.memo ? React.memo(IconDeleteuser) : IconDeleteuser;

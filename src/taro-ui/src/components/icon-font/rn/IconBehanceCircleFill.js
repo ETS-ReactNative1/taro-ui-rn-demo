@@ -24,7 +24,7 @@ let IconBehanceCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconBehanceCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBehanceCircleFill = React.memo ? React.memo(IconBehanceCircleFill) : IconBehanceCircleFill;

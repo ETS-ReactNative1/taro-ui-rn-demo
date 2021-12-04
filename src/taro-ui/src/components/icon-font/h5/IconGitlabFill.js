@@ -21,7 +21,7 @@ const IconGitlabFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGitlabFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGitlabFill;

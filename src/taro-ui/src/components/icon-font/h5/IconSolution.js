@@ -29,7 +29,7 @@ const IconSolution = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSolution.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSolution;

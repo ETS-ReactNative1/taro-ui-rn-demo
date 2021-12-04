@@ -21,7 +21,7 @@ const IconVerticalAlignBotto = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVerticalAlignBotto.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVerticalAlignBotto;

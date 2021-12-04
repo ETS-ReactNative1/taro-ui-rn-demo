@@ -25,7 +25,7 @@ const IconEye = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEye.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEye;

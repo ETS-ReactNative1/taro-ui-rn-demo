@@ -16,7 +16,7 @@ let IconBold = ({ size, color, ...rest }) => {
 };
 
 IconBold.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBold = React.memo ? React.memo(IconBold) : IconBold;

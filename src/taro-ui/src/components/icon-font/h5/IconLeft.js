@@ -21,7 +21,7 @@ const IconLeft = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLeft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLeft;

@@ -25,7 +25,7 @@ const IconWalletFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconWalletFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconWalletFill;

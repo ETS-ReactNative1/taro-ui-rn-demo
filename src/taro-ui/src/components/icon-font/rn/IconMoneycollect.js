@@ -20,7 +20,7 @@ let IconMoneycollect = ({ size, color, ...rest }) => {
 };
 
 IconMoneycollect.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMoneycollect = React.memo ? React.memo(IconMoneycollect) : IconMoneycollect;

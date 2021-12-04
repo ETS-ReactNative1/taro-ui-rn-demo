@@ -39,68 +39,58 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 基础用法 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtRate
-                  value={rateValue1}
-                  onChange={this.handleRateChange.bind(this, 'rateValue1')}
-                />
-              </View>
+            <View className='panel__content__padding'>
+              <AtRate
+                value={rateValue1}
+                onChange={this.handleRateChange.bind(this, 'rateValue1')}
+              />
             </View>
           </View>
 
           {/* 自定义尺寸 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义尺寸</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtRate
-                  size={16}
-                  value={rateValue2}
-                  onChange={this.handleRateChange.bind(this, 'rateValue2')}
-                />
-              </View>
+            <View className='panel__content__padding'>
+              <AtRate
+                size={16}
+                value={rateValue2}
+                onChange={this.handleRateChange.bind(this, 'rateValue2')}
+              />
             </View>
           </View>
 
           {/* 自定义评分数 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义评分数</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtRate
-                  max={10}
-                  value={rateValue3}
-                  onChange={this.handleRateChange.bind(this, 'rateValue3')}
-                />
-              </View>
+            <View className='panel__content__padding'>
+              <AtRate
+                max={10}
+                value={rateValue3}
+                onChange={this.handleRateChange.bind(this, 'rateValue3')}
+              />
             </View>
           </View>
 
           {/* 自定义星星间隔 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义星星间隔</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtRate
-                  margin={15}
-                  value={rateValue4}
-                  onChange={this.handleRateChange.bind(this, 'rateValue4')}
-                />
-              </View>
+            <View className='panel__content__padding'>
+              <AtRate
+                margin={15}
+                value={rateValue4}
+                onChange={this.handleRateChange.bind(this, 'rateValue4')}
+              />
             </View>
           </View>
 
           {/* 只读 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>只读</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content__padding'>
               <View className='example-item'>
                 <View>评分: 3.5</View>
-                <View>
-                  <AtRate value={3.5} />
-                </View>
               </View>
+              <AtRate value={3.5} />
             </View>
           </View>
         </View>

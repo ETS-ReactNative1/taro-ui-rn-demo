@@ -21,7 +21,7 @@ const IconFileTextFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileTextFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileTextFill;

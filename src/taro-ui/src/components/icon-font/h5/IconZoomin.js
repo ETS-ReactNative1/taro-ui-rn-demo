@@ -25,7 +25,7 @@ const IconZoomin = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconZoomin.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconZoomin;

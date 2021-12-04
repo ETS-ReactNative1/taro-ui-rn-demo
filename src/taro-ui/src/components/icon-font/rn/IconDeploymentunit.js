@@ -16,7 +16,7 @@ let IconDeploymentunit = ({ size, color, ...rest }) => {
 };
 
 IconDeploymentunit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeploymentunit = React.memo ? React.memo(IconDeploymentunit) : IconDeploymentunit;

@@ -21,7 +21,7 @@ const IconWindowsFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconWindowsFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconWindowsFill;

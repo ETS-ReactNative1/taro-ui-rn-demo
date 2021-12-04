@@ -16,7 +16,7 @@ let IconTimeCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconTimeCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTimeCircleFill = React.memo ? React.memo(IconTimeCircleFill) : IconTimeCircleFill;

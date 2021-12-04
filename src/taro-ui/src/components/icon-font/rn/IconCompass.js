@@ -24,7 +24,7 @@ let IconCompass = ({ size, color, ...rest }) => {
 };
 
 IconCompass.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCompass = React.memo ? React.memo(IconCompass) : IconCompass;

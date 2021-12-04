@@ -25,7 +25,7 @@ const IconContainer = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconContainer.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconContainer;

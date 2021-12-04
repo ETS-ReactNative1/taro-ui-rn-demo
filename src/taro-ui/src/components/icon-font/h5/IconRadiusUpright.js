@@ -21,7 +21,7 @@ const IconRadiusUpright = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRadiusUpright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRadiusUpright;

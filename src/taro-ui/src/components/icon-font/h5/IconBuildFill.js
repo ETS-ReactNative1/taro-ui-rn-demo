@@ -21,7 +21,7 @@ const IconBuildFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBuildFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBuildFill;

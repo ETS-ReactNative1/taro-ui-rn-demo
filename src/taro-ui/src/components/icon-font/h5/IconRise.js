@@ -21,7 +21,7 @@ const IconRise = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRise.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRise;

@@ -21,7 +21,7 @@ const IconGoogleplusCircleF = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGoogleplusCircleF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGoogleplusCircleF;

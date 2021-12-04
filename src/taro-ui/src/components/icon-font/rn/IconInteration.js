@@ -20,7 +20,7 @@ let IconInteration = ({ size, color, ...rest }) => {
 };
 
 IconInteration.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconInteration = React.memo ? React.memo(IconInteration) : IconInteration;

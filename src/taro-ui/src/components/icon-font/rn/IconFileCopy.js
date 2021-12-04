@@ -20,7 +20,7 @@ let IconFileCopy = ({ size, color, ...rest }) => {
 };
 
 IconFileCopy.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileCopy = React.memo ? React.memo(IconFileCopy) : IconFileCopy;

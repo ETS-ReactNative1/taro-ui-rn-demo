@@ -20,7 +20,7 @@ let IconSlackSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconSlackSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSlackSquareFill = React.memo ? React.memo(IconSlackSquareFill) : IconSlackSquareFill;

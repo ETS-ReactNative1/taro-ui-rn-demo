@@ -16,7 +16,7 @@ let IconFilter = ({ size, color, ...rest }) => {
 };
 
 IconFilter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFilter = React.memo ? React.memo(IconFilter) : IconFilter;

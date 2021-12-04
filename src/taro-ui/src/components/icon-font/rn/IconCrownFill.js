@@ -20,7 +20,7 @@ let IconCrownFill = ({ size, color, ...rest }) => {
 };
 
 IconCrownFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCrownFill = React.memo ? React.memo(IconCrownFill) : IconCrownFill;

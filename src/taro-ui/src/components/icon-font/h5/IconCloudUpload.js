@@ -25,7 +25,7 @@ const IconCloudUpload = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCloudUpload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCloudUpload;

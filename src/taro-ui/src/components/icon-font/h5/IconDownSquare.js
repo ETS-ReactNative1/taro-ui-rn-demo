@@ -25,7 +25,7 @@ const IconDownSquare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDownSquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDownSquare;

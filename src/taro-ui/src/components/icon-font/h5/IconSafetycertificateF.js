@@ -21,7 +21,7 @@ const IconSafetycertificateF = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSafetycertificateF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSafetycertificateF;

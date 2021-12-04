@@ -25,7 +25,7 @@ const IconSecurityscan = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSecurityscan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSecurityscan;

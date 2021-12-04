@@ -21,7 +21,7 @@ const IconStrikethrough = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStrikethrough.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStrikethrough;

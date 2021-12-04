@@ -20,7 +20,7 @@ let IconAudiostatic = ({ size, color, ...rest }) => {
 };
 
 IconAudiostatic.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAudiostatic = React.memo ? React.memo(IconAudiostatic) : IconAudiostatic;

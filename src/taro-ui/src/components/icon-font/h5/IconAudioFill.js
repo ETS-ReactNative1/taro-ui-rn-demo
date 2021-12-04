@@ -25,7 +25,7 @@ const IconAudioFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAudioFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAudioFill;

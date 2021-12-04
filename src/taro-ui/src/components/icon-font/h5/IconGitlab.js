@@ -21,7 +21,7 @@ const IconGitlab = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGitlab.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGitlab;

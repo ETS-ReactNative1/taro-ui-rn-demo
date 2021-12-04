@@ -16,7 +16,7 @@ let IconSkypeFill = ({ size, color, ...rest }) => {
 };
 
 IconSkypeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSkypeFill = React.memo ? React.memo(IconSkypeFill) : IconSkypeFill;

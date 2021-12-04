@@ -20,7 +20,7 @@ let IconTrademarkCircleFil = ({ size, color, ...rest }) => {
 };
 
 IconTrademarkCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTrademarkCircleFil = React.memo ? React.memo(IconTrademarkCircleFil) : IconTrademarkCircleFil;

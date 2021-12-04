@@ -21,7 +21,7 @@ const IconErrorFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconErrorFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconErrorFill;

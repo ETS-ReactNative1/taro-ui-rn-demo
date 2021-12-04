@@ -16,7 +16,7 @@ let IconRedenvelopeFill = ({ size, color, ...rest }) => {
 };
 
 IconRedenvelopeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRedenvelopeFill = React.memo ? React.memo(IconRedenvelopeFill) : IconRedenvelopeFill;

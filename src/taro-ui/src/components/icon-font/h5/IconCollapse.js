@@ -21,7 +21,7 @@ const IconCollapse = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCollapse.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCollapse;

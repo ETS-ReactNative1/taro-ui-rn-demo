@@ -21,7 +21,7 @@ const IconBank = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBank.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBank;

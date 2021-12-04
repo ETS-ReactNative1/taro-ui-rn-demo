@@ -24,7 +24,7 @@ let IconConsoleSql = ({ size, color, ...rest }) => {
 };
 
 IconConsoleSql.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconConsoleSql = React.memo ? React.memo(IconConsoleSql) : IconConsoleSql;

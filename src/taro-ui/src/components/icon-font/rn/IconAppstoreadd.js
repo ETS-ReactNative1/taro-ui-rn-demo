@@ -16,7 +16,7 @@ let IconAppstoreadd = ({ size, color, ...rest }) => {
 };
 
 IconAppstoreadd.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAppstoreadd = React.memo ? React.memo(IconAppstoreadd) : IconAppstoreadd;

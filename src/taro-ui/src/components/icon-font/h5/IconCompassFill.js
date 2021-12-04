@@ -21,7 +21,7 @@ const IconCompassFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCompassFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCompassFill;

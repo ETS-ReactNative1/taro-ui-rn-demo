@@ -21,7 +21,7 @@ const IconStarFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStarFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStarFill;

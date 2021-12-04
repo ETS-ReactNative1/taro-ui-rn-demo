@@ -21,7 +21,7 @@ const IconTwitterSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTwitterSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTwitterSquareFill;

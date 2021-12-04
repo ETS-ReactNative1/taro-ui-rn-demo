@@ -16,7 +16,7 @@ let IconDatabaseFill = ({ size, color, ...rest }) => {
 };
 
 IconDatabaseFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDatabaseFill = React.memo ? React.memo(IconDatabaseFill) : IconDatabaseFill;

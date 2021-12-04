@@ -21,7 +21,7 @@ const IconCreditcardFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCreditcardFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCreditcardFill;

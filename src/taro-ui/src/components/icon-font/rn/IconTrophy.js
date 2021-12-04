@@ -16,7 +16,7 @@ let IconTrophy = ({ size, color, ...rest }) => {
 };
 
 IconTrophy.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTrophy = React.memo ? React.memo(IconTrophy) : IconTrophy;

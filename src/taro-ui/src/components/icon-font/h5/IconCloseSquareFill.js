@@ -21,7 +21,7 @@ const IconCloseSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCloseSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCloseSquareFill;

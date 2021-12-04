@@ -16,7 +16,7 @@ let IconTwitter = ({ size, color, ...rest }) => {
 };
 
 IconTwitter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTwitter = React.memo ? React.memo(IconTwitter) : IconTwitter;

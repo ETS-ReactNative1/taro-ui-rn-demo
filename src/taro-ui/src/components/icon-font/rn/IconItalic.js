@@ -16,7 +16,7 @@ let IconItalic = ({ size, color, ...rest }) => {
 };
 
 IconItalic.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconItalic = React.memo ? React.memo(IconItalic) : IconItalic;

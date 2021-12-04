@@ -25,7 +25,7 @@ const IconTrademarkCircleFil = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTrademarkCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTrademarkCircleFil;

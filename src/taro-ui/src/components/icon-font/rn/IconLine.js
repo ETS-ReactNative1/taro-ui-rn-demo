@@ -16,7 +16,7 @@ let IconLine = ({ size, color, ...rest }) => {
 };
 
 IconLine.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLine = React.memo ? React.memo(IconLine) : IconLine;

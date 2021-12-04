@@ -25,7 +25,7 @@ const IconFontSize = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFontSize.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFontSize;

@@ -16,7 +16,7 @@ let IconAttachment = ({ size, color, ...rest }) => {
 };
 
 IconAttachment.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAttachment = React.memo ? React.memo(IconAttachment) : IconAttachment;

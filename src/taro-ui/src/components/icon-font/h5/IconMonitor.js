@@ -25,7 +25,7 @@ const IconMonitor = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMonitor.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMonitor;

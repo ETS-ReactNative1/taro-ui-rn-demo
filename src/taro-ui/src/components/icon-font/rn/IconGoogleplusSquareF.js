@@ -16,7 +16,7 @@ let IconGoogleplusSquareF = ({ size, color, ...rest }) => {
 };
 
 IconGoogleplusSquareF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGoogleplusSquareF = React.memo ? React.memo(IconGoogleplusSquareF) : IconGoogleplusSquareF;

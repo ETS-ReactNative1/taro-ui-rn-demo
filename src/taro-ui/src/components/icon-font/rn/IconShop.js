@@ -16,7 +16,7 @@ let IconShop = ({ size, color, ...rest }) => {
 };
 
 IconShop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconShop = React.memo ? React.memo(IconShop) : IconShop;

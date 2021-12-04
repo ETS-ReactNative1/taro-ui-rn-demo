@@ -16,7 +16,7 @@ let IconPlaySquareFill = ({ size, color, ...rest }) => {
 };
 
 IconPlaySquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPlaySquareFill = React.memo ? React.memo(IconPlaySquareFill) : IconPlaySquareFill;

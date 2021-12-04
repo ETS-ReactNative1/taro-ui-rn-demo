@@ -16,7 +16,7 @@ let IconPicRight = ({ size, color, ...rest }) => {
 };
 
 IconPicRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPicRight = React.memo ? React.memo(IconPicRight) : IconPicRight;

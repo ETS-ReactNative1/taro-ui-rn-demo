@@ -25,7 +25,7 @@ const IconAddteam = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAddteam.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAddteam;

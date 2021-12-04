@@ -20,7 +20,7 @@ let IconWeibo = ({ size, color, ...rest }) => {
 };
 
 IconWeibo.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWeibo = React.memo ? React.memo(IconWeibo) : IconWeibo;

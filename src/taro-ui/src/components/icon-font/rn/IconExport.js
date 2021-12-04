@@ -20,7 +20,7 @@ let IconExport = ({ size, color, ...rest }) => {
 };
 
 IconExport.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconExport = React.memo ? React.memo(IconExport) : IconExport;

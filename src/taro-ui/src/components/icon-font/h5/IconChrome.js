@@ -21,7 +21,7 @@ const IconChrome = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconChrome.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconChrome;

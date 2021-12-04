@@ -29,7 +29,7 @@ const IconFilesearch = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFilesearch.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFilesearch;

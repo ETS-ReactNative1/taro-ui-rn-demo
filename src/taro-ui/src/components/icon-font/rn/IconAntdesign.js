@@ -24,7 +24,7 @@ let IconAntdesign = ({ size, color, ...rest }) => {
 };
 
 IconAntdesign.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAntdesign = React.memo ? React.memo(IconAntdesign) : IconAntdesign;

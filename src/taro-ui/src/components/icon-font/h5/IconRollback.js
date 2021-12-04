@@ -21,7 +21,7 @@ const IconRollback = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRollback.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRollback;

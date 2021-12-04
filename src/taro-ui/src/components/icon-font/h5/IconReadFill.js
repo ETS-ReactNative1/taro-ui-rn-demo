@@ -21,7 +21,7 @@ const IconReadFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconReadFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconReadFill;

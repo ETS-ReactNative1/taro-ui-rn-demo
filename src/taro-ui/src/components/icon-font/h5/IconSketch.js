@@ -21,7 +21,7 @@ const IconSketch = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSketch.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSketch;

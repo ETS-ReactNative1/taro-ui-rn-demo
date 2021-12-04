@@ -16,7 +16,7 @@ let IconShare = ({ size, color, ...rest }) => {
 };
 
 IconShare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconShare = React.memo ? React.memo(IconShare) : IconShare;

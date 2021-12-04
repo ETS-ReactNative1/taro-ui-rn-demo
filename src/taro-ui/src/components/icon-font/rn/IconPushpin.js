@@ -16,7 +16,7 @@ let IconPushpin = ({ size, color, ...rest }) => {
 };
 
 IconPushpin.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPushpin = React.memo ? React.memo(IconPushpin) : IconPushpin;

@@ -21,7 +21,7 @@ const IconFacebook = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFacebook.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFacebook;

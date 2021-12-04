@@ -16,7 +16,7 @@ let IconSignalFill = ({ size, color, ...rest }) => {
 };
 
 IconSignalFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSignalFill = React.memo ? React.memo(IconSignalFill) : IconSignalFill;

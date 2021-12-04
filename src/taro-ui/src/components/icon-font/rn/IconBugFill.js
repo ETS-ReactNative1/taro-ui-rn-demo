@@ -20,7 +20,7 @@ let IconBugFill = ({ size, color, ...rest }) => {
 };
 
 IconBugFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBugFill = React.memo ? React.memo(IconBugFill) : IconBugFill;

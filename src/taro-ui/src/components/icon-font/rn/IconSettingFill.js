@@ -20,7 +20,7 @@ let IconSettingFill = ({ size, color, ...rest }) => {
 };
 
 IconSettingFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSettingFill = React.memo ? React.memo(IconSettingFill) : IconSettingFill;

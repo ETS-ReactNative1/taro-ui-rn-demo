@@ -20,7 +20,7 @@ let IconSetting = ({ size, color, ...rest }) => {
 };
 
 IconSetting.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSetting = React.memo ? React.memo(IconSetting) : IconSetting;

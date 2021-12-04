@@ -32,7 +32,7 @@ let IconControl = ({ size, color, ...rest }) => {
 };
 
 IconControl.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconControl = React.memo ? React.memo(IconControl) : IconControl;

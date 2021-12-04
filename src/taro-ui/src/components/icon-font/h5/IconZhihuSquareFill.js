@@ -25,7 +25,7 @@ const IconZhihuSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconZhihuSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconZhihuSquareFill;

@@ -16,7 +16,7 @@ let IconArrawsalt = ({ size, color, ...rest }) => {
 };
 
 IconArrawsalt.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconArrawsalt = React.memo ? React.memo(IconArrawsalt) : IconArrawsalt;

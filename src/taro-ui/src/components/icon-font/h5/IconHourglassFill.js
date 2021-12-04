@@ -21,7 +21,7 @@ const IconHourglassFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconHourglassFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconHourglassFill;

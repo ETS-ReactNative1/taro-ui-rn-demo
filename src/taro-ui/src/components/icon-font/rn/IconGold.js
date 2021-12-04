@@ -16,7 +16,7 @@ let IconGold = ({ size, color, ...rest }) => {
 };
 
 IconGold.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGold = React.memo ? React.memo(IconGold) : IconGold;

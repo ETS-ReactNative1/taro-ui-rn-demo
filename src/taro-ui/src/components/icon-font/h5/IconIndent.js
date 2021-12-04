@@ -21,7 +21,7 @@ const IconIndent = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconIndent.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconIndent;

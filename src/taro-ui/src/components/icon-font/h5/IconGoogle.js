@@ -21,7 +21,7 @@ const IconGoogle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGoogle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGoogle;

@@ -25,7 +25,7 @@ const IconBatchfoldingFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBatchfoldingFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBatchfoldingFill;

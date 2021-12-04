@@ -21,7 +21,7 @@ const IconDeleteFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDeleteFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDeleteFill;

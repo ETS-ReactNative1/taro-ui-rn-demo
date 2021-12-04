@@ -24,7 +24,7 @@ let IconShortcutFill = ({ size, color, ...rest }) => {
 };
 
 IconShortcutFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconShortcutFill = React.memo ? React.memo(IconShortcutFill) : IconShortcutFill;

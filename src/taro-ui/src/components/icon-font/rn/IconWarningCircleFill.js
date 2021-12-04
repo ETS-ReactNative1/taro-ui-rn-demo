@@ -16,7 +16,7 @@ let IconWarningCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconWarningCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWarningCircleFill = React.memo ? React.memo(IconWarningCircleFill) : IconWarningCircleFill;

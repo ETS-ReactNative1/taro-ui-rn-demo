@@ -24,7 +24,7 @@ let IconEllipsis = ({ size, color, ...rest }) => {
 };
 
 IconEllipsis.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEllipsis = React.memo ? React.memo(IconEllipsis) : IconEllipsis;

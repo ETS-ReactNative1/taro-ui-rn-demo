@@ -28,7 +28,7 @@ let IconFrown = ({ size, color, ...rest }) => {
 };
 
 IconFrown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFrown = React.memo ? React.memo(IconFrown) : IconFrown;

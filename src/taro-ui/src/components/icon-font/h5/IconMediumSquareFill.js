@@ -21,7 +21,7 @@ const IconMediumSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMediumSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMediumSquareFill;

@@ -24,7 +24,7 @@ let IconDribbbleSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconDribbbleSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDribbbleSquareFill = React.memo ? React.memo(IconDribbbleSquareFill) : IconDribbbleSquareFill;

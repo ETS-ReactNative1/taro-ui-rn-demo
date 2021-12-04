@@ -21,7 +21,7 @@ const IconFundFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFundFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFundFill;

@@ -16,7 +16,7 @@ let IconEnter = ({ size, color, ...rest }) => {
 };
 
 IconEnter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEnter = React.memo ? React.memo(IconEnter) : IconEnter;

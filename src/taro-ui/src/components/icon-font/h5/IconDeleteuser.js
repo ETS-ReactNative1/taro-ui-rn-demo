@@ -21,7 +21,7 @@ const IconDeleteuser = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDeleteuser.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDeleteuser;

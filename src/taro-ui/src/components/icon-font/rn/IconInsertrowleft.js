@@ -16,7 +16,7 @@ let IconInsertrowleft = ({ size, color, ...rest }) => {
 };
 
 IconInsertrowleft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconInsertrowleft = React.memo ? React.memo(IconInsertrowleft) : IconInsertrowleft;

@@ -21,7 +21,7 @@ const IconFork = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFork.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFork;

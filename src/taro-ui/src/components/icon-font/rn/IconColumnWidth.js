@@ -16,7 +16,7 @@ let IconColumnWidth = ({ size, color, ...rest }) => {
 };
 
 IconColumnWidth.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconColumnWidth = React.memo ? React.memo(IconColumnWidth) : IconColumnWidth;

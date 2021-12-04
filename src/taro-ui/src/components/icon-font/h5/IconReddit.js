@@ -33,7 +33,7 @@ const IconReddit = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconReddit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconReddit;

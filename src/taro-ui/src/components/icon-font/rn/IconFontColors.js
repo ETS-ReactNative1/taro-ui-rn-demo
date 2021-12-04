@@ -16,7 +16,7 @@ let IconFontColors = ({ size, color, ...rest }) => {
 };
 
 IconFontColors.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFontColors = React.memo ? React.memo(IconFontColors) : IconFontColors;

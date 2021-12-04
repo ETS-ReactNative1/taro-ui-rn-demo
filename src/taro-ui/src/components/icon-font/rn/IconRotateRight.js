@@ -20,7 +20,7 @@ let IconRotateRight = ({ size, color, ...rest }) => {
 };
 
 IconRotateRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRotateRight = React.memo ? React.memo(IconRotateRight) : IconRotateRight;

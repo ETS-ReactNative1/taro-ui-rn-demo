@@ -21,7 +21,7 @@ const IconFunnelplotFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFunnelplotFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFunnelplotFill;

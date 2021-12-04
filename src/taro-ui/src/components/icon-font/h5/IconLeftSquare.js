@@ -25,7 +25,7 @@ const IconLeftSquare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLeftSquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLeftSquare;

@@ -16,7 +16,7 @@ let IconDash = ({ size, color, ...rest }) => {
 };
 
 IconDash.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDash = React.memo ? React.memo(IconDash) : IconDash;

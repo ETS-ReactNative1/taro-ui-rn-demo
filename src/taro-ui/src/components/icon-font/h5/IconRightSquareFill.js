@@ -21,7 +21,7 @@ const IconRightSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRightSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRightSquareFill;

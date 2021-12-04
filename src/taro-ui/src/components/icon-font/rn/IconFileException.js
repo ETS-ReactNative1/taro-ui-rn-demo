@@ -28,7 +28,7 @@ let IconFileException = ({ size, color, ...rest }) => {
 };
 
 IconFileException.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileException = React.memo ? React.memo(IconFileException) : IconFileException;

@@ -21,7 +21,7 @@ const IconPropertysafetyFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPropertysafetyFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPropertysafetyFill;

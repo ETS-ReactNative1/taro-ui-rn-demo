@@ -16,7 +16,7 @@ let IconBlock = ({ size, color, ...rest }) => {
 };
 
 IconBlock.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBlock = React.memo ? React.memo(IconBlock) : IconBlock;

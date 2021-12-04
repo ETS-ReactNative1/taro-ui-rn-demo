@@ -16,7 +16,7 @@ let IconLineHeight = ({ size, color, ...rest }) => {
 };
 
 IconLineHeight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLineHeight = React.memo ? React.memo(IconLineHeight) : IconLineHeight;

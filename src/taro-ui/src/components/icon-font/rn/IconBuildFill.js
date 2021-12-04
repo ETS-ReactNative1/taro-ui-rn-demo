@@ -16,7 +16,7 @@ let IconBuildFill = ({ size, color, ...rest }) => {
 };
 
 IconBuildFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBuildFill = React.memo ? React.memo(IconBuildFill) : IconBuildFill;

@@ -20,7 +20,7 @@ let IconPoweroff = ({ size, color, ...rest }) => {
 };
 
 IconPoweroff.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPoweroff = React.memo ? React.memo(IconPoweroff) : IconPoweroff;

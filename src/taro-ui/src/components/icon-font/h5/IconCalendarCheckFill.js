@@ -21,7 +21,7 @@ const IconCalendarCheckFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCalendarCheckFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCalendarCheckFill;

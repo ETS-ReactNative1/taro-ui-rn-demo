@@ -21,7 +21,7 @@ const IconQuestion = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconQuestion.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconQuestion;

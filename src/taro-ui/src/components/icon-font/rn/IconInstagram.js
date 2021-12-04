@@ -20,7 +20,7 @@ let IconInstagram = ({ size, color, ...rest }) => {
 };
 
 IconInstagram.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconInstagram = React.memo ? React.memo(IconInstagram) : IconInstagram;

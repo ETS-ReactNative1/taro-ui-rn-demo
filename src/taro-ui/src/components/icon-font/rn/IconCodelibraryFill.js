@@ -16,7 +16,7 @@ let IconCodelibraryFill = ({ size, color, ...rest }) => {
 };
 
 IconCodelibraryFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodelibraryFill = React.memo ? React.memo(IconCodelibraryFill) : IconCodelibraryFill;

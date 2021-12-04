@@ -21,7 +21,7 @@ const IconMan = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMan;

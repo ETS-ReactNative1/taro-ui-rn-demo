@@ -16,7 +16,7 @@ let IconApiFill = ({ size, color, ...rest }) => {
 };
 
 IconApiFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconApiFill = React.memo ? React.memo(IconApiFill) : IconApiFill;

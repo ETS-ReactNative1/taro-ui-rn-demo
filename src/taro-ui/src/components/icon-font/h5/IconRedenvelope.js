@@ -25,7 +25,7 @@ const IconRedenvelope = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRedenvelope.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRedenvelope;

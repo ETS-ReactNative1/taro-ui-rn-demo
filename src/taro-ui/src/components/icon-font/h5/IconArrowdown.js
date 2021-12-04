@@ -21,7 +21,7 @@ const IconArrowdown = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconArrowdown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconArrowdown;

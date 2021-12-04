@@ -20,7 +20,7 @@ let IconCodeSandboxCircleF = ({ size, color, ...rest }) => {
 };
 
 IconCodeSandboxCircleF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodeSandboxCircleF = React.memo ? React.memo(IconCodeSandboxCircleF) : IconCodeSandboxCircleF;

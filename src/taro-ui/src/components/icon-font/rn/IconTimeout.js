@@ -20,7 +20,7 @@ let IconTimeout = ({ size, color, ...rest }) => {
 };
 
 IconTimeout.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTimeout = React.memo ? React.memo(IconTimeout) : IconTimeout;

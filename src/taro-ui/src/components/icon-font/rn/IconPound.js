@@ -20,7 +20,7 @@ let IconPound = ({ size, color, ...rest }) => {
 };
 
 IconPound.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPound = React.memo ? React.memo(IconPound) : IconPound;

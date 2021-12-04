@@ -16,7 +16,7 @@ let IconTwitterSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconTwitterSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTwitterSquareFill = React.memo ? React.memo(IconTwitterSquareFill) : IconTwitterSquareFill;

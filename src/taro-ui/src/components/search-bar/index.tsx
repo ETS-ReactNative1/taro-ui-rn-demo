@@ -98,6 +98,7 @@ export default class AtSearchBar extends React.Component<
     }
     if (showActionButton) {
       actionStyle.opacity = 1
+      actionStyle.display = 'flex';
       actionStyle.marginRight = Taro.pxTransform(0)
     }
 

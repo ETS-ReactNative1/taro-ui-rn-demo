@@ -16,7 +16,7 @@ let IconSketch = ({ size, color, ...rest }) => {
 };
 
 IconSketch.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSketch = React.memo ? React.memo(IconSketch) : IconSketch;

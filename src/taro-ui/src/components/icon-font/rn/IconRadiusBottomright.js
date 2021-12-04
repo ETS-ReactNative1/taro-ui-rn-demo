@@ -16,7 +16,7 @@ let IconRadiusBottomright = ({ size, color, ...rest }) => {
 };
 
 IconRadiusBottomright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRadiusBottomright = React.memo ? React.memo(IconRadiusBottomright) : IconRadiusBottomright;

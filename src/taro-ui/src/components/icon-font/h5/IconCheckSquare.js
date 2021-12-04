@@ -25,7 +25,7 @@ const IconCheckSquare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCheckSquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCheckSquare;

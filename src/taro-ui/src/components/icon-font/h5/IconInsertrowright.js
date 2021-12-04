@@ -21,7 +21,7 @@ const IconInsertrowright = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInsertrowright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInsertrowright;

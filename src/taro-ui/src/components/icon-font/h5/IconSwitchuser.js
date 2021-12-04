@@ -21,7 +21,7 @@ const IconSwitchuser = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSwitchuser.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSwitchuser;

@@ -16,7 +16,7 @@ let IconTaobaoCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconTaobaoCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTaobaoCircleFill = React.memo ? React.memo(IconTaobaoCircleFill) : IconTaobaoCircleFill;

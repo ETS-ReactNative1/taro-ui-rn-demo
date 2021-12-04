@@ -25,7 +25,7 @@ const IconLocationFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLocationFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLocationFill;

@@ -16,7 +16,7 @@ let IconFlag = ({ size, color, ...rest }) => {
 };
 
 IconFlag.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFlag = React.memo ? React.memo(IconFlag) : IconFlag;

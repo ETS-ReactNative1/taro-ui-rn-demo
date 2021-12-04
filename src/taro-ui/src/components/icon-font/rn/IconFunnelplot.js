@@ -16,7 +16,7 @@ let IconFunnelplot = ({ size, color, ...rest }) => {
 };
 
 IconFunnelplot.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFunnelplot = React.memo ? React.memo(IconFunnelplot) : IconFunnelplot;

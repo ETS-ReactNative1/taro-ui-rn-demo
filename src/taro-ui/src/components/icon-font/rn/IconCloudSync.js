@@ -20,7 +20,7 @@ let IconCloudSync = ({ size, color, ...rest }) => {
 };
 
 IconCloudSync.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCloudSync = React.memo ? React.memo(IconCloudSync) : IconCloudSync;

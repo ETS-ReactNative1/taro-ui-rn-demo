@@ -16,7 +16,7 @@ let IconGateway = ({ size, color, ...rest }) => {
 };
 
 IconGateway.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGateway = React.memo ? React.memo(IconGateway) : IconGateway;

@@ -20,7 +20,7 @@ let IconLock = ({ size, color, ...rest }) => {
 };
 
 IconLock.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLock = React.memo ? React.memo(IconLock) : IconLock;

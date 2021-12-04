@@ -20,7 +20,7 @@ let IconTablet = ({ size, color, ...rest }) => {
 };
 
 IconTablet.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTablet = React.memo ? React.memo(IconTablet) : IconTablet;

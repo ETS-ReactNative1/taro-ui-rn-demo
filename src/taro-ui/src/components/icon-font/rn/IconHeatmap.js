@@ -24,7 +24,7 @@ let IconHeatmap = ({ size, color, ...rest }) => {
 };
 
 IconHeatmap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconHeatmap = React.memo ? React.memo(IconHeatmap) : IconHeatmap;

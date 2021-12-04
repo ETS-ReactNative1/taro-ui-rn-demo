@@ -21,7 +21,7 @@ const IconExpand = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconExpand.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconExpand;

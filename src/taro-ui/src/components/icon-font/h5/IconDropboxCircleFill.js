@@ -25,7 +25,7 @@ const IconDropboxCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDropboxCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDropboxCircleFill;

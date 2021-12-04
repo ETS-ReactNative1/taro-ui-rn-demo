@@ -16,7 +16,7 @@ let IconTabletFill = ({ size, color, ...rest }) => {
 };
 
 IconTabletFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTabletFill = React.memo ? React.memo(IconTabletFill) : IconTabletFill;

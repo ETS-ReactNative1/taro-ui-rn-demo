@@ -20,7 +20,7 @@ let IconGroup = ({ size, color, ...rest }) => {
 };
 
 IconGroup.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGroup = React.memo ? React.memo(IconGroup) : IconGroup;

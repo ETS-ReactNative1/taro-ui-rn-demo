@@ -21,7 +21,7 @@ const IconAndroidFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAndroidFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAndroidFill;

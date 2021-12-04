@@ -25,7 +25,7 @@ const IconDropboxSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDropboxSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDropboxSquareFill;

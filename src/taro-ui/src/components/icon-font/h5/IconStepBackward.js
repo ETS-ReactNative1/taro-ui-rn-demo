@@ -21,7 +21,7 @@ const IconStepBackward = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStepBackward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStepBackward;

@@ -16,7 +16,7 @@ let IconUnderline = ({ size, color, ...rest }) => {
 };
 
 IconUnderline.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUnderline = React.memo ? React.memo(IconUnderline) : IconUnderline;

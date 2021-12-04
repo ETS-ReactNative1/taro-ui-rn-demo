@@ -21,7 +21,7 @@ const IconTaobaoSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTaobaoSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTaobaoSquareFill;

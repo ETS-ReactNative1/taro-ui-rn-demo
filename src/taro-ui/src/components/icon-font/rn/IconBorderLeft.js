@@ -16,7 +16,7 @@ let IconBorderLeft = ({ size, color, ...rest }) => {
 };
 
 IconBorderLeft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBorderLeft = React.memo ? React.memo(IconBorderLeft) : IconBorderLeft;

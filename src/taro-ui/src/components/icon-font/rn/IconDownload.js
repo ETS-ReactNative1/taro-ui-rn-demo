@@ -20,7 +20,7 @@ let IconDownload = ({ size, color, ...rest }) => {
 };
 
 IconDownload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDownload = React.memo ? React.memo(IconDownload) : IconDownload;

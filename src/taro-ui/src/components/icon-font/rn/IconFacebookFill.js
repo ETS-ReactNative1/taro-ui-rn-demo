@@ -16,7 +16,7 @@ let IconFacebookFill = ({ size, color, ...rest }) => {
 };
 
 IconFacebookFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFacebookFill = React.memo ? React.memo(IconFacebookFill) : IconFacebookFill;

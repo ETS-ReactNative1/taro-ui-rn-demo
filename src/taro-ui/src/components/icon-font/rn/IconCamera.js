@@ -20,7 +20,7 @@ let IconCamera = ({ size, color, ...rest }) => {
 };
 
 IconCamera.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCamera = React.memo ? React.memo(IconCamera) : IconCamera;

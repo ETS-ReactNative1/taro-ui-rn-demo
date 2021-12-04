@@ -16,7 +16,7 @@ let IconMailFill = ({ size, color, ...rest }) => {
 };
 
 IconMailFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMailFill = React.memo ? React.memo(IconMailFill) : IconMailFill;

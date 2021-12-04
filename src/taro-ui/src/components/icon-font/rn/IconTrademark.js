@@ -20,7 +20,7 @@ let IconTrademark = ({ size, color, ...rest }) => {
 };
 
 IconTrademark.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTrademark = React.memo ? React.memo(IconTrademark) : IconTrademark;

@@ -25,7 +25,7 @@ const IconPlaySquare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPlaySquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPlaySquare;

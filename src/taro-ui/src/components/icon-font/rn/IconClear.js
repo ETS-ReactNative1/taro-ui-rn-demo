@@ -16,7 +16,7 @@ let IconClear = ({ size, color, ...rest }) => {
 };
 
 IconClear.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconClear = React.memo ? React.memo(IconClear) : IconClear;

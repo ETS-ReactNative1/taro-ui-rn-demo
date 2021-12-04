@@ -16,7 +16,7 @@ let IconShrink = ({ size, color, ...rest }) => {
 };
 
 IconShrink.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconShrink = React.memo ? React.memo(IconShrink) : IconShrink;

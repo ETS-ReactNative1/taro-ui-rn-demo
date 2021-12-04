@@ -20,7 +20,7 @@ let IconDropboxSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconDropboxSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDropboxSquareFill = React.memo ? React.memo(IconDropboxSquareFill) : IconDropboxSquareFill;

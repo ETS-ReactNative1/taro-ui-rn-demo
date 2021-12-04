@@ -16,7 +16,7 @@ let IconFastBackward = ({ size, color, ...rest }) => {
 };
 
 IconFastBackward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFastBackward = React.memo ? React.memo(IconFastBackward) : IconFastBackward;

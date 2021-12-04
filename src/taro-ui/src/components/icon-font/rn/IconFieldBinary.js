@@ -16,7 +16,7 @@ let IconFieldBinary = ({ size, color, ...rest }) => {
 };
 
 IconFieldBinary.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFieldBinary = React.memo ? React.memo(IconFieldBinary) : IconFieldBinary;

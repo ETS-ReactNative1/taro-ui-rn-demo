@@ -24,7 +24,7 @@ let IconSever = ({ size, color, ...rest }) => {
 };
 
 IconSever.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSever = React.memo ? React.memo(IconSever) : IconSever;

@@ -21,7 +21,7 @@ const IconCaretRight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCaretRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCaretRight;

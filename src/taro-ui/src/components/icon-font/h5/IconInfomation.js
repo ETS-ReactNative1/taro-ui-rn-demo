@@ -25,7 +25,7 @@ const IconInfomation = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInfomation.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInfomation;

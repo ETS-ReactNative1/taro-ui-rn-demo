@@ -20,7 +20,7 @@ let IconSecurityscan = ({ size, color, ...rest }) => {
 };
 
 IconSecurityscan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSecurityscan = React.memo ? React.memo(IconSecurityscan) : IconSecurityscan;

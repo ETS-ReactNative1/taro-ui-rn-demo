@@ -16,7 +16,7 @@ let IconSisternode = ({ size, color, ...rest }) => {
 };
 
 IconSisternode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSisternode = React.memo ? React.memo(IconSisternode) : IconSisternode;

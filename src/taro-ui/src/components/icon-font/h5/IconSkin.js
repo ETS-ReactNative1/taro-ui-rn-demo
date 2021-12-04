@@ -21,7 +21,7 @@ const IconSkin = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSkin.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSkin;

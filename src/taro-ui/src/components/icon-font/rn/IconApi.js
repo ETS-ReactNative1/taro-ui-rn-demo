@@ -16,7 +16,7 @@ let IconApi = ({ size, color, ...rest }) => {
 };
 
 IconApi.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconApi = React.memo ? React.memo(IconApi) : IconApi;

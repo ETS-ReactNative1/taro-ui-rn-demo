@@ -21,7 +21,7 @@ const IconTable1 = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTable1.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTable1;

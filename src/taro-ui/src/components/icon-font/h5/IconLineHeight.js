@@ -21,7 +21,7 @@ const IconLineHeight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLineHeight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLineHeight;

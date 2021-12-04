@@ -21,7 +21,7 @@ const IconBranches = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBranches.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBranches;

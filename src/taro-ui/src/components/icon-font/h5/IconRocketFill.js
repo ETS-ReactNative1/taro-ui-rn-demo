@@ -21,7 +21,7 @@ const IconRocketFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRocketFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRocketFill;

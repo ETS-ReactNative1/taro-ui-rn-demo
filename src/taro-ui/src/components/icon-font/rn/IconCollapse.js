@@ -16,7 +16,7 @@ let IconCollapse = ({ size, color, ...rest }) => {
 };
 
 IconCollapse.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCollapse = React.memo ? React.memo(IconCollapse) : IconCollapse;

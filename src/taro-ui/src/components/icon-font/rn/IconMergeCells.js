@@ -16,7 +16,7 @@ let IconMergeCells = ({ size, color, ...rest }) => {
 };
 
 IconMergeCells.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMergeCells = React.memo ? React.memo(IconMergeCells) : IconMergeCells;

@@ -16,7 +16,7 @@ let IconReadFill = ({ size, color, ...rest }) => {
 };
 
 IconReadFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconReadFill = React.memo ? React.memo(IconReadFill) : IconReadFill;

@@ -21,7 +21,7 @@ const IconQq = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconQq.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconQq;

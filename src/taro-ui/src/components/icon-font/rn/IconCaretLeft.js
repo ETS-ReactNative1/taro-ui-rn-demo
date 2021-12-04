@@ -16,7 +16,7 @@ let IconCaretLeft = ({ size, color, ...rest }) => {
 };
 
 IconCaretLeft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCaretLeft = React.memo ? React.memo(IconCaretLeft) : IconCaretLeft;

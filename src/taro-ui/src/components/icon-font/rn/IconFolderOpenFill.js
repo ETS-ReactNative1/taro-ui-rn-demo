@@ -16,7 +16,7 @@ let IconFolderOpenFill = ({ size, color, ...rest }) => {
 };
 
 IconFolderOpenFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFolderOpenFill = React.memo ? React.memo(IconFolderOpenFill) : IconFolderOpenFill;

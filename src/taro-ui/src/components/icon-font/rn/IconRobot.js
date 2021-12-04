@@ -28,7 +28,7 @@ let IconRobot = ({ size, color, ...rest }) => {
 };
 
 IconRobot.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRobot = React.memo ? React.memo(IconRobot) : IconRobot;

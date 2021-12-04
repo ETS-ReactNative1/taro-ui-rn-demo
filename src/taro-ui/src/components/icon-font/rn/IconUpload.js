@@ -20,7 +20,7 @@ let IconUpload = ({ size, color, ...rest }) => {
 };
 
 IconUpload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUpload = React.memo ? React.memo(IconUpload) : IconUpload;

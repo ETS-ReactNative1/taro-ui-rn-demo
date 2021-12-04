@@ -21,7 +21,7 @@ const IconStoredprocedure = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStoredprocedure.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStoredprocedure;

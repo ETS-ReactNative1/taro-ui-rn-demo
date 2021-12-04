@@ -37,7 +37,7 @@ const IconRedditCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRedditCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRedditCircleFill;

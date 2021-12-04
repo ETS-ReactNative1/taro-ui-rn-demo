@@ -16,7 +16,7 @@ let IconDingtalk = ({ size, color, ...rest }) => {
 };
 
 IconDingtalk.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDingtalk = React.memo ? React.memo(IconDingtalk) : IconDingtalk;

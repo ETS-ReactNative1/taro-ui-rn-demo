@@ -16,7 +16,7 @@ let IconSlidersFill = ({ size, color, ...rest }) => {
 };
 
 IconSlidersFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSlidersFill = React.memo ? React.memo(IconSlidersFill) : IconSlidersFill;

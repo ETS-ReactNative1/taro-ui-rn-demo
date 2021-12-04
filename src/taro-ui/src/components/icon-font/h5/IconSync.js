@@ -21,7 +21,7 @@ const IconSync = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSync.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSync;

@@ -16,7 +16,7 @@ let IconGitlabFill = ({ size, color, ...rest }) => {
 };
 
 IconGitlabFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGitlabFill = React.memo ? React.memo(IconGitlabFill) : IconGitlabFill;

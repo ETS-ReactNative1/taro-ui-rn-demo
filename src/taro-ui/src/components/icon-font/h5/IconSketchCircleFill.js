@@ -29,7 +29,7 @@ const IconSketchCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSketchCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSketchCircleFill;

@@ -29,7 +29,7 @@ const IconBehanceCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBehanceCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBehanceCircleFill;

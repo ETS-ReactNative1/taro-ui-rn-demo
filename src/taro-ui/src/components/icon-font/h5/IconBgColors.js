@@ -21,7 +21,7 @@ const IconBgColors = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBgColors.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBgColors;

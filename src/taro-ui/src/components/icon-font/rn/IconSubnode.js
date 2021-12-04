@@ -16,7 +16,7 @@ let IconSubnode = ({ size, color, ...rest }) => {
 };
 
 IconSubnode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSubnode = React.memo ? React.memo(IconSubnode) : IconSubnode;

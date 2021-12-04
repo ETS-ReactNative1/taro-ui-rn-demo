@@ -28,7 +28,7 @@ let IconWeiboSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconWeiboSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWeiboSquareFill = React.memo ? React.memo(IconWeiboSquareFill) : IconWeiboSquareFill;

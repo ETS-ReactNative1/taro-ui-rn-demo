@@ -21,7 +21,7 @@ const IconBold = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBold.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBold;

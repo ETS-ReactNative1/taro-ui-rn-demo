@@ -25,7 +25,7 @@ const IconLinechart = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLinechart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLinechart;

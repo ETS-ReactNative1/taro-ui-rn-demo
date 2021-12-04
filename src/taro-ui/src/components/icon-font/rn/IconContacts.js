@@ -20,7 +20,7 @@ let IconContacts = ({ size, color, ...rest }) => {
 };
 
 IconContacts.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconContacts = React.memo ? React.memo(IconContacts) : IconContacts;

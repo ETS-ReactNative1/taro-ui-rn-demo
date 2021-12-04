@@ -16,7 +16,7 @@ let IconYuqueFill = ({ size, color, ...rest }) => {
 };
 
 IconYuqueFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYuqueFill = React.memo ? React.memo(IconYuqueFill) : IconYuqueFill;

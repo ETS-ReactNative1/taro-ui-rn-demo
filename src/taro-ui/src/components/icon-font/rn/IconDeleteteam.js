@@ -20,7 +20,7 @@ let IconDeleteteam = ({ size, color, ...rest }) => {
 };
 
 IconDeleteteam.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeleteteam = React.memo ? React.memo(IconDeleteteam) : IconDeleteteam;

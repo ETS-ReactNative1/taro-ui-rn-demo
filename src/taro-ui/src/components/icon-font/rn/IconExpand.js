@@ -16,7 +16,7 @@ let IconExpand = ({ size, color, ...rest }) => {
 };
 
 IconExpand.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconExpand = React.memo ? React.memo(IconExpand) : IconExpand;

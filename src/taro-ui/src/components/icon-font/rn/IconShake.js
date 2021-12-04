@@ -20,7 +20,7 @@ let IconShake = ({ size, color, ...rest }) => {
 };
 
 IconShake.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconShake = React.memo ? React.memo(IconShake) : IconShake;

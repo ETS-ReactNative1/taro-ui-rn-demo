@@ -16,7 +16,7 @@ let IconCodeSandbox = ({ size, color, ...rest }) => {
 };
 
 IconCodeSandbox.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodeSandbox = React.memo ? React.memo(IconCodeSandbox) : IconCodeSandbox;

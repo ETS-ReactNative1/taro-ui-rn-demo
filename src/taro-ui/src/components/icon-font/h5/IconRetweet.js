@@ -21,7 +21,7 @@ const IconRetweet = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRetweet.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRetweet;

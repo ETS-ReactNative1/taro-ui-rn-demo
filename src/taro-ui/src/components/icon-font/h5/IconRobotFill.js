@@ -21,7 +21,7 @@ const IconRobotFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRobotFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRobotFill;

@@ -21,7 +21,7 @@ const IconUnderline = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconUnderline.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconUnderline;

@@ -21,7 +21,7 @@ const IconFullscreen = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFullscreen.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFullscreen;

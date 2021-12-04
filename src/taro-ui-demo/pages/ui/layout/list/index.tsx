@@ -99,7 +99,7 @@ export default class ListPage extends React.Component {
                     note='描述信息'
                     arrow='right'
                     iconInfo={{
-                      size: 25,
+                      size: 50,
                       color: '#78A4FA',
                       value: 'calendar'
                     }}
@@ -110,9 +110,9 @@ export default class ListPage extends React.Component {
                     extraText='详细信息'
                     arrow='right'
                     iconInfo={{
-                      size: 25,
+                      size: 50,
                       color: '#FF4949',
-                      value: 'bookmark'
+                      value: 'tag'
                     }}
                   />
                 </AtList>

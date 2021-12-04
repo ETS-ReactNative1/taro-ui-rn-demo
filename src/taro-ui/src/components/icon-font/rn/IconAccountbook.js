@@ -20,7 +20,7 @@ let IconAccountbook = ({ size, color, ...rest }) => {
 };
 
 IconAccountbook.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAccountbook = React.memo ? React.memo(IconAccountbook) : IconAccountbook;

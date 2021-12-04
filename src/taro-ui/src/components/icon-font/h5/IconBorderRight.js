@@ -21,7 +21,7 @@ const IconBorderRight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBorderRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBorderRight;

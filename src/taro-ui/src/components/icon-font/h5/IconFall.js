@@ -21,7 +21,7 @@ const IconFall = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFall.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFall;

@@ -20,7 +20,7 @@ let IconAlipayCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconAlipayCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlipayCircleFill = React.memo ? React.memo(IconAlipayCircleFill) : IconAlipayCircleFill;

@@ -21,7 +21,7 @@ const IconMinusSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMinusSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMinusSquareFill;

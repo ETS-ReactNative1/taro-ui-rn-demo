@@ -21,7 +21,7 @@ const IconSisternode = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSisternode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSisternode;

@@ -20,7 +20,7 @@ let IconLocationFill = ({ size, color, ...rest }) => {
 };
 
 IconLocationFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLocationFill = React.memo ? React.memo(IconLocationFill) : IconLocationFill;

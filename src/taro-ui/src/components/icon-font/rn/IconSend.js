@@ -16,7 +16,7 @@ let IconSend = ({ size, color, ...rest }) => {
 };
 
 IconSend.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSend = React.memo ? React.memo(IconSend) : IconSend;

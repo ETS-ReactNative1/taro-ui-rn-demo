@@ -16,7 +16,7 @@ let IconRollback = ({ size, color, ...rest }) => {
 };
 
 IconRollback.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRollback = React.memo ? React.memo(IconRollback) : IconRollback;

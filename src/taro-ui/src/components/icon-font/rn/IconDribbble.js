@@ -16,7 +16,7 @@ let IconDribbble = ({ size, color, ...rest }) => {
 };
 
 IconDribbble.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDribbble = React.memo ? React.memo(IconDribbble) : IconDribbble;

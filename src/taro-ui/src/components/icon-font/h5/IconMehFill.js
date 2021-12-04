@@ -21,7 +21,7 @@ const IconMehFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMehFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMehFill;

@@ -24,7 +24,7 @@ let IconError = ({ size, color, ...rest }) => {
 };
 
 IconError.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconError = React.memo ? React.memo(IconError) : IconError;

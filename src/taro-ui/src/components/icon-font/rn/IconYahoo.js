@@ -16,7 +16,7 @@ let IconYahoo = ({ size, color, ...rest }) => {
 };
 
 IconYahoo.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYahoo = React.memo ? React.memo(IconYahoo) : IconYahoo;

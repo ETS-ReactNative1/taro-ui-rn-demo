@@ -21,7 +21,7 @@ const IconGiftFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGiftFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGiftFill;

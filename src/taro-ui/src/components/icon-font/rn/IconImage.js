@@ -20,7 +20,7 @@ let IconImage = ({ size, color, ...rest }) => {
 };
 
 IconImage.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconImage = React.memo ? React.memo(IconImage) : IconImage;

@@ -24,7 +24,7 @@ let IconFileExclamation = ({ size, color, ...rest }) => {
 };
 
 IconFileExclamation.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileExclamation = React.memo ? React.memo(IconFileExclamation) : IconFileExclamation;

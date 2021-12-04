@@ -20,7 +20,7 @@ let IconDollar = ({ size, color, ...rest }) => {
 };
 
 IconDollar.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDollar = React.memo ? React.memo(IconDollar) : IconDollar;

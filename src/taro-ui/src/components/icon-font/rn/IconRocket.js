@@ -20,7 +20,7 @@ let IconRocket = ({ size, color, ...rest }) => {
 };
 
 IconRocket.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRocket = React.memo ? React.memo(IconRocket) : IconRocket;

@@ -28,7 +28,7 @@ let IconCar = ({ size, color, ...rest }) => {
 };
 
 IconCar.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCar = React.memo ? React.memo(IconCar) : IconCar;

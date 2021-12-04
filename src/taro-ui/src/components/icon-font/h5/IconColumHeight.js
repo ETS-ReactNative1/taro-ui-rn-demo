@@ -21,7 +21,7 @@ const IconColumHeight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconColumHeight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconColumHeight;

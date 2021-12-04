@@ -16,7 +16,7 @@ let IconAlignRight = ({ size, color, ...rest }) => {
 };
 
 IconAlignRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlignRight = React.memo ? React.memo(IconAlignRight) : IconAlignRight;

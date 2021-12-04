@@ -21,7 +21,7 @@ const IconPoweroffCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPoweroffCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPoweroffCircleFill;

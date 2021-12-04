@@ -20,7 +20,7 @@ let IconYuan = ({ size, color, ...rest }) => {
 };
 
 IconYuan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYuan = React.memo ? React.memo(IconYuan) : IconYuan;

@@ -16,7 +16,7 @@ let IconSmallDash = ({ size, color, ...rest }) => {
 };
 
 IconSmallDash.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSmallDash = React.memo ? React.memo(IconSmallDash) : IconSmallDash;

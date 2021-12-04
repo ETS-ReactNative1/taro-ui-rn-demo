@@ -16,7 +16,7 @@ let IconScissor = ({ size, color, ...rest }) => {
 };
 
 IconScissor.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconScissor = React.memo ? React.memo(IconScissor) : IconScissor;

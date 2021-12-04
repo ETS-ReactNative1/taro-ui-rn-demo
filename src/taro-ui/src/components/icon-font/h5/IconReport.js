@@ -25,7 +25,7 @@ const IconReport = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconReport.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconReport;

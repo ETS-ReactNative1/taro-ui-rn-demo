@@ -21,7 +21,7 @@ const IconHomeFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconHomeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconHomeFill;

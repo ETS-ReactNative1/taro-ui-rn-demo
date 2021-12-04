@@ -20,7 +20,7 @@ let IconInstagramFill = ({ size, color, ...rest }) => {
 };
 
 IconInstagramFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconInstagramFill = React.memo ? React.memo(IconInstagramFill) : IconInstagramFill;

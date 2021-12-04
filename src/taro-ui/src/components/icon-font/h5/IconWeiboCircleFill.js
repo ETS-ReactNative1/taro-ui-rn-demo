@@ -29,7 +29,7 @@ const IconWeiboCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconWeiboCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconWeiboCircleFill;

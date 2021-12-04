@@ -25,7 +25,7 @@ const IconSelect = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSelect.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSelect;

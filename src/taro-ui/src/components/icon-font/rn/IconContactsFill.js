@@ -16,7 +16,7 @@ let IconContactsFill = ({ size, color, ...rest }) => {
 };
 
 IconContactsFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconContactsFill = React.memo ? React.memo(IconContactsFill) : IconContactsFill;

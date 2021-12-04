@@ -16,7 +16,7 @@ let IconMobileFill = ({ size, color, ...rest }) => {
 };
 
 IconMobileFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMobileFill = React.memo ? React.memo(IconMobileFill) : IconMobileFill;

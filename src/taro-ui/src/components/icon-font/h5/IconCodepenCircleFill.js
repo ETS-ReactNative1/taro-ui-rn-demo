@@ -29,7 +29,7 @@ const IconCodepenCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCodepenCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCodepenCircleFill;

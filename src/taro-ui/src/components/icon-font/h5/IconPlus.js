@@ -25,7 +25,7 @@ const IconPlus = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPlus.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPlus;

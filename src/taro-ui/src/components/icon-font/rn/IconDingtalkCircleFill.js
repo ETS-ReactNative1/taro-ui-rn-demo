@@ -16,7 +16,7 @@ let IconDingtalkCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconDingtalkCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDingtalkCircleFill = React.memo ? React.memo(IconDingtalkCircleFill) : IconDingtalkCircleFill;

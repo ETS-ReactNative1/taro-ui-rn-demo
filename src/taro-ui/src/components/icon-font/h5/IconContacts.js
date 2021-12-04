@@ -25,7 +25,7 @@ const IconContacts = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconContacts.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconContacts;

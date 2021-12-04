@@ -24,7 +24,7 @@ let IconDribbbleCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconDribbbleCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDribbbleCircleFill = React.memo ? React.memo(IconDribbbleCircleFill) : IconDribbbleCircleFill;

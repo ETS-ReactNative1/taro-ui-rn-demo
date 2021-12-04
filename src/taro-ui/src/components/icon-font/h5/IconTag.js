@@ -25,7 +25,7 @@ const IconTag = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTag.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTag;

@@ -20,7 +20,7 @@ let IconAmazonCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconAmazonCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAmazonCircleFill = React.memo ? React.memo(IconAmazonCircleFill) : IconAmazonCircleFill;

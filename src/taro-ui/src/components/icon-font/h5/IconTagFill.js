@@ -21,7 +21,7 @@ const IconTagFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTagFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTagFill;

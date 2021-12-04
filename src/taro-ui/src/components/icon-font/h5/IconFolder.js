@@ -21,7 +21,7 @@ const IconFolder = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFolder.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFolder;

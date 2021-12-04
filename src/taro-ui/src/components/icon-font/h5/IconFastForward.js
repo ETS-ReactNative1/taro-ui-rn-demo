@@ -21,7 +21,7 @@ const IconFastForward = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFastForward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFastForward;

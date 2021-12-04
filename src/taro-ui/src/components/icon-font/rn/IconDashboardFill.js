@@ -16,7 +16,7 @@ let IconDashboardFill = ({ size, color, ...rest }) => {
 };
 
 IconDashboardFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDashboardFill = React.memo ? React.memo(IconDashboardFill) : IconDashboardFill;

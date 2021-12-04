@@ -37,7 +37,7 @@ const IconPointmap = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPointmap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPointmap;

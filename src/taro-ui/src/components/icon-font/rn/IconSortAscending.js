@@ -24,7 +24,7 @@ let IconSortAscending = ({ size, color, ...rest }) => {
 };
 
 IconSortAscending.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSortAscending = React.memo ? React.memo(IconSortAscending) : IconSortAscending;

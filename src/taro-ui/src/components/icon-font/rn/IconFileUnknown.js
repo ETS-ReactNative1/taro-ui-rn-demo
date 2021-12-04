@@ -24,7 +24,7 @@ let IconFileUnknown = ({ size, color, ...rest }) => {
 };
 
 IconFileUnknown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileUnknown = React.memo ? React.memo(IconFileUnknown) : IconFileUnknown;

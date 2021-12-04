@@ -25,7 +25,7 @@ const IconFieldTime = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFieldTime.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFieldTime;

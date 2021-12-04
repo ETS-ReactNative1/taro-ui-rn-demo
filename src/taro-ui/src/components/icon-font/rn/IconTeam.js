@@ -20,7 +20,7 @@ let IconTeam = ({ size, color, ...rest }) => {
 };
 
 IconTeam.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTeam = React.memo ? React.memo(IconTeam) : IconTeam;

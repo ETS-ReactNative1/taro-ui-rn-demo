@@ -1,7 +1,7 @@
 /* eslint-disable */
 const useGlobalIconFont = () => {
   return {
-    iconfont: `taro-ui/src/components/icon/${process.env.TARO_ENV}/${process.env.TARO_ENV}`,
+    iconfont: `taro-ui/src/components/icon-font/${process.env.TARO_ENV}/${process.env.TARO_ENV}`,
   };
 };
 

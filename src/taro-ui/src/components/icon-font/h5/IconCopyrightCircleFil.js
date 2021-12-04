@@ -21,7 +21,7 @@ const IconCopyrightCircleFil = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCopyrightCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCopyrightCircleFil;

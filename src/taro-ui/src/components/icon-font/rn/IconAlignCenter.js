@@ -16,7 +16,7 @@ let IconAlignCenter = ({ size, color, ...rest }) => {
 };
 
 IconAlignCenter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlignCenter = React.memo ? React.memo(IconAlignCenter) : IconAlignCenter;

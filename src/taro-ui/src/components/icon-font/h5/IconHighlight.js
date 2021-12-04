@@ -21,7 +21,7 @@ const IconHighlight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconHighlight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconHighlight;

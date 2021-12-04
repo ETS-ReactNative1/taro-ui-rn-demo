@@ -20,7 +20,7 @@ let IconVideo = ({ size, color, ...rest }) => {
 };
 
 IconVideo.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconVideo = React.memo ? React.memo(IconVideo) : IconVideo;

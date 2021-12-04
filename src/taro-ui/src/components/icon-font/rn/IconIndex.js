@@ -16,7 +16,7 @@ let IconIndex = ({ size, color, ...rest }) => {
 };
 
 IconIndex.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconIndex = React.memo ? React.memo(IconIndex) : IconIndex;

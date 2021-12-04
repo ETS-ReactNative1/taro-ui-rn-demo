@@ -20,7 +20,7 @@ let IconEyeClose = ({ size, color, ...rest }) => {
 };
 
 IconEyeClose.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEyeClose = React.memo ? React.memo(IconEyeClose) : IconEyeClose;

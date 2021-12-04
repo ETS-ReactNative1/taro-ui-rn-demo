@@ -21,7 +21,7 @@ const IconShare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconShare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconShare;

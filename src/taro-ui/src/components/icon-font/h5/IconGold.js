@@ -21,7 +21,7 @@ const IconGold = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGold.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGold;

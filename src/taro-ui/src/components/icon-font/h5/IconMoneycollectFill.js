@@ -21,7 +21,7 @@ const IconMoneycollectFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMoneycollectFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMoneycollectFill;

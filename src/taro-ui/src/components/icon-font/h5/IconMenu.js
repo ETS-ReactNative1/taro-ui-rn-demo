@@ -21,7 +21,7 @@ const IconMenu = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMenu.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMenu;

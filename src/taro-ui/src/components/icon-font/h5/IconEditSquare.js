@@ -25,7 +25,7 @@ const IconEditSquare = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEditSquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEditSquare;

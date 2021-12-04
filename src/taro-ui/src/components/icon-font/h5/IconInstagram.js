@@ -25,7 +25,7 @@ const IconInstagram = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInstagram.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInstagram;

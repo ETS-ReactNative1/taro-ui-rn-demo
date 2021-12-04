@@ -25,7 +25,7 @@ const IconFileText = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileText.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileText;

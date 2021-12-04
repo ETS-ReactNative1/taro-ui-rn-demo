@@ -16,7 +16,7 @@ let IconUndo = ({ size, color, ...rest }) => {
 };
 
 IconUndo.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUndo = React.memo ? React.memo(IconUndo) : IconUndo;

@@ -16,7 +16,7 @@ let IconFilePdfFill = ({ size, color, ...rest }) => {
 };
 
 IconFilePdfFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFilePdfFill = React.memo ? React.memo(IconFilePdfFill) : IconFilePdfFill;

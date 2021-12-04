@@ -16,7 +16,7 @@ let IconColumHeight = ({ size, color, ...rest }) => {
 };
 
 IconColumHeight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconColumHeight = React.memo ? React.memo(IconColumHeight) : IconColumHeight;

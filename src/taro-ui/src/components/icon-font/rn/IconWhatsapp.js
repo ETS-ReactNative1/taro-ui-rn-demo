@@ -20,7 +20,7 @@ let IconWhatsapp = ({ size, color, ...rest }) => {
 };
 
 IconWhatsapp.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWhatsapp = React.memo ? React.memo(IconWhatsapp) : IconWhatsapp;

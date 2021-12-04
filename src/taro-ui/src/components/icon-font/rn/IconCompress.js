@@ -16,7 +16,7 @@ let IconCompress = ({ size, color, ...rest }) => {
 };
 
 IconCompress.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCompress = React.memo ? React.memo(IconCompress) : IconCompress;

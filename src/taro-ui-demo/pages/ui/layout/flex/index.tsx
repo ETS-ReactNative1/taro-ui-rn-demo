@@ -38,7 +38,7 @@ export default class FlexPage extends React.Component {
           {/* 基本案例 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基本案例</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content__padding'>
               <View className='example-item'>
                 <View className='at-row'>
                   <View className='at-col'>A</View>

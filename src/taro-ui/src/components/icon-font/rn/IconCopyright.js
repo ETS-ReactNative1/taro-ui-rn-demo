@@ -20,7 +20,7 @@ let IconCopyright = ({ size, color, ...rest }) => {
 };
 
 IconCopyright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCopyright = React.memo ? React.memo(IconCopyright) : IconCopyright;

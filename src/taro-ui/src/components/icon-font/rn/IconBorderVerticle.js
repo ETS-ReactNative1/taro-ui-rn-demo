@@ -16,7 +16,7 @@ let IconBorderVerticle = ({ size, color, ...rest }) => {
 };
 
 IconBorderVerticle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBorderVerticle = React.memo ? React.memo(IconBorderVerticle) : IconBorderVerticle;

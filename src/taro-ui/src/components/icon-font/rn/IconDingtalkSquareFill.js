@@ -16,7 +16,7 @@ let IconDingtalkSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconDingtalkSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDingtalkSquareFill = React.memo ? React.memo(IconDingtalkSquareFill) : IconDingtalkSquareFill;

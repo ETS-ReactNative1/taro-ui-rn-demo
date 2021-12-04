@@ -21,7 +21,7 @@ const IconEdit = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEdit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEdit;

@@ -6,6 +6,8 @@ import { Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtAccordionProps, AtAccordionState } from '../../../types/accordion'
 import { delayQuerySelector } from '../../common/utils'
+import '../../style/components/accordion.scss'
+import IconFont from '../icon-font';
 
 export default class AtAccordion extends React.Component<
   AtAccordionProps,
@@ -95,9 +97,7 @@ export default class AtAccordion extends React.Component<
     const headerCls = classNames('at-accordion__header', {
       'at-accordion__header--noborder': !hasBorder
     })
-    const arrowCls = classNames('at-accordion__arrow', {
-      'at-accordion__arrow--folded': !!open
-    })
+
     const contentCls = classNames('at-accordion__content', {
       'at-accordion__content--inactive':
         (!open && this.isCompleted) || this.startOpen
@@ -121,16 +121,16 @@ export default class AtAccordion extends React.Component<
     return (
       <View className={rootCls} style={customStyle}>
         <View className={headerCls} onClick={this.handleClick}>
-          {icon && icon.value && (
+          {!!icon && !!icon.value && (
             <Text className={iconCls} style={iconStyle} />
           )}
           <View className='at-accordion__info'>
-            <View className='at-accordion__info__title'>{title}</View>
-            <View className='at-accordion__info__note'>{note}</View>
+            <Text className='at-accordion__info__title'>{title}</Text>
+            {!!note && (
+              <Text className='at-accordion__info__note'>{note}</Text>
+            )}
           </View>
-          <View className={arrowCls}>
-            <Text className='at-icon at-icon-chevron-down'></Text>
-          </View>
+          <IconFont name={open ? 'down' : 'up'} color='#999' size={42} />
         </View>
         <View style={contentStyle} className={contentCls}>
           <View className='at-accordion__body'>{this.props.children}</View>

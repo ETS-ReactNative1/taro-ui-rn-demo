@@ -20,7 +20,7 @@ let IconPropertysafety = ({ size, color, ...rest }) => {
 };
 
 IconPropertysafety.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPropertysafety = React.memo ? React.memo(IconPropertysafety) : IconPropertysafety;

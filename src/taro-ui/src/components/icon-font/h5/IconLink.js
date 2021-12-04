@@ -25,7 +25,7 @@ const IconLink = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLink.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLink;

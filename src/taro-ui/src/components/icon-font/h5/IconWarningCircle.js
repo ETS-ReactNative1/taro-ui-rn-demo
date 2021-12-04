@@ -29,7 +29,7 @@ const IconWarningCircle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconWarningCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconWarningCircle;

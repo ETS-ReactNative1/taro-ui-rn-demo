@@ -21,7 +21,7 @@ const IconCodeSandbox = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCodeSandbox.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCodeSandbox;

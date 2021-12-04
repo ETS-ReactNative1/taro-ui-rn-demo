@@ -20,7 +20,7 @@ let IconZhihuSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconZhihuSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconZhihuSquareFill = React.memo ? React.memo(IconZhihuSquareFill) : IconZhihuSquareFill;

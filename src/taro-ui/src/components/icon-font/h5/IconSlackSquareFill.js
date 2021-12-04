@@ -25,7 +25,7 @@ const IconSlackSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSlackSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSlackSquareFill;

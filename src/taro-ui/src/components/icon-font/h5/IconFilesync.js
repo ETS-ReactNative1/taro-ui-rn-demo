@@ -29,7 +29,7 @@ const IconFilesync = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFilesync.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFilesync;

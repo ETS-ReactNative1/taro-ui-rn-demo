@@ -20,7 +20,7 @@ let IconMonitor = ({ size, color, ...rest }) => {
 };
 
 IconMonitor.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMonitor = React.memo ? React.memo(IconMonitor) : IconMonitor;

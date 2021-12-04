@@ -20,7 +20,7 @@ let IconSaveFill = ({ size, color, ...rest }) => {
 };
 
 IconSaveFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSaveFill = React.memo ? React.memo(IconSaveFill) : IconSaveFill;

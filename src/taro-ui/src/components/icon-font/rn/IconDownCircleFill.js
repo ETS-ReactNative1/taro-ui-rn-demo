@@ -16,7 +16,7 @@ let IconDownCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconDownCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDownCircleFill = React.memo ? React.memo(IconDownCircleFill) : IconDownCircleFill;

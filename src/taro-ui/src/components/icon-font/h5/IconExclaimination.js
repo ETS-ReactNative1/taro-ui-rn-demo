@@ -25,7 +25,7 @@ const IconExclaimination = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconExclaimination.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconExclaimination;

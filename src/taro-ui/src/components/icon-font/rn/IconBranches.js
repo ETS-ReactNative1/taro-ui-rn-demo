@@ -16,7 +16,7 @@ let IconBranches = ({ size, color, ...rest }) => {
 };
 
 IconBranches.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBranches = React.memo ? React.memo(IconBranches) : IconBranches;

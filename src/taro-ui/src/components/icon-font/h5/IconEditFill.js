@@ -21,7 +21,7 @@ const IconEditFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEditFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEditFill;

@@ -16,7 +16,7 @@ let IconRise = ({ size, color, ...rest }) => {
 };
 
 IconRise.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRise = React.memo ? React.memo(IconRise) : IconRise;

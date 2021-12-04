@@ -20,7 +20,7 @@ let IconDropboxCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconDropboxCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDropboxCircleFill = React.memo ? React.memo(IconDropboxCircleFill) : IconDropboxCircleFill;

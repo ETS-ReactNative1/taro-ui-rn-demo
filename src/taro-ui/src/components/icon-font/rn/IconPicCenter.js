@@ -16,7 +16,7 @@ let IconPicCenter = ({ size, color, ...rest }) => {
 };
 
 IconPicCenter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPicCenter = React.memo ? React.memo(IconPicCenter) : IconPicCenter;

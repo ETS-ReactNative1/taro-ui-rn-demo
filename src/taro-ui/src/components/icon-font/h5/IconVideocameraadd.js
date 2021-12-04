@@ -29,7 +29,7 @@ const IconVideocameraadd = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVideocameraadd.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVideocameraadd;

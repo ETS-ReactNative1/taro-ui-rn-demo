@@ -20,7 +20,7 @@ let IconBehanceSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconBehanceSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBehanceSquareFill = React.memo ? React.memo(IconBehanceSquareFill) : IconBehanceSquareFill;

@@ -20,7 +20,7 @@ let IconSlackCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconSlackCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSlackCircleFill = React.memo ? React.memo(IconSlackCircleFill) : IconSlackCircleFill;

@@ -16,7 +16,7 @@ let IconSeverFill = ({ size, color, ...rest }) => {
 };
 
 IconSeverFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSeverFill = React.memo ? React.memo(IconSeverFill) : IconSeverFill;

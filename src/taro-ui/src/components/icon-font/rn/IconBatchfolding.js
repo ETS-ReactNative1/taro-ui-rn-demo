@@ -20,7 +20,7 @@ let IconBatchfolding = ({ size, color, ...rest }) => {
 };
 
 IconBatchfolding.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBatchfolding = React.memo ? React.memo(IconBatchfolding) : IconBatchfolding;

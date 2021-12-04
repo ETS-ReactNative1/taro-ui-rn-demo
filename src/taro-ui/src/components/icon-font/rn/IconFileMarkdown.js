@@ -20,7 +20,7 @@ let IconFileMarkdown = ({ size, color, ...rest }) => {
 };
 
 IconFileMarkdown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileMarkdown = React.memo ? React.memo(IconFileMarkdown) : IconFileMarkdown;

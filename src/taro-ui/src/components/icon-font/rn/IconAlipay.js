@@ -16,7 +16,7 @@ let IconAlipay = ({ size, color, ...rest }) => {
 };
 
 IconAlipay.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlipay = React.memo ? React.memo(IconAlipay) : IconAlipay;

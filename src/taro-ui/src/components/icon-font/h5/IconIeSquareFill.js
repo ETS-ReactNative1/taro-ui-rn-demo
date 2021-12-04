@@ -25,7 +25,7 @@ const IconIeSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconIeSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconIeSquareFill;

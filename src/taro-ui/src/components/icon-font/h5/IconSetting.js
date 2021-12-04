@@ -25,7 +25,7 @@ const IconSetting = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSetting.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSetting;

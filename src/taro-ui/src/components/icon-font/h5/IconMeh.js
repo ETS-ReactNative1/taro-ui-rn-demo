@@ -33,7 +33,7 @@ const IconMeh = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMeh.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMeh;

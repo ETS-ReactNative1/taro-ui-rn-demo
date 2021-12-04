@@ -1,6 +1,9 @@
 /* eslint-disable */
 
 import React from 'react';
+import IconStarempty from './IconStarempty';
+import IconStarfull from './IconStarfull';
+import IconStarhalf from './IconStarhalf';
 import IconIdcard from './IconIdcard';
 import IconTaobao from './IconTaobao';
 import IconCreditcard from './IconCreditcard';
@@ -600,6 +603,9 @@ import IconMail from './IconMail';
 import IconSlack from './IconSlack';
 import IconTable from './IconTable';
 import IconAlipay from './IconAlipay';
+export { default as IconStarempty } from './IconStarempty';
+export { default as IconStarfull } from './IconStarfull';
+export { default as IconStarhalf } from './IconStarhalf';
 export { default as IconIdcard } from './IconIdcard';
 export { default as IconTaobao } from './IconTaobao';
 export { default as IconCreditcard } from './IconCreditcard';
@@ -1202,6 +1208,12 @@ export { default as IconAlipay } from './IconAlipay';
 
 const IconFont = ({ name, ...rest }) => {
   switch (name) {
+    case 'starempty':
+      return <IconStarempty {...rest} />;
+    case 'starfull':
+      return <IconStarfull {...rest} />;
+    case 'starhalf':
+      return <IconStarhalf {...rest} />;
     case 'idcard':
       return <IconIdcard {...rest} />;
     case 'taobao':

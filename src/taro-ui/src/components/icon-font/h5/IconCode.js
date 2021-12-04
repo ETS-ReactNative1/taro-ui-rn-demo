@@ -25,7 +25,7 @@ const IconCode = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCode;

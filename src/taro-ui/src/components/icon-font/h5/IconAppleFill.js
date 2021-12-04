@@ -25,7 +25,7 @@ const IconAppleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAppleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAppleFill;

@@ -25,7 +25,7 @@ const IconRotateRight = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRotateRight.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRotateRight;

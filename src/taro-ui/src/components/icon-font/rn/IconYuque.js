@@ -16,7 +16,7 @@ let IconYuque = ({ size, color, ...rest }) => {
 };
 
 IconYuque.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYuque = React.memo ? React.memo(IconYuque) : IconYuque;

@@ -25,7 +25,7 @@ const IconCluster = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCluster.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCluster;

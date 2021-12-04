@@ -21,7 +21,7 @@ const IconLayout = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLayout.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLayout;

@@ -25,7 +25,7 @@ const IconPiechartCircleFil = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPiechartCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPiechartCircleFil;

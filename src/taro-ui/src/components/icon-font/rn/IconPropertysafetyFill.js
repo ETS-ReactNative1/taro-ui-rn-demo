@@ -16,7 +16,7 @@ let IconPropertysafetyFill = ({ size, color, ...rest }) => {
 };
 
 IconPropertysafetyFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPropertysafetyFill = React.memo ? React.memo(IconPropertysafetyFill) : IconPropertysafetyFill;

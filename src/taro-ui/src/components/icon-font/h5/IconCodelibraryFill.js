@@ -21,7 +21,7 @@ const IconCodelibraryFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCodelibraryFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCodelibraryFill;

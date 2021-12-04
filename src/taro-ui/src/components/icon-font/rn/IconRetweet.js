@@ -16,7 +16,7 @@ let IconRetweet = ({ size, color, ...rest }) => {
 };
 
 IconRetweet.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRetweet = React.memo ? React.memo(IconRetweet) : IconRetweet;

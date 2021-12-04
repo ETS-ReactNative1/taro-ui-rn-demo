@@ -24,7 +24,7 @@ let IconSortDescending = ({ size, color, ...rest }) => {
 };
 
 IconSortDescending.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSortDescending = React.memo ? React.memo(IconSortDescending) : IconSortDescending;

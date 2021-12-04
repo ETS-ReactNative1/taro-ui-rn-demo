@@ -25,7 +25,7 @@ const IconCrown = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCrown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCrown;

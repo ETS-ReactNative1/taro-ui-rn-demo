@@ -29,7 +29,7 @@ const IconShortcutFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconShortcutFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconShortcutFill;

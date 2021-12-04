@@ -20,7 +20,7 @@ let IconUsb = ({ size, color, ...rest }) => {
 };
 
 IconUsb.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUsb = React.memo ? React.memo(IconUsb) : IconUsb;

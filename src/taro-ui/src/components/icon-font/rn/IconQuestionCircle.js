@@ -24,7 +24,7 @@ let IconQuestionCircle = ({ size, color, ...rest }) => {
 };
 
 IconQuestionCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconQuestionCircle = React.memo ? React.memo(IconQuestionCircle) : IconQuestionCircle;

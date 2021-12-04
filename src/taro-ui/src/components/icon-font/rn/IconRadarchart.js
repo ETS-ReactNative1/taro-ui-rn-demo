@@ -16,7 +16,7 @@ let IconRadarchart = ({ size, color, ...rest }) => {
 };
 
 IconRadarchart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRadarchart = React.memo ? React.memo(IconRadarchart) : IconRadarchart;

@@ -16,7 +16,7 @@ let IconBoxplot = ({ size, color, ...rest }) => {
 };
 
 IconBoxplot.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBoxplot = React.memo ? React.memo(IconBoxplot) : IconBoxplot;

@@ -21,7 +21,7 @@ const IconAliwangwangFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAliwangwangFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAliwangwangFill;

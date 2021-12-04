@@ -21,7 +21,7 @@ const IconCaretDown = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCaretDown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCaretDown;

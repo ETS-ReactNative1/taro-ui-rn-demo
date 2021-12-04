@@ -21,7 +21,7 @@ const IconSeverFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSeverFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSeverFill;

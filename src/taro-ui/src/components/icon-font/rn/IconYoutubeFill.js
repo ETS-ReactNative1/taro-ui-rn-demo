@@ -16,7 +16,7 @@ let IconYoutubeFill = ({ size, color, ...rest }) => {
 };
 
 IconYoutubeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYoutubeFill = React.memo ? React.memo(IconYoutubeFill) : IconYoutubeFill;

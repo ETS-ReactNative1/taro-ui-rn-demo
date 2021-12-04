@@ -21,7 +21,7 @@ const IconLine = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLine.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLine;

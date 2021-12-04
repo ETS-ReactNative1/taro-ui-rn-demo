@@ -20,7 +20,7 @@ let IconAim = ({ size, color, ...rest }) => {
 };
 
 IconAim.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAim = React.memo ? React.memo(IconAim) : IconAim;

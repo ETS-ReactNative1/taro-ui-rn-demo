@@ -16,7 +16,7 @@ let IconBarcode = ({ size, color, ...rest }) => {
 };
 
 IconBarcode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBarcode = React.memo ? React.memo(IconBarcode) : IconBarcode;

@@ -29,7 +29,7 @@ const IconDribbbleSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDribbbleSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDribbbleSquareFill;

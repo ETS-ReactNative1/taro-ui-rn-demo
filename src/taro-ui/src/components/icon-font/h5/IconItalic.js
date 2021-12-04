@@ -21,7 +21,7 @@ const IconItalic = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconItalic.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconItalic;

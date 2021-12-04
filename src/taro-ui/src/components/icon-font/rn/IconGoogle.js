@@ -16,7 +16,7 @@ let IconGoogle = ({ size, color, ...rest }) => {
 };
 
 IconGoogle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGoogle = React.memo ? React.memo(IconGoogle) : IconGoogle;

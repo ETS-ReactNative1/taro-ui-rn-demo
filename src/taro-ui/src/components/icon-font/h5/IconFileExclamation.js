@@ -29,7 +29,7 @@ const IconFileExclamation = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileExclamation.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileExclamation;

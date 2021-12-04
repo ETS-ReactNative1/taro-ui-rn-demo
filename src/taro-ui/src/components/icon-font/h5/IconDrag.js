@@ -21,7 +21,7 @@ const IconDrag = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDrag.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDrag;

@@ -16,7 +16,7 @@ let IconSlack = ({ size, color, ...rest }) => {
 };
 
 IconSlack.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSlack = React.memo ? React.memo(IconSlack) : IconSlack;

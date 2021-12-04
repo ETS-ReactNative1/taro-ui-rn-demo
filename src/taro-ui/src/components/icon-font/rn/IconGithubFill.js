@@ -16,7 +16,7 @@ let IconGithubFill = ({ size, color, ...rest }) => {
 };
 
 IconGithubFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconGithubFill = React.memo ? React.memo(IconGithubFill) : IconGithubFill;

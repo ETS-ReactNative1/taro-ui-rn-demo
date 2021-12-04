@@ -16,7 +16,7 @@ let IconExpend = ({ size, color, ...rest }) => {
 };
 
 IconExpend.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconExpend = React.memo ? React.memo(IconExpend) : IconExpend;

@@ -28,7 +28,7 @@ let IconUnorderedlist = ({ size, color, ...rest }) => {
 };
 
 IconUnorderedlist.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUnorderedlist = React.memo ? React.memo(IconUnorderedlist) : IconUnorderedlist;

@@ -21,7 +21,7 @@ const IconFlagFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFlagFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFlagFill;

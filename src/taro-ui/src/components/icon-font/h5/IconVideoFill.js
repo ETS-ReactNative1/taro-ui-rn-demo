@@ -21,7 +21,7 @@ const IconVideoFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVideoFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVideoFill;

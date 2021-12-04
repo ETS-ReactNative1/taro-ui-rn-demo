@@ -28,7 +28,7 @@ let IconMessage = ({ size, color, ...rest }) => {
 };
 
 IconMessage.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMessage = React.memo ? React.memo(IconMessage) : IconMessage;

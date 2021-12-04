@@ -16,7 +16,7 @@ let IconAlert = ({ size, color, ...rest }) => {
 };
 
 IconAlert.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlert = React.memo ? React.memo(IconAlert) : IconAlert;

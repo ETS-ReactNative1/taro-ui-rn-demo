@@ -20,7 +20,7 @@ let IconImport = ({ size, color, ...rest }) => {
 };
 
 IconImport.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconImport = React.memo ? React.memo(IconImport) : IconImport;

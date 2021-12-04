@@ -21,7 +21,7 @@ const IconAlignLeft = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlignLeft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlignLeft;

@@ -21,7 +21,7 @@ const IconBellFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBellFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBellFill;

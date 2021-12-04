@@ -24,7 +24,7 @@ let IconCodepenSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconCodepenSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodepenSquareFill = React.memo ? React.memo(IconCodepenSquareFill) : IconCodepenSquareFill;

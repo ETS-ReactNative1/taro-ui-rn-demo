@@ -25,7 +25,7 @@ const IconUsb = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconUsb.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconUsb;

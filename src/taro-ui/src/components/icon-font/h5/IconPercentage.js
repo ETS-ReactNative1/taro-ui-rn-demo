@@ -21,7 +21,7 @@ const IconPercentage = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPercentage.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPercentage;

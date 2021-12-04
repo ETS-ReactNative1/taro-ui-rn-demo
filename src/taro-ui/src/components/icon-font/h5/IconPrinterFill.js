@@ -21,7 +21,7 @@ const IconPrinterFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPrinterFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPrinterFill;

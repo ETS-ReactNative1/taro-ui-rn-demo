@@ -16,7 +16,7 @@ let IconSwitchuser = ({ size, color, ...rest }) => {
 };
 
 IconSwitchuser.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSwitchuser = React.memo ? React.memo(IconSwitchuser) : IconSwitchuser;

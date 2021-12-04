@@ -16,7 +16,7 @@ let IconDeletecolumn = ({ size, color, ...rest }) => {
 };
 
 IconDeletecolumn.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeletecolumn = React.memo ? React.memo(IconDeletecolumn) : IconDeletecolumn;

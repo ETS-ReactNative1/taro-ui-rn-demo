@@ -21,7 +21,7 @@ const IconFieldBinary = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFieldBinary.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFieldBinary;

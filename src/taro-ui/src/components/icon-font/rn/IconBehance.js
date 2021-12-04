@@ -16,7 +16,7 @@ let IconBehance = ({ size, color, ...rest }) => {
 };
 
 IconBehance.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBehance = React.memo ? React.memo(IconBehance) : IconBehance;

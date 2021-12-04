@@ -16,7 +16,7 @@ let IconPause = ({ size, color, ...rest }) => {
 };
 
 IconPause.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPause = React.memo ? React.memo(IconPause) : IconPause;

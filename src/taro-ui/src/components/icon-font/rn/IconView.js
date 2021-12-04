@@ -28,7 +28,7 @@ let IconView = ({ size, color, ...rest }) => {
 };
 
 IconView.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconView = React.memo ? React.memo(IconView) : IconView;

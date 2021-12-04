@@ -24,7 +24,7 @@ let IconVideocameraadd = ({ size, color, ...rest }) => {
 };
 
 IconVideocameraadd.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconVideocameraadd = React.memo ? React.memo(IconVideocameraadd) : IconVideocameraadd;

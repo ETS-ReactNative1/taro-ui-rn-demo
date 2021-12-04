@@ -16,7 +16,7 @@ let IconThunderbolt = ({ size, color, ...rest }) => {
 };
 
 IconThunderbolt.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconThunderbolt = React.memo ? React.memo(IconThunderbolt) : IconThunderbolt;

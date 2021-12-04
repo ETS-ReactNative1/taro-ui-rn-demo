@@ -25,7 +25,7 @@ const IconDiffFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDiffFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDiffFill;

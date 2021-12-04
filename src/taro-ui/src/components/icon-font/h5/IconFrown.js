@@ -33,7 +33,7 @@ const IconFrown = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFrown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFrown;

@@ -21,7 +21,7 @@ const IconDribbble = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDribbble.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDribbble;

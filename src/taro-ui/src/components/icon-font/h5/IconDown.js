@@ -21,7 +21,7 @@ const IconDown = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDown.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDown;

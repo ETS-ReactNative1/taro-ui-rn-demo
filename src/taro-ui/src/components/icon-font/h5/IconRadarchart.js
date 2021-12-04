@@ -21,7 +21,7 @@ const IconRadarchart = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRadarchart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRadarchart;

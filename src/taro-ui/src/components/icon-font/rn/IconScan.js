@@ -16,7 +16,7 @@ let IconScan = ({ size, color, ...rest }) => {
 };
 
 IconScan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconScan = React.memo ? React.memo(IconScan) : IconScan;

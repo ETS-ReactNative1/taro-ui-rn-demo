@@ -21,7 +21,7 @@ const IconEarth = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEarth.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEarth;

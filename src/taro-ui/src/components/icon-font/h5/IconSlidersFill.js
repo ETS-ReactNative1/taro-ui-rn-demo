@@ -21,7 +21,7 @@ const IconSlidersFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSlidersFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSlidersFill;

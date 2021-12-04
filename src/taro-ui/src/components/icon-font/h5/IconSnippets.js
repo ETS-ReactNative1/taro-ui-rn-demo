@@ -21,7 +21,7 @@ const IconSnippets = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSnippets.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSnippets;

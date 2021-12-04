@@ -29,7 +29,7 @@ const IconFileGif = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileGif.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileGif;

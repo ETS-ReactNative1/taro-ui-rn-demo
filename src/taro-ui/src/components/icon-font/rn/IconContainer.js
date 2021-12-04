@@ -20,7 +20,7 @@ let IconContainer = ({ size, color, ...rest }) => {
 };
 
 IconContainer.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconContainer = React.memo ? React.memo(IconContainer) : IconContainer;

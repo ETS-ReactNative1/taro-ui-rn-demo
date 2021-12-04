@@ -25,7 +25,7 @@ const IconIdcard = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconIdcard.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconIdcard;

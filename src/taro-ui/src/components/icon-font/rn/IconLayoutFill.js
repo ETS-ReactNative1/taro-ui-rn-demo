@@ -16,7 +16,7 @@ let IconLayoutFill = ({ size, color, ...rest }) => {
 };
 
 IconLayoutFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLayoutFill = React.memo ? React.memo(IconLayoutFill) : IconLayoutFill;

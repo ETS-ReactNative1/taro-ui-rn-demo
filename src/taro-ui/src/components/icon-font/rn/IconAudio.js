@@ -20,7 +20,7 @@ let IconAudio = ({ size, color, ...rest }) => {
 };
 
 IconAudio.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAudio = React.memo ? React.memo(IconAudio) : IconAudio;

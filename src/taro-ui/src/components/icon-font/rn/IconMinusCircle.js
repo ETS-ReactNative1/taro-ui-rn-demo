@@ -20,7 +20,7 @@ let IconMinusCircle = ({ size, color, ...rest }) => {
 };
 
 IconMinusCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMinusCircle = React.memo ? React.memo(IconMinusCircle) : IconMinusCircle;

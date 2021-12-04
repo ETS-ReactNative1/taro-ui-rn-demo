@@ -21,7 +21,7 @@ const IconFilePdfFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFilePdfFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFilePdfFill;

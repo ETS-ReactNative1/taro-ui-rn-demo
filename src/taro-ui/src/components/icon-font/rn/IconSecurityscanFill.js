@@ -20,7 +20,7 @@ let IconSecurityscanFill = ({ size, color, ...rest }) => {
 };
 
 IconSecurityscanFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSecurityscanFill = React.memo ? React.memo(IconSecurityscanFill) : IconSecurityscanFill;

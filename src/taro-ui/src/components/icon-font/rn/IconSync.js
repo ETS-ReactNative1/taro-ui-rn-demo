@@ -16,7 +16,7 @@ let IconSync = ({ size, color, ...rest }) => {
 };
 
 IconSync.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSync = React.memo ? React.memo(IconSync) : IconSync;

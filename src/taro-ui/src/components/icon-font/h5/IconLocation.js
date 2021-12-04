@@ -25,7 +25,7 @@ const IconLocation = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLocation.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLocation;

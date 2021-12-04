@@ -20,7 +20,7 @@ let IconEuro = ({ size, color, ...rest }) => {
 };
 
 IconEuro.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEuro = React.memo ? React.memo(IconEuro) : IconEuro;

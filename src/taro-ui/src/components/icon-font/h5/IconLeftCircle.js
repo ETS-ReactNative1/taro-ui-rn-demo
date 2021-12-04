@@ -25,7 +25,7 @@ const IconLeftCircle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLeftCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLeftCircle;

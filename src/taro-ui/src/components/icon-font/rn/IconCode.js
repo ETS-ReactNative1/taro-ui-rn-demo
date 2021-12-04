@@ -20,7 +20,7 @@ let IconCode = ({ size, color, ...rest }) => {
 };
 
 IconCode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCode = React.memo ? React.memo(IconCode) : IconCode;

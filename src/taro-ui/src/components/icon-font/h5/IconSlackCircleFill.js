@@ -25,7 +25,7 @@ const IconSlackCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSlackCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSlackCircleFill;

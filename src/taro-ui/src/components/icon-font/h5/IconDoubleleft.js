@@ -25,7 +25,7 @@ const IconDoubleleft = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDoubleleft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDoubleleft;

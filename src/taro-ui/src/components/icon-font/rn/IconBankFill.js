@@ -16,7 +16,7 @@ let IconBankFill = ({ size, color, ...rest }) => {
 };
 
 IconBankFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBankFill = React.memo ? React.memo(IconBankFill) : IconBankFill;

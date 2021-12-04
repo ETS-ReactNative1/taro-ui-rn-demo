@@ -25,7 +25,7 @@ const IconCalculator = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCalculator.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCalculator;

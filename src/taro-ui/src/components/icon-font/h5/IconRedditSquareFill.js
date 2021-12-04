@@ -37,7 +37,7 @@ const IconRedditSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRedditSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRedditSquareFill;

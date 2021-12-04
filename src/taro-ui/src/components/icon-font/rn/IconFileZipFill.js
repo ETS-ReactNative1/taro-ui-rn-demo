@@ -16,7 +16,7 @@ let IconFileZipFill = ({ size, color, ...rest }) => {
 };
 
 IconFileZipFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileZipFill = React.memo ? React.memo(IconFileZipFill) : IconFileZipFill;

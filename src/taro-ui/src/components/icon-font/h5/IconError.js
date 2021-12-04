@@ -29,7 +29,7 @@ const IconError = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconError.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconError;

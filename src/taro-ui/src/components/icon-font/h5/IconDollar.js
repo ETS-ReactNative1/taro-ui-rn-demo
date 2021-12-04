@@ -25,7 +25,7 @@ const IconDollar = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDollar.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDollar;

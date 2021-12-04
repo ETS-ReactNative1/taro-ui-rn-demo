@@ -16,7 +16,7 @@ let IconUnlockFill = ({ size, color, ...rest }) => {
 };
 
 IconUnlockFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUnlockFill = React.memo ? React.memo(IconUnlockFill) : IconUnlockFill;

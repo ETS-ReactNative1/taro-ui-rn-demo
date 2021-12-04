@@ -21,7 +21,7 @@ const IconAlipay = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlipay.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlipay;

@@ -16,7 +16,7 @@ let IconSnippets = ({ size, color, ...rest }) => {
 };
 
 IconSnippets.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSnippets = React.memo ? React.memo(IconSnippets) : IconSnippets;

@@ -20,7 +20,7 @@ let IconMedicinebox = ({ size, color, ...rest }) => {
 };
 
 IconMedicinebox.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMedicinebox = React.memo ? React.memo(IconMedicinebox) : IconMedicinebox;

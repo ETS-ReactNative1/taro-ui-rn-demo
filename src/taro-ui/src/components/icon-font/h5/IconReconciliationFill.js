@@ -29,7 +29,7 @@ const IconReconciliationFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconReconciliationFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconReconciliationFill;

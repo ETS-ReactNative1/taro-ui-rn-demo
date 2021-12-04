@@ -20,7 +20,7 @@ let IconCarryout = ({ size, color, ...rest }) => {
 };
 
 IconCarryout.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCarryout = React.memo ? React.memo(IconCarryout) : IconCarryout;

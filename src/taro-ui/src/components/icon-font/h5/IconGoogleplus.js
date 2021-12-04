@@ -21,7 +21,7 @@ const IconGoogleplus = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGoogleplus.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGoogleplus;

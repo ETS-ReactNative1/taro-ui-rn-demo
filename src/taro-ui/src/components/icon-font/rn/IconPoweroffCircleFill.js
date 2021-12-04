@@ -16,7 +16,7 @@ let IconPoweroffCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconPoweroffCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPoweroffCircleFill = React.memo ? React.memo(IconPoweroffCircleFill) : IconPoweroffCircleFill;

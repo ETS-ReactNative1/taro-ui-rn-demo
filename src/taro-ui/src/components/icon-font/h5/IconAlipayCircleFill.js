@@ -25,7 +25,7 @@ const IconAlipayCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlipayCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlipayCircleFill;

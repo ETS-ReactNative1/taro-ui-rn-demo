@@ -20,7 +20,7 @@ let IconDownSquare = ({ size, color, ...rest }) => {
 };
 
 IconDownSquare.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDownSquare = React.memo ? React.memo(IconDownSquare) : IconDownSquare;

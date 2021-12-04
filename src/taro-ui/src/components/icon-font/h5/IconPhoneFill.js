@@ -21,7 +21,7 @@ const IconPhoneFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPhoneFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPhoneFill;

@@ -20,7 +20,7 @@ let IconFieldTime = ({ size, color, ...rest }) => {
 };
 
 IconFieldTime.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFieldTime = React.memo ? React.memo(IconFieldTime) : IconFieldTime;

@@ -16,7 +16,7 @@ let IconClose = ({ size, color, ...rest }) => {
 };
 
 IconClose.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconClose = React.memo ? React.memo(IconClose) : IconClose;

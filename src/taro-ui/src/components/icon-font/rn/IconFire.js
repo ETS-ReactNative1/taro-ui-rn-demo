@@ -16,7 +16,7 @@ let IconFire = ({ size, color, ...rest }) => {
 };
 
 IconFire.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFire = React.memo ? React.memo(IconFire) : IconFire;

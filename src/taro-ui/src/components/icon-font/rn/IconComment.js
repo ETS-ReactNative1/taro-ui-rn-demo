@@ -24,7 +24,7 @@ let IconComment = ({ size, color, ...rest }) => {
 };
 
 IconComment.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconComment = React.memo ? React.memo(IconComment) : IconComment;

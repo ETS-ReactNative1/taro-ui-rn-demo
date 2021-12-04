@@ -28,7 +28,7 @@ let IconReddit = ({ size, color, ...rest }) => {
 };
 
 IconReddit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconReddit = React.memo ? React.memo(IconReddit) : IconReddit;

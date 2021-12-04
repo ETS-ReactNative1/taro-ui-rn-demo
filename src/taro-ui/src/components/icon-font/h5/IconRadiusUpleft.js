@@ -21,7 +21,7 @@ const IconRadiusUpleft = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRadiusUpleft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRadiusUpleft;

@@ -21,7 +21,7 @@ const IconAttachment = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAttachment.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAttachment;

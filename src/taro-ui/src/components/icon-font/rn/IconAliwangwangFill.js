@@ -16,7 +16,7 @@ let IconAliwangwangFill = ({ size, color, ...rest }) => {
 };
 
 IconAliwangwangFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAliwangwangFill = React.memo ? React.memo(IconAliwangwangFill) : IconAliwangwangFill;

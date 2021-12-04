@@ -20,7 +20,7 @@ let IconPiechart = ({ size, color, ...rest }) => {
 };
 
 IconPiechart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPiechart = React.memo ? React.memo(IconPiechart) : IconPiechart;

@@ -21,7 +21,7 @@ const IconProjectFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconProjectFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconProjectFill;

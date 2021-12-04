@@ -41,7 +41,7 @@ const IconAntCloud = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAntCloud.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAntCloud;

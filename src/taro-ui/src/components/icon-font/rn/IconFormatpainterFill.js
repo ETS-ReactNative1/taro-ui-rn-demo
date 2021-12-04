@@ -16,7 +16,7 @@ let IconFormatpainterFill = ({ size, color, ...rest }) => {
 };
 
 IconFormatpainterFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFormatpainterFill = React.memo ? React.memo(IconFormatpainterFill) : IconFormatpainterFill;

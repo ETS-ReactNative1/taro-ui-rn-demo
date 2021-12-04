@@ -16,7 +16,7 @@ let IconArrowup = ({ size, color, ...rest }) => {
 };
 
 IconArrowup.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconArrowup = React.memo ? React.memo(IconArrowup) : IconArrowup;

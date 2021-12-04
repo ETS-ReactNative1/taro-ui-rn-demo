@@ -25,7 +25,7 @@ const IconExport = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconExport.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconExport;

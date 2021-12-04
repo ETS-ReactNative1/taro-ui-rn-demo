@@ -16,7 +16,7 @@ let IconHome = ({ size, color, ...rest }) => {
 };
 
 IconHome.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconHome = React.memo ? React.memo(IconHome) : IconHome;

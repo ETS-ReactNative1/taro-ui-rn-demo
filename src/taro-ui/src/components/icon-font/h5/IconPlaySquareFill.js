@@ -21,7 +21,7 @@ const IconPlaySquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPlaySquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPlaySquareFill;

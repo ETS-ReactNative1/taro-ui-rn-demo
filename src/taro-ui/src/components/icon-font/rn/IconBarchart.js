@@ -20,7 +20,7 @@ let IconBarchart = ({ size, color, ...rest }) => {
 };
 
 IconBarchart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBarchart = React.memo ? React.memo(IconBarchart) : IconBarchart;

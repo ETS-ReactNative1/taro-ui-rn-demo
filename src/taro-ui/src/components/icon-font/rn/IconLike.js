@@ -16,7 +16,7 @@ let IconLike = ({ size, color, ...rest }) => {
 };
 
 IconLike.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLike = React.memo ? React.memo(IconLike) : IconLike;

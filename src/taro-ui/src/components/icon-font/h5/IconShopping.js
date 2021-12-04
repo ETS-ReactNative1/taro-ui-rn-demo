@@ -21,7 +21,7 @@ const IconShopping = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconShopping.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconShopping;

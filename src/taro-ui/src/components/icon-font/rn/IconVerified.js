@@ -24,7 +24,7 @@ let IconVerified = ({ size, color, ...rest }) => {
 };
 
 IconVerified.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconVerified = React.memo ? React.memo(IconVerified) : IconVerified;

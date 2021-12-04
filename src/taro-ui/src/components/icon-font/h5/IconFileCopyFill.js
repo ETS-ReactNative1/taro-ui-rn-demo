@@ -25,7 +25,7 @@ const IconFileCopyFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileCopyFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileCopyFill;

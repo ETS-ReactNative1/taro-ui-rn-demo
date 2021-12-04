@@ -20,7 +20,7 @@ let IconFilePpt = ({ size, color, ...rest }) => {
 };
 
 IconFilePpt.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFilePpt = React.memo ? React.memo(IconFilePpt) : IconFilePpt;

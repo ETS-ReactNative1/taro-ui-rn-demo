@@ -20,7 +20,7 @@ let IconTransaction = ({ size, color, ...rest }) => {
 };
 
 IconTransaction.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTransaction = React.memo ? React.memo(IconTransaction) : IconTransaction;

@@ -29,7 +29,7 @@ const IconFiledone = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFiledone.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFiledone;

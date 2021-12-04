@@ -16,7 +16,7 @@ let IconCloudFill = ({ size, color, ...rest }) => {
 };
 
 IconCloudFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCloudFill = React.memo ? React.memo(IconCloudFill) : IconCloudFill;

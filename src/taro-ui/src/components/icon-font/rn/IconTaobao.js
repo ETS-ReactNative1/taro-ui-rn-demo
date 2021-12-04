@@ -24,7 +24,7 @@ let IconTaobao = ({ size, color, ...rest }) => {
 };
 
 IconTaobao.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTaobao = React.memo ? React.memo(IconTaobao) : IconTaobao;

@@ -21,7 +21,7 @@ const IconFormatpainterFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFormatpainterFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFormatpainterFill;

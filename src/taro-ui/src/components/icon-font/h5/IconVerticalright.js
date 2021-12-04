@@ -21,7 +21,7 @@ const IconVerticalright = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVerticalright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVerticalright;

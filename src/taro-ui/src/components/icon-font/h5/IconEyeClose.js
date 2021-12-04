@@ -25,7 +25,7 @@ const IconEyeClose = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEyeClose.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEyeClose;

@@ -20,7 +20,7 @@ let IconPiechartCircleFil = ({ size, color, ...rest }) => {
 };
 
 IconPiechartCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPiechartCircleFil = React.memo ? React.memo(IconPiechartCircleFil) : IconPiechartCircleFil;

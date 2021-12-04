@@ -16,7 +16,7 @@ let IconDisconnect = ({ size, color, ...rest }) => {
 };
 
 IconDisconnect.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDisconnect = React.memo ? React.memo(IconDisconnect) : IconDisconnect;

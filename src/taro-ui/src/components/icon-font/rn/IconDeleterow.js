@@ -16,7 +16,7 @@ let IconDeleterow = ({ size, color, ...rest }) => {
 };
 
 IconDeleterow.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeleterow = React.memo ? React.memo(IconDeleterow) : IconDeleterow;

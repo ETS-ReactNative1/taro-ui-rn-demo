@@ -16,7 +16,7 @@ let IconRadiusUpright = ({ size, color, ...rest }) => {
 };
 
 IconRadiusUpright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRadiusUpright = React.memo ? React.memo(IconRadiusUpright) : IconRadiusUpright;

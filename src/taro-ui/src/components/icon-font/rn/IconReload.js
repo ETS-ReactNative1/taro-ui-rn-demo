@@ -16,7 +16,7 @@ let IconReload = ({ size, color, ...rest }) => {
 };
 
 IconReload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconReload = React.memo ? React.memo(IconReload) : IconReload;

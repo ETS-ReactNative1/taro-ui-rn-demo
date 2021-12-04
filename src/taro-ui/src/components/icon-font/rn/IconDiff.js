@@ -24,7 +24,7 @@ let IconDiff = ({ size, color, ...rest }) => {
 };
 
 IconDiff.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDiff = React.memo ? React.memo(IconDiff) : IconDiff;

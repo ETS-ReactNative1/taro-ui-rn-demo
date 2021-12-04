@@ -20,7 +20,7 @@ let IconPrinter = ({ size, color, ...rest }) => {
 };
 
 IconPrinter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPrinter = React.memo ? React.memo(IconPrinter) : IconPrinter;

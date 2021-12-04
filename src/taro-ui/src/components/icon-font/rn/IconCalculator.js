@@ -20,7 +20,7 @@ let IconCalculator = ({ size, color, ...rest }) => {
 };
 
 IconCalculator.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCalculator = React.memo ? React.memo(IconCalculator) : IconCalculator;

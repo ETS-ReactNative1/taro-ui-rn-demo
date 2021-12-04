@@ -20,7 +20,7 @@ let IconChromeFill = ({ size, color, ...rest }) => {
 };
 
 IconChromeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconChromeFill = React.memo ? React.memo(IconChromeFill) : IconChromeFill;

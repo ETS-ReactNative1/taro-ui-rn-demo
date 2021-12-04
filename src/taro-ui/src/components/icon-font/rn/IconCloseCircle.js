@@ -20,7 +20,7 @@ let IconCloseCircle = ({ size, color, ...rest }) => {
 };
 
 IconCloseCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCloseCircle = React.memo ? React.memo(IconCloseCircle) : IconCloseCircle;

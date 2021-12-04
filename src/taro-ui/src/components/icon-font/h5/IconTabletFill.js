@@ -21,7 +21,7 @@ const IconTabletFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTabletFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTabletFill;

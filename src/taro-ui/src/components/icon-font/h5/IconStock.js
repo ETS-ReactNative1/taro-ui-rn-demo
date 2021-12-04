@@ -21,7 +21,7 @@ const IconStock = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconStock.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconStock;

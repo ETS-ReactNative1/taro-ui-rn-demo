@@ -20,7 +20,7 @@ let IconRadiusSetting = ({ size, color, ...rest }) => {
 };
 
 IconRadiusSetting.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRadiusSetting = React.memo ? React.memo(IconRadiusSetting) : IconRadiusSetting;

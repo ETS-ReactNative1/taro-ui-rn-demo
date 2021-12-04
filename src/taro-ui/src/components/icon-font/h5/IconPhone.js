@@ -21,7 +21,7 @@ const IconPhone = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPhone.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPhone;

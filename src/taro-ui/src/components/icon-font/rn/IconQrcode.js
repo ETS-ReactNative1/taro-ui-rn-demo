@@ -32,7 +32,7 @@ let IconQrcode = ({ size, color, ...rest }) => {
 };
 
 IconQrcode.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconQrcode = React.memo ? React.memo(IconQrcode) : IconQrcode;

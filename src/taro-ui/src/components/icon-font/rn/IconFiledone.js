@@ -24,7 +24,7 @@ let IconFiledone = ({ size, color, ...rest }) => {
 };
 
 IconFiledone.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFiledone = React.memo ? React.memo(IconFiledone) : IconFiledone;

@@ -16,7 +16,7 @@ let IconOutdent = ({ size, color, ...rest }) => {
 };
 
 IconOutdent.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconOutdent = React.memo ? React.memo(IconOutdent) : IconOutdent;

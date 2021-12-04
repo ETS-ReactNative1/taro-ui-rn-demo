@@ -21,7 +21,7 @@ const IconDownSquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDownSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDownSquareFill;

@@ -16,7 +16,7 @@ let IconStrikethrough = ({ size, color, ...rest }) => {
 };
 
 IconStrikethrough.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconStrikethrough = React.memo ? React.memo(IconStrikethrough) : IconStrikethrough;

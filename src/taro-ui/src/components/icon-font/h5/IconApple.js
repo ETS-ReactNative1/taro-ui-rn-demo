@@ -25,7 +25,7 @@ const IconApple = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconApple.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconApple;

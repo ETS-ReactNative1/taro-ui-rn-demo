@@ -16,7 +16,7 @@ let IconSolitCells = ({ size, color, ...rest }) => {
 };
 
 IconSolitCells.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSolitCells = React.memo ? React.memo(IconSolitCells) : IconSolitCells;

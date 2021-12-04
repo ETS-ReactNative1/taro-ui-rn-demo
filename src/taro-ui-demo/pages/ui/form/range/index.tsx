@@ -36,7 +36,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 基础用法 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>基础用法</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content__padding'>
               <Text className='example-item'>
                 数值范围：{this.state.value1[0]}~{this.state.value1[1]}
               </Text>
@@ -51,7 +51,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 自定义样式 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>自定义样式</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content__padding'>
               <Text className='example-item'>
                 数值范围：{this.state.value2[0]}~{this.state.value2[1]}
               </Text>
@@ -65,7 +65,7 @@ export default class Index extends React.Component<{}, IndexState> {
           {/* 禁止状态 */}
           <View className='doc-body__panel'>
             <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>禁止状态</Text></View>
-            <View className='panel__content'>
+            <View className='panel__content__padding'>
               <AtRange value={[30, 50]} disabled />
             </View>
           </View>

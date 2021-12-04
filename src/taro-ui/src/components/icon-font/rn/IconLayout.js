@@ -16,7 +16,7 @@ let IconLayout = ({ size, color, ...rest }) => {
 };
 
 IconLayout.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLayout = React.memo ? React.memo(IconLayout) : IconLayout;

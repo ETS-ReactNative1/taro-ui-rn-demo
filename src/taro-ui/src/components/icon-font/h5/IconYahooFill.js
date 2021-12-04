@@ -21,7 +21,7 @@ const IconYahooFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconYahooFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconYahooFill;

@@ -24,7 +24,7 @@ let IconFileprotect = ({ size, color, ...rest }) => {
 };
 
 IconFileprotect.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileprotect = React.memo ? React.memo(IconFileprotect) : IconFileprotect;

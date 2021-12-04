@@ -25,7 +25,7 @@ const IconInsurance = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInsurance.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInsurance;

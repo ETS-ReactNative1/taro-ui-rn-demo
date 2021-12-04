@@ -29,7 +29,7 @@ const IconAndroid = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAndroid.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAndroid;

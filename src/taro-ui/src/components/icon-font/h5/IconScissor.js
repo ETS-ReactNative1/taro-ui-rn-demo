@@ -21,7 +21,7 @@ const IconScissor = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconScissor.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconScissor;

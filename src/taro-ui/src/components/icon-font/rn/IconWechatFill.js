@@ -20,7 +20,7 @@ let IconWechatFill = ({ size, color, ...rest }) => {
 };
 
 IconWechatFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWechatFill = React.memo ? React.memo(IconWechatFill) : IconWechatFill;

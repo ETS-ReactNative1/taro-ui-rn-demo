@@ -21,7 +21,7 @@ const IconAlert = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlert.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlert;

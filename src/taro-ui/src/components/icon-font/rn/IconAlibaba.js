@@ -16,7 +16,7 @@ let IconAlibaba = ({ size, color, ...rest }) => {
 };
 
 IconAlibaba.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAlibaba = React.memo ? React.memo(IconAlibaba) : IconAlibaba;

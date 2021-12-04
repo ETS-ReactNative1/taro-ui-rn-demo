@@ -21,7 +21,7 @@ const IconGoogleplusSquareF = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconGoogleplusSquareF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconGoogleplusSquareF;

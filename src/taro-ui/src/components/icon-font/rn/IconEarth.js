@@ -16,7 +16,7 @@ let IconEarth = ({ size, color, ...rest }) => {
 };
 
 IconEarth.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEarth = React.memo ? React.memo(IconEarth) : IconEarth;

@@ -29,7 +29,7 @@ const IconAudit = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAudit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAudit;

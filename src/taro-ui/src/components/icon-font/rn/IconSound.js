@@ -16,7 +16,7 @@ let IconSound = ({ size, color, ...rest }) => {
 };
 
 IconSound.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconSound = React.memo ? React.memo(IconSound) : IconSound;

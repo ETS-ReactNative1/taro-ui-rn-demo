@@ -29,7 +29,7 @@ const IconHeatmap = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconHeatmap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconHeatmap;

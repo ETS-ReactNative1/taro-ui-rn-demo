@@ -16,7 +16,7 @@ let IconHourglassFill = ({ size, color, ...rest }) => {
 };
 
 IconHourglassFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconHourglassFill = React.memo ? React.memo(IconHourglassFill) : IconHourglassFill;

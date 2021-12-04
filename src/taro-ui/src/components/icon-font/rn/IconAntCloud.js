@@ -36,7 +36,7 @@ let IconAntCloud = ({ size, color, ...rest }) => {
 };
 
 IconAntCloud.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAntCloud = React.memo ? React.memo(IconAntCloud) : IconAntCloud;

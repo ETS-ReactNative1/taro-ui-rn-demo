@@ -16,7 +16,7 @@ let IconRocketFill = ({ size, color, ...rest }) => {
 };
 
 IconRocketFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRocketFill = React.memo ? React.memo(IconRocketFill) : IconRocketFill;

@@ -16,7 +16,7 @@ let IconTaobaoSquareFill = ({ size, color, ...rest }) => {
 };
 
 IconTaobaoSquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTaobaoSquareFill = React.memo ? React.memo(IconTaobaoSquareFill) : IconTaobaoSquareFill;

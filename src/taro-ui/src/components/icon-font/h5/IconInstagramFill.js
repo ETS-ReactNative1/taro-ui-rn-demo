@@ -25,7 +25,7 @@ const IconInstagramFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconInstagramFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconInstagramFill;

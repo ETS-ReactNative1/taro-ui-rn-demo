@@ -20,7 +20,7 @@ let IconZoomin = ({ size, color, ...rest }) => {
 };
 
 IconZoomin.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconZoomin = React.memo ? React.memo(IconZoomin) : IconZoomin;

@@ -16,7 +16,7 @@ let IconStop = ({ size, color, ...rest }) => {
 };
 
 IconStop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconStop = React.memo ? React.memo(IconStop) : IconStop;

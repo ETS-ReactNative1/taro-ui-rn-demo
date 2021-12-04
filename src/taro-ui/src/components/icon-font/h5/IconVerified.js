@@ -29,7 +29,7 @@ const IconVerified = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconVerified.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconVerified;

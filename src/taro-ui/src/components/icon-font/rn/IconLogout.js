@@ -20,7 +20,7 @@ let IconLogout = ({ size, color, ...rest }) => {
 };
 
 IconLogout.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLogout = React.memo ? React.memo(IconLogout) : IconLogout;

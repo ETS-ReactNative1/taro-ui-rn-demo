@@ -25,7 +25,7 @@ const IconPoweroff = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPoweroff.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPoweroff;

@@ -16,7 +16,7 @@ let IconWrench = ({ size, color, ...rest }) => {
 };
 
 IconWrench.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWrench = React.memo ? React.memo(IconWrench) : IconWrench;

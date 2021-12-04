@@ -16,7 +16,7 @@ let IconFieldNumber = ({ size, color, ...rest }) => {
 };
 
 IconFieldNumber.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFieldNumber = React.memo ? React.memo(IconFieldNumber) : IconFieldNumber;

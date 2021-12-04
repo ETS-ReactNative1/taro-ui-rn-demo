@@ -25,7 +25,7 @@ const IconDownload = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDownload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDownload;

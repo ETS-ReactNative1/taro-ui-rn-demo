@@ -28,7 +28,7 @@ let IconDatabase = ({ size, color, ...rest }) => {
 };
 
 IconDatabase.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDatabase = React.memo ? React.memo(IconDatabase) : IconDatabase;

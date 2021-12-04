@@ -16,7 +16,7 @@ let IconBorderHorizontal = ({ size, color, ...rest }) => {
 };
 
 IconBorderHorizontal.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBorderHorizontal = React.memo ? React.memo(IconBorderHorizontal) : IconBorderHorizontal;

@@ -20,7 +20,7 @@ let IconTranslate = ({ size, color, ...rest }) => {
 };
 
 IconTranslate.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTranslate = React.memo ? React.memo(IconTranslate) : IconTranslate;

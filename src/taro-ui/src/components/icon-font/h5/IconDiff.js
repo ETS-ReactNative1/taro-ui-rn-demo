@@ -29,7 +29,7 @@ const IconDiff = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDiff.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDiff;

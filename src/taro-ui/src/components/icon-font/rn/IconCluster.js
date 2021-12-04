@@ -20,7 +20,7 @@ let IconCluster = ({ size, color, ...rest }) => {
 };
 
 IconCluster.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCluster = React.memo ? React.memo(IconCluster) : IconCluster;

@@ -16,7 +16,7 @@ let IconZhihu = ({ size, color, ...rest }) => {
 };
 
 IconZhihu.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconZhihu = React.memo ? React.memo(IconZhihu) : IconZhihu;

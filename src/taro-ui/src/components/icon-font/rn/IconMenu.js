@@ -16,7 +16,7 @@ let IconMenu = ({ size, color, ...rest }) => {
 };
 
 IconMenu.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMenu = React.memo ? React.memo(IconMenu) : IconMenu;

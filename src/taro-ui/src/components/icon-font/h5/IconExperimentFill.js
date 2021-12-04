@@ -25,7 +25,7 @@ const IconExperimentFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconExperimentFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconExperimentFill;

@@ -20,7 +20,7 @@ let IconRead = ({ size, color, ...rest }) => {
 };
 
 IconRead.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconRead = React.memo ? React.memo(IconRead) : IconRead;

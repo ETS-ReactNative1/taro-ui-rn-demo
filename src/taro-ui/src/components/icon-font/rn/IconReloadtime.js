@@ -20,7 +20,7 @@ let IconReloadtime = ({ size, color, ...rest }) => {
 };
 
 IconReloadtime.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconReloadtime = React.memo ? React.memo(IconReloadtime) : IconReloadtime;

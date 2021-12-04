@@ -21,7 +21,7 @@ const IconBoxplotFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBoxplotFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBoxplotFill;

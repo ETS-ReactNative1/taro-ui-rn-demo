@@ -24,7 +24,7 @@ let IconWifi = ({ size, color, ...rest }) => {
 };
 
 IconWifi.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWifi = React.memo ? React.memo(IconWifi) : IconWifi;

@@ -21,7 +21,7 @@ const IconBorderInner = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBorderInner.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBorderInner;

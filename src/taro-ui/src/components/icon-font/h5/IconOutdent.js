@@ -21,7 +21,7 @@ const IconOutdent = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconOutdent.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconOutdent;

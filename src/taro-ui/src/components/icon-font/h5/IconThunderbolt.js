@@ -21,7 +21,7 @@ const IconThunderbolt = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconThunderbolt.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconThunderbolt;

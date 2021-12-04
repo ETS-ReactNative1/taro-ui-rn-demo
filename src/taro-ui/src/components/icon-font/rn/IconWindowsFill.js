@@ -16,7 +16,7 @@ let IconWindowsFill = ({ size, color, ...rest }) => {
 };
 
 IconWindowsFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWindowsFill = React.memo ? React.memo(IconWindowsFill) : IconWindowsFill;

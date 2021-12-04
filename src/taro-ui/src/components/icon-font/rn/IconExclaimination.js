@@ -20,7 +20,7 @@ let IconExclaimination = ({ size, color, ...rest }) => {
 };
 
 IconExclaimination.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconExclaimination = React.memo ? React.memo(IconExclaimination) : IconExclaimination;

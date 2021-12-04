@@ -24,7 +24,7 @@ let IconFolderView = ({ size, color, ...rest }) => {
 };
 
 IconFolderView.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFolderView = React.memo ? React.memo(IconFolderView) : IconFolderView;

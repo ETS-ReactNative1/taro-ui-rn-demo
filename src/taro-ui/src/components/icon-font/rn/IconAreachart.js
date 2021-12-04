@@ -20,7 +20,7 @@ let IconAreachart = ({ size, color, ...rest }) => {
 };
 
 IconAreachart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAreachart = React.memo ? React.memo(IconAreachart) : IconAreachart;

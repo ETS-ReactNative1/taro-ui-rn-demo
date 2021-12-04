@@ -16,7 +16,7 @@ let IconMan = ({ size, color, ...rest }) => {
 };
 
 IconMan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconMan = React.memo ? React.memo(IconMan) : IconMan;

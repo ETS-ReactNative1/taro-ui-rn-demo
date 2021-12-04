@@ -25,7 +25,7 @@ const IconPrinter = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconPrinter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconPrinter;

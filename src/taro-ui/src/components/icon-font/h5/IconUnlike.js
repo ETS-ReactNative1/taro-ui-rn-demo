@@ -21,7 +21,7 @@ const IconUnlike = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconUnlike.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconUnlike;

@@ -16,7 +16,7 @@ let IconFullscreen = ({ size, color, ...rest }) => {
 };
 
 IconFullscreen.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFullscreen = React.memo ? React.memo(IconFullscreen) : IconFullscreen;

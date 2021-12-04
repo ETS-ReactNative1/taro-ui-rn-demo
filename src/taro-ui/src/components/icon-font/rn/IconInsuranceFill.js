@@ -20,7 +20,7 @@ let IconInsuranceFill = ({ size, color, ...rest }) => {
 };
 
 IconInsuranceFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconInsuranceFill = React.memo ? React.memo(IconInsuranceFill) : IconInsuranceFill;

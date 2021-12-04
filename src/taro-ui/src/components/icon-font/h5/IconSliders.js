@@ -21,7 +21,7 @@ const IconSliders = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSliders.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSliders;

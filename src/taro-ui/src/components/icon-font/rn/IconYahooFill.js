@@ -16,7 +16,7 @@ let IconYahooFill = ({ size, color, ...rest }) => {
 };
 
 IconYahooFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYahooFill = React.memo ? React.memo(IconYahooFill) : IconYahooFill;

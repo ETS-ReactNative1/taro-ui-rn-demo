@@ -29,7 +29,7 @@ const IconWifi = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconWifi.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconWifi;

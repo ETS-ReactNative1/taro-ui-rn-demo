@@ -21,7 +21,7 @@ const IconColumnWidth = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconColumnWidth.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconColumnWidth;

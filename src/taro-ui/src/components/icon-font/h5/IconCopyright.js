@@ -25,7 +25,7 @@ const IconCopyright = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCopyright.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCopyright;

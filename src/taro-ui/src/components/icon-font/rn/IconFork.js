@@ -16,7 +16,7 @@ let IconFork = ({ size, color, ...rest }) => {
 };
 
 IconFork.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFork = React.memo ? React.memo(IconFork) : IconFork;

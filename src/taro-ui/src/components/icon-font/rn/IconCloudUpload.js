@@ -20,7 +20,7 @@ let IconCloudUpload = ({ size, color, ...rest }) => {
 };
 
 IconCloudUpload.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCloudUpload = React.memo ? React.memo(IconCloudUpload) : IconCloudUpload;

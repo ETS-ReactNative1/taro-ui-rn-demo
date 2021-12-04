@@ -16,7 +16,7 @@ let IconDrag = ({ size, color, ...rest }) => {
 };
 
 IconDrag.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDrag = React.memo ? React.memo(IconDrag) : IconDrag;

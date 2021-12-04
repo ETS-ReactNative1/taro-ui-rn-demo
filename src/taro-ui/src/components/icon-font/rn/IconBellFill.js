@@ -16,7 +16,7 @@ let IconBellFill = ({ size, color, ...rest }) => {
 };
 
 IconBellFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBellFill = React.memo ? React.memo(IconBellFill) : IconBellFill;

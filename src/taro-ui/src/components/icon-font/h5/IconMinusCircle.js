@@ -25,7 +25,7 @@ const IconMinusCircle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconMinusCircle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconMinusCircle;

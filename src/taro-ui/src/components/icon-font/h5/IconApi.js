@@ -21,7 +21,7 @@ const IconApi = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconApi.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconApi;

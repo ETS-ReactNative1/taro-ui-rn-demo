@@ -16,7 +16,7 @@ let IconAppstoreFill = ({ size, color, ...rest }) => {
 };
 
 IconAppstoreFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAppstoreFill = React.memo ? React.memo(IconAppstoreFill) : IconAppstoreFill;

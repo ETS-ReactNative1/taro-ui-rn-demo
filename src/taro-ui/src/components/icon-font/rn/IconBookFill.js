@@ -16,7 +16,7 @@ let IconBookFill = ({ size, color, ...rest }) => {
 };
 
 IconBookFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBookFill = React.memo ? React.memo(IconBookFill) : IconBookFill;

@@ -20,7 +20,7 @@ let IconYoutube = ({ size, color, ...rest }) => {
 };
 
 IconYoutube.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconYoutube = React.memo ? React.memo(IconYoutube) : IconYoutube;

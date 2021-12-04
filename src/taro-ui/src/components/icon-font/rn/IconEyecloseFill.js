@@ -16,7 +16,7 @@ let IconEyecloseFill = ({ size, color, ...rest }) => {
 };
 
 IconEyecloseFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconEyecloseFill = React.memo ? React.memo(IconEyecloseFill) : IconEyecloseFill;

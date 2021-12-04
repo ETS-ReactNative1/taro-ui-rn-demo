@@ -16,7 +16,7 @@ let IconPartition = ({ size, color, ...rest }) => {
 };
 
 IconPartition.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPartition = React.memo ? React.memo(IconPartition) : IconPartition;

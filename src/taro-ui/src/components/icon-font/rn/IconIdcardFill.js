@@ -20,7 +20,7 @@ let IconIdcardFill = ({ size, color, ...rest }) => {
 };
 
 IconIdcardFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconIdcardFill = React.memo ? React.memo(IconIdcardFill) : IconIdcardFill;

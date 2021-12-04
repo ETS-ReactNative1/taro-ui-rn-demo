@@ -16,7 +16,7 @@ let IconCodepen = ({ size, color, ...rest }) => {
 };
 
 IconCodepen.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodepen = React.memo ? React.memo(IconCodepen) : IconCodepen;

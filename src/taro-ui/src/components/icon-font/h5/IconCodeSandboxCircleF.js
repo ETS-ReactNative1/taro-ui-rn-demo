@@ -25,7 +25,7 @@ const IconCodeSandboxCircleF = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconCodeSandboxCircleF.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconCodeSandboxCircleF;

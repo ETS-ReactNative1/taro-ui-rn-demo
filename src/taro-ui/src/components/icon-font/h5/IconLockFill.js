@@ -21,7 +21,7 @@ const IconLockFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLockFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLockFill;

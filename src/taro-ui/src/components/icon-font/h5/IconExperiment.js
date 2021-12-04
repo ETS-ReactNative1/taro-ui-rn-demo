@@ -25,7 +25,7 @@ const IconExperiment = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconExperiment.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconExperiment;

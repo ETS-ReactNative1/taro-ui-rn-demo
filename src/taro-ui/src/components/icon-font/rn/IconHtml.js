@@ -20,7 +20,7 @@ let IconHtml = ({ size, color, ...rest }) => {
 };
 
 IconHtml.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconHtml = React.memo ? React.memo(IconHtml) : IconHtml;

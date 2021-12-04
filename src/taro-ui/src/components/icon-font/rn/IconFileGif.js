@@ -24,7 +24,7 @@ let IconFileGif = ({ size, color, ...rest }) => {
 };
 
 IconFileGif.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFileGif = React.memo ? React.memo(IconFileGif) : IconFileGif;

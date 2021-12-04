@@ -16,7 +16,7 @@ let IconBank = ({ size, color, ...rest }) => {
 };
 
 IconBank.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBank = React.memo ? React.memo(IconBank) : IconBank;

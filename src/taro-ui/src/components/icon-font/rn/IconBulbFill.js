@@ -16,7 +16,7 @@ let IconBulbFill = ({ size, color, ...rest }) => {
 };
 
 IconBulbFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconBulbFill = React.memo ? React.memo(IconBulbFill) : IconBulbFill;

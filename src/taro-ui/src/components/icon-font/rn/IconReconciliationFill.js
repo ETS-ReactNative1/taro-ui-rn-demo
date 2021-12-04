@@ -24,7 +24,7 @@ let IconReconciliationFill = ({ size, color, ...rest }) => {
 };
 
 IconReconciliationFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconReconciliationFill = React.memo ? React.memo(IconReconciliationFill) : IconReconciliationFill;

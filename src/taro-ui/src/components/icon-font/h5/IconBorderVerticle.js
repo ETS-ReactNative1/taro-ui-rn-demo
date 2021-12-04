@@ -21,7 +21,7 @@ const IconBorderVerticle = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBorderVerticle.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBorderVerticle;

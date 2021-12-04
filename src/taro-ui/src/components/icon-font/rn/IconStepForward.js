@@ -16,7 +16,7 @@ let IconStepForward = ({ size, color, ...rest }) => {
 };
 
 IconStepForward.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconStepForward = React.memo ? React.memo(IconStepForward) : IconStepForward;

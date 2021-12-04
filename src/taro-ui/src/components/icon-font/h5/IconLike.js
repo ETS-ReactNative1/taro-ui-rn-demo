@@ -21,7 +21,7 @@ const IconLike = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconLike.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconLike;

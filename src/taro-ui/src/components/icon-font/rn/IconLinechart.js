@@ -20,7 +20,7 @@ let IconLinechart = ({ size, color, ...rest }) => {
 };
 
 IconLinechart.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconLinechart = React.memo ? React.memo(IconLinechart) : IconLinechart;

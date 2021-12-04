@@ -25,7 +25,7 @@ const IconRotateLeft = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconRotateLeft.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconRotateLeft;

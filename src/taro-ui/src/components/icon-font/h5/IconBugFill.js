@@ -25,7 +25,7 @@ const IconBugFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBugFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBugFill;

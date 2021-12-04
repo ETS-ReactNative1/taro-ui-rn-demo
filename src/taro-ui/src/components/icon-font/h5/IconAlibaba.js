@@ -21,7 +21,7 @@ const IconAlibaba = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlibaba.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlibaba;

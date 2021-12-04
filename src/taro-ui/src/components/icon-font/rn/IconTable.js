@@ -16,7 +16,7 @@ let IconTable = ({ size, color, ...rest }) => {
 };
 
 IconTable.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTable = React.memo ? React.memo(IconTable) : IconTable;

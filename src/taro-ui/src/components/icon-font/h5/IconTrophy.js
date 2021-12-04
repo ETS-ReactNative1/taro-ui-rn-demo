@@ -21,7 +21,7 @@ const IconTrophy = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconTrophy.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconTrophy;

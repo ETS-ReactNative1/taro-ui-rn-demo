@@ -57,6 +57,7 @@
     "@tarojs/runtime": "3.3.15",
     "@tarojs/taro": "3.3.15",
     "@tarojs/taro-rn": "3.3.15",
+    "add": "^2.0.6",
     "classnames": "^2.3.1",
     "expo-av": "~9.2.3",
     "expo-barcode-scanner": "~10.2.2",
@@ -74,6 +75,7 @@
     "react-dom": "^17.0.2",
     "react-native": "^0.66.0",
     "react-native-animated-spinkit": "^1.5.2",
+    "react-native-collapsible": "^1.6.0",
     "react-native-device-info": "~8.4.8",
     "react-native-flash-message": "^0.2.0",
     "react-native-gesture-handler": "~1.10.3",
@@ -88,8 +90,10 @@
     "react-native-text-ticker": "^1.14.0",
     "react-native-unimodules": "~0.14.10",
     "react-native-webview": "~11.14.3",
+    "rn-range-slider": "^2.1.1",
     "unimodules-constants-interface": "^6.1.0",
-    "unimodules-font-interface": "^6.1.0"
+    "unimodules-font-interface": "^6.1.0",
+    "yarn": "^1.22.17"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",

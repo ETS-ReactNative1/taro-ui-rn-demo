@@ -24,7 +24,7 @@ let IconCodepenCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconCodepenCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCodepenCircleFill = React.memo ? React.memo(IconCodepenCircleFill) : IconCodepenCircleFill;

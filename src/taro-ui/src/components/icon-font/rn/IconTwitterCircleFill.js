@@ -16,7 +16,7 @@ let IconTwitterCircleFill = ({ size, color, ...rest }) => {
 };
 
 IconTwitterCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTwitterCircleFill = React.memo ? React.memo(IconTwitterCircleFill) : IconTwitterCircleFill;

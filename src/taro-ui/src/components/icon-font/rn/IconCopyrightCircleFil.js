@@ -16,7 +16,7 @@ let IconCopyrightCircleFil = ({ size, color, ...rest }) => {
 };
 
 IconCopyrightCircleFil.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCopyrightCircleFil = React.memo ? React.memo(IconCopyrightCircleFil) : IconCopyrightCircleFil;

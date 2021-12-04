@@ -21,7 +21,7 @@ const IconFileFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFileFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFileFill;

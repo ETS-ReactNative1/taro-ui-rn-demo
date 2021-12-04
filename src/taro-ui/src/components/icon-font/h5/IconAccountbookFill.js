@@ -21,7 +21,7 @@ const IconAccountbookFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAccountbookFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAccountbookFill;

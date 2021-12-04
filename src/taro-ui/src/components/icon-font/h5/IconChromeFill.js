@@ -25,7 +25,7 @@ const IconChromeFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconChromeFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconChromeFill;

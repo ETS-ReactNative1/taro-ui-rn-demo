@@ -32,7 +32,7 @@ let IconPointmap = ({ size, color, ...rest }) => {
 };
 
 IconPointmap.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconPointmap = React.memo ? React.memo(IconPointmap) : IconPointmap;

@@ -16,7 +16,7 @@ let IconWindows = ({ size, color, ...rest }) => {
 };
 
 IconWindows.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWindows = React.memo ? React.memo(IconWindows) : IconWindows;

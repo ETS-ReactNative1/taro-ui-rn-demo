@@ -25,7 +25,7 @@ const IconAlipaySquareFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconAlipaySquareFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconAlipaySquareFill;

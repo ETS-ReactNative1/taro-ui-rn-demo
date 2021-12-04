@@ -29,7 +29,7 @@ const IconDribbbleCircleFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconDribbbleCircleFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconDribbbleCircleFill;

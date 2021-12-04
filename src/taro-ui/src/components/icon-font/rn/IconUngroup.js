@@ -16,7 +16,7 @@ let IconUngroup = ({ size, color, ...rest }) => {
 };
 
 IconUngroup.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconUngroup = React.memo ? React.memo(IconUngroup) : IconUngroup;

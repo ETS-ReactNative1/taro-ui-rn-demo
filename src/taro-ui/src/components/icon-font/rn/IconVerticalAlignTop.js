@@ -16,7 +16,7 @@ let IconVerticalAlignTop = ({ size, color, ...rest }) => {
 };
 
 IconVerticalAlignTop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconVerticalAlignTop = React.memo ? React.memo(IconVerticalAlignTop) : IconVerticalAlignTop;

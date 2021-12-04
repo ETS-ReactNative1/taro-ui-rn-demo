@@ -21,7 +21,7 @@ const IconBorderHorizontal = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconBorderHorizontal.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconBorderHorizontal;

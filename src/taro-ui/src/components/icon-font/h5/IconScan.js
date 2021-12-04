@@ -21,7 +21,7 @@ const IconScan = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconScan.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconScan;

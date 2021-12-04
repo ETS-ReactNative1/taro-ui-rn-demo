@@ -6,6 +6,7 @@
     position: relative;
     padding: $spacing-v-lg $spacing-h-lg;
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 100%;
     min-height: $font-size-lg;
@@ -24,9 +25,8 @@
 
   &__info {
     flex: 1;
-    text-align: left;
-    font-size: $font-size-lg;
-    line-height: 1.6 * $font-size-lg;
+    display: flex;
+    flex-direction: column;
 
     &__title {
       @include line;

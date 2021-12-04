@@ -21,7 +21,7 @@ const IconYuque = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconYuque.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconYuque;

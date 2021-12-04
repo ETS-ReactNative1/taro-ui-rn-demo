@@ -21,7 +21,7 @@ const IconFilterFill = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconFilterFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconFilterFill;

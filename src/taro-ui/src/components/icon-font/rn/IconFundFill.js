@@ -16,7 +16,7 @@ let IconFundFill = ({ size, color, ...rest }) => {
 };
 
 IconFundFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFundFill = React.memo ? React.memo(IconFundFill) : IconFundFill;

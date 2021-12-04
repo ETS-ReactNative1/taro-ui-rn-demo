@@ -16,7 +16,7 @@ let IconCarFill = ({ size, color, ...rest }) => {
 };
 
 IconCarFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCarFill = React.memo ? React.memo(IconCarFill) : IconCarFill;

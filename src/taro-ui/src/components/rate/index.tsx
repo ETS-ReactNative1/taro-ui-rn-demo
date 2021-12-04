@@ -1,11 +1,12 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtRateProps } from '../../../types/rate'
-import { pxTransform } from '../../common/utils'
 import '../../style/components/rate.scss'
+import IconFont from '../icon-font'
 
 export default class AtRate extends React.Component<AtRateProps> {
   public static defaultProps: AtRateProps
@@ -26,47 +27,42 @@ export default class AtRate extends React.Component<AtRateProps> {
     } = this.props
 
     const iconStyle = {
-      marginRight: pxTransform(margin)
+      marginRight: Taro.pxTransform(margin)
     }
-    const starIconStyle = {
-      fontSize: size ? `${size}px` : ''
+    const starIconStyle: React.CSSProperties = {}
+    if (size) {
+      starIconStyle.fontSize = Taro.pxTransform(size);
     }
 
     // 生成星星颜色 className 数组，方便在jsx中直接map
     const classNameArr: string[] = []
+    const icons: string[] = []
     const floorValue = Math.floor(value)
     const ceilValue = Math.ceil(value)
     for (let i = 0; i < max; i++) {
       if (floorValue > i) {
-        classNameArr.push('at-rate__icon at-rate__icon--on')
+        icons.push('starfull');
       } else if (ceilValue - 1 === i) {
-        classNameArr.push('at-rate__icon at-rate__icon--half')
+        icons.push('starhalf');
       } else {
-        classNameArr.push('at-rate__icon at-rate__icon--off')
+        icons.push('starempty');
       }
     }
 
     return (
       <View className={classNames('at-rate', className)} style={customStyle}>
-        {classNameArr.map((cls, i) => (
-          <View
-            className={cls}
-            key={`at-rate-star-${i}`}
-            style={iconStyle}
-            onClick={this.handleClick.bind(this, i + 1)}
-          >
-            <Text
-              className='at-icon at-icon-star-2'
-              style={starIconStyle}
-            />
-            <View className='at-rate__left'>
-              <Text
-                className='at-icon at-icon-star-2'
-                style={starIconStyle}
-              />
+        {icons.map((item, i) => {
+          return (
+            <View
+              key={`at-rate-star-${i}`}
+              className={classNames('at-rate__star', `at-rate__star-${i}`)}
+              style={iconStyle}
+              onClick={this.handleClick.bind(this, i + 1)}
+            >
+              <IconFont name={item} size={36} color='#FFCA3E' />
             </View>
-          </View>
-        ))}
+          );
+        })}
       </View>
     )
   }

@@ -16,7 +16,7 @@ let IconCreditcardFill = ({ size, color, ...rest }) => {
 };
 
 IconCreditcardFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconCreditcardFill = React.memo ? React.memo(IconCreditcardFill) : IconCreditcardFill;

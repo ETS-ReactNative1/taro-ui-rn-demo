@@ -16,7 +16,7 @@ let IconDeleteFill = ({ size, color, ...rest }) => {
 };
 
 IconDeleteFill.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconDeleteFill = React.memo ? React.memo(IconDeleteFill) : IconDeleteFill;

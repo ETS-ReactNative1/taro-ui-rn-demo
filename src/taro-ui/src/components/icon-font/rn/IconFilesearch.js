@@ -24,7 +24,7 @@ let IconFilesearch = ({ size, color, ...rest }) => {
 };
 
 IconFilesearch.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFilesearch = React.memo ? React.memo(IconFilesearch) : IconFilesearch;

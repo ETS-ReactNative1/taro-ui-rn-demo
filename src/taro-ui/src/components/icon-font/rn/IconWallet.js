@@ -20,7 +20,7 @@ let IconWallet = ({ size, color, ...rest }) => {
 };
 
 IconWallet.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconWallet = React.memo ? React.memo(IconWallet) : IconWallet;

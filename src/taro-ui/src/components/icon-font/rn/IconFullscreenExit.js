@@ -16,7 +16,7 @@ let IconFullscreenExit = ({ size, color, ...rest }) => {
 };
 
 IconFullscreenExit.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconFullscreenExit = React.memo ? React.memo(IconFullscreenExit) : IconFullscreenExit;

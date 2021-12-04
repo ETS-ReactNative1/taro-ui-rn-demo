@@ -24,7 +24,7 @@ let IconAndroid = ({ size, color, ...rest }) => {
 };
 
 IconAndroid.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconAndroid = React.memo ? React.memo(IconAndroid) : IconAndroid;

@@ -25,7 +25,7 @@ const IconSkype = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSkype.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSkype;

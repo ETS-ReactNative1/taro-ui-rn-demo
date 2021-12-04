@@ -21,7 +21,7 @@ const IconEnter = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconEnter.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconEnter;

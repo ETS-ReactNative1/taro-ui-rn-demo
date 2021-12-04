@@ -16,7 +16,7 @@ let IconTotop = ({ size, color, ...rest }) => {
 };
 
 IconTotop.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconTotop = React.memo ? React.memo(IconTotop) : IconTotop;

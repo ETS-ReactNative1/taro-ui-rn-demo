@@ -33,7 +33,7 @@ const IconSmile = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSmile.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSmile;

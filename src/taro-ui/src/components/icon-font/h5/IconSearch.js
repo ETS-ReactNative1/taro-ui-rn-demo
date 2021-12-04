@@ -21,7 +21,7 @@ const IconSearch = ({ size, color, style: _style, ...rest }) => {
 };
 
 IconSearch.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 export default IconSearch;

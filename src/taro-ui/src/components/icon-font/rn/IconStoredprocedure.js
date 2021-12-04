@@ -16,7 +16,7 @@ let IconStoredprocedure = ({ size, color, ...rest }) => {
 };
 
 IconStoredprocedure.defaultProps = {
-  size: 18,
+  size: 36,
 };
 
 IconStoredprocedure = React.memo ? React.memo(IconStoredprocedure) : IconStoredprocedure;
