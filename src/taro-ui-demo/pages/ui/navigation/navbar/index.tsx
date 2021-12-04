@@ -130,7 +130,7 @@ export default class Index extends React.Component {
                 title='NavBar 导航栏示例'
                 leftText='返回'
                 rightFirstIconType='bullet-list'
-                rightSecondIconType={{ value: 'user', size: 36, color: 'red' }}
+                rightSecondIconType={{ value: 'user', size: 48, color: 'red' }}
               />
             </View>
           </View>

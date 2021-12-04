@@ -129,15 +129,18 @@ export default class DrawerPage extends React.Component<{}, DrawerPageState> {
                       onClick={this.onItemClick.bind(this, index)}
                       key={`drawer-item-${index}`}
                     >
-                      {item}
-                      {index !== 3 && icons[index] && (
-                        <AtIcon value={icons[index]} size='20' />
+                      <Text className='drawer-item--title'>
+                        {item}
+                      </Text>
+                      {index !== 3 && !!icons[index] && (
+                        <AtIcon value={icons[index]} size={40} />
                       )}
-                      {index === 3 && icons[index] && (
+                      {index === 3 && !!icons[index] && (
                         <AtBadge value='3'>
-                          <AtIcon value={icons[index]} size='20' />
+                          <AtIcon value={icons[index]} size={40} />
                         </AtBadge>
                       )}
+                      <View className='drawer-item--rest' />
                     </View>
                   ))}
                 </AtDrawer>

@@ -5,9 +5,8 @@ import Taro from '@tarojs/taro';
 import { Text, View } from '@tarojs/components'
 import { ITouchEvent } from '@tarojs/components/types/common'
 import { AtNavBarProps } from '../../../types/nav-bar'
-import { mergeStyle } from '../../common/utils'
 import '../../style/components/nav-bar.scss';
-import IconFont from '../icon-font';
+import AtIcon from '../icon';
 
 export default class AtNavBar extends React.Component<AtNavBarProps> {
   public static defaultProps: AtNavBarProps
@@ -42,49 +41,27 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
     const linkStyle: React.CSSProperties = { color }
 
     const defaultIconInfo = {
-      customStyle: '',
+      customStyle: {},
       className: '',
-      prefixClass: 'at-icon',
       value: '',
-      color: '',
-      size: 24
+      color: '#6190E8',
+      size: 48
     }
 
-    const leftIconInfo =
+    const leftIconInfo: any =
       leftIconType instanceof Object
         ? { ...defaultIconInfo, ...leftIconType }
         : { ...defaultIconInfo, value: leftIconType }
-    const leftIconClass = classNames(
-      leftIconInfo.prefixClass,
-      {
-        [`${leftIconInfo.prefixClass}-${leftIconInfo.value}`]: leftIconInfo.value
-      },
-      leftIconInfo.className
-    )
 
     const rightFirstIconInfo =
       rightFirstIconType instanceof Object
         ? { ...defaultIconInfo, ...rightFirstIconType }
         : { ...defaultIconInfo, value: rightFirstIconType }
-    const rightFirstIconClass = classNames(
-      rightFirstIconInfo.prefixClass,
-      {
-        [`${rightFirstIconInfo.prefixClass}-${rightFirstIconInfo.value}`]: rightFirstIconInfo.value
-      },
-      rightFirstIconInfo.className
-    )
 
     const rightSecondIconInfo =
       rightSecondIconType instanceof Object
         ? { ...defaultIconInfo, ...rightSecondIconType }
         : { ...defaultIconInfo, value: rightSecondIconType }
-    const rightSecondIconClass = classNames(
-      rightSecondIconInfo.prefixClass,
-      {
-        [`${rightSecondIconInfo.prefixClass}-${rightSecondIconInfo.value}`]: rightSecondIconInfo.value
-      },
-      rightSecondIconInfo.className
-    )
 
     return (
       <View
@@ -104,15 +81,24 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
           style={linkStyle}
         >
           {!!leftIconType && (
-            <IconFont name={leftIconInfo.value} size={48} />
+            <AtIcon {...leftIconInfo} />
           )}
-          <Text className='at-nav-bar__left-view__text'>{leftText}</Text>
+          {!!leftText && (
+            <Text className='at-nav-bar__left-view__text'>{leftText}</Text>
+          )}
         </View>
-        <View className='at-nav-bar__title'>
-          <Text className='at-nav-bar__title__text' numberOfLines={1}>
+
+        <View
+          className={classNames('at-nav-bar__title', `at-nav-bar__title-${Taro.getEnv()}`)}
+        >
+          <Text
+            className={classNames('at-nav-bar__title__text', `at-nav-bar__title__text-${Taro.getEnv()}`)}
+            numberOfLines={1}
+          >
             {title || this.props.children}
           </Text>
         </View>
+
         <View className='at-nav-bar__right-view'>
           <View
             className={classNames({
@@ -122,17 +108,8 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
             style={linkStyle}
             onClick={this.handleClickNd.bind(this)}
           >
-            {rightSecondIconType && (
-              <Text
-                className={rightSecondIconClass}
-                style={mergeStyle(
-                  {
-                    color: rightSecondIconInfo.color,
-                    fontSize: Taro.pxTransform(parseInt(rightSecondIconInfo.size.toString()) * 2),
-                  },
-                  rightSecondIconInfo.customStyle
-                )}
-              />
+            {!!rightSecondIconType && (
+              <AtIcon {...rightSecondIconInfo} />
             )}
           </View>
           <View
@@ -143,17 +120,8 @@ export default class AtNavBar extends React.Component<AtNavBarProps> {
             style={linkStyle}
             onClick={this.handleClickSt.bind(this)}
           >
-            {rightFirstIconType && (
-              <Text
-                className={rightFirstIconClass}
-                style={mergeStyle(
-                  {
-                    color: rightFirstIconInfo.color,
-                    fontSize: Taro.pxTransform(parseInt(rightFirstIconInfo.size.toString()) * 2),
-                  },
-                  rightFirstIconInfo.customStyle
-                )}
-              />
+            {!!rightFirstIconType && (
+              <AtIcon {...rightFirstIconInfo} />
             )}
           </View>
         </View>

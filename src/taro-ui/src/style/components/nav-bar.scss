@@ -13,10 +13,11 @@ $at-nav-bar-back-font-size: 30px;
   justify-content: center;
   width: 100%;
   background-color: $color-bg;
-  box-sizing: border-box;
+  //box-sizing: border-box;
   white-space: nowrap;
   overflow: hidden;
   @include hairline-bottom();
+  //border-bottom-width: 2px;
 
   /* elements */
   &__left-view {
@@ -26,26 +27,20 @@ $at-nav-bar-back-font-size: 30px;
     padding-left: $at-nav-bar-spacing-h;
     padding-right: $at-nav-bar-spacing-h;
     height: 100%;
-    font-size: $at-nav-bar-font-size;
-    text-align: left;
     text-overflow: ellipsis;
     overflow: hidden;
     @include active;
     display: flex;
     flex-direction: row;
-
-    .at-icon {
-      font-size: 48px;
-    }
+    align-items: center;
 
     &__text {
       //display: inline-block;
       padding-left: $at-nav-bar-spacing-h;
-      height: 100%;
+      //height: 100%;
       font-size: $at-nav-bar-back-font-size;
       color: $at-nav-bar-link-color;
-      vertical-align: middle;
-      line-height: $line-height-base * $at-nav-bar-back-font-size;
+      //line-height: $line-height-base * $at-nav-bar-back-font-size;
       @include line;
     }
   }
@@ -68,19 +63,23 @@ $at-nav-bar-back-font-size: 30px;
     align-items: center;
     @include line;
     &__text {
-      line-height: $line-height-base * $at-nav-bar-font-size;
+      //line-height: $line-height-base * $at-nav-bar-font-size;
       color: $at-nav-bar-title-color;
       font-size: $at-nav-bar-font-size;
+      //&-RN {
+      //  line-height: $at-nav-bar-font-size + $spacing-h-sm;
+      //}
     }
   }
 
   &__container {
+    flex: 1;
     //display: inline-block;
     padding-top: $at-nav-bar-spacing-v;
     padding-bottom: $at-nav-bar-spacing-v;
     padding-left: $at-nav-bar-spacing-h;
     padding-right: $at-nav-bar-spacing-h;
-    width: 50%;
+    //width: 50%;
     height: 100%;
     font-size: $at-nav-bar-font-size;
     text-align: center;
@@ -99,6 +98,7 @@ $at-nav-bar-back-font-size: 30px;
 
   /* modifiers */
   &--no-border {
+    border-bottom-width: 0;
     &::after {
       border-bottom-width: 0;
     }

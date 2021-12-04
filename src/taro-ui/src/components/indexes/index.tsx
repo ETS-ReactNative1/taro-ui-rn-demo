@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import { ScrollView, View } from '@tarojs/components'
+import { ScrollView, View, Text } from '@tarojs/components'
 import { CommonEvent, ITouchEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtIndexesProps, AtIndexesState, Item } from '../../../types/indexes'
@@ -193,7 +193,7 @@ export default class AtIndexes extends React.Component<
           key={key}
           onClick={this.jumpTarget.bind(this, targetView, i + 1)}
         >
-          {key}
+          <Text className='at-indexes__menu-item__text'>{key}</Text>
         </View>
       )
     })
@@ -227,7 +227,7 @@ export default class AtIndexes extends React.Component<
           duration={2000}
         />
         <View
-          className='at-indexes__menu'
+          className={classNames('at-indexes__menu', `at-indexes__menu-${Taro.getEnv()}`)}
           onTouchMove={this.handleTouchMove}
           onTouchEnd={this.handleTouchEnd}
         >
@@ -235,7 +235,7 @@ export default class AtIndexes extends React.Component<
             className='at-indexes__menu-item'
             onClick={this.jumpTarget.bind(this, 'at-indexes__top', 0)}
           >
-            {topKey}
+            <Text className='at-indexes__menu-item__text'>{topKey}</Text>
           </View>
           {menuList}
         </View>

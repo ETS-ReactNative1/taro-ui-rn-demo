@@ -20,13 +20,18 @@
     overflow: hidden;
     //transform: translate3d(0, -50%, 0);
     z-index: $zindex-indexes;
+    &-RN {
+      top: 30%;
+      right: 1%;
+    }
   }
-
   &__menu-item {
     padding: 2px $spacing-h-sm;
-    color: $at-indexes-nav-color;
-    font-size: $at-indexes-nav-font-size;
-    text-align: center;
+    &__text {
+      color: $at-indexes-nav-color;
+      font-size: $at-indexes-nav-font-size;
+      text-align: center;
+    }
   }
 
   &__body {
