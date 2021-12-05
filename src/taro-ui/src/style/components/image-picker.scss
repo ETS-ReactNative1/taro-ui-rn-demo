@@ -37,11 +37,11 @@
     position: absolute;
     /*postcss-pxtransform rn eject enable*/
     top: 50%;
+    transform: translateY(-50%);
     /*postcss-pxtransform rn eject disable*/
     width: 100%;
     height: 100%;
     border-radius: $border-radius-md;
-    //transform: translateY(-50%);
     overflow: hidden;
   }
 
@@ -63,41 +63,14 @@
     top: 6px;
     right: 6px;
     z-index: 2;
-    width: 18px;
-    height: 18px;
-    font-size: 0;
+    width: 36px;
+    height: 36px;
     border-radius: 9px;
     overflow: hidden;
     text-align: center;
-    background-color: $at-image-picker-btn-remove-bg-color;
     opacity: 0.8;
     box-sizing: border-box;
-    &-RN {
-      width: 36px;
-      height: 36px;
-      background-color: transparent;
-    }
-
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      //display: inline-block;
-      width: 10PX;
-      height: 1PX;
-      border-radius: 1px;
-      background: $at-image-picker-btn-remove-color;
-    }
-
-    &::before {
-      //transform: translate3d(-50%, -50%, 0) rotate(45deg);
-    }
-
-    &::after {
-      //transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-    }
+    background-color: transparent;
   }
 
   &__preview-img {

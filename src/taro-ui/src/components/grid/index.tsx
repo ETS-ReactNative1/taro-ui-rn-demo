@@ -8,6 +8,7 @@ import { CommonEvent } from '@tarojs/components/types/common'
 import { AtGridItem, AtGridProps } from '../../../types/grid'
 import { mergeStyle } from '../../common/utils'
 import '../../style/components/grid.scss';
+import AtIcon from '../icon'
 
 export default class AtGrid extends React.Component<AtGridProps> {
   public static defaultProps: AtGridProps
@@ -70,40 +71,21 @@ export default class AtGrid extends React.Component<AtGridProps> {
                       `at-grid__item--${mode}__content-inner`,
                     ])}
                   >
-                    <View className='content-inner__icon'>
-                      {childItem.image && (
-                        <Image
-                          className={classNames([
-                            'at-grid__item__content-inner__img',
-                            `at-grid__item--${mode}__content-inner__img`,
-                          ])}
-                          src={childItem.image}
-                          mode='scaleToFill'
-                        />
-                      )}
-                      {childItem.iconInfo && !childItem.image && (
-                        <Text
-                          className={classNames(
-                            childItem.iconInfo.prefixClass || 'at-icon',
-                            {
-                              [`${
-                                childItem.iconInfo.prefixClass || 'at-icon'
-                              }-${childItem.iconInfo.value}`]: childItem
-                                .iconInfo.value
-                            },
-                            childItem.iconInfo.className
-                          )}
-                          style={mergeStyle(
-                            {
-                              color: childItem.iconInfo.color,
-                              fontSize: Taro.pxTransform(Number(childItem.iconInfo.size || 24))
-                            },
-                            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-                            childItem.iconInfo!.customStyle!
-                          )}
-                        />
-                      )}
-                    </View>
+                    {childItem.image && (
+                      <Image
+                        className={classNames([
+                          'at-grid__item__content-inner__img',
+                          `at-grid__item--${mode}__content-inner__img`,
+                        ])}
+                        src={childItem.image}
+                        mode='scaleToFill'
+                      />
+                    )}
+
+                    {!!childItem.iconInfo && !childItem.image && (
+                      <AtIcon {...childItem.iconInfo} />
+                    )}
+
                     <Text
                       className={classNames([
                         'at-grid__item__content-inner__text',

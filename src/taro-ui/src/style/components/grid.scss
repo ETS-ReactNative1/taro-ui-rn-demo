@@ -10,8 +10,8 @@
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: $color-border-light;
-    padding-top: $spacing-v-xl;
-    padding-bottom: $spacing-v-xl;
+    //padding-top: $spacing-v-xl;
+    //padding-bottom: $spacing-v-xl;
 
     &::after {
       border-top: none;
@@ -40,7 +40,7 @@
   }
 
   &__item {
-    @include flex(1);
+    //@include flex(1);
 
     display: flex;
     flex-direction: row;
@@ -106,7 +106,7 @@
         flex-direction: row;
         &__text {
           margin-left: 12px;
-          //margin-top: initial;
+          margin-top: 0;
           text-align: left;
         }
         &__img {

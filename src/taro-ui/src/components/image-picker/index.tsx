@@ -127,6 +127,7 @@ export default class AtImagePicker extends React.Component<AtImagePickerProps> {
                       <IconFont
                         name='close-circle-fill'
                         size={32}
+                        color='#666'
                       />
                     </View>
                     <Image

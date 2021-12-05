@@ -2,6 +2,7 @@ import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
 import { ScrollView, Text, View } from '@tarojs/components'
+import Taro from "@tarojs/taro";
 import { CommonEvent } from '@tarojs/components/types/common'
 import {
   AtFloatLayoutProps,
@@ -9,6 +10,7 @@ import {
 } from '../../../types/float-layout'
 import { handleTouchScroll } from '../../common/utils'
 import '../../style/components/float-layout.scss';
+import IconFont from "../icon-font";
 
 export default class AtFloatLayout extends React.Component<
   AtFloatLayoutProps,
@@ -86,14 +88,26 @@ export default class AtFloatLayout extends React.Component<
 
     return (
       <View className={rootClass} onTouchMove={this.handleTouchMove}>
-        <View onClick={this.close} className='at-float-layout__overlay' />
+        <View
+          onClick={this.close}
+          className={classNames({
+            'at-float-layout__overlay': true,
+            'at-float-layout__overlay--active': _isOpened,
+          })}
+        />
         <View className='at-float-layout__container'>
-          {title ? (
+          {!!title && (
             <View className='at-float-layout-header'>
-              <Text className='at-float-layout-header__title'>{title}</Text>
-              <View className='at-float-layout-header__btn-close' onClick={this.close} />
+              <Text className='at-float-layout-header__title' numberOfLines={1}>{title}</Text>
+              <View
+                className={classNames(['at-float-layout-header__btn-close', `at-float-layout-header__btn-close-${Taro.getEnv()}`])}
+                onClick={this.close}
+              >
+                <IconFont name='close' size={36} />
+              </View>
             </View>
-          ) : null}
+          )}
+
           <View className='at-float-layout-body'>
             <ScrollView
               scrollY={scrollY}
