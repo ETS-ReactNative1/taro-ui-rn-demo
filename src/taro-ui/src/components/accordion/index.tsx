@@ -1,18 +1,18 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import Taro from '@tarojs/taro';
 import { Text, View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtAccordionProps, AtAccordionState } from '../../../types/accordion'
 import { delayQuerySelector } from '../../common/utils'
+import IconFont from "../icon-font";
+import AtIcon from "../icon";
 import '../../style/components/accordion.scss'
-import IconFont from '../icon-font';
 
 export default class AtAccordion extends React.Component<
   AtAccordionProps,
   AtAccordionState
-> {
+  > {
   private isCompleted: boolean
   private startOpen: boolean
 
@@ -97,32 +97,23 @@ export default class AtAccordion extends React.Component<
     const headerCls = classNames('at-accordion__header', {
       'at-accordion__header--noborder': !hasBorder
     })
-
     const contentCls = classNames('at-accordion__content', {
       'at-accordion__content--inactive':
         (!open && this.isCompleted) || this.startOpen
     })
+    const contentStyle = { height: `${wrapperHeight}px` }
 
-    const iconStyle: React.CSSProperties = {}
-    if (icon && icon.color) {
-      iconStyle.color = icon.color;
-    }
-    if (icon && icon.size) {
-      iconStyle.fontSize = Taro.pxTransform(Number(icon.size));
-    }
-
-    const contentStyle: React.CSSProperties = {
-      height: Taro.pxTransform(wrapperHeight),
-    }
     if (this.isCompleted) {
-      contentStyle.height = Taro.pxTransform(0)
+      contentStyle.height = ''
     }
 
     return (
       <View className={rootCls} style={customStyle}>
         <View className={headerCls} onClick={this.handleClick}>
           {!!icon && !!icon.value && (
-            <Text className={iconCls} style={iconStyle} />
+            <View className='at-accordion__icon'>
+              <AtIcon {...icon} />
+            </View>
           )}
           <View className='at-accordion__info'>
             <Text className='at-accordion__info__title'>{title}</Text>
@@ -130,7 +121,7 @@ export default class AtAccordion extends React.Component<
               <Text className='at-accordion__info__note'>{note}</Text>
             )}
           </View>
-          <IconFont name={open ? 'down' : 'up'} color='#999' size={42} />
+          <IconFont name={open ? 'up' : 'down'} color='#999' size={42} />
         </View>
         <View style={contentStyle} className={contentCls}>
           <View className='at-accordion__body'>{this.props.children}</View>
@@ -142,7 +133,7 @@ export default class AtAccordion extends React.Component<
 
 AtAccordion.defaultProps = {
   open: false,
-  customStyle: {},
+  customStyle: '',
   className: '',
   title: '',
   note: '',
