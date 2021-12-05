@@ -5,37 +5,45 @@ $at-badge-border-radius: $at-badge-font-size * 0.7;
 $at-badge-box-shadow: 0 4px 8px 0 rgba($color: $at-badge-bg-color, $alpha: 0.2);
 
 .at-badge {
-  flex: 1;
   position: relative;
-  //display: inline-block;
+  /*postcss-pxtransform rn eject enable*/
+  display: inline-block;
+  /*postcss-pxtransform rn eject disable*/
   font-size: 0;
   vertical-align: middle;
+  &-RN {
+    flex: 1;
+  }
 
   /* elements */
   &__dot {
     position: absolute;
-    right: -6px;
+    right: -10px;
     top: -6px;
     width: $at-badge-dot-size;
     height: $at-badge-dot-size;
     border-radius: $at-badge-dot-size / 2;
     overflow: hidden;
     background: $at-badge-bg;
-    //box-shadow: $at-badge-box-shadow;
+    /*postcss-pxtransform rn eject enable*/
+    box-shadow: $at-badge-box-shadow;
+    /*postcss-pxtransform rn eject disable*/
   }
 
   &__num {
     position: absolute;
     padding: 0 $spacing-h-sm;
     top: -$at-badge-border-radius;
-    right: -32px;
+    right: -12px;
     color: $at-badge-color;
     font-size: $at-badge-font-size;
     line-height: 1.4 * $at-badge-font-size;
     border-radius: $at-badge-border-radius $at-badge-border-radius $at-badge-border-radius 0;
     background: $at-badge-bg;
-    //box-shadow: $at-badge-box-shadow;
-    //transform: translate(50%, 0);
+    /*postcss-pxtransform rn eject enable*/
+    box-shadow: $at-badge-box-shadow;
+    transform: translate(50%, 0);
+    /*postcss-pxtransform rn eject disable*/
     overflow: hidden;
     z-index: 1;
   }

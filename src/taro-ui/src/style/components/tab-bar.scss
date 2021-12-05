@@ -22,6 +22,7 @@ $at-tab-bar-title-max-width: 200px;
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: $spacing-v-sm $spacing-v-sm;
     color: $at-tab-bar-color;
     font-size: 0;
@@ -33,8 +34,10 @@ $at-tab-bar-title-max-width: 200px;
   }
 
   &__icon {
-    font-size: $at-tab-bar-icon-font-size;
-    line-height: 1 * $at-tab-bar-icon-font-size;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 
   &__inner-img {
@@ -49,7 +52,7 @@ $at-tab-bar-title-max-width: 200px;
   &__title {
     padding: $spacing-v-xs 0;
     max-width: $at-tab-bar-title-max-width;
-    overflow: hidden;
+    //overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: center;

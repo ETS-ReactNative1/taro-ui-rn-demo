@@ -7,6 +7,7 @@ import { CommonEvent } from '@tarojs/components/types/common'
 import { AtTabBarProps, TabItem } from '../../../types/tab-bar'
 import { mergeStyle } from '../../common/utils'
 import AtBadge from '../badge/index'
+import AtIcon from '../icon'
 import '../../style/components/tab-bar.scss'
 
 export default class AtTabBar extends React.Component<AtTabBarProps> {
@@ -96,41 +97,29 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
             key={item.title}
             onClick={this.handleClick.bind(this, i)}
           >
-            {item.iconType ? (
+            {!!item.iconType && (
               <AtBadge
                 dot={!!item.dot}
                 value={item.text}
                 maxValue={Number(item.max)}
               >
                 <View className='at-tab-bar__icon'>
-                  <Text
-                    className={classNames(
-                      `${item.iconPrefixClass || 'at-icon'}`,
-                      {
-                        [`${item.iconPrefixClass || 'at-icon'}-${
-                          item.selectedIconType
-                        }`]: current === i && item.selectedIconType,
-                        [`${item.iconPrefixClass || 'at-icon'}-${
-                          item.iconType
-                        }`]: !(current === i && item.selectedIconType)
-                      }
-                    )}
-                    style={{
-                      color: current === i ? selectedColor : color,
-                      fontSize: Taro.pxTransform(iconSize ? iconSize : 36),
-                    }}
+                  <AtIcon
+                    value={current === i && item.selectedIconType ? item.selectedIconType : item.iconType}
+                    color={current === i ? selectedColor : color}
+                    size={iconSize ? iconSize : 48}
                   />
                 </View>
               </AtBadge>
-            ) : null}
+            )}
 
-            {item.image ? (
-              <AtBadge
-                dot={!!item.dot}
-                value={item.text}
-                maxValue={Number(item.max)}
-              >
-                <View className='at-tab-bar__icon'>
+            {!!item.image && (
+              <View className='at-tab-bar__icon'>
+                <AtBadge
+                  dot={!!item.dot}
+                  value={item.text}
+                  maxValue={Number(item.max)}
+                >
                   <Image
                     className={classNames('at-tab-bar__inner-img', {
                       'at-tab-bar__inner-img--inactive': current !== i
@@ -147,21 +136,20 @@ export default class AtTabBar extends React.Component<AtTabBarProps> {
                     src={item.image}
                     style={imgStyle}
                   />
-                </View>
-              </AtBadge>
-            ) : null}
-
-            <AtBadge
-              dot={item.iconType || item.image ? false : !!item.dot}
-              value={item.iconType || item.image ? '' : item.text}
-              maxValue={item.iconType || item.image ? 0 : Number(item.max)}
-            >
-              <View className='at-tab-bar__title' style={titleStyle}>
-                <Text className='at-tab-bar__title__text'>
-                  {item.title}
-                </Text>
+                </AtBadge>
               </View>
-            </AtBadge>
+            )}
+
+            <View className='at-tab-bar__title' style={titleStyle}>
+              <AtBadge
+                dot={item.iconType || item.image ? false : !!item.dot}
+                value={item.iconType || item.image ? '' : item.text}
+                maxValue={item.iconType || item.image ? 0 : Number(item.max)}
+              >
+                <Text className='at-tab-bar__title__text'>{item.title}</Text>
+              </AtBadge>
+            </View>
+
           </View>
         ))}
       </View>
@@ -176,7 +164,8 @@ AtTabBar.defaultProps = {
   current: 0,
   tabList: [],
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  onClick: (): void => {}
+  onClick: (): void => {},
+  selectedColor: '#6190E8',
 }
 
 AtTabBar.propTypes = {

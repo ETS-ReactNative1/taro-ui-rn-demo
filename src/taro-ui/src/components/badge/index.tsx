@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
+import Taro from '@tarojs/taro';
 import { View } from '@tarojs/components'
 import { AtBadgeProps } from '../../../types/badge'
 import '../../style/components/badge.scss';
@@ -29,23 +30,26 @@ export default class AtBadge extends React.Component<AtBadgeProps> {
 
   public render(): JSX.Element {
     const { dot, value, maxValue = 99, customStyle } = this.props
-    const rootClassName = ['at-badge']
+    const rootClassName = ['at-badge', `at-badge-${Taro.getEnv()}`]
 
     const val = this.formatValue(value, maxValue)
 
-    return (
-      <View
-        className={classNames(rootClassName, this.props.className)}
-        style={customStyle}
-      >
-        {this.props.children}
-        {dot ? (
-          <View className='at-badge__dot'></View>
-        ) : (
-          val !== '' && <View className='at-badge__num'>{val}</View>
-        )}
-      </View>
-    )
+    if (dot || val !== '') {
+      return (
+        <View
+          className={classNames(rootClassName, this.props.className)}
+          style={customStyle}
+        >
+          {this.props.children}
+          {dot ? (
+            <View className='at-badge__dot' />
+          ) : (
+            val !== '' && <View className='at-badge__num'>{val}</View>
+          )}
+        </View>
+      )
+    }
+    return <>{this.props.children}</>;
   }
 }
 

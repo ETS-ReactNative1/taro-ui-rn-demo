@@ -172,14 +172,18 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
       width: tabDirection === 'horizontal' ? `${tabList.length * 100}%` : Taro.pxTransform(1),
     }
     const bodyStyle: React.CSSProperties = {}
-    let transformStyle = `translate3d(0px, -${current * 100}%, 0px)`
-    if (tabDirection === 'horizontal') {
-      transformStyle = `translate3d(-${current * 100}%, 0px, 0px)`
+
+    if (process.env.TARO_ENV !== 'rn') {
+      let transformStyle = `translate3d(0px, -${current * 100}%, 0px)`
+      if (tabDirection === 'horizontal') {
+        transformStyle = `translate3d(-${current * 100}%, 0px, 0px)`
+      }
+      Object.assign(bodyStyle, {
+        transform: transformStyle,
+        '-webkit-transform': transformStyle
+      })
     }
-    Object.assign(bodyStyle, {
-      //transform: transformStyle,
-      '-webkit-transform': transformStyle
-    })
+
     if (!animated) {
       bodyStyle.transition = 'unset'
     }
@@ -195,14 +199,21 @@ export default class AtTabs extends React.Component<AtTabsProps, AtTabsState> {
           key={`at-tabs-item-${idx}`}
           onClick={this.handleClick.bind(this, idx)}
         >
-          <Text
+          <View
             className={classNames({
-              'at-tabs__header__item__text': true,
-              'at-tabs__header__item__text--active': current === idx
+              'at-tabs__header__item__title': true,
+              'at-tabs__header__item__title--active': current === idx
             })}
           >
-            {item.title}
-          </Text>
+            <Text
+              className={classNames({
+                'at-tabs__header__item__title__text': true,
+                'at-tabs__header__item__title__text--active': current === idx
+              })}
+            >
+              {item.title}
+            </Text>
+          </View>
           <View
             className={classNames({
               'at-tabs__header__item-underline': true,
