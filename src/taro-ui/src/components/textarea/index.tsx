@@ -116,9 +116,9 @@ export default class AtTextarea extends React.Component<AtTextareaProps> {
           onLineChange={this.handleLinechange}
         />
         {count && (
-          <Text className='at-textarea__counter'>
-            {value.length}/{_maxLength}
-          </Text>
+          <View className='at-textarea__counter'>
+            <Text className='at-textarea__counter__text'>{value.length}/{_maxLength}</Text>
+          </View>
         )}
       </View>
     )

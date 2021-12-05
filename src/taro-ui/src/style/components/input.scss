@@ -96,10 +96,15 @@
   }
 
   &__children {
-    background-color: #00BCD4;
+    //background-color: #00BCD4;
     width: 200px;
-    //display: inline-flex;
-    @include hairline-left();
+    /*postcss-pxtransform rn eject enable*/
+    display: inline-flex;
+    /*postcss-pxtransform rn eject disable*/
+    //@include hairline-left();
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $color-border-light;
 
     > view,
     div,

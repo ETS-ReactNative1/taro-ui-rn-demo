@@ -4,6 +4,7 @@ import React from 'react'
 import { View } from '@tarojs/components'
 import Taro from '@tarojs/taro'
 import { AtMessageProps, AtMessageState } from '../../../types/message'
+import '../../style/components/message.scss'
 
 export default class AtMessage extends React.Component<
   AtMessageProps,

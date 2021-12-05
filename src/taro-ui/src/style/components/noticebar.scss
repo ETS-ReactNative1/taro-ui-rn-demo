@@ -137,7 +137,9 @@
 }
 
 @keyframes marquee {
+  /*postcss-pxtransform rn eject enable*/
   100% {
-    //transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
+  /*postcss-pxtransform rn eject disable*/
 }

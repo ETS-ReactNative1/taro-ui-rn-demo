@@ -28,7 +28,10 @@
     @include active;
     @include align-items(center);
 
-    //display: inline-flex;
+    /*postcss-pxtransform rn eject enable*/
+    display: inline-flex;
+    /*postcss-pxtransform rn eject disable*/
+
     padding: 0 $spacing-h-xl;
     height: 100%;
     color: $at-swipe-action-color;
@@ -42,7 +45,10 @@
   &__options {
     @include align-items(center);
 
-    //display: inline-flex;
+    /*postcss-pxtransform rn eject enable*/
+    display: inline-flex;
+    /*postcss-pxtransform rn eject disable*/
+
     position: absolute;
     top: 0;
     right: 0;

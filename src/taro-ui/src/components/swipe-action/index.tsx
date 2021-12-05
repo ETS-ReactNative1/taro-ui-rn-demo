@@ -1,7 +1,6 @@
 import classNames from 'classnames'
 import PropTypes, { InferProps } from 'prop-types'
 import React from 'react'
-import Taro from '@tarojs/taro'
 import { Text, View, MovableArea, MovableView } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import {
@@ -16,7 +15,7 @@ import '../../style/components/swipe-action.scss'
 export default class AtSwipeAction extends React.Component<
   AtSwipeActionProps,
   AtSwipeActionState
-> {
+  > {
   public static defaultProps: AtSwipeActionProps
   public static propTypes: InferProps<AtSwipeActionProps>
 
@@ -148,14 +147,14 @@ export default class AtSwipeAction extends React.Component<
         id={`swipeAction-${componentId}`}
         className={rootClass}
         style={{
-          width: Taro.pxTransform(this.eleWidth),
+          width: `${this.eleWidth}px`
         }}
       >
         <MovableArea
           className='at-swipe-action__area'
           style={{
-            width: Taro.pxTransform(this.eleWidth + this.maxOffsetSize),
-            //transform: `translate(-${this.maxOffsetSize}px, 0)`
+            width: `${this.eleWidth + this.maxOffsetSize}px`,
+            transform: `translate(-${this.maxOffsetSize}px, 0)`
           }}
         >
           <MovableView
@@ -166,8 +165,8 @@ export default class AtSwipeAction extends React.Component<
             onTouchEnd={this.onTouchEnd}
             onChange={this.onChange}
             style={{
-              width: Taro.pxTransform(this.eleWidth),
-              left: Taro.pxTransform(this.maxOffsetSize),
+              width: `${this.eleWidth}px`,
+              left: `${this.maxOffsetSize}px`
             }}
           >
             {this.props.children}
@@ -176,7 +175,7 @@ export default class AtSwipeAction extends React.Component<
                 options={options}
                 componentId={componentId}
                 customStyle={{
-                  //transform: `translate(${this.maxOffsetSize}px, 0)`,
+                  transform: `translate(${this.maxOffsetSize}px, 0)`,
                   opacity: 1
                 }}
               >

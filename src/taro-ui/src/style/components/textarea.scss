@@ -34,10 +34,15 @@ $at-textarea-bg-color: $color-bg;
   &__counter {
     padding-top: $spacing-v-sm;
     width: 100%;
-    color: $at-textarea-tips-color;
-    font-size: $at-textarea-tips-size;
-    text-align: right;
-    line-height: $line-height-base * $at-textarea-tips-size;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    &__text {
+      color: $at-textarea-tips-color;
+      font-size: $at-textarea-tips-size;
+      line-height: $line-height-base * $at-textarea-tips-size;
+    }
   }
 
   &--WEB,

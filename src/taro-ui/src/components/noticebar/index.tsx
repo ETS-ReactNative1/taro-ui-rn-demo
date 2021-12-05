@@ -6,8 +6,8 @@ import { CommonEvent } from '@tarojs/components/types/common'
 import Taro from '@tarojs/taro'
 import { AtNoticeBarProps, AtNoticeBarState } from '../../../types/noticebar'
 import NoticeText from "./text";
-import '../../style/components/noticebar.scss'
 import IconFont from '../icon-font'
+import '../../style/components/noticebar.scss'
 
 export default class AtNoticebar extends React.Component<
   AtNoticeBarProps,
