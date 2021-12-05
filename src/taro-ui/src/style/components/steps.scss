@@ -11,6 +11,8 @@
 
   /* elements */
   &__circular {
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     width: $at-steps-circle-size;
@@ -38,6 +40,8 @@
     flex: 1;
     width: 33%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
 
   &__circular-wrap {
@@ -101,6 +105,7 @@
     align-items: center;
     /*postcss-pxtransform rn eject enable*/
     @include line(2);
+    display: flex !important;
     /*postcss-pxtransform rn eject disable*/
     &__text {
       color: $at-steps-desc-color;

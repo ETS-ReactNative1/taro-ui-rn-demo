@@ -55,6 +55,7 @@
     background-color: transparent;
     opacity: 0;
     z-index: 1;
+    display: none;
 
     &::after {
       display: none;

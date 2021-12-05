@@ -45,11 +45,14 @@ export default class AtTag extends React.Component<AtTagProps> {
     const rootClassName = ['at-tag']
 
     const classObject = {
-      [`at-tag--${SIZE_CLASS[size]}`]: SIZE_CLASS[size],
       [`at-tag--${type}`]: TYPE_CLASS[type],
+      [`at-tag--${SIZE_CLASS[size]}`]: SIZE_CLASS[size],
       'at-tag--disabled': disabled,
       'at-tag--active': active,
-      'at-tag--circle': circle
+      'at-tag--circle': circle,
+      [`at-tag--${type}--disabled`]: disabled,
+      [`at-tag--${type}--active`]: active,
+      [`at-tag--${type}--circle`]: circle,
     }
 
     return (
@@ -61,6 +64,7 @@ export default class AtTag extends React.Component<AtTagProps> {
         {React.isValidElement(this.props.children) ? this.props.children : (
           <Text
             className={classNames({
+              'at-tag__text': true,
               [`at-tag--${SIZE_CLASS[size]}__text`]: SIZE_CLASS[size],
               [`at-tag--${type}__text`]: TYPE_CLASS[type],
               'at-tag--disabled__text': disabled,
@@ -77,8 +81,8 @@ export default class AtTag extends React.Component<AtTagProps> {
 }
 
 AtTag.defaultProps = {
-  size: 'normal',
   type: '',
+  size: 'normal',
   name: '',
   circle: false,
   active: false,
@@ -87,8 +91,8 @@ AtTag.defaultProps = {
 }
 
 AtTag.propTypes = {
-  size: PropTypes.oneOf(['normal', 'small']),
   type: PropTypes.oneOf(['', 'primary']),
+  size: PropTypes.oneOf(['normal', 'small']),
   name: PropTypes.string,
   circle: PropTypes.bool,
   active: PropTypes.bool,

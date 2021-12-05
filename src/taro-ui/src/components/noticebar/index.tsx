@@ -12,7 +12,7 @@ import IconFont from '../icon-font'
 export default class AtNoticebar extends React.Component<
   AtNoticeBarProps,
   AtNoticeBarState
-> {
+  > {
   public static defaultProps: AtNoticeBarProps
   public static propTypes: InferProps<AtNoticeBarProps>
 
@@ -61,11 +61,15 @@ export default class AtNoticebar extends React.Component<
   private initAnimation(): void {
     const { isWEAPP, isALIPAY } = this.state
     this.timeout = setTimeout(() => {
-      this.timeout = null
+      this.timeout = null;
+      const sId = `.${this.state.animElemId}`;
       if (this.state.isWEB) {
-        const { speed = 100 } = this.props
-        const elem = document.querySelector(`.${this.state.animElemId}`)
-        if (!elem) return
+        const { speed = 100 } = this.props;
+        const elem = document.querySelector(sId)
+        if (!elem) {
+          console.warn(`找不到 ${sId}`);
+          return;
+        }
         const width = elem.getBoundingClientRect().width
         const dura = width / +speed
         this.setState({ dura })

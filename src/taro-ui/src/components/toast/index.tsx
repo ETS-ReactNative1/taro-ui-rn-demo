@@ -132,7 +132,7 @@ export default class AtToast extends React.Component<
             )}
             {!!text && (
               <View className='toast-body-content__info'>
-                <Text>{text}</Text>
+                <Text className='toast-body-content__info__text'>{text}</Text>
               </View>
             )}
           </View>

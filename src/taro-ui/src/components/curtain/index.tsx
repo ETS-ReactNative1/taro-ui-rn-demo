@@ -5,6 +5,7 @@ import { View } from '@tarojs/components'
 import { CommonEvent } from '@tarojs/components/types/common'
 import { AtCurtainProps } from '../../../types/curtain'
 import '../../style/components/curtain.scss';
+import IconFont from "../icon-font";
 
 export default class AtCurtain extends React.Component<AtCurtainProps> {
   public static defaultProps: AtCurtainProps
@@ -46,7 +47,9 @@ export default class AtCurtain extends React.Component<AtCurtainProps> {
             <View
               className={btnCloseClass}
               onClick={this.onClose.bind(this)}
-            />
+            >
+              <IconFont name='close-circle' size={48} color='#fff' />
+            </View>
           </View>
         </View>
       </View>

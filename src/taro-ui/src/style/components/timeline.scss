@@ -46,51 +46,39 @@
   }
 
   &__dot {
-    &--RN {
-      margin-top: 5px;
-      width: $at-timeline-dot-size;
-      height: $at-timeline-dot-size;
-      border-top-width: 1px;
-      border-top-style: solid;
-      border-top-color: $at-timeline-dot-border-color;
-      border-right-width: 1px;
-      border-right-style: solid;
-      border-right-color: $at-timeline-dot-border-color;
-      border-left-width: 1px;
-      border-left-style: solid;
-      border-left-color: $at-timeline-dot-border-color;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color: $at-timeline-dot-border-color;
-      border-radius: $at-timeline-dot-size / 2;
-      &--green {
-        border-top-color: $color-success;
-        border-bottom-color: $color-success;
-        border-left-color: $color-success;
-        border-right-color: $color-success;
-      }
-      &--red {
-        border-top-color: $color-error;
-        border-bottom-color: $color-error;
-        border-left-color: $color-error;
-        border-right-color: $color-error;
-      }
-      &--yellow {
-        border-top-color: $color-warning;
-        border-bottom-color: $color-warning;
-        border-left-color: $color-warning;
-        border-right-color: $color-warning;
-      }
+    margin-top: 5px;
+    width: $at-timeline-dot-size;
+    height: $at-timeline-dot-size;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: $at-timeline-dot-border-color;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: $at-timeline-dot-border-color;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $at-timeline-dot-border-color;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $at-timeline-dot-border-color;
+    border-radius: $at-timeline-dot-size / 2;
+    &--green {
+      border-top-color: $color-success;
+      border-bottom-color: $color-success;
+      border-left-color: $color-success;
+      border-right-color: $color-success;
     }
-    &::after {
-      content: '';
-      //display: inline-block;
-      box-sizing: border-box;
-      width: $at-timeline-dot-size;
-      height: $at-timeline-dot-size;
-      border: 1px solid transparent;
-      border-radius: $at-timeline-dot-size / 2;
-      border-color: $at-timeline-dot-border-color;
+    &--red {
+      border-top-color: $color-error;
+      border-bottom-color: $color-error;
+      border-left-color: $color-error;
+      border-right-color: $color-error;
+    }
+    &--yellow {
+      border-top-color: $color-warning;
+      border-bottom-color: $color-warning;
+      border-left-color: $color-warning;
+      border-right-color: $color-warning;
     }
 
     &.at-timeline-item__icon {

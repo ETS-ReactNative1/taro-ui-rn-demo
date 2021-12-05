@@ -1,180 +1,146 @@
-import React from 'react'
+import {useState, useEffect} from 'react'
 import { AtButton, AtCurtain } from '@/taro-ui'
 import { Image, View, Text } from '@tarojs/components'
-import Taro from '@tarojs/taro'
 import curtainPng from '../../../../assets/images/curtain.png'
 import DocsHeader from '../../components/doc-header'
 import './index.scss'
 
-interface TagPageState {
-  isOpened: boolean
-  closeBtnPosition:
-    | 'top'
-    | 'top-left'
-    | 'top-right'
-    | 'bottom'
-    | 'bottom-left'
-    | 'bottom-right'
-  [key: string]: string | boolean
-}
+function Index() {
+  const [isOpened, setIsOpened] = useState(false);
+  const [closeBtnPosition, setCloseBtnPosition] = useState('bottom');
+  useEffect(() => {
+    console.log('state closeBtnPosition', closeBtnPosition);
+  }, [closeBtnPosition]);
 
-export default class TagPage extends React.Component<{}, TagPageState> {
-  public constructor(props: any) {
-    super(props)
-    this.state = {
-      isOpened: false,
-      closeBtnPosition: 'bottom'
-    }
-  }
+  return (
+    <View className='page'>
+      {/* S Header */}
+      <DocsHeader title='Curtain 幕帘' />
+      {/* E Header */}
 
-  private handleChange(stateName: string, value: string): void {
-    this.setState({
-      isOpened: true,
-      [stateName]: value
-    })
-  }
+      {/* S Body */}
+      <View className='doc-body'>
+        <AtCurtain
+          isOpened={isOpened}
+          closeBtnPosition={closeBtnPosition}
+          onClose={() => {
+            setIsOpened(false);
+          }}
+        >
+          <Image
+            style={{
+              width: '100%',
+            }}
+            mode='widthFix'
+            src={curtainPng}
+          />
+        </AtCurtain>
 
-  private onClose(): void {
-    this.setState({
-      isOpened: false
-    })
-  }
-
-  public render(): JSX.Element {
-    const { isOpened, closeBtnPosition } = this.state
-
-    return (
-      <View className='page'>
-        {/* S Header */}
-        <DocsHeader title='Curtain 幕帘' />
-        {/* E Header */}
-
-        {/* S Body */}
-        <View className='doc-body'>
-          <AtCurtain
-            isOpened={isOpened}
-            closeBtnPosition={closeBtnPosition}
-            onClose={this.onClose.bind(this)}
-          >
-            <Image
-              style={{
-                width: '100%',
-              }}
-              mode='widthFix'
-              src={curtainPng}
-            />
-          </AtCurtain>
-
-          {/* 顶部关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>顶部关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'top'
-                  )}
-                >
-                  顶部关闭幕帘
-                </AtButton>
-              </View>
-            </View>
-          </View>
-
-          {/* 底部关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>底部关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'bottom'
-                  )}
-                >
-                  底部关闭幕帘
-                </AtButton>
-              </View>
-            </View>
-          </View>
-
-          {/* 左上关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左上关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'top-left'
-                  )}
-                >
-                  左上关闭幕帘
-                </AtButton>
-              </View>
-            </View>
-          </View>
-
-          {/* 右上关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右上关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'top-right'
-                  )}
-                >
-                  右上关闭幕帘
-                </AtButton>
-              </View>
-            </View>
-          </View>
-
-          {/* 左下关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左下关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'bottom-left'
-                  )}
-                >
-                  左下关闭幕帘
-                </AtButton>
-              </View>
-            </View>
-          </View>
-
-          {/* 右下关闭 */}
-          <View className='doc-body__panel'>
-            <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右下关闭</Text></View>
-            <View className='panel__content'>
-              <View className='example-item'>
-                <AtButton
-                  onClick={this.handleChange.bind(
-                    this,
-                    'closeBtnPosition',
-                    'bottom-right'
-                  )}
-                >
-                  右下关闭幕帘
-                </AtButton>
-              </View>
+        {/* 顶部关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>顶部关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('top');
+                }}
+              >
+                顶部关闭幕帘
+              </AtButton>
             </View>
           </View>
         </View>
-        {/* E Body */}
+
+        {/* 底部关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>底部关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('bottom');
+                }}
+              >
+                底部关闭幕帘
+              </AtButton>
+            </View>
+          </View>
+        </View>
+
+        {/* 左上关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左上关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('top-left');
+                }}
+              >
+                左上关闭幕帘
+              </AtButton>
+            </View>
+          </View>
+        </View>
+
+        {/* 右上关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右上关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('top-right');
+                }}
+              >
+                右上关闭幕帘
+              </AtButton>
+            </View>
+          </View>
+        </View>
+
+        {/* 左下关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>左下关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('bottom-left');
+                }}
+              >
+                左下关闭幕帘
+              </AtButton>
+            </View>
+          </View>
+        </View>
+
+        {/* 右下关闭 */}
+        <View className='doc-body__panel'>
+          <View className='doc-body__panel__title'><Text className='doc-body__panel__title__text'>右下关闭</Text></View>
+          <View className='panel__content'>
+            <View className='example-item'>
+              <AtButton
+                onClick={() => {
+                  setIsOpened(true);
+                  setCloseBtnPosition('bottom-right');
+                }}
+              >
+                右下关闭幕帘
+              </AtButton>
+            </View>
+          </View>
+        </View>
       </View>
-    )
-  }
+      {/* E Body */}
+    </View>
+  )
 }
+
+export default Index;

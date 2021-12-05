@@ -28,6 +28,8 @@ $at-tag-border-size: 1PX;
     &__text {
       color: $at-tag-color-primary;
     }
+    &--primary {
+    }
   }
 
   &--active {
@@ -35,12 +37,6 @@ $at-tag-border-size: 1PX;
     background-color: $at-tag-bg-color-active;
     &__text {
       color: $at-tag-color-active;
-    }
-
-    &.at-tag--primary {
-      color: $at-tag-color-primary-active;
-      border-color: $at-tag-border-color-active;
-      background-color: $at-tag-bg-color-primary-active;
     }
   }
 
